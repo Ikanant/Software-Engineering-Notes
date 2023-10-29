@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "b3de665ef7800e34",
+        "id": "f5033f625b528e9a",
         "type": "tabs",
         "children": [
           {
-            "id": "4df6db3ee40eeb1d",
+            "id": "de4249fe0ff7cc6e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "09-Misc/Terraform/000_Getting Started.md",
+                "file": "10-Certifications/AWS Certified Developer - Associate DVA-C02/000_IAM.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "09-Misc/Terraform/000_Getting Started.md",
+                "file": "10-Certifications/AWS Certified Developer - Associate DVA-C02/000_IAM.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "09-Misc/Terraform/000_Getting Started.md",
+                "file": "10-Certifications/AWS Certified Developer - Associate DVA-C02/000_IAM.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "09-Misc/Terraform/000_Getting Started.md"
+                "file": "10-Certifications/AWS Certified Developer - Associate DVA-C02/000_IAM.md"
               }
             }
           }
@@ -146,6 +146,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "4df6db3ee40eeb1d",
-  "lastOpenFiles": []
+  "active": "de4249fe0ff7cc6e",
+  "lastOpenFiles": [
+    "09-Misc/Terraform/001_Infrastructure as Code.md",
+    "09-Misc/Terraform/000_Getting Started.md",
+    "10-Certifications/AWS Certified Developer - Associate DVA-C02/000_IAM.md",
+    "README.md"
+  ]
 }
