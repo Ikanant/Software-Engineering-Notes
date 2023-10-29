@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "10-Certifications/AWS Certified Developer - Associate DVA-C02/000_IAM.md",
+                "file": "09-Misc/Terraform/004_Goals-.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "10-Certifications/AWS Certified Developer - Associate DVA-C02/000_IAM.md",
+                "file": "09-Misc/Terraform/004_Goals-.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "10-Certifications/AWS Certified Developer - Associate DVA-C02/000_IAM.md",
+                "file": "09-Misc/Terraform/004_Goals-.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "10-Certifications/AWS Certified Developer - Associate DVA-C02/000_IAM.md"
+                "file": "09-Misc/Terraform/004_Goals-.md"
               }
             }
           }
@@ -148,9 +148,9 @@
   },
   "active": "de4249fe0ff7cc6e",
   "lastOpenFiles": [
+    "10-Certifications/AWS Certified Developer - Associate DVA-C02/000_IAM.md",
     "09-Misc/Terraform/001_Infrastructure as Code.md",
     "09-Misc/Terraform/000_Getting Started.md",
-    "10-Certifications/AWS Certified Developer - Associate DVA-C02/000_IAM.md",
     "README.md"
   ]
 }

@@ -1,16 +1,6 @@
- 
-
-Wednesday, October 25, 2023
-
-12:11 PM
-
- 
-
 Goals:
 
 We want to get AWS equivalcne ... in the GROWTH AWS environments
-
- 
 
 1.  SWA equivalent of stagin which is test..... We nebed to get the TEST env from Azure INTO aws
 
