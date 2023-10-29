@@ -8,7 +8,7 @@ Sunday, April 18, 2021
 
  
 
-![Deployment Container ReplicaSet Container pod Container ](002_Creating_Deployments_000.png){width="7.783333333333333in" height="2.8916666666666666in"}
+![Deployment Container ReplicaSet Container pod Container ](002_Creating_Deployments_000.png)
 
  
 
@@ -34,7 +34,7 @@ Was able to NOT ONLY create a pod and have a running container inside of it... B
 
  
 
-![Pods represent the most basic resource in Kubernetes Can be created and destroyed but are never re-created What happens if a Pod is destroyed? Deployments and ReplicaSets ensure Pods stay running and can be used to scale Pods pods, Deployments, and ReplicaSets Pod Container ](002_Creating_Deployments_001.png){width="7.925in" height="3.091666666666667in"}
+![Pods represent the most basic resource in Kubernetes Can be created and destroyed but are never re-created What happens if a Pod is destroyed? Deployments and ReplicaSets ensure Pods stay running and can be used to scale Pods pods, Deployments, and ReplicaSets Pod Container ](002_Creating_Deployments_001.png)
 
  
 
@@ -42,7 +42,7 @@ ReplicaSets essentially are going to control the Pod
 
  
 
-![ReplicaSet Container ](002_Creating_Deployments_002.png){width="1.6166666666666667in" height="1.2in"}
+![ReplicaSet Container ](002_Creating_Deployments_002.png)
 
  
 
@@ -66,7 +66,7 @@ ReplicaSets act as a Pod **controller:**
 
  
 
-![Result of Creating a ReplicaSet 2 Pods created iMac---3: replicaSets danwahlin\$ k get all + kubectl get all NME pod/ f rontend-8rs lg pod/ f rontend---zc8g I NME service/kubernetes NME READY 1/1 1/1 TYPE STATUS RESTARTS Running O Running O CLUSTER-IP AGE 8s Cluster1P 10.96.0.1 DESIRED CURRENT rep licaset. apps/ f rontend 2 2 EXTERNAL-IP READY AGE 2 PORT(S) AGE 443/TCP 41d ReplicaSet created ](002_Creating_Deployments_003.png){width="6.883333333333334in" height="3.3833333333333333in"}
+![Result of Creating a ReplicaSet 2 Pods created iMac---3: replicaSets danwahlin\$ k get all + kubectl get all NME pod/ f rontend-8rs lg pod/ f rontend---zc8g I NME service/kubernetes NME READY 1/1 1/1 TYPE STATUS RESTARTS Running O Running O CLUSTER-IP AGE 8s Cluster1P 10.96.0.1 DESIRED CURRENT rep licaset. apps/ f rontend 2 2 EXTERNAL-IP READY AGE 2 PORT(S) AGE 443/TCP 41d ReplicaSet created ](002_Creating_Deployments_003.png)
 
  
 
@@ -74,7 +74,7 @@ So I am personally confused at this point... how do Deployments fit into this pr
 
  
 
-![Deployment ReplicaSet ](002_Creating_Deployments_004.png){width="2.283333333333333in" height="1.9916666666666667in"}
+![Deployment ReplicaSet ](002_Creating_Deployments_004.png)
 
  
 
@@ -106,7 +106,7 @@ The nice thing about YAML files for Deployments is that they already take care o
 
  
 
-![Definin apiVersion: apps/vl kind: Deployment metadata : spec : selector : template : spec : containers: a Deplo - name: my-nginx image: nginx:alpine ment (From a High-Level) Kubernetes API version and resource type (Deployment) Metadata about the Deployment Select Pod template label(s) \< Template used to create the Pods \< Containers that will run in the pod ](002_Creating_Deployments_005.png){width="6.866666666666666in" height="3.5416666666666665in"}
+![Definin apiVersion: apps/vl kind: Deployment metadata : spec : selector : template : spec : containers: a Deplo - name: my-nginx image: nginx:alpine ment (From a High-Level) Kubernetes API version and resource type (Deployment) Metadata about the Deployment Select Pod template label(s) \< Template used to create the Pods \< Containers that will run in the pod ](002_Creating_Deployments_005.png)
 
  
 
@@ -138,11 +138,11 @@ The nice thing about YAML files for Deployments is that they already take care o
 
 Check out a more detailed Deployment YAML:
 
-![apiVersion: apps/vl kind: Deployment metadata : name: frontend labels : app: my-nginx tier: frontend spec : selector : matchLabe1s : tier: frontend template : metadata : labels : tier: frontend spec : containers: - name: my-nglnx image: nginx:alpine Kubernetes API version and resource type (Deployment) Metadata about the Deployment \< The selector is used to \"select\" the template to use (based on labels) Template to use to create the Pod/Containers (note that the selector matches the label) ](002_Creating_Deployments_006.png){width="6.716666666666667in" height="3.575in"}
+![apiVersion: apps/vl kind: Deployment metadata : name: frontend labels : app: my-nginx tier: frontend spec : selector : matchLabe1s : tier: frontend template : metadata : labels : tier: frontend spec : containers: - name: my-nglnx image: nginx:alpine Kubernetes API version and resource type (Deployment) Metadata about the Deployment \< The selector is used to \"select\" the template to use (based on labels) Template to use to create the Pod/Containers (note that the selector matches the label) ](002_Creating_Deployments_006.png)
 
  
 
-![](002_Creating_Deployments_007.png){width="6.725in" height="3.675in"}
+![](002_Creating_Deployments_007.png)
 
  
 
@@ -196,7 +196,7 @@ Can also use yaml file
 
 We can ALSO specify the replicas in the yaml file btw:
 
-![spec : replicas: 3 selector : tier: frontend ](002_Creating_Deployments_008.png){width="3.1333333333333333in" height="1.75in"}
+![spec : replicas: 3 selector : tier: frontend ](002_Creating_Deployments_008.png)
 
  
 
@@ -204,7 +204,7 @@ We can ALSO specify the replicas in the yaml file btw:
 
 *Jumping into the example provided by the course:*
 
-![nginx.deployment.yml X Samples \> Deployments \> nginx.deploymentyml \> { ) spec \> { ) selector \> {)matchLabels \> üapp 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 apiVersion: apps/vl kind: Deployment metadata: name: my---nginx labels: app: my---nginx spec : selector: matchLabels : app: my---nginx template: metadata: labels : app: my---nginx spec: containers: --- name: my---nginx image: nginx:alpine ports: --- containerPort: 80 resou rces : limits: memory: \"128M\" #128 MB cpu: \"200m\" #200 millicpu 1 (.2 cpu or of the cpu) ](002_Creating_Deployments_009.png){width="7.433333333333334in" height="6.783333333333333in"}
+![nginx.deployment.yml X Samples \> Deployments \> nginx.deploymentyml \> { ) spec \> { ) selector \> {)matchLabels \> üapp 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 apiVersion: apps/vl kind: Deployment metadata: name: my---nginx labels: app: my---nginx spec : selector: matchLabels : app: my---nginx template: metadata: labels : app: my---nginx spec: containers: --- name: my---nginx image: nginx:alpine ports: --- containerPort: 80 resou rces : limits: memory: \"128M\" #128 MB cpu: \"200m\" #200 millicpu 1 (.2 cpu or of the cpu) ](002_Creating_Deployments_009.png)
 
  
 
@@ -212,7 +212,7 @@ We can ALSO specify the replicas in the yaml file btw:
 
  
 
-![21 24 resources limits: memory : \"128Mi\" #128 MB \"200m\" #2ØØ millicpu cpu; (.2 cpu or of the cpu) ](002_Creating_Deployments_010.png){width="5.3in" height="1.0333333333333334in"}
+![21 24 resources limits: memory : \"128Mi\" #128 MB \"200m\" #2ØØ millicpu cpu; (.2 cpu or of the cpu) ](002_Creating_Deployments_010.png)
 
  
 
@@ -230,7 +230,7 @@ We can ALSO specify the replicas in the yaml file btw:
 We can get the list of deployments with any of the following commands really:\
  
 
-![danwahlin\$ + kubectl get deploy NAME READY UP-TO-DATE 1/1 1 my---ngxnx danwahtin\$ + kubectl get deployment NAME READY UP-TO-DATE my---nginx 1/1 1 danwahtin\$ + kubectl get deployments NAME READY UP-TO-DATE my---nginx 1/1 1 iMac---3:Deployments danwahlin\$ k k k 1 get deploy AVAILABLE AGE 1 1Ø7s get deployment AVAILABLE AGE 1 1Ø9s get deployments AVAILABLE AGE 1 112s ](002_Creating_Deployments_011.png){width="5.375in" height="2.825in"}
+![danwahlin\$ + kubectl get deploy NAME READY UP-TO-DATE 1/1 1 my---ngxnx danwahtin\$ + kubectl get deployment NAME READY UP-TO-DATE my---nginx 1/1 1 danwahtin\$ + kubectl get deployments NAME READY UP-TO-DATE my---nginx 1/1 1 iMac---3:Deployments danwahlin\$ k k k 1 get deploy AVAILABLE AGE 1 1Ø7s get deployment AVAILABLE AGE 1 1Ø9s get deployments AVAILABLE AGE 1 112s ](002_Creating_Deployments_011.png)
 
  
 
@@ -244,11 +244,11 @@ We can get the list of deployments with any of the following commands really:\
 *While playing around with Labels and the selector for our Deployment I found out that something like this:\
 * 
 
-![one 7 8 9 10 11 12 13 14 15 16 17 18 19 20 orange : spec selector : matchLabe1s : basic-deployment -fancy app : apple: two template : metadata labels app: basic-deployment apple: two spec containers : fancy-container-name name image: nginx: alpine ](002_Creating_Deployments_012.png){width="5.033333333333333in" height="3.575in"}
+![one 7 8 9 10 11 12 13 14 15 16 17 18 19 20 orange : spec selector : matchLabe1s : basic-deployment -fancy app : apple: two template : metadata labels app: basic-deployment apple: two spec containers : fancy-container-name name image: nginx: alpine ](002_Creating_Deployments_012.png)
 
 *Would not work for us... since the matchlabels need to match ALL of the labels in there..... Now in the other hand:*
 
-![spec : selector : matchLabe1s apple: two template : metadata : labels : app: basic-deployment apple: spec : ](002_Creating_Deployments_013.png){width="3.408333333333333in" height="2.4166666666666665in"}
+![spec : selector : matchLabe1s apple: two template : metadata : labels : app: basic-deployment apple: spec : ](002_Creating_Deployments_013.png)
 
 *That would work! - Cool!*
 
@@ -256,7 +256,7 @@ We can get the list of deployments with any of the following commands really:\
 
 **[HOW DO WE SCALE?]{.underline}**
 
-![danwahtin\$ k scale ---f nginx.deployment.ymt ---replicas=4 + kubectl scale ---f ng inx. deployment . yml ------replicas=4 deployment. apps/my---nginx scaled 1 iMac---3: loyments danwahlin\$ ](002_Creating_Deployments_014.png){width="7.675in" height="1.0in"}
+![danwahtin\$ k scale ---f nginx.deployment.ymt ---replicas=4 + kubectl scale ---f ng inx. deployment . yml ------replicas=4 deployment. apps/my---nginx scaled 1 iMac---3: loyments danwahlin\$ ](002_Creating_Deployments_014.png)
 
  
 
@@ -268,7 +268,7 @@ Or we can introduce this in the YAML file itself...
 
  
 
-![Windows PowerSheII PS E: k get all NAME pod / basic -deployment- 657b9c9c7f -5xj pf pod / basic -deployment -657b9c9c 7f -v898w READY 1/1 1/1 STATUS RESTARTS Running Running EXTERNAL-IP PORT(S) NAME service/kubernetes NAME TYPE ClusterIP CLUSTER-IP 10.96.ø.1 READY 2/2 -657b9c9c7f \< none) 443/TCP AVAILABLE AGE 31s 31s AGE 3Øh AGE 31s deployment. apps / basic -deployment NAME replicaset. apps / basic -deployment UP-TO-DATE 2 DESIRED 2 2 CURRENT 2 READY AGE 2 31s PS E: \\Workspaces\\KubernetesTraining\\Dep10yments\> k delete deployment -1 orange=\"one deployment. apps \"basic-deployment\" deleted ](002_Creating_Deployments_015.png){width="7.158333333333333in" height="3.1666666666666665in"}
+![Windows PowerSheII PS E: k get all NAME pod / basic -deployment- 657b9c9c7f -5xj pf pod / basic -deployment -657b9c9c 7f -v898w READY 1/1 1/1 STATUS RESTARTS Running Running EXTERNAL-IP PORT(S) NAME service/kubernetes NAME TYPE ClusterIP CLUSTER-IP 10.96.ø.1 READY 2/2 -657b9c9c7f \< none) 443/TCP AVAILABLE AGE 31s 31s AGE 3Øh AGE 31s deployment. apps / basic -deployment NAME replicaset. apps / basic -deployment UP-TO-DATE 2 DESIRED 2 2 CURRENT 2 READY AGE 2 31s PS E: \\Workspaces\\KubernetesTraining\\Dep10yments\> k delete deployment -1 orange=\"one deployment. apps \"basic-deployment\" deleted ](002_Creating_Deployments_015.png)
 
 ALSO notice how we can delete using the labels
 
@@ -276,7 +276,7 @@ ALSO notice how we can delete using the labels
 
 SUMMARY:
 
-![kubectl kubectl kubectl kubectl kubectl kubectl create -f nginx. deployment.yml - -save-config describe \[pod I deployment\] \[pod-name I deployment-name\] apply -f nginx.pod.yml get deployments \--show-labels get deployments -1 app=my-nginx scale -f nginx.deployment .yml - - replicas=4 ](002_Creating_Deployments_016.png){width="9.225in" height="2.825in"}
+![kubectl kubectl kubectl kubectl kubectl kubectl create -f nginx. deployment.yml - -save-config describe \[pod I deployment\] \[pod-name I deployment-name\] apply -f nginx.pod.yml get deployments \--show-labels get deployments -1 app=my-nginx scale -f nginx.deployment .yml - - replicas=4 ](002_Creating_Deployments_016.png)
 
  
 
@@ -290,7 +290,7 @@ SUMMARY:
 
  
 
-![Current Pod Container nginx:I.14.2-alpine Change Image Desired Pod Container nginx:I.15.9-aIpine ](002_Creating_Deployments_017.png){width="6.175in" height="1.7166666666666666in"}
+![Current Pod Container nginx:I.14.2-alpine Change Image Desired Pod Container nginx:I.15.9-aIpine ](002_Creating_Deployments_017.png)
 
 *Let\'s say we currently have an update to whatever application we have running inside a container inside a Pod... (Like for example the nginx application we have been using till just now)... in the old days to accomplish something like this we would probably end up having to stop the old container and then bring up the new one... potentially even having a down-time for our application... Deployments allows us to solve this problem! WHAT?!*
 

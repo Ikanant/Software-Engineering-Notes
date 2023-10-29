@@ -6,7 +6,7 @@ Wednesday, August 26, 2020
 
  
 
-![Regular modules implement values and behaviours Ambient modules describe implementations ](002_Ambient_Modules_000.png){width="6.925in" height="2.2083333333333335in"}
+![Regular modules implement values and behaviours Ambient modules describe implementations ](002_Ambient_Modules_000.png)
 
  
 
@@ -20,7 +20,7 @@ Ambient Modules are the common tool used to describe the API that a NON-TS file 
 
  
 
-![\"allowJs\" . true, • ](002_Ambient_Modules_001.png){width="3.716666666666667in" height="0.825in"}
+![\"allowJs\" . true, • ](002_Ambient_Modules_001.png)
 
  
 
@@ -28,7 +28,7 @@ First make sure we allow JS code inside of our own TS code.
 
  
 
-![JS cube.js X JS cube.js \> \... 1 2 3 4 export function cube(num) { - return num num num; ](002_Ambient_Modules_002.png){width="5.966666666666667in" height="2.716666666666667in"}
+![JS cube.js X JS cube.js \> \... 1 2 3 4 export function cube(num) { - return num num num; ](002_Ambient_Modules_002.png)
 
  
 
@@ -36,7 +36,7 @@ Let\'s assume we are interested in using the above function in our existing TS c
 
  
 
-![Ambient modules: Have .d.ts extensions Referred to as declaration files Have the same name as the file they describe ](002_Ambient_Modules_003.png){width="6.533333333333333in" height="2.3in"}
+![Ambient modules: Have .d.ts extensions Referred to as declaration files Have the same name as the file they describe ](002_Ambient_Modules_003.png)
 
  
 
@@ -44,7 +44,7 @@ Let\'s assume we are interested in using the above function in our existing TS c
 
 So for use we would do something along the lines of:
 
-![JS cube.js tsconfig.json TS b.ts TS cube.d.ts TS cube.d.ts \> { } \'cube\' I 2 3 4 declare module - \' cube\' - { , export function cube(num: number) : number; ](002_Ambient_Modules_004.png){width="10.608333333333333in" height="3.575in"}
+![JS cube.js tsconfig.json TS b.ts TS cube.d.ts TS cube.d.ts \> { } \'cube\' I 2 3 4 declare module - \' cube\' - { , export function cube(num: number) : number; ](002_Ambient_Modules_004.png)
 
  
 
@@ -52,7 +52,7 @@ So for use we would do something along the lines of:
 
  
 
-![import { cube } from \'cube\' ; cube( \' 002%\') ; ](002_Ambient_Modules_005.png){width="4.991666666666666in" height="1.2166666666666666in"}
+![import { cube } from \'cube\' ; cube( \' 002%\') ; ](002_Ambient_Modules_005.png)
 
  
 
@@ -62,7 +62,7 @@ So for use we would do something along the lines of:
 
  
 
-![ES modules must be referenced by path not by name ](002_Ambient_Modules_006.png){width="5.8in" height="1.8083333333333333in"}
+![ES modules must be referenced by path not by name ](002_Ambient_Modules_006.png)
 
  
 
@@ -74,7 +74,7 @@ This would be resolved by simply using webpack or some kind of bundler
 
 **Third Party Libraries**
 
-![15 16 17 18 19 20 21 22 23 25 \'\$\' is declared but its value is never read. ts(6133) Could not find a declaration file for module \'jquery\' . \' c : /Users/Dan/using-typescript- modules/node_modules/jquery/dist/jquery.js\' implicitly has an Try npm install \@types/jquery• if it exists or add a new (.d.ts) file containing \*declare module declaration \'jquery• ; • ts(7Ø16) import \$ from ](002_Ambient_Modules_007.png){width="4.85in" height="2.1666666666666665in"}
+![15 16 17 18 19 20 21 22 23 25 \'\$\' is declared but its value is never read. ts(6133) Could not find a declaration file for module \'jquery\' . \' c : /Users/Dan/using-typescript- modules/node_modules/jquery/dist/jquery.js\' implicitly has an Try npm install \@types/jquery• if it exists or add a new (.d.ts) file containing \*declare module declaration \'jquery• ; • ts(7Ø16) import \$ from ](002_Ambient_Modules_007.png)
 
  
 
@@ -96,7 +96,7 @@ There are so many declaration files here that are too many to read from github..
 
 By using this
 
-![](002_Ambient_Modules_008.png){width="6.033333333333333in" height="2.4916666666666667in"}
+![](002_Ambient_Modules_008.png)
 
  
 
@@ -104,7 +104,7 @@ BOOM now we are getting intellisense for JQuery.
 
  
 
-![N PM dependencies are not included by the compiler by default ](002_Ambient_Modules_009.png){width="5.816666666666666in" height="1.8666666666666667in"}
+![N PM dependencies are not included by the compiler by default ](002_Ambient_Modules_009.png)
 
  
 
@@ -120,7 +120,7 @@ Taking into consideration we might want to edit/tweak something in the declarati
 
  
 
-![declare module \'cube\' - export function - cube() : - string; ](002_Ambient_Modules_010.png){width="5.741666666666666in" height="1.6916666666666667in"}
+![declare module \'cube\' - export function - cube() : - string; ](002_Ambient_Modules_010.png)
 
  
 
@@ -130,7 +130,7 @@ In this scenario TS will MERGE the two DECLARATIONS for the module and INCLUDE t
 
  
 
-![= function() console. ) ; return \$(this); ](002_Ambient_Modules_011.png){width="4.55in" height="1.75in"}
+![= function() console. ) ; return \$(this); ](002_Ambient_Modules_011.png)
 
  
 
@@ -138,6 +138,6 @@ Like here \^\^\^\^ we want to add a debug method to Jquery... how can we do that
 
  
 
-![32 33 34 35 36 37 declare global { - interface - JQuery { debug(): JQuery; ](002_Ambient_Modules_012.png){width="4.958333333333333in" height="2.5416666666666665in"}
+![32 33 34 35 36 37 declare global { - interface - JQuery { debug(): JQuery; ](002_Ambient_Modules_012.png)
 
  

@@ -22,7 +22,7 @@ Services are often (not always) stateless. (it\'s not unusual to have services t
 
  
 
-![Machine generated alternative text: The Term Service Is Overloaded Not Necessarily Over-the-Wire A Worker Object Often Stateless ](002_03_-_Creating_and_Using_Angular_Services_000.png){width="6.0in" height="2.225in"}
+![Machine generated alternative text: The Term Service Is Overloaded Not Necessarily Over-the-Wire A Worker Object Often Stateless ](002_03_-_Creating_and_Using_Angular_Services_000.png)
 
  
 
@@ -50,7 +50,7 @@ Services makes a lot of the testing of our code easier to perform. Smaller parts
 
  
 
-![Machine generated alternative text: Reusable Dependency Injection SRP Testable ](002_03_-_Creating_and_Using_Angular_Services_001.png){width="6.0in" height="2.2916666666666665in"}
+![Machine generated alternative text: Reusable Dependency Injection SRP Testable ](002_03_-_Creating_and_Using_Angular_Services_001.png)
 
  
 
@@ -94,7 +94,7 @@ Creating an Angular service is simple. We just call the factory method onto our 
 
  
 
-![](002_03_-_Creating_and_Using_Angular_Services_002.png){width="6.0in" height="5.6in"}
+![](002_03_-_Creating_and_Using_Angular_Services_002.png)
 
  
 
@@ -160,7 +160,7 @@ Within the \$resource service we have multiple functions. We implemented the .ge
 
  
 
-![](002_03_-_Creating_and_Using_Angular_Services_003.png){width="9.033333333333333in" height="0.225in"}
+![](002_03_-_Creating_and_Using_Angular_Services_003.png)
 
  
 
@@ -180,7 +180,7 @@ The compile service is used **heavily** internally by Angular. It is used whenev
 
  
 
-![](002_03_-_Creating_and_Using_Angular_Services_004.png){width="5.0in" height="1.5666666666666667in"}
+![](002_03_-_Creating_and_Using_Angular_Services_004.png)
 
  
 
@@ -192,7 +192,7 @@ Though this is possible, using this is quite dangerous and would allow very simp
 
  
 
-![](002_03_-_Creating_and_Using_Angular_Services_005.png){width="2.4583333333333335in" height="1.3333333333333333in"}
+![](002_03_-_Creating_and_Using_Angular_Services_005.png)
 
  
 
@@ -208,7 +208,7 @@ Quite similar to the compile service. It is also used internally by Angular when
 
  
 
-![](002_03_-_Creating_and_Using_Angular_Services_006.png){width="2.716666666666667in" height="0.6666666666666666in"}
+![](002_03_-_Creating_and_Using_Angular_Services_006.png)
 
  
 
@@ -252,7 +252,7 @@ For example, lets say we have a label that contains a content that says \"apple\
 
  
 
-![](002_03_-_Creating_and_Using_Angular_Services_007.png){width="3.066666666666667in" height="1.0583333333333333in"}
+![](002_03_-_Creating_and_Using_Angular_Services_007.png)
 
  
 
@@ -268,7 +268,7 @@ For example, lets say we have a label that contains a content that says \"apple\
 
     -   There are various scenarios in which we have issues with Angular {{ }} battling with a list of other javascript tools often used in other applications. When using the interpolate service we can potentially change what angular uses (symbols wise)
 
-    -   ![](002_03_-_Creating_and_Using_Angular_Services_008.png){width="6.0in" height="1.375in"}
+    -   ![](002_03_-_Creating_and_Using_Angular_Services_008.png)
 
 -   \$log
 

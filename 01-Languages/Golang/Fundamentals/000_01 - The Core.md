@@ -190,7 +190,7 @@ Operators:
 
  
 
-![Machine generated alternative text: if \<simple statement\> \<code block\> , \<B001ean expression\> { ](000_01_-_The_Core_000.png){width="5.0in" height="0.9916666666666667in"}
+![Machine generated alternative text: if \<simple statement\> \<code block\> , \<B001ean expression\> { ](000_01_-_The_Core_000.png)
 
  
 
@@ -238,7 +238,7 @@ Consider the case in which we have 3 for loops that are nested.... By default, w
 
  
 
-![Machine generated alternative text: for \<expr. \<code\> breakPoint for \<expr\...\> { \<code\> for \<expr\...\> { \<code\> break breakPoint ](000_01_-_The_Core_001.png){width="5.0in" height="3.7416666666666667in"}
+![Machine generated alternative text: for \<expr. \<code\> breakPoint for \<expr\...\> { \<code\> for \<expr\...\> { \<code\> break breakPoint ](000_01_-_The_Core_001.png)
 
  
 
@@ -256,7 +256,7 @@ In the above code, when we break inside the YELLOW for loop, we will head out to
 
  
 
-![Machine generated alternative text: for timer --- le; timer timer % 2 continuel fmt . Print ln (timer) e, timer\-- { time. Sleep(l \* time. Second) ](000_01_-_The_Core_002.png){width="3.95in" height="1.5916666666666666in"}
+![Machine generated alternative text: for timer --- le; timer timer % 2 continuel fmt . Print ln (timer) e, timer\-- { time. Sleep(l \* time. Second) ](000_01_-_The_Core_002.png)
 
  
 
@@ -272,7 +272,7 @@ When dealing with Arrays and Slices remember you can\'t have an array with diffe
 
  
 
-![Machine generated alternative text: Arrays Arrays vs Slices Slices O 2 3 4 5 6 \"Apples\" \"Oranges\" \"Bread\" \"Milk\" \"Hummus\" \"Cheese\" \"Chocolate\" O 2 3 4 5 6 \"Apples\" \"Oranges\" \"Bread\" \"Milk\" \"Hummus\" \"Cheese\" \"Chocolate\" Numbered list of a single type • Fixed length • Numbered list of a single type • Can be resized ](000_01_-_The_Core_003.png){width="5.0in" height="2.591666666666667in"}
+![Machine generated alternative text: Arrays Arrays vs Slices Slices O 2 3 4 5 6 \"Apples\" \"Oranges\" \"Bread\" \"Milk\" \"Hummus\" \"Cheese\" \"Chocolate\" O 2 3 4 5 6 \"Apples\" \"Oranges\" \"Bread\" \"Milk\" \"Hummus\" \"Cheese\" \"Chocolate\" Numbered list of a single type • Fixed length • Numbered list of a single type • Can be resized ](000_01_-_The_Core_003.png)
 
  
 
@@ -430,11 +430,11 @@ The best way to explain Concurrency is by understanding its core difference from
 
  
 
-![Machine generated alternative text: ssa)0Jd ddv ](000_01_-_The_Core_004.png){width="5.0in" height="3.7083333333333335in"}
+![Machine generated alternative text: ssa)0Jd ddv ](000_01_-_The_Core_004.png)
 
  
 
-![Machine generated alternative text: ssa)0Jd JJJJ ddv ](000_01_-_The_Core_005.png){width="5.0in" height="4.908333333333333in"}
+![Machine generated alternative text: ssa)0Jd JJJJ ddv ](000_01_-_The_Core_005.png)
 
  
 
@@ -448,7 +448,7 @@ Go Concurrency model DOES use Threads.... But it\'s just that all of the concurr
 
  
 
-![Machine generated alternative text: goroutine ](000_01_-_The_Core_006.png){width="2.4583333333333335in" height="2.408333333333333in"}
+![Machine generated alternative text: goroutine ](000_01_-_The_Core_006.png)
 
  
 
@@ -496,7 +496,7 @@ Actors (GoRoutines) safely pass messages between eachothers by using channels.
 
 Channels (Simple) are like pipes:
 
-![Machine generated alternative text: goroutine Channel (safe comms) goroutine ](000_01_-_The_Core_007.png){width="5.0in" height="2.341666666666667in"}
+![Machine generated alternative text: goroutine Channel (safe comms) goroutine ](000_01_-_The_Core_007.png)
 
 >  
 
@@ -542,7 +542,7 @@ An un-buffered channel is a channel we create using the **make** keyboard BUT we
 
 The important thing about un-boffered channels is that when a Go_Routine wants to share some data through such channel, it will wait (locK) until another go_routine grabs such data... Forcing some kind of Synchronous criteria:
 
-![Machine generated alternative text: myChanne1 c, Channel (un-buffered) - make(chan int) ](000_01_-_The_Core_008.png){width="2.908333333333333in" height="1.85in"}
+![Machine generated alternative text: myChanne1 c, Channel (un-buffered) - make(chan int) ](000_01_-_The_Core_008.png)
 
  
 
@@ -562,12 +562,12 @@ For **BOTH** cases, if a Go_Routine tries to READ from a Channel (Buffered or Un
 
  
 
-![Machine generated alternative text: myChanne1 Channel (buffers 5) - make(chan int, ](000_01_-_The_Core_009.png){width="5.0in" height="2.775in"}
+![Machine generated alternative text: myChanne1 Channel (buffers 5) - make(chan int, ](000_01_-_The_Core_009.png)
 
  
 
  
 
-![Machine generated alternative text: Summary Concurrency Concurrency = independently executing processes The go keyword go sender(myChan, waitGrp) goroutines O Channels ](000_01_-_The_Core_010.png){width="5.0in" height="3.1333333333333333in"}
+![Machine generated alternative text: Summary Concurrency Concurrency = independently executing processes The go keyword go sender(myChan, waitGrp) goroutines O Channels ](000_01_-_The_Core_010.png)
 
  

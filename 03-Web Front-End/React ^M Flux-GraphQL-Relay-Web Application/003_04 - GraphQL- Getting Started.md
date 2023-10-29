@@ -27,7 +27,7 @@ Friday, April 29, 2016
             -   A GraphQL models the output...rahter than the steps that get your there\
                  
 
-                -   ![](003_04_-_GraphQL-_Getting_Started_000.png){width="4.075in" height="1.6166666666666667in"}
+                -   ![](003_04_-_GraphQL-_Getting_Started_000.png)
 
  
 
@@ -45,7 +45,7 @@ Example Query:
 
  
 
-![](003_04_-_GraphQL-_Getting_Started_001.png){width="2.575in" height="1.7083333333333333in"}
+![](003_04_-_GraphQL-_Getting_Started_001.png)
 
  
 
@@ -63,45 +63,45 @@ Example Query:
 >
 >  
 
-![](003_04_-_GraphQL-_Getting_Started_002.png){width="5.0in" height="2.558333333333333in"}
+![](003_04_-_GraphQL-_Getting_Started_002.png)
 
  
 
  
 
-![](003_04_-_GraphQL-_Getting_Started_003.png){width="5.0in" height="2.7333333333333334in"}
+![](003_04_-_GraphQL-_Getting_Started_003.png)
 
  
 
  
 
-![](003_04_-_GraphQL-_Getting_Started_004.png){width="5.0in" height="2.7416666666666667in"}
+![](003_04_-_GraphQL-_Getting_Started_004.png)
 
  
 
  
 
-![](003_04_-_GraphQL-_Getting_Started_005.png){width="5.0in" height="2.625in"}
+![](003_04_-_GraphQL-_Getting_Started_005.png)
 
  
 
-![](003_04_-_GraphQL-_Getting_Started_006.png){width="5.0in" height="2.575in"}
-
- 
-
- 
-
-![](003_04_-_GraphQL-_Getting_Started_007.png){width="5.0in" height="2.7in"}
+![](003_04_-_GraphQL-_Getting_Started_006.png)
 
  
 
  
 
-![](003_04_-_GraphQL-_Getting_Started_008.png){width="5.0in" height="2.7416666666666667in"}
+![](003_04_-_GraphQL-_Getting_Started_007.png)
 
  
 
-![](003_04_-_GraphQL-_Getting_Started_009.png){width="5.0in" height="2.591666666666667in"}
+ 
+
+![](003_04_-_GraphQL-_Getting_Started_008.png)
+
+ 
+
+![](003_04_-_GraphQL-_Getting_Started_009.png)
 
  
 
@@ -117,17 +117,17 @@ Example Query:
 
     b.  It's a two way mental model. It is very easy to write a GraphQL query if we know the data we are dealing with
 
-    c.  ![](003_04_-_GraphQL-_Getting_Started_010.png){width="5.0in" height="2.6666666666666665in"}
+    c.  ![](003_04_-_GraphQL-_Getting_Started_010.png)
 
 2.  Introspection
 
     a.  Allows us to type the type system dynamicly
 
-    b.  ![](003_04_-_GraphQL-_Getting_Started_011.png){width="5.0in" height="2.5083333333333333in"}
+    b.  ![](003_04_-_GraphQL-_Getting_Started_011.png)
 
 >  
 
-c.  ![](003_04_-_GraphQL-_Getting_Started_012.png){width="5.0in" height="2.6in"}
+c.  ![](003_04_-_GraphQL-_Getting_Started_012.png)
 
 ```{=html}
 <!-- -->
@@ -143,15 +143,15 @@ c.  ![](003_04_-_GraphQL-_Getting_Started_012.png){width="5.0in" height="2.6in"}
     a.  Map perfectly to the components of our system\
          
 
-    b.  ![](003_04_-_GraphQL-_Getting_Started_013.png){width="4.841666666666667in" height="4.808333333333334in"}
+    b.  ![](003_04_-_GraphQL-_Getting_Started_013.png)
 
 >  
 
-c.  ![](003_04_-_GraphQL-_Getting_Started_014.png){width="5.0in" height="2.7416666666666667in"}
+c.  ![](003_04_-_GraphQL-_Getting_Started_014.png)
 
 d.  By using fragments we do not care for repetition of similar queries
 
-e.  ![](003_04_-_GraphQL-_Getting_Started_015.png){width="3.066666666666667in" height="2.933333333333333in"}
+e.  ![](003_04_-_GraphQL-_Getting_Started_015.png)
 
 ```{=html}
 <!-- -->
@@ -166,10 +166,10 @@ e.  ![](003_04_-_GraphQL-_Getting_Started_015.png){width="3.066666666666667in" h
 
     a.  A Special kind of query which changes data on the server
 
-    b.  ![](003_04_-_GraphQL-_Getting_Started_016.png){width="5.0in" height="2.55in"}
+    b.  ![](003_04_-_GraphQL-_Getting_Started_016.png)
 
  
 
  
 
-![](003_04_-_GraphQL-_Getting_Started_017.png){width="5.0in" height="2.5in"}
+![](003_04_-_GraphQL-_Getting_Started_017.png)

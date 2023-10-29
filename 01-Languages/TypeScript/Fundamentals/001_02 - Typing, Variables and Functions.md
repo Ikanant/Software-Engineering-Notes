@@ -8,13 +8,13 @@ Sunday, February 25, 2018
 
  
 
-![Declare it var num 2 Name it 3 Set it ](001_02_-_Typing,_Variables_and_Functions_000.png){width="3.216666666666667in" height="1.7916666666666667in"}
+![Declare it var num 2 Name it 3 Set it ](001_02_-_Typing,_Variables_and_Functions_000.png)
 
 The above example it\'s interesting. This syntax would work just fine when coding on JS.... But what is different now ? In essence, we are using TypeScript inference tool to set the **num** variable to a number. So, if this variable were to be compared to something else along the lines of our program, it would be treated like a number and NOT like any other data type.
 
  
 
-![Declare rt 3 Annotate it var num: number = 5 Set it 2 Name iC 4 Type it ](001_02_-_Typing,_Variables_and_Functions_001.png){width="3.6166666666666667in" height="1.5833333333333333in"}
+![Declare rt 3 Annotate it var num: number = 5 Set it 2 Name iC 4 Type it ](001_02_-_Typing,_Variables_and_Functions_001.png)
 
  
 
@@ -22,7 +22,7 @@ Note: In typescript we have a variable type of ANY.... Which is the base type of
 
  
 
-![var anyl; var numl: number; var num2: var num3 = var num4 = num3 var strl = numl Type could be any type (any) number = 2 3; Type Annotation Type Annotation Setting Che Value Type Inference (number) Type Inference (number) lee; \' some string\'; Type Inference (string) var nothappy : number = numl + \' some string\' ; Error ! ](001_02_-_Typing,_Variables_and_Functions_002.png){width="5.866666666666666in" height="3.525in"}
+![var anyl; var numl: number; var num2: var num3 = var num4 = num3 var strl = numl Type could be any type (any) number = 2 3; Type Annotation Type Annotation Setting Che Value Type Inference (number) Type Inference (number) lee; \' some string\'; Type Inference (string) var nothappy : number = numl + \' some string\' ; Error ! ](001_02_-_Typing,_Variables_and_Functions_002.png)
 
  
 
@@ -36,7 +36,7 @@ In Javascript, if we tried calling that function with some input in it: **apple 
 
  
 
-![// Bootstrap everything : (s: string, p: string, c: string) void = function (startButton, pauseButton, clearButton) document. getEIementById ( startButton) . addEventLi stener( \"click \" , start Timer, document. getE1ementById ( pauseButton) . addEventListener( \"click •t , pauseTimer, document . getE1ementById ( clearButton) . addEventListener( \"click • • , clearTimer, false) ; false) ; false) ; displayTimer(); window. onload = function linit( \' startButton\' , \' pauseButton \' \' clearButton \' ) ; ](001_02_-_Typing,_Variables_and_Functions_003.png){width="5.991666666666666in" height="3.7916666666666665in"}
+![// Bootstrap everything : (s: string, p: string, c: string) void = function (startButton, pauseButton, clearButton) document. getEIementById ( startButton) . addEventLi stener( \"click \" , start Timer, document. getE1ementById ( pauseButton) . addEventListener( \"click •t , pauseTimer, document . getE1ementById ( clearButton) . addEventListener( \"click • • , clearTimer, false) ; false) ; false) ; displayTimer(); window. onload = function linit( \' startButton\' , \' pauseButton \' \' clearButton \' ) ; ](001_02_-_Typing,_Variables_and_Functions_003.png)
 
  
 
@@ -53,13 +53,13 @@ That line will assure us that the apple variable will be assigned to a function 
 
  
 
-![TypeScript Static typing (optional) Type safety is a compile-time feature JavaScript Dynamictyping Type safety happens at run-time debugging ](001_02_-_Typing,_Variables_and_Functions_004.png){width="6.616666666666666in" height="3.7916666666666665in"}
+![TypeScript Static typing (optional) Type safety is a compile-time feature JavaScript Dynamictyping Type safety happens at run-time debugging ](001_02_-_Typing,_Variables_and_Functions_004.png)
 
  
 
 An example of this relationship is as follows:
 
-![JavaScript\'s Dynamic Types Could be any type var person; \'John Papa\' ; person = person. substring (1, person --- 1 substring(l, person. 4); Uncaught TypeError: Object 1 has no 4); method \'substring\' ](001_02_-_Typing,_Variables_and_Functions_005.png){width="6.15in" height="3.6in"}
+![JavaScript\'s Dynamic Types Could be any type var person; \'John Papa\' ; person = person. substring (1, person --- 1 substring(l, person. 4); Uncaught TypeError: Object 1 has no 4); method \'substring\' ](001_02_-_Typing,_Variables_and_Functions_005.png)
 
  
 
@@ -69,7 +69,7 @@ These refer to the many cases in which we have no control over the type of the v
 
  
 
-![TypeScript declare var document; document. title = \"Hello\" ; lib.d.ts is referenced by default and contains references for the DOM and JavaScript ](001_02_-_Typing,_Variables_and_Functions_006.png){width="3.0in" height="3.775in"}
+![TypeScript declare var document; document. title = \"Hello\" ; lib.d.ts is referenced by default and contains references for the DOM and JavaScript ](001_02_-_Typing,_Variables_and_Functions_006.png)
 
  
 
@@ -79,7 +79,7 @@ Looking at the above example, if we set the title to a number accidentally,,, TS
 
  
 
-![Type Definition Files (aka Declaration Source Files) var data = \"Hello John\" ; TypeScript /// \<reference path=\"jquery.d.ts\" / \> declare var \$; \$(\"div\") . text (data); Helps provide types forjquery JavaScript var data = \"Hello John\"; . text (data); Ambient Declarations do not appear anywhere in the JavaScript ](001_02_-_Typing,_Variables_and_Functions_007.png){width="7.466666666666667in" height="4.833333333333333in"}
+![Type Definition Files (aka Declaration Source Files) var data = \"Hello John\" ; TypeScript /// \<reference path=\"jquery.d.ts\" / \> declare var \$; \$(\"div\") . text (data); Helps provide types forjquery JavaScript var data = \"Hello John\"; . text (data); Ambient Declarations do not appear anywhere in the JavaScript ](001_02_-_Typing,_Variables_and_Functions_007.png)
 
  
 
@@ -107,7 +107,7 @@ The question now is.... How do we reference our typings file in our module.... S
 \
  
 
-![/// (reference Errodule demo ø2 ø4 { // KO beloin s to the imported Knockout nuget pacakge we installed declare var var name = Knoc koutStatic ; . obserwa ble \'Jonathan Hdez\' • ](001_02_-_Typing,_Variables_and_Functions_008.png){width="5.775in" height="1.4083333333333334in"}
+![/// (reference Errodule demo ø2 ø4 { // KO beloin s to the imported Knockout nuget pacakge we installed declare var var name = Knoc koutStatic ; . obserwa ble \'Jonathan Hdez\' • ](001_02_-_Typing,_Variables_and_Functions_008.png)
 
  
 
@@ -129,23 +129,23 @@ Any can represent any value at all. ANY is the base type of TS and there is no t
 
  
 
-![var data: var info; any ; No static type checking on \"any\" ](001_02_-_Typing,_Variables_and_Functions_009.png){width="3.816666666666667in" height="1.825in"}
+![var data: var info; any ; No static type checking on \"any\" ](001_02_-_Typing,_Variables_and_Functions_009.png)
 
  
 
-![age: number var score: number = 98.25; var var var var string = \'John\'; var var rating hasData : isReady firstName : lastName = = 98.25; boolean = true; \'Papa\'; = true; number boolean string ](001_02_-_Typing,_Variables_and_Functions_010.png){width="4.808333333333334in" height="2.5833333333333335in"}
+![age: number var score: number = 98.25; var var var var string = \'John\'; var var rating hasData : isReady firstName : lastName = = 98.25; boolean = true; \'Papa\'; = true; number boolean string ](001_02_-_Typing,_Variables_and_Functions_010.png)
 
  
 
-![var names: string\[\] = \[\'John\', \'Dan var firstPerson: string; firstPerson = names\[0\]; indexer , \'Aaron\', \'Fritz\'\]; ](001_02_-_Typing,_Variables_and_Functions_011.png){width="5.066666666666666in" height="2.0083333333333333in"}
+![var names: string\[\] = \[\'John\', \'Dan var firstPerson: string; firstPerson = names\[0\]; indexer , \'Aaron\', \'Fritz\'\]; ](001_02_-_Typing,_Variables_and_Functions_011.png)
 
  
 
-![var var var var var var num: number = null; str: string = null; isHappy: boolean = null; customer: { } = null; age: number; = undefined; customer null undefined Null type is a subtype ofall primitives (except void and undefined) ](001_02_-_Typing,_Variables_and_Functions_012.png){width="5.225in" height="3.325in"}
+![var var var var var var num: number = null; str: string = null; isHappy: boolean = null; customer: { } = null; age: number; = undefined; customer null undefined Null type is a subtype ofall primitives (except void and undefined) ](001_02_-_Typing,_Variables_and_Functions_012.png)
 
  
 
-![var quantity: number; undefined var company = undefined; undefined type is a subtype of all types ](001_02_-_Typing,_Variables_and_Functions_013.png){width="5.25in" height="2.6166666666666667in"}
+![var quantity: number; undefined var company = undefined; undefined type is a subtype of all types ](001_02_-_Typing,_Variables_and_Functions_013.png)
 
  
 
@@ -153,11 +153,11 @@ Any can represent any value at all. ANY is the base type of TS and there is no t
 \
 ** 
 
-![• Examples Functions, class, module, interface, and literal types May contain Properties o public or private o required oroptional Call signatures Construct signatures Index signatures ](001_02_-_Typing,_Variables_and_Functions_014.png){width="6.625in" height="3.908333333333333in"}
+![• Examples Functions, class, module, interface, and literal types May contain Properties o public or private o required oroptional Call signatures Construct signatures Index signatures ](001_02_-_Typing,_Variables_and_Functions_014.png)
 
  
 
-![var squarelt = if (rect. w = rect. h return else { rect. h return var sqI: number console. log(sql) ; number sq2: var console.log(s 2 • function (rect: { h: --- undefined) { number, rect. h; rect. w; ](001_02_-_Typing,_Variables_and_Functions_015.png){width="4.766666666666667in" height="2.316666666666667in"}
+![var squarelt = if (rect. w = rect. h return else { rect. h return var sqI: number console. log(sql) ; number sq2: var console.log(s 2 • function (rect: { h: --- undefined) { number, rect. h; rect. w; ](001_02_-_Typing,_Variables_and_Functions_015.png)
 
  
 

@@ -110,7 +110,7 @@ I will insert the diagram that explain the Prototype model but keep in mind that
 
 Simple Diagram to study:
 
-![](002_03_-_Object_Orienting_000.png){width="5.0in" height="4.366666666666666in"}
+![](002_03_-_Object_Orienting_000.png)
 
  
 
@@ -118,7 +118,7 @@ Simple Diagram to study:
 
 A more complex version of that:
 
-![](002_03_-_Object_Orienting_001.png){width="5.0in" height="4.716666666666667in"}
+![](002_03_-_Object_Orienting_001.png)
 
  
 
@@ -178,7 +178,7 @@ OLLO: **O**bjects **L**inked to **O**ther **O**bjects
 
  
 
-![](002_03_-_Object_Orienting_002.png){width="5.0in" height="3.8666666666666667in"}
+![](002_03_-_Object_Orienting_002.png)
 
  
 
@@ -256,7 +256,7 @@ We are going to try to fix this...
 
 (This, along some other examples shown is not really correct)
 
-![](002_03_-_Object_Orienting_003.png){width="5.0in" height="3.9583333333333335in"}
+![](002_03_-_Object_Orienting_003.png)
 
  
 
@@ -282,7 +282,7 @@ New syntax: Function\* (not function pointer !!!) This functions have this new k
 
  
 
-![](002_03_-_Object_Orienting_004.png){width="5.0in" height="2.925in"}
+![](002_03_-_Object_Orienting_004.png)
 
  
 
@@ -294,7 +294,7 @@ When you call a generator function, what you get back is an **Iterator.** When w
 
 Why do we need this ?????
 
-![](002_03_-_Object_Orienting_005.png){width="5.0in" height="2.7416666666666667in"}
+![](002_03_-_Object_Orienting_005.png)
 
  
 
@@ -310,7 +310,7 @@ This is NOT asynchronous.....so what then?
 
 Here we go:
 
-![](002_03_-_Object_Orienting_006.png){width="5.0in" height="3.4166666666666665in"}
+![](002_03_-_Object_Orienting_006.png)
 
  
 
@@ -339,7 +339,7 @@ Promises: (two metaphores for it)\\
 
 Code:
 
-![](002_03_-_Object_Orienting_007.png){width="5.0in" height="3.025in"}
+![](002_03_-_Object_Orienting_007.png)
 
 >  
 >
@@ -347,7 +347,7 @@ Code:
 
 So we can have something like:
 
-![](002_03_-_Object_Orienting_008.png){width="5.0in" height="4.258333333333334in"}
+![](002_03_-_Object_Orienting_008.png)
 
 >  
 >
@@ -361,7 +361,7 @@ Promises are now built in after ES6
 
  
 
-![](002_03_-_Object_Orienting_009.png){width="5.0in" height="4.116666666666666in"}
+![](002_03_-_Object_Orienting_009.png)
 
  
 
@@ -391,7 +391,7 @@ Gates......Sequences are things that go this then this then this then this patte
 
 Example of code:
 
-![](002_03_-_Object_Orienting_010.png){width="5.0in" height="4.016666666666667in"}
+![](002_03_-_Object_Orienting_010.png)
 
  
 
@@ -399,7 +399,7 @@ Example of code:
 
 Meaning of life example:
 
-![](002_03_-_Object_Orienting_011.png){width="5.0in" height="4.016666666666667in"}
+![](002_03_-_Object_Orienting_011.png)
 
  
 
@@ -413,7 +413,7 @@ This is actually the most popular pattern we are getting used too...Runner utili
 
  
 
-![](002_03_-_Object_Orienting_012.png){width="5.0in" height="3.9166666666666665in"}
+![](002_03_-_Object_Orienting_012.png)
 
  
 
@@ -427,7 +427,7 @@ This is actually the most popular pattern we are getting used too...Runner utili
 
  
 
-![](002_03_-_Object_Orienting_013.png){width="5.0in" height="3.8583333333333334in"}
+![](002_03_-_Object_Orienting_013.png)
 
  
 

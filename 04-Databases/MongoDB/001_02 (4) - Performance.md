@@ -36,7 +36,7 @@ MongoDB:
 
 **Alternative Schema Design for Blog:**
 
-![](001_02_(4)_-_Performance_000.png){width="5.0in" height="3.125in"}
+![](001_02_(4)_-_Performance_000.png)
 
  
 

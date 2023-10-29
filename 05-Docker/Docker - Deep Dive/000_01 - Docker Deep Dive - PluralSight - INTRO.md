@@ -22,11 +22,11 @@ So, what is the most efficient solution to this problem? The answer is: The Cont
 
 Mega-High Level: Containers are a bit like virtual machines in the sense that they are application runtime environments. The difference with containers and virtual machines is that containers are WAY more lightweight. So each container, contains less CPU, less RAM and less Disk space than a VM.
 
-![](000_01_-_Docker_Deep_Dive_-_PluralSight_-_INTRO_000.png){width="5.0in" height="2.183333333333333in"}
+![](000_01_-_Docker_Deep_Dive_-_PluralSight_-_INTRO_000.png)
 
       
 
-![](000_01_-_Docker_Deep_Dive_-_PluralSight_-_INTRO_001.png){width="5.0in" height="3.325in"}
+![](000_01_-_Docker_Deep_Dive_-_PluralSight_-_INTRO_001.png)
 
 In the VM model, inside each VM we need to install a full grown OS. So 10 VMs on a physical computer then that would be a lot of resource use. Refer to the picture above.
 
@@ -54,7 +54,7 @@ In order to achieve this, we need to be able to create our own isolated instance
 
 What all this means is that, one container needs to have it\'s own view of a root file system:
 
-![](000_01_-_Docker_Deep_Dive_-_PluralSight_-_INTRO_002.png){width="5.0in" height="2.65in"}
+![](000_01_-_Docker_Deep_Dive_-_PluralSight_-_INTRO_002.png)
 
  
 
@@ -422,4 +422,4 @@ Let\'s now spin that container back up and see if we can still see the file:
 
 \$sudo service docker start
 
-![](000_01_-_Docker_Deep_Dive_-_PluralSight_-_INTRO_003.png){width="5.0in" height="2.7333333333333334in"}
+![](000_01_-_Docker_Deep_Dive_-_PluralSight_-_INTRO_003.png)

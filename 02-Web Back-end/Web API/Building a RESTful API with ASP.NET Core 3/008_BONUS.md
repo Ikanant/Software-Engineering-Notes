@@ -28,7 +28,7 @@ Then later in SSMS:
 
  
 
-![](008_BONUS_000.png){width="5.741666666666666in" height="3.9166666666666665in"}
+![](008_BONUS_000.png)
 
  
 

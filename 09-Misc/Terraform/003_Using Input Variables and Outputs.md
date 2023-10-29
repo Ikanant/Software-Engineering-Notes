@@ -15,7 +15,7 @@ Within Terraform we receive variables as input AND even change their values with
 **Variable Syntax looks something like:\
 ** 
 
-![variable variable \'name \_ label\" \"name_label\" o value type = description = \"value\" default = \"value\" sensitive = true false ](003_Using_Input_Variables_and_Outputs_000.png){width="3.966666666666667in" height="3.95in"}
+![variable variable \'name \_ label\" \"name_label\" o value type = description = \"value\" default = \"value\" sensitive = true false ](003_Using_Input_Variables_and_Outputs_000.png)
 
  
 
@@ -62,19 +62,19 @@ If no argument is provided to a variable that is no problem. This is a simple an
 
  
 
-![\# List \[ us-east-I\' us-east-2\", \"us-west-I \" , \[1, true\] \# INVALID LIST! us-east-2\" , medium = \"t2.sma11\" \# Map small = \"t2.micro\' ](003_Using_Input_Variables_and_Outputs_002.png){width="5.0in" height="3.575in"}
+![\# List \[ us-east-I\' us-east-2\", \"us-west-I \" , \[1, true\] \# INVALID LIST! us-east-2\" , medium = \"t2.sma11\" \# Map small = \"t2.micro\' ](003_Using_Input_Variables_and_Outputs_002.png)
 
  
 
 Example of a LIST:
 
-![variable \"aws_regions list (string) type = description = \"Region to use for AWS resources\' default = \'us-east-2\" , us-west-I us-east-I Collection Values ](003_Using_Input_Variables_and_Outputs_003.png){width="5.0in" height="2.533333333333333in"}
+![variable \"aws_regions list (string) type = description = \"Region to use for AWS resources\' default = \'us-east-2\" , us-west-I us-east-I Collection Values ](003_Using_Input_Variables_and_Outputs_003.png)
 
  
 
 Example of a MAP:
 
-![\"aws_instance_sizes\" variable type = map(string description = \"Region to use for AWS resources\" default = small medium large = \"t2 . micro\" = \"t2 . small\" - \"t2.1arge\" ](003_Using_Input_Variables_and_Outputs_004.png){width="5.0in" height="2.975in"}
+![\"aws_instance_sizes\" variable type = map(string description = \"Region to use for AWS resources\" default = small medium large = \"t2 . micro\" = \"t2 . small\" - \"t2.1arge\" ](003_Using_Input_Variables_and_Outputs_004.png)
 
  
 
@@ -82,7 +82,7 @@ Example of a MAP:
 
  
 
-![main.tf --- Getting-Started-Terraform variables.tf main.tf x globo_web_app \> main.tf \> provider \"avvs\" \> secret_key \# PROVIDERS provider \"aws•• access secret region \# DATA \_ key \_key = var. = var. = var. 11 12 13 14 15 aws_access_key aws_sec ret_key aws_reg Ion \" arni lø 11 12 13 14 15 varn varii varii data ](003_Using_Input_Variables_and_Outputs_005.png){width="5.0in" height="1.3916666666666666in"}
+![main.tf --- Getting-Started-Terraform variables.tf main.tf x globo_web_app \> main.tf \> provider \"avvs\" \> secret_key \# PROVIDERS provider \"aws•• access secret region \# DATA \_ key \_key = var. = var. = var. 11 12 13 14 15 aws_access_key aws_sec ret_key aws_reg Ion \" arni lø 11 12 13 14 15 varn varii varii data ](003_Using_Input_Variables_and_Outputs_005.png)
 
  
 
@@ -100,11 +100,11 @@ These will just be filled with key/value pairs... Simple!
 
  
 
-![locals instance_prefix - common_tags - \" globo \" Globomantics company project = var. project billing \_ code = var. bill il Terraform Locals Refer ](003_Using_Input_Variables_and_Outputs_006.png){width="5.0in" height="6.116666666666666in"}
+![locals instance_prefix - common_tags - \" globo \" Globomantics company project = var. project billing \_ code = var. bill il Terraform Locals Refer ](003_Using_Input_Variables_and_Outputs_006.png)
 
  
 
-![](003_Using_Input_Variables_and_Outputs_007.png){width="5.0in" height="1.9166666666666667in"}
+![](003_Using_Input_Variables_and_Outputs_007.png)
 
  
 
@@ -128,18 +128,18 @@ Just like the value of a local, the value for an output can be any supported dat
 
  
 
-![output \"name \_ label\" value output \_ value \"Description of description true I false sensitive - ](003_Using_Input_Variables_and_Outputs_008.png){width="5.0in" height="2.275in"}
+![output \"name \_ label\" value output \_ value \"Description of description true I false sensitive - ](003_Using_Input_Variables_and_Outputs_008.png)
 
  
 
 Example:\
  
 
-![output \"public_dns_hostname\" value aws_instance . web \_ server . put \"Public DNS hostname description - ](003_Using_Input_Variables_and_Outputs_009.png){width="5.0in" height="1.475in"}
+![output \"public_dns_hostname\" value aws_instance . web \_ server . put \"Public DNS hostname description - ](003_Using_Input_Variables_and_Outputs_009.png)
 
  
 
-![main.tf globo_web_app \> output variables.tf locals.tf globo_web_app \> outputs.tf \> c 28 29 31 32 33 main.tf \> = local. comon_tags tags \"igw•• { resource vpc_id = aws_vpc. vpc. id 1 2 3 output value = aws_instance.ng PROBLEMS OUTPUT DEBUG CONSOLE primary_network_interface_id private_dns rivate_ip btic_dn public_ip + secondary_private_ips + security_groups TERMINAL after after after after (known after apply) after after after ( known ( known ( known ( known ( known ( known (known apply) apply) apply) apply) apply) apply) apply) ](003_Using_Input_Variables_and_Outputs_010.png){width="5.0in" height="1.9083333333333334in"}
+![main.tf globo_web_app \> output variables.tf locals.tf globo_web_app \> outputs.tf \> c 28 29 31 32 33 main.tf \> = local. comon_tags tags \"igw•• { resource vpc_id = aws_vpc. vpc. id 1 2 3 output value = aws_instance.ng PROBLEMS OUTPUT DEBUG CONSOLE primary_network_interface_id private_dns rivate_ip btic_dn public_ip + secondary_private_ips + security_groups TERMINAL after after after after (known after apply) after after after ( known ( known ( known ( known ( known ( known (known apply) apply) apply) apply) apply) apply) apply) ](003_Using_Input_Variables_and_Outputs_010.png)
 
 What\'s really important here is that the output value is actually not used at all in any of our main.tf files. When we apply a Terraform configuration file we see a good amount of parameters that have **(known after apply)** ... these parameters are the ones that can be real useful when printing stuff out to our terminal... In this case it is saving us a trip to AWS console to grab the public_dns value of our web server.
 
@@ -199,7 +199,7 @@ The OTHER important question to ask is, what happens if we define a value for a 
 
  
 
-![TF VAR environment variable .tfvars or .tfvars.json .auto.tfvars or -var-file flag .auto.tfvars.json -var fl ](003_Using_Input_Variables_and_Outputs_011.png){width="5.0in" height="1.3916666666666666in"}
+![TF VAR environment variable .tfvars or .tfvars.json .auto.tfvars or -var-file flag .auto.tfvars.json -var fl ](003_Using_Input_Variables_and_Outputs_011.png)
 
  
 
@@ -211,6 +211,6 @@ BOOM... DONEZZO\
 \
  
 
-![Overview fil Supply data through il Many ways to submit Receive data through ](003_Using_Input_Variables_and_Outputs_012.png){width="5.0in" height="1.5833333333333333in"}
+![Overview fil Supply data through il Many ways to submit Receive data through ](003_Using_Input_Variables_and_Outputs_012.png)
 
  

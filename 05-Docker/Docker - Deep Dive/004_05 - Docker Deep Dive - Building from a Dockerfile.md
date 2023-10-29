@@ -114,4 +114,4 @@ Note that with RUN command we can add commands with the && sign. That way we don
 
  
 
-![](004_05_-_Docker_Deep_Dive_-_Building_from_a_Dockerfile_000.png){width="5.0in" height="2.775in"}
+![](004_05_-_Docker_Deep_Dive_-_Building_from_a_Dockerfile_000.png)

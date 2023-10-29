@@ -4,7 +4,7 @@ Monday, January 21, 2019
 
 3:30 PM
 
-![Tradeoffs Framework Concise Template-centric Separate template Standard Community backed Library Explicit JavaScript-centric Single-file component Non-standard Corporate backed ](001_Tradeoffs_000.png){width="5.0in" height="3.3833333333333333in"}
+![Tradeoffs Framework Concise Template-centric Separate template Standard Community backed Library Explicit JavaScript-centric Single-file component Non-standard Corporate backed ](001_Tradeoffs_000.png)
 
  
 
@@ -18,11 +18,11 @@ REACT on the other hand is significantly smaller than most frameworks. **This al
 
  
 
-![Framework Clear opinions Less decision fatigue Less setup overhead More cross-team consistency Library Light-weight Sprinkle on existing apps Pick what you need Choose best tech Popular boilerplates exist ](001_Tradeoffs_001.png){width="5.0in" height="2.5833333333333335in"}
+![Framework Clear opinions Less decision fatigue Less setup overhead More cross-team consistency Library Light-weight Sprinkle on existing apps Pick what you need Choose best tech Popular boilerplates exist ](001_Tradeoffs_001.png)
 
  
 
-![Components Testing I-IT TP library Routing 118n Animation Form validation CLI Features React Jest, Mocha Fetch, Axios React Router react-intl react-motion react-forms create-react-app Angular angular-cli ](001_Tradeoffs_002.png){width="5.0in" height="2.9916666666666667in"}
+![Components Testing I-IT TP library Routing 118n Animation Form validation CLI Features React Jest, Mocha Fetch, Axios React Router react-intl react-motion react-forms create-react-app Angular angular-cli ](001_Tradeoffs_002.png)
 
  
 
@@ -38,7 +38,7 @@ Note that you can write single change handlers for an entire form. No need to wr
 \
  
 
-![Two-way binding Less coding Automatic let user --- - •cory\'; \<input type=\"text\" value={user} Don\'t worry, you can declare one per form. O One-way binding More control More explicit Easy to debug = { user: \'Cory\' } ; state function handleChange(event) { this. setState({ user: event. target. value \<input type=\"text\" state. user} hand leChange} ](001_Tradeoffs_003.png){width="5.0in" height="2.908333333333333in"}
+![Two-way binding Less coding Automatic let user --- - •cory\'; \<input type=\"text\" value={user} Don\'t worry, you can declare one per form. O One-way binding More control More explicit Easy to debug = { user: \'Cory\' } ; state function handleChange(event) { this. setState({ user: event. target. value \<input type=\"text\" state. user} hand leChange} ](001_Tradeoffs_003.png)
 
  
 
@@ -52,7 +52,7 @@ Note that you can write single change handlers for an entire form. No need to wr
 
  
 
-![\<hl Admin\</hl\> \<hl v-if=\" isAdmin\"\>Hi Admin\</hl\> \<hl\>{{if isAdmin {isAdmin \'Hi Admin Since plain JS, you get: 1. Autocomplete support 2. Error messages ](001_Tradeoffs_004.png){width="5.0in" height="2.841666666666667in"}
+![\<hl Admin\</hl\> \<hl v-if=\" isAdmin\"\>Hi Admin\</hl\> \<hl\>{{if isAdmin {isAdmin \'Hi Admin Since plain JS, you get: 1. Autocomplete support 2. Error messages ](001_Tradeoffs_004.png)
 
  
 
@@ -60,7 +60,7 @@ Note that you can write single change handlers for an entire form. No need to wr
 
  
 
-![\<div user of \<div v---for=\"user in {{#each users as I user l}} {{/each}} users.map(user ](001_Tradeoffs_005.png){width="5.0in" height="3.025in"}
+![\<div user of \<div v---for=\"user in {{#each users as I user l}} {{/each}} users.map(user ](001_Tradeoffs_005.png)
 
  
 
@@ -68,7 +68,7 @@ Note that you can write single change handlers for an entire form. No need to wr
 \
 ** 
 
-![\<button ) \<button \<button \<button \' de ](001_Tradeoffs_006.png){width="5.0in" height="3.0083333333333333in"}
+![\<button ) \<button \<button \<button \' de ](001_Tradeoffs_006.png)
 
  
 
@@ -78,7 +78,7 @@ Note that you can write single change handlers for an entire form. No need to wr
 
  
 
-![Template-centric Little JS knowledge required Avoid confusion with JS binding Rule of least power JavaScript-centric Little framework-specific syntax Fewer concepts to learn. It\'s JS. Less code Easy to read Encourages improving JS skills Skills transfer ](001_Tradeoffs_007.png){width="5.0in" height="2.8in"}
+![Template-centric Little JS knowledge required Avoid confusion with JS binding Rule of least power JavaScript-centric Little framework-specific syntax Fewer concepts to learn. It\'s JS. Less code Easy to read Encourages improving JS skills Skills transfer ](001_Tradeoffs_007.png)
 
  
 
@@ -90,7 +90,7 @@ Taking into consideration how patterns like the Model, View, Controller have gro
 
  
 
-![HTML Separate technologies, css but intertwined concerns. JS Each component is a separate concern. 0 ](001_Tradeoffs_008.png){width="5.0in" height="2.7in"}
+![HTML Separate technologies, css but intertwined concerns. JS Each component is a separate concern. 0 ](001_Tradeoffs_008.png)
 
  
 
@@ -110,7 +110,7 @@ What is a **Web Component?**
 
  
 
-![Templates Custom Elements Shadow DOM Imports Inert, reusable markup Define our own elements Encapsulated styling Bundle HTML, JS, & CSS ](001_Tradeoffs_009.png){width="5.0in" height="2.1333333333333333in"}
+![Templates Custom Elements Shadow DOM Imports Inert, reusable markup Define our own elements Encapsulated styling Bundle HTML, JS, & CSS ](001_Tradeoffs_009.png)
 
  
 
@@ -120,7 +120,7 @@ Sadly, though having a standard across our code would be greatly beneficial... T
 
  
 
-![Web Components Templates Custom Elements Shadow DOM Imports React JSX, JS Declare React components CSS modules, CSS in JS, \"inline\" One component per file ](001_Tradeoffs_010.png){width="5.0in" height="3.4in"}
+![Web Components Templates Custom Elements Shadow DOM Imports React JSX, JS Declare React components CSS modules, CSS in JS, \"inline\" One component per file ](001_Tradeoffs_010.png)
 
  
 
@@ -128,14 +128,14 @@ In Summary, Web Components uses nothing NEW compared to REACT today.
 
  
 
-![Why Not Web Components? Spotty browser support = polyfills req\'d Doesn\'t enable anything new JS libraries keep innovating Only run in the browser ](001_Tradeoffs_011.png){width="5.0in" height="2.575in"}
+![Why Not Web Components? Spotty browser support = polyfills req\'d Doesn\'t enable anything new JS libraries keep innovating Only run in the browser ](001_Tradeoffs_011.png)
 
  
 
-![Non-standard Today, the majority use these. Why? 1. Faster innovation 2. Strong user and developer experience 3. Broad browser support ](001_Tradeoffs_012.png){width="4.675in" height="4.466666666666667in"}
+![Non-standard Today, the majority use these. Why? 1. Faster innovation 2. Strong user and developer experience 3. Broad browser support ](001_Tradeoffs_012.png)
 
 **6. Community vs Corporate**
 
-![Corporate Backed Driven by FB\'s needs Full-time development staff Over 1,000 contributors FB: World\'s 5th most valuable company 30,000 components in prod ](001_Tradeoffs_013.png){width="5.0in" height="2.55in"}
+![Corporate Backed Driven by FB\'s needs Full-time development staff Over 1,000 contributors FB: World\'s 5th most valuable company 30,000 components in prod ](001_Tradeoffs_013.png)
 
  

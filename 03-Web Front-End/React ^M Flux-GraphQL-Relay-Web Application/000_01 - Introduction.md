@@ -6,7 +6,7 @@ Friday, April 29, 2016
 
  
 
-![](000_01_-_Introduction_000.png){width="1.6916666666666667in" height="1.1166666666666667in"}
+![](000_01_-_Introduction_000.png)
 
  
 
@@ -32,7 +32,7 @@ Why React?
 >
 >  
 >
-> ![Machine generated alternative text: HTML in JS? why?? Data HTML PHP/JSP server-side Send only the Data to the client Enhance HTML: Loops, Conditionals Generate HTML with JavaScript Virtual DOM ](000_01_-_Introduction_001.png){width="5.0in" height="2.716666666666667in"}
+> ![Machine generated alternative text: HTML in JS? why?? Data HTML PHP/JSP server-side Send only the Data to the client Enhance HTML: Loops, Conditionals Generate HTML with JavaScript Virtual DOM ](000_01_-_Introduction_001.png)
 >
 >  
 
@@ -92,7 +92,7 @@ Why React?
 
  
 
-![Machine generated alternative text: GraphQL JSON without the values address• person: { name• No custom endpoints Clients ask exactly what they want One endpoint to rule them all ](000_01_-_Introduction_002.png){width="5.0in" height="3.033333333333333in"}
+![Machine generated alternative text: GraphQL JSON without the values address• person: { name• No custom endpoints Clients ask exactly what they want One endpoint to rule them all ](000_01_-_Introduction_002.png)
 
  
 
@@ -120,7 +120,7 @@ GraphQL can be the killer of Rest APIs
 
  
 
-![Machine generated alternative text: Flux No data binding, one-way data flow Views do not change the models A single dispatcher Views listen, React reacts What\'s wrong with MVC? Constraints are good ](000_01_-_Introduction_003.png){width="5.0in" height="3.575in"}
+![Machine generated alternative text: Flux No data binding, one-way data flow Views do not change the models A single dispatcher Views listen, React reacts What\'s wrong with MVC? Constraints are good ](000_01_-_Introduction_003.png)
 
  
 
@@ -152,7 +152,7 @@ According to the FLUX pattern the solution is in constrains..... An enforced ONE
 
  
 
-![](000_01_-_Introduction_004.png){width="5.0in" height="3.2083333333333335in"}
+![](000_01_-_Introduction_004.png)
 
  
 

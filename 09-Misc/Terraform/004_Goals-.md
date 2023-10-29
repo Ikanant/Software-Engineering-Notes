@@ -28,7 +28,7 @@ We want to get AWS equivalcne ... in the GROWTH AWS environments
 
  
 
-![them into Abriß AWE - it gong äke to off - an to use the - \'---i to o SAP rot 8LX • 22 list is for still a DNS. it a ex a global - i\' SFTP2Z and to Fiks get BLY ard ir.to the We I---it: We will ritize Test to I if if it is right Will to with John effort CIJCD - Oct 24.2023 octo\"r 17.2023 JOY Nip and CEightn to for Wstmct 11/3 8) --- Ichn updating tt-\* to 82, take site to to is 82 filef1AR file sim link), take the ](004_Goals-_000.png){width="11.575in" height="8.441666666666666in"}
+![them into Abriß AWE - it gong äke to off - an to use the - \'---i to o SAP rot 8LX • 22 list is for still a DNS. it a ex a global - i\' SFTP2Z and to Fiks get BLY ard ir.to the We I---it: We will ritize Test to I if if it is right Will to with John effort CIJCD - Oct 24.2023 octo\"r 17.2023 JOY Nip and CEightn to for Wstmct 11/3 8) --- Ichn updating tt-\* to 82, take site to to is 82 filef1AR file sim link), take the ](004_Goals-_000.png)
 
  
 

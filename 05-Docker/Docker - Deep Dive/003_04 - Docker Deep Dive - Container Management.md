@@ -224,4 +224,4 @@ Nice! but this is NOT the same as an attach.Because we are not attached to the s
 
 -   This is probably the RECOMMENDED way to get a terminal inside of the container
 
-![](003_04_-_Docker_Deep_Dive_-_Container_Management_000.png){width="5.0in" height="2.7333333333333334in"}
+![](003_04_-_Docker_Deep_Dive_-_Container_Management_000.png)

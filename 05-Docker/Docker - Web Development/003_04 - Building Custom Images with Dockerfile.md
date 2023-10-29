@@ -82,7 +82,7 @@ In the Docker world we take this Dockerfile and we run it through our client. Wh
 
  
 
-![](003_04_-_Building_Custom_Images_with_Dockerfile_000.png){width="5.0in" height="3.7in"}
+![](003_04_-_Building_Custom_Images_with_Dockerfile_000.png)
 
  
 
@@ -92,7 +92,7 @@ In the Docker world we take this Dockerfile and we run it through our client. Wh
 
  
 
-![Machine generated alternative text: Building a Custom Image docker build Tag name -t cyour username\>/node Short for \--tag Build context ](003_04_-_Building_Custom_Images_with_Dockerfile_001.png){width="5.0in" height="3.066666666666667in"}
+![Machine generated alternative text: Building a Custom Image docker build Tag name -t cyour username\>/node Short for \--tag Build context ](003_04_-_Building_Custom_Images_with_Dockerfile_001.png)
 
  
 
@@ -126,4 +126,4 @@ Docker push \<your username\>/node
 
  
 
-![Machine generated alternative text: Summary Dockerfile is a simple text file with instructions that is used to create an image Each Dockerfile starts with a FROM instruction Custom images are built using: docker build -t \<username\>/imageName Images can be pushed to Docker Hub ](003_04_-_Building_Custom_Images_with_Dockerfile_002.png){width="5.0in" height="2.2416666666666667in"}
+![Machine generated alternative text: Summary Dockerfile is a simple text file with instructions that is used to create an image Each Dockerfile starts with a FROM instruction Custom images are built using: docker build -t \<username\>/imageName Images can be pushed to Docker Hub ](003_04_-_Building_Custom_Images_with_Dockerfile_002.png)

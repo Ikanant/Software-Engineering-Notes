@@ -80,7 +80,7 @@ We will take care of download the latest Bootstrap, Angular, FontAwesome, etc...
 
  
 
-![](001_02_-_Setting_up_Express_000.png){width="5.0in" height="2.975in"}
+![](001_02_-_Setting_up_Express_000.png)
 
  
 
@@ -120,4 +120,4 @@ Insde .bowerrc we are going to include the following command:
 
  
 
-![](001_02_-_Setting_up_Express_001.png){width="5.0in" height="3.033333333333333in"}
+![](001_02_-_Setting_up_Express_001.png)

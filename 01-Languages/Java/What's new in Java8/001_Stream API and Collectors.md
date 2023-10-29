@@ -10,19 +10,19 @@ Sunday, March 3, 2019
 >
 > Simple concept widely used in the industry.
 >
-> ![Map / Filter / Reduce • Example: • Let\'s take a list a Person List\<Person\> list = new ArrayList\<\>() ](001_Stream_API_and_Collectors_000.png){width="4.375in" height="2.033333333333333in"}
+> ![Map / Filter / Reduce • Example: • Let\'s take a list a Person List\<Person\> list = new ArrayList\<\>() ](001_Stream_API_and_Collectors_000.png)
 >
 >  
 >
-> ![Map / Filter / Reduce 1 st step: mapping The mapping step takes a List\<Person\> and returns a List\<lnteger\> The size of both lists is the same ](001_Stream_API_and_Collectors_001.png){width="6.341666666666667in" height="1.9083333333333334in"}
+> ![Map / Filter / Reduce 1 st step: mapping The mapping step takes a List\<Person\> and returns a List\<lnteger\> The size of both lists is the same ](001_Stream_API_and_Collectors_001.png)
 >
 >  
 >
-> ![Map / Filter / Reduce 2nd step: filtering The filtering step takes a List\<lnteger\> and returns a List\<lnteger\> But there some elements have been filtered out in the process ](001_Stream_API_and_Collectors_002.png){width="6.225in" height="1.9in"}
+> ![Map / Filter / Reduce 2nd step: filtering The filtering step takes a List\<lnteger\> and returns a List\<lnteger\> But there some elements have been filtered out in the process ](001_Stream_API_and_Collectors_002.png)
 >
 >  
 >
-> ![Map / Filter / Reduce 3rd step: average This is the reduction step, equivalent to the SQL aggregation ](001_Stream_API_and_Collectors_003.png){width="6.133333333333334in" height="1.5416666666666667in"}
+> ![Map / Filter / Reduce 3rd step: average This is the reduction step, equivalent to the SQL aggregation ](001_Stream_API_and_Collectors_003.png)
 >
 >  
 >
@@ -66,11 +66,11 @@ Sunday, March 3, 2019
 >
 > Multiple ways... Lots of patterns...here is the most popular one:
 >
-> ![List\<Person\> persons = Stream\<Person\> stream = persons . stream(); ](001_Stream_API_and_Collectors_004.png){width="4.083333333333333in" height="0.9166666666666666in"}
+> ![List\<Person\> persons = Stream\<Person\> stream = persons . stream(); ](001_Stream_API_and_Collectors_004.png)
 >
 >  
 >
-> ![= new ArrayList\<\>(); List\<String\> result List\<Person\> persons = = result: :add; Consurner\<String\> cl --- System.out: : print In; Consumer\<String\> c2 persons. stream() . forEach(c1. andThen (c2)) ; ](001_Stream_API_and_Collectors_005.png){width="7.125in" height="3.2583333333333333in"}
+> ![= new ArrayList\<\>(); List\<String\> result List\<Person\> persons = = result: :add; Consurner\<String\> cl --- System.out: : print In; Consumer\<String\> c2 persons. stream() . forEach(c1. andThen (c2)) ; ](001_Stream_API_and_Collectors_005.png)
 >
 >  
 >
@@ -80,21 +80,21 @@ Sunday, March 3, 2019
 >
 > **Now let\'s look at a second operations: Filter**
 >
-> ![Predicates combinations examples: Predicate\<lnteger\> Predicate\<lnteger\> Predicate\<lnteger\> Predicate\<lnteger\> Predicate\<lnteger\> pl --- p2 --- p3 p pl. and (p2) . or(p3); // (pi AND p2) OR p3 = p3. or(pl) .and(p2); // (p3 OR pi) AND p2 ](001_Stream_API_and_Collectors_006.png){width="8.833333333333334in" height="2.5833333333333335in"}
+> ![Predicates combinations examples: Predicate\<lnteger\> Predicate\<lnteger\> Predicate\<lnteger\> Predicate\<lnteger\> Predicate\<lnteger\> pl --- p2 --- p3 p pl. and (p2) . or(p3); // (pi AND p2) OR p3 = p3. or(pl) .and(p2); // (p3 OR pi) AND p2 ](001_Stream_API_and_Collectors_006.png)
 >
 >  
 >
-> ![Machine generated alternative text: Use case: Predicate\<String\> p = Predicate. isEquaL (\"two\") Stream\<String\> streaml Stream\<String\> stream2 = \"two\", \"three\") = streaml.filter(p) ; The filter method returns a Stream This Stream is a new instance ](001_Stream_API_and_Collectors_007.png){width="8.625in" height="4.5in"}
+> ![Machine generated alternative text: Use case: Predicate\<String\> p = Predicate. isEquaL (\"two\") Stream\<String\> streaml Stream\<String\> stream2 = \"two\", \"three\") = streaml.filter(p) ; The filter method returns a Stream This Stream is a new instance ](001_Stream_API_and_Collectors_007.png)
 >
 > The .of method above it\'s just creating a Stream out of the list of strings we are passing in... Same thing as if we had a list and we ran the .stream() on it. In this case notice how this .of method is static... which is something we need to remember was introduced as a capability of Java 8 to have static default methods declared in functional interfaces
 >
 >  
 >
-> ![A Second Operation: Filter Question: what do I have in this new Stream? • Simple answer: WRONG! The right answer is: nothing, since a Stream does not hold any data ](001_Stream_API_and_Collectors_008.png){width="9.075in" height="2.875in"}
+> ![A Second Operation: Filter Question: what do I have in this new Stream? • Simple answer: WRONG! The right answer is: nothing, since a Stream does not hold any data ](001_Stream_API_and_Collectors_008.png)
 >
 >  
 >
-> ![So, what does this code do? List\<Person\> list = Stream\<Person\> stream = list. stream(); Stream\<Person\> filtered = stream. filter(person -Y person.getAge() \> 20); Answer is: nothing This call is only a declaration, no data is processed ](001_Stream_API_and_Collectors_009.png){width="8.558333333333334in" height="3.7in"}
+> ![So, what does this code do? List\<Person\> list = Stream\<Person\> stream = list. stream(); Stream\<Person\> filtered = stream. filter(person -Y person.getAge() \> 20); Answer is: nothing This call is only a declaration, no data is processed ](001_Stream_API_and_Collectors_009.png)
 >
 >  
 >
@@ -108,13 +108,13 @@ Sunday, March 3, 2019
 >
 > In the shot bellow we will look into another method we can use similar to the forEach function. The only difference between these two is that the peek method returns a Stream, while the forEach does NOT.
 >
-> ![• What does this code do? List\<String\> result = new ArrayList\<\>(); List\<Person\> persons = persons. stream( ) . peek(System.out : : print In) . filter(person -Y person.getAge() \> 20) . peek(result: : add) ; ](001_Stream_API_and_Collectors_010.png){width="5.925in" height="2.55in"}
+> ![• What does this code do? List\<String\> result = new ArrayList\<\>(); List\<Person\> persons = persons. stream( ) . peek(System.out : : print In) . filter(person -Y person.getAge() \> 20) . peek(result: : add) ; ](001_Stream_API_and_Collectors_010.png)
 >
 > **Answer:** This code does NOTHING. The first println is NEVER invoked, same as the add function call. These are just not doing anything since we are essentially trying to println on a stream.
 >
 >  
 >
-> ![stream . peek(System.out: : println) . filter (pl. or(p2)) . forEach (list: : ](001_Stream_API_and_Collectors_011.png){width="2.7916666666666665in" height="0.8833333333333333in"}
+> ![stream . peek(System.out: : println) . filter (pl. or(p2)) . forEach (list: : ](001_Stream_API_and_Collectors_011.png)
 >
 >  
 >
@@ -126,7 +126,7 @@ Sunday, March 3, 2019
 >
 >  
 >
-> ![Summary The Stream API defines intermediary operations We saw 3 operations: forEach(Consumer) • peek(Consumer) • filter(Predicate) ](001_Stream_API_and_Collectors_012.png){width="6.716666666666667in" height="3.9166666666666665in"}
+> ![Summary The Stream API defines intermediary operations We saw 3 operations: forEach(Consumer) • peek(Consumer) • filter(Predicate) ](001_Stream_API_and_Collectors_012.png)
 >
 >  
 >
@@ -142,7 +142,7 @@ Sunday, March 3, 2019
 >
 >  
 >
-> ![If the flatMap was a regular map, it would return a Stream\<Stream\<R\>\> Thus a « stream of streams » ](001_Stream_API_and_Collectors_013.png){width="4.825in" height="1.0in"}
+> ![If the flatMap was a regular map, it would return a Stream\<Stream\<R\>\> Thus a « stream of streams » ](001_Stream_API_and_Collectors_013.png)
 >
 >  
 >
@@ -154,7 +154,7 @@ Sunday, March 3, 2019
 
 1.  Aggregation = min, max, sum, etc...
 
-    a.  ![How does it work? List\<lnteger\> ages = ; Stream\<lnteger\> stream = ages stream(); Integer sum = stream. reduce(Ø, (agel, age2) -\> agel + age2); 1 st argument: identity element of the reduction operation 2nd argument: reduction operation, of type BinaryOperator\<T\> ](001_Stream_API_and_Collectors_014.png){width="4.608333333333333in" height="1.95in"}
+    a.  ![How does it work? List\<lnteger\> ages = ; Stream\<lnteger\> stream = ages stream(); Integer sum = stream. reduce(Ø, (agel, age2) -\> agel + age2); 1 st argument: identity element of the reduction operation 2nd argument: reduction operation, of type BinaryOperator\<T\> ](001_Stream_API_and_Collectors_014.png)
 
     b.  What happens if the Stream is empty?
 
@@ -164,19 +164,19 @@ Sunday, March 3, 2019
 
         i.  If the stream has only one element, then the reduction is that element.
 
-    d.  ![• Examples: Stream\<lnteger\> stream = ; BinaryOperation\<Integer\> sum = (il, i2) -Y il + i2; Integer id = 0; // identity element for the sum int red = stream.reduce(id, sm); Stream\<lnteger\> stream = Stream.empty(); int red = stream.reduce(id, sum); System. out. println ( red) ; • Will print: ](001_Stream_API_and_Collectors_015.png){width="4.675in" height="3.466666666666667in"}
+    d.  ![• Examples: Stream\<lnteger\> stream = ; BinaryOperation\<Integer\> sum = (il, i2) -Y il + i2; Integer id = 0; // identity element for the sum int red = stream.reduce(id, sm); Stream\<lnteger\> stream = Stream.empty(); int red = stream.reduce(id, sum); System. out. println ( red) ; • Will print: ](001_Stream_API_and_Collectors_015.png)
 
 >  
 >
 >  
 
-1.  ![Machine generated alternative text: Optionals Then what is the return type of this call? List\<lnteger\> ages = ; stream = ages .stream(); max = stream. max( Comparator. natural Order ( ) ) ; Optional means « there might be no result » ](001_Stream_API_and_Collectors_016.png){width="4.5in" height="2.3in"}
+1.  ![Machine generated alternative text: Optionals Then what is the return type of this call? List\<lnteger\> ages = ; stream = ages .stream(); max = stream. max( Comparator. natural Order ( ) ) ; Optional means « there might be no result » ](001_Stream_API_and_Collectors_016.png)
 
 >  
 >
 >  
 >
-> ![• Reductions Available reductions: a max(), min() count() Boolean reductions allMatch(), noneMatch(), anyMatch() Reductions that return an optional findFirst(), findAny() ](001_Stream_API_and_Collectors_017.png){width="6.441666666666666in" height="4.25in"}
+> ![• Reductions Available reductions: a max(), min() count() Boolean reductions allMatch(), noneMatch(), anyMatch() Reductions that return an optional findFirst(), findAny() ](001_Stream_API_and_Collectors_017.png)
 >
 >  
 >
@@ -186,11 +186,11 @@ Sunday, March 3, 2019
 >
 > **Terminal Operations**
 >
-> ![List\<Persony persons = ; minAge = persons. stream( ) .map(person -Y person.getAge()) . filter(age -Y age \> 20) . min (Comparator. natura LOrder( ) ) ; Stream\<lnteger\> Stream\< Int eger\> terminal operation ](001_Stream_API_and_Collectors_018.png){width="8.183333333333334in" height="2.5in"}
+> ![List\<Persony persons = ; minAge = persons. stream( ) .map(person -Y person.getAge()) . filter(age -Y age \> 20) . min (Comparator. natura LOrder( ) ) ; Stream\<lnteger\> Stream\< Int eger\> terminal operation ](001_Stream_API_and_Collectors_018.png)
 >
 >  
 >
-> ![Example, optimization: List\<Persony persons = ; persons. stream() . map(person person. getLastName()) . allMatch (length \< 20); // terminal op. The map / filter / reduce operations are evaluated in one pass over the data ](001_Stream_API_and_Collectors_019.png){width="9.066666666666666in" height="3.45in"}
+> ![Example, optimization: List\<Persony persons = ; persons. stream() . map(person person. getLastName()) . allMatch (length \< 20); // terminal op. The map / filter / reduce operations are evaluated in one pass over the data ](001_Stream_API_and_Collectors_019.png)
 >
 >  
 >
@@ -212,6 +212,6 @@ Sunday, March 3, 2019
 
 >  
 >
-> ![• Example: List\<Person\> persons = String result - persons. stream() . filter(person - \> person .getAge() \> 20) . map(Person : : getLastName) . col lect( Collectors. joining( , Result is a String with all the names of the people in persons, older than 20, separated by a comma ](001_Stream_API_and_Collectors_020.png){width="8.033333333333333in" height="3.7in"}
+> ![• Example: List\<Person\> persons = String result - persons. stream() . filter(person - \> person .getAge() \> 20) . map(Person : : getLastName) . col lect( Collectors. joining( , Result is a String with all the names of the people in persons, older than 20, separated by a comma ](001_Stream_API_and_Collectors_020.png)
 >
 >  

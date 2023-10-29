@@ -4,7 +4,7 @@ Wednesday, August 26, 2020
 
 10:04 AM
 
-![](000_Introduction_000.png){width="7.9in" height="2.6666666666666665in"}
+![](000_Introduction_000.png)
 
  
 
@@ -22,7 +22,7 @@ With growing application it is critical to break up the application into discret
 
  
 
-![Importing and Exporting O Easily make code in a module public or private Avoid repetition and boiler-plate code ](000_Introduction_001.png){width="8.425in" height="4.208333333333333in"}
+![Importing and Exporting O Easily make code in a module public or private Avoid repetition and boiler-plate code ](000_Introduction_001.png)
 
  
 
@@ -36,7 +36,7 @@ By this I mean, why do we need to categorize modules to begin with? What is diff
 
  
 
-![import { x } from \' . / some-module\' ; export x; The Primary Distinction of Modules import and/or export statements ](000_Introduction_002.png){width="7.608333333333333in" height="2.3333333333333335in"}
+![import { x } from \' . / some-module\' ; export x; The Primary Distinction of Modules import and/or export statements ](000_Introduction_002.png)
 
  
 
@@ -70,11 +70,11 @@ TS now has the module **keyword** which is used to create what used to be known 
 
  
 
-![module MyNamedInterna1Modu1e { private\' ; const privateVar - \'public\'; export const publicVar = Named Internal Module Values can be exported ](000_Introduction_003.png){width="4.158333333333333in" height="2.5083333333333333in"}
+![module MyNamedInterna1Modu1e { private\' ; const privateVar - \'public\'; export const publicVar = Named Internal Module Values can be exported ](000_Introduction_003.png)
 
  
 
-![console . log(MyNamedInterna1Modu1e . publicVar) ; / /public ](000_Introduction_004.png){width="6.816666666666666in" height="0.25833333333333336in"}
+![console . log(MyNamedInterna1Modu1e . publicVar) ; / /public ](000_Introduction_004.png)
 
  
 
@@ -88,7 +88,7 @@ This is [important:]{.underline} Internal Modules are not referred as NAMESPACES
 
  
 
-![namespace MyNamespace { private\' ; const privateVar - \'public\'; export const publicVar = console . log(MyNamespace . publicVar) ; / /public ](000_Introduction_005.png){width="9.916666666666666in" height="2.45in"}
+![namespace MyNamespace { private\' ; const privateVar - \'public\'; export const publicVar = console . log(MyNamespace . publicVar) ; / /public ](000_Introduction_005.png)
 
  
 

@@ -48,7 +48,7 @@ Containers: Sit on top of the Host... Virtual Machines: Have their own copy of t
 
  
 
-![Machine generated alternative text: Docker Containers Versus Virtual Machines App 1 Bins/Libs Guest OS App 2 Bins/Libs Guest OS App 1 Bins/Libs App 2 Bins/Libs Hypervisor Host Operating System Virtual Machines Docker Engine Host Operating System Docker Containers ](000_01_-_Introduction_000.png){width="5.0in" height="2.841666666666667in"}
+![Machine generated alternative text: Docker Containers Versus Virtual Machines App 1 Bins/Libs Guest OS App 2 Bins/Libs Guest OS App 1 Bins/Libs App 2 Bins/Libs Hypervisor Host Operating System Virtual Machines Docker Engine Host Operating System Docker Containers ](000_01_-_Introduction_000.png)
 
  
 

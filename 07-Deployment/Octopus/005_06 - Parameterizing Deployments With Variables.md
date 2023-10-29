@@ -4,7 +4,7 @@ Friday, November 18, 2016
 
 11:15 AM
 
-![](005_06_-_Parameterizing_Deployments_With_Variables_000.png){width="6.0in" height="2.575in"}
+![](005_06_-_Parameterizing_Deployments_With_Variables_000.png)
 
  
 
@@ -18,7 +18,7 @@ Mixing both types of variables in the deployment variables is a common trap. But
 
  
 
-![](005_06_-_Parameterizing_Deployments_With_Variables_001.png){width="6.0in" height="3.2916666666666665in"}
+![](005_06_-_Parameterizing_Deployments_With_Variables_001.png)
 
  
 
@@ -26,7 +26,7 @@ Mixing both types of variables in the deployment variables is a common trap. But
 
  
 
-![](005_06_-_Parameterizing_Deployments_With_Variables_002.png){width="6.0in" height="3.941666666666667in"}
+![](005_06_-_Parameterizing_Deployments_With_Variables_002.png)
 
  
 
@@ -34,7 +34,7 @@ We can easily create Variables in the VARIABLES tab in our Project. When creatin
 
  
 
-![](005_06_-_Parameterizing_Deployments_With_Variables_003.png){width="6.0in" height="2.716666666666667in"}
+![](005_06_-_Parameterizing_Deployments_With_Variables_003.png)
 
  
 
@@ -42,7 +42,7 @@ Another thing that we can do is use another variable as a part of our new vvaria
 
  
 
-![](005_06_-_Parameterizing_Deployments_With_Variables_004.png){width="6.0in" height="1.7666666666666666in"}
+![](005_06_-_Parameterizing_Deployments_With_Variables_004.png)
 
  
 
@@ -54,7 +54,7 @@ Now when we go to the STEP template for a certain process, we can specify values
 
  
 
-![](005_06_-_Parameterizing_Deployments_With_Variables_005.png){width="6.0in" height="3.658333333333333in"}
+![](005_06_-_Parameterizing_Deployments_With_Variables_005.png)
 
  
 
@@ -127,7 +127,7 @@ Variable Sets can easily be used in our previous example:
 
  
 
-![](005_06_-_Parameterizing_Deployments_With_Variables_006.png){width="6.0in" height="4.5in"}
+![](005_06_-_Parameterizing_Deployments_With_Variables_006.png)
 
  
 
@@ -143,11 +143,11 @@ Variable Sets can easily be used in our previous example:
 
 2.  Now we can create Variables just as we did in the Project Variables
 
-    a.  ![](005_06_-_Parameterizing_Deployments_With_Variables_007.png){width="6.0in" height="1.0833333333333333in"}
+    a.  ![](005_06_-_Parameterizing_Deployments_With_Variables_007.png)
 
 3.  Now that we have the Variable sets we can go to the Projects and include the variable sets from the Library
 
-    a.  ![](005_06_-_Parameterizing_Deployments_With_Variables_008.png){width="6.0in" height="2.3583333333333334in"}
+    a.  ![](005_06_-_Parameterizing_Deployments_With_Variables_008.png)
 
  
 
@@ -155,7 +155,7 @@ Variable Sets can easily be used in our previous example:
 
  
 
-![](005_06_-_Parameterizing_Deployments_With_Variables_009.png){width="6.0in" height="2.225in"}
+![](005_06_-_Parameterizing_Deployments_With_Variables_009.png)
 
  
 
@@ -165,7 +165,7 @@ In the case that we want to Debug and inspect the values of the Variables we are
 
  
 
-![](005_06_-_Parameterizing_Deployments_With_Variables_010.png){width="6.0in" height="3.5083333333333333in"}
+![](005_06_-_Parameterizing_Deployments_With_Variables_010.png)
 
  
 
@@ -173,7 +173,7 @@ In the case that we want to Debug and inspect the values of the Variables we are
 
  
 
-![](005_06_-_Parameterizing_Deployments_With_Variables_011.png){width="6.0in" height="3.1333333333333333in"}
+![](005_06_-_Parameterizing_Deployments_With_Variables_011.png)
 
  
 

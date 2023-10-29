@@ -100,7 +100,7 @@ Let\'s look how this eth0 inside of the container and the vethx interface we saw
 
 A good way to think of this is like a virtual ethernet cable. One end of the cable is plugged into the eth0 in the container, and the other end is plugged into the vethx port on the Docker0 bridge
 
-![](007_08_-_Docker_Deep_Dive_-_Docker_Networking_000.png){width="5.0in" height="2.8in"}
+![](007_08_-_Docker_Deep_Dive_-_Docker_Networking_000.png)
 
  
 
@@ -258,7 +258,7 @@ When dealing with linking containers we need to understand that we got a source,
 
 Then we spin the recipient container, and when we do this we create a LINK back tot he source. At this point, the source tells the recipient various things about its networking config...IP address, protocols, ports and the likes.... and this info gets stored inside the recipient container. This means that the recipient container has the knowledge of the source container networking config and can each it and communicate with it. But all, without any ports on the source having to be exposed.
 
-![](007_08_-_Docker_Deep_Dive_-_Docker_Networking_001.png){width="5.0in" height="2.8333333333333335in"}
+![](007_08_-_Docker_Deep_Dive_-_Docker_Networking_001.png)
 
 Work:
 
@@ -296,4 +296,4 @@ Docker also adds an entry to the recipient containers HOSTS file. This maps the 
 
 **We can link MULTIPLE recipient containers to a SINGLE source container. And a SINGLE recipient container to MULTIPLE sources**
 
-![](007_08_-_Docker_Deep_Dive_-_Docker_Networking_002.png){width="5.0in" height="2.7333333333333334in"}
+![](007_08_-_Docker_Deep_Dive_-_Docker_Networking_002.png)

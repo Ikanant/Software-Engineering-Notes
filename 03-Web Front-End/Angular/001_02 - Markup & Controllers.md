@@ -216,7 +216,7 @@ To do a filter we just need to add \'\|\' character and then name the filter we 
 
  
 
-![Machine generated alternative text: Using Filters expression I filter } } ](001_02_-_Markup_&_Controllers_000.png){width="5.0in" height="1.675in"}
+![Machine generated alternative text: Using Filters expression I filter } } ](001_02_-_Markup_&_Controllers_000.png)
 
  
 
@@ -224,7 +224,7 @@ To do a filter we just need to add \'\|\' character and then name the filter we 
 
  
 
-![Machine generated alternative text: module. filter( \'name\' , function() { return function(input / \* , filter parameters \*/) { // modify input return modifiedOutput; ](001_02_-_Markup_&_Controllers_001.png){width="5.0in" height="1.5333333333333334in"}
+![Machine generated alternative text: module. filter( \'name\' , function() { return function(input / \* , filter parameters \*/) { // modify input return modifiedOutput; ](001_02_-_Markup_&_Controllers_001.png)
 
  
 
@@ -256,7 +256,7 @@ We can add the Model directive to all three of these html elements. These will a
 
  
 
-![](001_02_-_Markup_&_Controllers_002.png){width="6.0in" height="2.5083333333333333in"}
+![](001_02_-_Markup_&_Controllers_002.png)
 
  
 
@@ -264,13 +264,13 @@ We can add the Model directive to all three of these html elements. These will a
 
  
 
-![](001_02_-_Markup_&_Controllers_003.png){width="3.6333333333333333in" height="4.966666666666667in"}
+![](001_02_-_Markup_&_Controllers_003.png)
 
  
 
  
 
-![](001_02_-_Markup_&_Controllers_004.png){width="6.0in" height="1.35in"}
+![](001_02_-_Markup_&_Controllers_004.png)
 
  
 

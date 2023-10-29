@@ -16,7 +16,7 @@ A thread executes a task. IN JAVA 1, the model for a task is a Runnable interfac
 
  
 
-![Machine generated alternative text: public Interface Runnable void ](001_Implementing_the_Producer-Consumer_Pattern_using_Wait-Notify_000.png){width="3.1083333333333334in" height="1.0in"}
+![Machine generated alternative text: public Interface Runnable void ](001_Implementing_the_Producer-Consumer_Pattern_using_Wait-Notify_000.png)
 
  
 
@@ -28,7 +28,7 @@ This runnable interface can be implemented using LAMBDA expressions
 
  
 
-![Machine generated alternative text: Runnable task System . out \"Hello world! \" ](001_Implementing_the_Producer-Consumer_Pattern_using_Wait-Notify_001.png){width="5.208333333333333in" height="0.4583333333333333in"}
+![Machine generated alternative text: Runnable task System . out \"Hello world! \" ](001_Implementing_the_Producer-Consumer_Pattern_using_Wait-Notify_001.png)
 
  
 
@@ -40,7 +40,7 @@ Watch out... we need to Start the thread and NOT the RUN method since this might
 
  
 
-![Machine generated alternative text: Runnable task Thread thread o; new System . out Thread(task Ill \"Hello world! \" thread. w, // NO ](001_Implementing_the_Producer-Consumer_Pattern_using_Wait-Notify_002.png){width="6.991666666666666in" height="1.625in"}
+![Machine generated alternative text: Runnable task Thread thread o; new System . out Thread(task Ill \"Hello world! \" thread. w, // NO ](001_Implementing_the_Producer-Consumer_Pattern_using_Wait-Notify_002.png)
 
  
 
@@ -56,7 +56,7 @@ This is a bit tricky. And there are traps. You should NOT use the method stop().
 
 The way to stop a thread is by using the interrupt() method. This will not stop the thread, but just send the signal to the task the thread is running telling it is time to stop the thread.
 
-![Runnable while task Thread the task o. itself ](001_Implementing_the_Producer-Consumer_Pattern_using_Wait-Notify_003.png){width="6.008333333333334in" height="1.825in"}
+![Runnable while task Thread the task o. itself ](001_Implementing_the_Producer-Consumer_Pattern_using_Wait-Notify_003.png)
 
  
 
@@ -64,7 +64,7 @@ This would be implemented like above.
 
  
 
-![Stopping a Thread The call to interrupt() causes the islnterrupted() method to return true If the thread is blocked, or waiting, then the corresponding method will throw an InterruptedException The methods wait() / notify(), join() throw InterruptedException ](001_Implementing_the_Producer-Consumer_Pattern_using_Wait-Notify_004.png){width="5.0in" height="2.1416666666666666in"}
+![Stopping a Thread The call to interrupt() causes the islnterrupted() method to return true If the thread is blocked, or waiting, then the corresponding method will throw an InterruptedException The methods wait() / notify(), join() throw InterruptedException ](001_Implementing_the_Producer-Consumer_Pattern_using_Wait-Notify_004.png)
 
  
 
@@ -72,13 +72,13 @@ This would be implemented like above.
 
 Easy to understand pattern.
 
-![Producer / Consumer A producer produces values in a buffer A consumer consumes the values from this buffer Be careful: the buffer can be empty, or full Producers and consumers are run in their own thread ](001_Implementing_the_Producer-Consumer_Pattern_using_Wait-Notify_005.png){width="6.508333333333334in" height="2.55in"}
+![Producer / Consumer A producer produces values in a buffer A consumer consumes the values from this buffer Be careful: the buffer can be empty, or full Producers and consumers are run in their own thread ](001_Implementing_the_Producer-Consumer_Pattern_using_Wait-Notify_005.png)
 
  
 
  
 
-![: lass Producer public \*\'Oid buffer buffer \[count++l ) lass Consumer public joid while buffer \[- buffer -count ](001_Implementing_the_Producer-Consumer_Pattern_using_Wait-Notify_006.png){width="3.5in" height="3.4583333333333335in"}
+![: lass Producer public \*\'Oid buffer buffer \[count++l ) lass Consumer public joid while buffer \[- buffer -count ](001_Implementing_the_Producer-Consumer_Pattern_using_Wait-Notify_006.png)
 
  
 
@@ -90,11 +90,11 @@ How can we fix this?
 
 1.  We can synchronize the access to the array (as we mentioned in the previous page)
 
-    a.  ![class Consumer public void synchronized while buffer buffer \[ \--count class Producer public \'Oid synchronized while buffer \[count buffer ](001_Implementing_the_Producer-Consumer_Pattern_using_Wait-Notify_007.png){width="3.3in" height="2.8916666666666666in"}
+    a.  ![class Consumer public void synchronized while buffer buffer \[ \--count class Producer public \'Oid synchronized while buffer \[count buffer ](001_Implementing_the_Producer-Consumer_Pattern_using_Wait-Notify_007.png)
 
 2.  This is actually not a good idea because we could still try to access our buffer while each thread is in which ever method and potentially getting out of sync again. The real fix comes from using a single synchronized object we can use around.
 
-    a.  ![private class Consumer public void synchronized(lock) { (buffer)) buffer \[ \--count lock ; class Producer public \'Old synchronized(lock) { buffer buffer \[count++\] ](001_Implementing_the_Producer-Consumer_Pattern_using_Wait-Notify_008.png){width="5.716666666666667in" height="2.716666666666667in"}
+    a.  ![private class Consumer public void synchronized(lock) { (buffer)) buffer \[ \--count lock ; class Producer public \'Old synchronized(lock) { buffer buffer \[count++\] ](001_Implementing_the_Producer-Consumer_Pattern_using_Wait-Notify_008.png)
 
  
 
@@ -104,13 +104,13 @@ Well we could run into a nasty problem. We could have a thread get into the Cons
 
  
 
-![Fixing the producer / consumer (again) We need a way to \"park\" a thread while he is waiting for some data to be produced Without blocking all the other threads So the key held by this thread should be released while this thread is \"parked\" This is the wait / notify pattern ](001_Implementing_the_Producer-Consumer_Pattern_using_Wait-Notify_009.png){width="5.775in" height="2.5166666666666666in"}
+![Fixing the producer / consumer (again) We need a way to \"park\" a thread while he is waiting for some data to be produced Without blocking all the other threads So the key held by this thread should be released while this thread is \"parked\" This is the wait / notify pattern ](001_Implementing_the_Producer-Consumer_Pattern_using_Wait-Notify_009.png)
 
  
 
 **Wait / Notify pattern**
 
-![wait() / notify() wait ( ) and notify() are two methods from the Object class They are invoked on a given object The thread executing the invocation should hold the key of that object So: wait() and notify() cannot be invoked outside a synchronized block ](001_Implementing_the_Producer-Consumer_Pattern_using_Wait-Notify_010.png){width="5.75in" height="2.4916666666666667in"}
+![wait() / notify() wait ( ) and notify() are two methods from the Object class They are invoked on a given object The thread executing the invocation should hold the key of that object So: wait() and notify() cannot be invoked outside a synchronized block ](001_Implementing_the_Producer-Consumer_Pattern_using_Wait-Notify_010.png)
 
  
 
@@ -126,7 +126,7 @@ If there are more than one thread in the WAIT state (common), the release thread
 
  
 
-![private class Producer public void synchronnzed(lock) { lock ; class Consumer public void synchronized(lock) { if lock . buffer)) o; if lock . buffer)) o; buffer \[count lock. o; buffer \[ -count lock. o; ](001_Implementing_the_Producer-Consumer_Pattern_using_Wait-Notify_011.png){width="7.466666666666667in" height="3.658333333333333in"}
+![private class Producer public void synchronnzed(lock) { lock ; class Consumer public void synchronized(lock) { if lock . buffer)) o; if lock . buffer)) o; buffer \[count lock. o; buffer \[ -count lock. o; ](001_Implementing_the_Producer-Consumer_Pattern_using_Wait-Notify_011.png)
 
  
 

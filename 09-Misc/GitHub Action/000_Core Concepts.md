@@ -22,7 +22,7 @@ You CAN create more than workflow in a repository. These are just going to be ya
 
  
 
-![simple-workf ](000_Core_Concepts_000.png){width="3.8583333333333334in" height="1.0in"}
+![simple-workf ](000_Core_Concepts_000.png)
 
  
 
@@ -34,14 +34,14 @@ The next part of the workflow file will define the WHEN the workflow will be tri
 
  
 
-![2 3 4 5 6 on: push: branches: \[ mast pull \_ request: ](000_Core_Concepts_001.png){width="5.0in" height="2.716666666666667in"}
+![2 3 4 5 6 on: push: branches: \[ mast pull \_ request: ](000_Core_Concepts_001.png)
 
  
 
 When an event occurs... such as a commit/merge/pr/when is created.... We can trigger this workflow. We can get quite specific with our triggers... above we see we are filtering our events with the branch name... but we can also do:\
  
 
-![on: push: branches : - master tags: ](000_Core_Concepts_002.png){width="1.9583333333333333in" height="2.75in"}
+![on: push: branches : - master tags: ](000_Core_Concepts_002.png)
 
  
 
@@ -57,7 +57,7 @@ Actions: Are the individual tasks that we combine as steps to create a job:
 
  
 
-![13 14 steps: --- uses: actions/checl ](000_Core_Concepts_003.png){width="5.0in" height="0.8416666666666667in"}
+![13 14 steps: --- uses: actions/checl ](000_Core_Concepts_003.png)
 
  
 
@@ -71,7 +71,7 @@ Workflows most have AT LEAST one job... jobs contains a set of steps with action
 
  
 
-![9 10 11 12 13 14 15 16 18 19 jobs: build: runs---on: steps: --- uses: --- name: run: --- name: ubuntu---latest actions/checkout@v2 Run echo Run a one---line script Hello, world! a multi---line scrip ](000_Core_Concepts_004.png){width="5.0in" height="4.075in"}
+![9 10 11 12 13 14 15 16 18 19 jobs: build: runs---on: steps: --- uses: --- name: run: --- name: ubuntu---latest actions/checkout@v2 Run echo Run a one---line script Hello, world! a multi---line scrip ](000_Core_Concepts_004.png)
 
  
 
@@ -83,7 +83,7 @@ Under the name definition we have **THE RUNNER**
 
  
 
-![:jobs :build ](000_Core_Concepts_005.png){width="3.0416666666666665in" height="0.95in"}
+![:jobs :build ](000_Core_Concepts_005.png)
 
  
 
@@ -95,7 +95,7 @@ On the **runs-on** we provide the runner\'s type OR the workflow label... In the
 
  
 
-![Virtual environment Windows Server 2019 Ubuntu 18.04 Ubuntu 16.04 YAML workflow windows-latest ubuntu-latest or ubuntu-16 .04 ](000_Core_Concepts_006.png){width="5.0in" height="1.0833333333333333in"}
+![Virtual environment Windows Server 2019 Ubuntu 18.04 Ubuntu 16.04 YAML workflow windows-latest ubuntu-latest or ubuntu-16 .04 ](000_Core_Concepts_006.png)
 
  
 
@@ -107,7 +107,7 @@ Self hosted runners offer WAY more flexibility for what to use of course.
 
  
 
-![runs-on: \[self-hosted, linux ](000_Core_Concepts_007.png){width="5.0in" height="0.6583333333333333in"}
+![runs-on: \[self-hosted, linux ](000_Core_Concepts_007.png)
 
  
 
@@ -115,7 +115,7 @@ Self hosted runners gets the **self-hosted** label and each of them have labels 
 
  
 
-![• self-hosted - Run this job on a self-hos • linux - Only use a Linux-based runner ](000_Core_Concepts_008.png){width="5.0in" height="0.7in"}
+![• self-hosted - Run this job on a self-hos • linux - Only use a Linux-based runner ](000_Core_Concepts_008.png)
 
  
 
@@ -123,7 +123,7 @@ The next step is to go over the series of STEPS in the job...
 
  
 
-![steps: --- uses: --- name: run: --- name: actions/checkout@v2 Run echo Run a one---line script Hello, world! a multi---line script ](000_Core_Concepts_009.png){width="5.0in" height="3.216666666666667in"}
+![steps: --- uses: --- name: run: --- name: actions/checkout@v2 Run echo Run a one---line script Hello, world! a multi---line script ](000_Core_Concepts_009.png)
 
  
 
@@ -134,7 +134,7 @@ These will all run under the same job and host machine... which allows each step
 There are such a thing as STANDARD ACTIONS... for example:\
  
 
-![: sdus ](000_Core_Concepts_010.png){width="5.0in" height="0.7916666666666666in"}
+![: sdus ](000_Core_Concepts_010.png)
 
  
 
@@ -149,7 +149,7 @@ NOT ALL STEPS RUN ACTIONS... BUT ALL ACTIONS RUN AS A STEP
 We see this right next line in:\
  
 
-![--- name: Run a one---line run: echo Hello, worlc ](000_Core_Concepts_011.png){width="5.0in" height="1.1583333333333334in"}
+![--- name: Run a one---line run: echo Hello, worlc ](000_Core_Concepts_011.png)
 
  
 
@@ -157,7 +157,7 @@ The name is something we define... but these are examples of simple scripts we c
 \
  
 
-![steps : --- uses: --- uses: naræ: with: actions/checkout@v3 actions/setup---node@v3 Use Node. js matrix. node---v node---version: matrix. node---ver cache: •npm• --- run: echo Helto World IRO --- run: I echo Hello World DOS echo Heno World TRES --- run: I ](000_Core_Concepts_012.png){width="4.0in" height="4.091666666666667in"}
+![steps : --- uses: --- uses: naræ: with: actions/checkout@v3 actions/setup---node@v3 Use Node. js matrix. node---v node---version: matrix. node---ver cache: •npm• --- run: echo Helto World IRO --- run: I echo Hello World DOS echo Heno World TRES --- run: I ](000_Core_Concepts_012.png)
 
  
 
@@ -165,7 +165,7 @@ EVENTS:
 
  
 
-![n: pull-request \_ comment on: check \_ suite on: pull \_ delete request on: on: pull_request_rev ](000_Core_Concepts_013.png){width="5.0in" height="1.0916666666666666in"}
+![n: pull-request \_ comment on: check \_ suite on: pull \_ delete request on: on: pull_request_rev ](000_Core_Concepts_013.png)
 
  
 
@@ -183,13 +183,13 @@ There are so many.... BUT mainly in three categories:
 
         i.  Events can have their own types that will allow for a more granular approach to WHEN something gets triggered.
 
-        ii. ![Webhook Event Payload pull \_ request Activity Types - assigned - unassigned - review_requ review_requ --- labeled - unlabeled Opened edited - closed ](000_Core_Concepts_014.png){width="5.0in" height="2.75in"}
+        ii. ![Webhook Event Payload pull \_ request Activity Types - assigned - unassigned - review_requ review_requ --- labeled - unlabeled Opened edited - closed ](000_Core_Concepts_014.png)
 
         iii. By default ALL types will be trigger when we defined the event in our workflow
 
         iv. Otherwise we can just use the **types** keyboard under the event... i.e.:
 
-        v.  ![on: pull \_ request : ](000_Core_Concepts_015.png){width="5.0in" height="1.2083333333333333in"}
+        v.  ![on: pull \_ request : ](000_Core_Concepts_015.png)
 
         vi. <https://docs.github.com/en/developers/webhooks-and-events/events/github-event-types#pullrequestevent>
 
@@ -201,9 +201,9 @@ There are so many.... BUT mainly in three categories:
 
     c.  Shortest time available is only ONCE every FIVE minutes
 
-    d.  ![on: schedule : ](000_Core_Concepts_016.png){width="5.0in" height="1.5416666666666667in"}
+    d.  ![on: schedule : ](000_Core_Concepts_016.png)
 
-    e.  ![minute (0 59) hour (0 23) day of the month (1 - 31) month (1 DEC) - 12 or JAN - day of the week (0 ](000_Core_Concepts_017.png){width="5.0in" height="1.95in"}
+    e.  ![minute (0 59) hour (0 23) day of the month (1 - 31) month (1 DEC) - 12 or JAN - day of the week (0 ](000_Core_Concepts_017.png)
 
 3.  Event outside of GitHub occurs
 
@@ -215,7 +215,7 @@ There are so many.... BUT mainly in three categories:
 
     d.  In order to use this though, we NEED a **repository_dispatch** with the identified type (gotta check if the type is required, I think so)
 
-    e.  ![on: repository \_ dispatch types: \[opened, delc ](000_Core_Concepts_018.png){width="5.0in" height="1.2166666666666666in"}
+    e.  ![on: repository \_ dispatch types: \[opened, delc ](000_Core_Concepts_018.png)
 
 >  
 
@@ -229,13 +229,13 @@ To make a secret available to an action, we can set the secret as an INPUT or EN
 
 Creating secrets is done in the **Settings** of the repository.
 
-![\< \> Code G) Issues @ General Access AA Collaborators Q) Moderation options Code and automation P Branches Tags @ Actions Webhooks Environments 8 Codespaces t Pages Security Code security and analysis Deploy keys Secrets and variables Pull requests @ Actions Projects CD Wiki C) Security Actions secrets and variables I.E Insights Secrets and variables allow you to manage reusable configuration data. Sec s sensitive data. Learn more about encrypted secrets. Variables are shown as Iail sensitive data. Learn more about variables. Anyone with collaborator access to this repository can use these secrets a va passed to workflows that are triggered by a pull request from a fork. Secrets Variables Environment secrets There are no Repository secrets ts for this repository\'s nvironr There are no secrets for this repository. ](000_Core_Concepts_019.png){width="5.0in" height="3.7083333333333335in"}
+![\< \> Code G) Issues @ General Access AA Collaborators Q) Moderation options Code and automation P Branches Tags @ Actions Webhooks Environments 8 Codespaces t Pages Security Code security and analysis Deploy keys Secrets and variables Pull requests @ Actions Projects CD Wiki C) Security Actions secrets and variables I.E Insights Secrets and variables allow you to manage reusable configuration data. Sec s sensitive data. Learn more about encrypted secrets. Variables are shown as Iail sensitive data. Learn more about variables. Anyone with collaborator access to this repository can use these secrets a va passed to workflows that are triggered by a pull request from a fork. Secrets Variables Environment secrets There are no Repository secrets ts for this repository\'s nvironr There are no secrets for this repository. ](000_Core_Concepts_019.png)
 
  
 
 To provide a value to our workflow in a secret or environment variable we can use the
 
-![steps : name: Hello world with : super \_ secret: \${{ secrets. M) ](000_Core_Concepts_020.png){width="5.0in" height="2.2in"}
+![steps : name: Hello world with : super \_ secret: \${{ secrets. M) ](000_Core_Concepts_020.png)
 
  
 
@@ -263,7 +263,7 @@ The token\'s permissions are limited to the repo that contains the workflow. To 
 
 Taking a look at the labler action for example...
 
-![jobs: triage: runs-on: ubuntu-latest ste s: - uses: actions/labeler@v2 with : ](000_Core_Concepts_021.png){width="5.0in" height="1.825in"}
+![jobs: triage: runs-on: ubuntu-latest ste s: - uses: actions/labeler@v2 with : ](000_Core_Concepts_021.png)
 
  
 
@@ -277,7 +277,7 @@ On the other hand, let\'s say we want to perform an API call on the repo that we
 
  
 
-![](000_Core_Concepts_022.png){width="5.0in" height="2.4916666666666667in"}
+![](000_Core_Concepts_022.png)
 
  
 
@@ -287,34 +287,34 @@ On the other hand, let\'s say we want to perform an API call on the repo that we
 
  
 
-![Actions are your units of code. You can use Act the marketplace one on your owr To use an action ](000_Core_Concepts_023.png){width="5.0in" height="2.908333333333333in"}
+![Actions are your units of code. You can use Act the marketplace one on your owr To use an action ](000_Core_Concepts_023.png)
 
  
 
-![1010 1110 1010 Artifacts are thc created when y and test your cc Binary, package files ](000_Core_Concepts_024.png){width="5.0in" height="2.908333333333333in"}
+![1010 1110 1010 Artifacts are thc created when y and test your cc Binary, package files ](000_Core_Concepts_024.png)
 
  
 
-![Create cust01 workflows th building and code Create cust01 workflows to automaticall) code to any ](000_Core_Concepts_025.png){width="5.0in" height="2.908333333333333in"}
+![Create cust01 workflows th building and code Create cust01 workflows to automaticall) code to any ](000_Core_Concepts_025.png)
 
  
 
-![Specific activiti trigger a workfl on: Provide a single array of events, ](000_Core_Concepts_026.png){width="5.0in" height="2.908333333333333in"}
+![Specific activiti trigger a workfl on: Provide a single array of events, ](000_Core_Concepts_026.png)
 
  
 
-![O This tells our wo where the virtua environment wil Wait for an avail to be kicked off event is triggere ](000_Core_Concepts_027.png){width="5.0in" height="2.908333333333333in"}
+![O This tells our wo where the virtua environment wil Wait for an avail to be kicked off event is triggere ](000_Core_Concepts_027.png)
 
  
 
-![A job consists of more steps Jobs can run independently o sequentially A step is a set oi ](000_Core_Concepts_028.png){width="5.0in" height="2.9166666666666665in"}
+![A job consists of more steps Jobs can run independently o sequentially A step is a set oi ](000_Core_Concepts_028.png)
 
  
 
-![An automated proce made up of one or and can be triggerec event Defined using a YAM . github/workflows ](000_Core_Concepts_029.png){width="5.0in" height="2.908333333333333in"}
+![An automated proce made up of one or and can be triggerec event Defined using a YAM . github/workflows ](000_Core_Concepts_029.png)
 
  
 
-![instance of that runs when configured eve You can see th actions, logs, a for each workfl ](000_Core_Concepts_030.png){width="5.0in" height="2.9166666666666665in"}
+![instance of that runs when configured eve You can see th actions, logs, a for each workfl ](000_Core_Concepts_030.png)
 
  

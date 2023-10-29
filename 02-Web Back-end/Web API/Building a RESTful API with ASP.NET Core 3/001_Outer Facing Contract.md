@@ -4,11 +4,11 @@ Saturday, April 25, 2020
 
 3:36 PM
 
-![](001_Outer_Facing_Contract_000.png){width="4.35in" height="2.875in"}
+![](001_Outer_Facing_Contract_000.png)
 
  
 
-![](001_Outer_Facing_Contract_001.png){width="6.408333333333333in" height="3.1166666666666667in"}
+![](001_Outer_Facing_Contract_001.png)
 
  
 
@@ -20,25 +20,25 @@ Saturday, April 25, 2020
 
         -   Should always be a noun. Things, not actions...the actions will be our HTTP methods
 
-        -   ![](001_Outer_Facing_Contract_002.png){width="3.091666666666667in" height="0.8166666666666667in"}
+        -   ![](001_Outer_Facing_Contract_002.png)
 
         -   Stay predictable
 
-        -   ![](001_Outer_Facing_Contract_003.png){width="3.908333333333333in" height="1.05in"}
+        -   ![](001_Outer_Facing_Contract_003.png)
 
         -   Represent hierarchy when naming resources
 
-        -   ![](001_Outer_Facing_Contract_004.png){width="3.3333333333333335in" height="0.7416666666666667in"}
+        -   ![](001_Outer_Facing_Contract_004.png)
 
         -   We should NOT try to filter, sort orders. These are not resources
 
-        -   ![](001_Outer_Facing_Contract_005.png){width="3.158333333333333in" height="0.6in"}
+        -   ![](001_Outer_Facing_Contract_005.png)
 
         -   **EXCEPTION:**
 
             -   Sometimes, RPC-style calls don\'t easily map to pluralized resource names
 
-            -   ![](001_Outer_Facing_Contract_006.png){width="2.9583333333333335in" height="0.8333333333333334in"}
+            -   ![](001_Outer_Facing_Contract_006.png)
 
 >  
 
@@ -54,7 +54,7 @@ Next: Apply \[ApiController\] attribute... this is NOT necessary but by doing so
 
  
 
-![](001_Outer_Facing_Contract_007.png){width="7.133333333333334in" height="3.0in"}
+![](001_Outer_Facing_Contract_007.png)
 
  
 
@@ -62,7 +62,7 @@ In older Dotnet Core versions routing was setup by using MVC or useRouting()... 
 
  
 
-![](001_Outer_Facing_Contract_008.png){width="6.791666666666667in" height="1.5in"}
+![](001_Outer_Facing_Contract_008.png)
 
  
 
@@ -76,21 +76,21 @@ Convention based Routing is usually used for web applications.... For APIs it\'s
 
  
 
-![](001_Outer_Facing_Contract_009.png){width="6.875in" height="3.175in"}
+![](001_Outer_Facing_Contract_009.png)
 
  
 
  
 
-![](001_Outer_Facing_Contract_010.png){width="5.125in" height="3.175in"}
+![](001_Outer_Facing_Contract_010.png)
 
  
 
-![](001_Outer_Facing_Contract_011.png){width="8.816666666666666in" height="4.375in"}
+![](001_Outer_Facing_Contract_011.png)
 
  
 
-![](001_Outer_Facing_Contract_012.png){width="4.991666666666666in" height="1.6916666666666667in"}
+![](001_Outer_Facing_Contract_012.png)
 
  
 
@@ -100,7 +100,7 @@ If using some of Microsoft templates to generate a controller for us, we can see
 
 Route constraints are also possible when using attributes
 
-![](001_Outer_Facing_Contract_013.png){width="4.875in" height="1.4333333333333333in"}
+![](001_Outer_Facing_Contract_013.png)
 
  
 
@@ -110,17 +110,17 @@ Route constraints are also possible when using attributes
 
  
 
-![](001_Outer_Facing_Contract_014.png){width="8.783333333333333in" height="2.933333333333333in"}
+![](001_Outer_Facing_Contract_014.png)
 
  
 
-![](001_Outer_Facing_Contract_015.png){width="8.616666666666667in" height="3.2083333333333335in"}
+![](001_Outer_Facing_Contract_015.png)
 
  
 
  
 
-![](001_Outer_Facing_Contract_016.png){width="9.216666666666667in" height="4.091666666666667in"}
+![](001_Outer_Facing_Contract_016.png)
 
  
 
@@ -136,10 +136,10 @@ The deal is that if the user specifiers the Accept header in the request, then I
 
  
 
-![](001_Outer_Facing_Contract_017.png){width="6.216666666666667in" height="3.4166666666666665in"}
+![](001_Outer_Facing_Contract_017.png)
 
  
 
-![](001_Outer_Facing_Contract_018.png){width="12.7in" height="1.175in"}
+![](001_Outer_Facing_Contract_018.png)
 
  

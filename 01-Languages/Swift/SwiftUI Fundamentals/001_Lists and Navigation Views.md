@@ -10,7 +10,7 @@ A List in View is a container that presents rows of data arranged in a single co
 
  
 
-![10 12 13 struct ToDoList: View { var body: some View List { do I ) 2\") do do 3 ) ](001_Lists_and_Navigation_Views_000.png){width="3.908333333333333in" height="2.408333333333333in"}
+![10 12 13 struct ToDoList: View { var body: some View List { do I ) 2\") do do 3 ) ](001_Lists_and_Navigation_Views_000.png)
 
  
 
@@ -18,6 +18,6 @@ The real important thing to remember when dealing with SwiftUI and a List of ite
 
  
 
-![10.15, ios 13.0, watchos 6.e, tvos 13.e public protocol Identifiable { / / Il A type representing the stable dentity of the entity associated with /// an instance. associatedtype ID : Hashable I\' / The stable identity of the entity associated with this instance. var id: Self. ID { get ](001_Lists_and_Navigation_Views_001.png){width="5.0in" height="1.8416666666666666in"}
+![10.15, ios 13.0, watchos 6.e, tvos 13.e public protocol Identifiable { / / Il A type representing the stable dentity of the entity associated with /// an instance. associatedtype ID : Hashable I\' / The stable identity of the entity associated with this instance. var id: Self. ID { get ](001_Lists_and_Navigation_Views_001.png)
 
  

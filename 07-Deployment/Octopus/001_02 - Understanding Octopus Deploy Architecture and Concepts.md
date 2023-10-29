@@ -10,7 +10,7 @@ Thursday, November 17, 2016
 
 First let\'s analyze the Physical Architecture used with Octopus Deploy:
 
-![p hysical Octopus Deploy Server SQL Database O Architecture Deployment Targets Tentacle O O O O Calamari ](001_02_-_Understanding_Octopus_Deploy_Architecture_and_Concepts_000.png){width="6.0in" height="3.425in"}
+![p hysical Octopus Deploy Server SQL Database O Architecture Deployment Targets Tentacle O O O O Calamari ](001_02_-_Understanding_Octopus_Deploy_Architecture_and_Concepts_000.png)
 
  
 
@@ -60,7 +60,7 @@ At the Core of the Octopus Architecture sits the Deploy Server:
 
  
 
-![Environments Projects Logical Concepts Web Services Roles Releases Deployments ](001_02_-_Understanding_Octopus_Deploy_Architecture_and_Concepts_001.png){width="6.0in" height="3.575in"}
+![Environments Projects Logical Concepts Web Services Roles Releases Deployments ](001_02_-_Understanding_Octopus_Deploy_Architecture_and_Concepts_001.png)
 
  
 
@@ -92,7 +92,7 @@ At the Core of the Octopus Architecture sits the Deploy Server:
 
  
 
-![Environments Deployment Target Deployment Target Deployment Target Deployment Target ](001_02_-_Understanding_Octopus_Deploy_Architecture_and_Concepts_002.png){width="6.0in" height="3.225in"}
+![Environments Deployment Target Deployment Target Deployment Target Deployment Target ](001_02_-_Understanding_Octopus_Deploy_Architecture_and_Concepts_002.png)
 
  
 
@@ -100,7 +100,7 @@ Normally when we deploy software we think about which files are going to which m
 
  
 
-![Roles QA WEB Deployment Target Services Deployment Target LIVE WEB Deployment Target Services Deployment Target ](001_02_-_Understanding_Octopus_Deploy_Architecture_and_Concepts_003.png){width="6.0in" height="3.566666666666667in"}
+![Roles QA WEB Deployment Target Services Deployment Target LIVE WEB Deployment Target Services Deployment Target ](001_02_-_Understanding_Octopus_Deploy_Architecture_and_Concepts_003.png)
 
  
 
@@ -120,7 +120,7 @@ Environments and roles are the target to destinations we deploy too. Packages on
 
  
 
-![Packages Collection of - DLL\'s Assets - Scripts NuGet ](001_02_-_Understanding_Octopus_Deploy_Architecture_and_Concepts_004.png){width="6.0in" height="5.116666666666666in"}
+![Packages Collection of - DLL\'s Assets - Scripts NuGet ](001_02_-_Understanding_Octopus_Deploy_Architecture_and_Concepts_004.png)
 
  
 
@@ -130,7 +130,7 @@ Environments and roles are the target to destinations we deploy too. Packages on
 
  
 
-![Projects Recipe Definition of how software is deployed Deploy Package Notify Users Run Smoke Tests ](001_02_-_Understanding_Octopus_Deploy_Architecture_and_Concepts_005.png){width="6.0in" height="3.5in"}
+![Projects Recipe Definition of how software is deployed Deploy Package Notify Users Run Smoke Tests ](001_02_-_Understanding_Octopus_Deploy_Architecture_and_Concepts_005.png)
 
  
 
@@ -150,7 +150,7 @@ An example of a Project can be:
 
  
 
-![Releases Combination - Package - Project steps and settings ](001_02_-_Understanding_Octopus_Deploy_Architecture_and_Concepts_006.png){width="6.0in" height="3.841666666666667in"}
+![Releases Combination - Package - Project steps and settings ](001_02_-_Understanding_Octopus_Deploy_Architecture_and_Concepts_006.png)
 
  
 
@@ -158,7 +158,7 @@ Releases will TIGHT together Packages and Projects. When we create a release it 
 
  
 
-![Deployments Releases Steps Package Package Steps Role ](001_02_-_Understanding_Octopus_Deploy_Architecture_and_Concepts_007.png){width="6.0in" height="4.333333333333333in"}
+![Deployments Releases Steps Package Package Steps Role ](001_02_-_Understanding_Octopus_Deploy_Architecture_and_Concepts_007.png)
 
  
 
@@ -170,29 +170,29 @@ When we deploy a project into an environment we pick a RELEASE to deploy. This r
 
  
 
-![Environments Environments 10.0.0.5 10.0.o.7 10.0.0.6 wiruiows service 10.0.0.8 wirxiows service Dashboard Roles Projects Library Tasks Edit Edit Kenneth Reorder Accounts Configuration Add environment Check health Check health Add deployment target Add deployment target ](001_02_-_Understanding_Octopus_Deploy_Architecture_and_Concepts_008.png){width="6.0in" height="2.9166666666666665in"}
+![Environments Environments 10.0.0.5 10.0.o.7 10.0.0.6 wiruiows service 10.0.0.8 wirxiows service Dashboard Roles Projects Library Tasks Edit Edit Kenneth Reorder Accounts Configuration Add environment Check health Check health Add deployment target Add deployment target ](001_02_-_Understanding_Octopus_Deploy_Architecture_and_Concepts_008.png)
 
  
 
  
 
-![Environments Todo.Web Process Todo.Web Create release Overview Variables Channels Releases Settings Dashboard Deployment process 1• Deploy site Projects Library web server Tasks Kenneth Configuration Deploy package Todo.Web from Octopus Server (built-in) to machines in roles: Add step One Step defined Project Lifecycle Default Lifecycle R) QA C) Live Choose a different lifecycle This lifecycle defines how releases can be promoted between environments. Lifecycles can be defined in the Library. This the default lifecycle for the project. It can be overridden by specifying Channels, Automatic Release Creation C) Create a release when a package is pushed to the built-in package repository Script modules Include script modules The Library includes PowerShell script modules tha an ](001_02_-_Understanding_Octopus_Deploy_Architecture_and_Concepts_009.png){width="6.0in" height="3.191666666666667in"}
+![Environments Todo.Web Process Todo.Web Create release Overview Variables Channels Releases Settings Dashboard Deployment process 1• Deploy site Projects Library web server Tasks Kenneth Configuration Deploy package Todo.Web from Octopus Server (built-in) to machines in roles: Add step One Step defined Project Lifecycle Default Lifecycle R) QA C) Live Choose a different lifecycle This lifecycle defines how releases can be promoted between environments. Lifecycles can be defined in the Library. This the default lifecycle for the project. It can be overridden by specifying Channels, Automatic Release Creation C) Create a release when a package is pushed to the built-in package repository Script modules Include script modules The Library includes PowerShell script modules tha an ](001_02_-_Understanding_Octopus_Deploy_Architecture_and_Concepts_009.png)
 
  
 
  
 
-![Dashboard Environments Projects Library Tasks Kenneth Configuration Todo.Web Releases Todo.Web Create release Overview Process Variables Channels Releases Settings Releases All channels 1.0.3 Assembled Tuesday, March 29, 2016 1:04 AM Added title 1.0.2 Assembled Tuesday, March 22, 2016 12:55 AM 1.0.1 Assembled Tuesday, March 22, 2016 1253 AM Assembled Tuesday, March 22, 2016 12:32 AM We need to give it a Version number and select a package we want to include in this release. ](001_02_-_Understanding_Octopus_Deploy_Architecture_and_Concepts_010.png){width="6.0in" height="3.0416666666666665in"}
+![Dashboard Environments Projects Library Tasks Kenneth Configuration Todo.Web Releases Todo.Web Create release Overview Process Variables Channels Releases Settings Releases All channels 1.0.3 Assembled Tuesday, March 29, 2016 1:04 AM Added title 1.0.2 Assembled Tuesday, March 22, 2016 12:55 AM 1.0.1 Assembled Tuesday, March 22, 2016 1253 AM Assembled Tuesday, March 22, 2016 12:32 AM We need to give it a Version number and select a package we want to include in this release. ](001_02_-_Understanding_Octopus_Deploy_Architecture_and_Concepts_010.png)
 
  
 
  
 
-![1.0.4 Most recent release: Todo.Web Overview Process Variables Channels Releases Settings Create release Version Packages Step Deploy site Release notes Don\'t need to match Enter a unique version number for this release with at least two parts. See examples. Package Todo.Web Latest @ I.o.o.3 Last o I.o.o.3 Specific O Search Enter a summary of what has changed in this release, such as which features were added and which bugs were fixed. These notes will be shown on the release page. You can edit these notes later, Save ](001_02_-_Understanding_Octopus_Deploy_Architecture_and_Concepts_011.png){width="6.0in" height="3.3833333333333333in"}
+![1.0.4 Most recent release: Todo.Web Overview Process Variables Channels Releases Settings Create release Version Packages Step Deploy site Release notes Don\'t need to match Enter a unique version number for this release with at least two parts. See examples. Package Todo.Web Latest @ I.o.o.3 Last o I.o.o.3 Specific O Search Enter a summary of what has changed in this release, such as which features were added and which bugs were fixed. These notes will be shown on the release page. You can edit these notes later, Save ](001_02_-_Understanding_Octopus_Deploy_Architecture_and_Concepts_011.png)
 
  
 
-![Projects Todo.Web Todo.Web Create release Process Variables Channels Settings 1.0.4 1.0.3 1.0.2 Dashboard Deploy 1.0.3 1.0.2 2016 Environments Live Library Tasks Kenneth Configuration 1.0.3 Mere 1.0.2 Mare 2016 When I click the deploy button it will deploy package 1.0.0.3 because it is part of release 1.0.4. To all the machine with the role WebServer that belong to the QA environment. ](001_02_-_Understanding_Octopus_Deploy_Architecture_and_Concepts_012.png){width="6.0in" height="3.216666666666667in"}
+![Projects Todo.Web Todo.Web Create release Process Variables Channels Settings 1.0.4 1.0.3 1.0.2 Dashboard Deploy 1.0.3 1.0.2 2016 Environments Live Library Tasks Kenneth Configuration 1.0.3 Mere 1.0.2 Mare 2016 When I click the deploy button it will deploy package 1.0.0.3 because it is part of release 1.0.4. To all the machine with the role WebServer that belong to the QA environment. ](001_02_-_Understanding_Octopus_Deploy_Architecture_and_Concepts_012.png)
 
  
 
@@ -210,6 +210,6 @@ This is how Octopus Deploy tights all the concepts together so we can deploy wit
 
  
 
-![Summary Physical Architecture - Central Server - Deployment Targets Tentacles Calamari Logical Concepts - Environments - Roles - Projects - Packages - Releases - Deployments ](001_02_-_Understanding_Octopus_Deploy_Architecture_and_Concepts_013.png){width="6.0in" height="4.091666666666667in"}
+![Summary Physical Architecture - Central Server - Deployment Targets Tentacles Calamari Logical Concepts - Environments - Roles - Projects - Packages - Releases - Deployments ](001_02_-_Understanding_Octopus_Deploy_Architecture_and_Concepts_013.png)
 
  

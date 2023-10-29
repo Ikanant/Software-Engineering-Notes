@@ -12,7 +12,7 @@ The Process to accomplish this step is LARGELY similar to what we did for our pr
 
  
 
-![](004_05_-_Deploying_Windows_Services_000.png){width="6.0in" height="3.4in"}
+![](004_05_-_Deploying_Windows_Services_000.png)
 
  
 
@@ -42,7 +42,7 @@ The Process to accomplish this step is LARGELY similar to what we did for our pr
 
     a.  After creating the package we will run the msbuild from the Command Line to Package the application and PUSH it to Octopus Deploy
 
-    b.  ![](004_05_-_Deploying_Windows_Services_001.png){width="6.0in" height="1.4916666666666667in"}
+    b.  ![](004_05_-_Deploying_Windows_Services_001.png)
 
 5.  Create a Release
 
@@ -56,10 +56,10 @@ The Process to accomplish this step is LARGELY similar to what we did for our pr
 
         i.  We can have a look at the Server where it was installed. Here we can see that the application binaries have been copied to the octopus application folder:
 
-            -   ![](004_05_-_Deploying_Windows_Services_002.png){width="6.0in" height="1.725in"}
+            -   ![](004_05_-_Deploying_Windows_Services_002.png)
 
         ii. If we look at the Services we can also see what\'s going on there
 
-            -   ![](004_05_-_Deploying_Windows_Services_003.png){width="6.0in" height="4.833333333333333in"}
+            -   ![](004_05_-_Deploying_Windows_Services_003.png)
 
 7.  Since the Deployment to QA was successful we can do the same for the LIVE environment.

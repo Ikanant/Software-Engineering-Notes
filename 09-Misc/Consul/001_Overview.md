@@ -20,7 +20,7 @@ What about if our application is using multiple services that are deployed acros
 
  
 
-![Challenges Service Service Discovery Failure Detection Multi Datacenter Configuration ](001_Overview_000.png){width="7.958333333333333in" height="5.325in"}
+![Challenges Service Service Discovery Failure Detection Multi Datacenter Configuration ](001_Overview_000.png)
 
  
 
@@ -42,13 +42,13 @@ This key/value store is reactive. It could watch for change (not only for servic
 
  
 
-![haproxy.cfg docker 4 Consul Template K/v lb (172.20.20.11) haproxy.ctpml Services Catalog ](001_Overview_001.png){width="7.058333333333334in" height="3.6416666666666666in"}
+![haproxy.cfg docker 4 Consul Template K/v lb (172.20.20.11) haproxy.ctpml Services Catalog ](001_Overview_001.png)
 
  
 
  
 
-![80 lb (172.20.20.11) docier PROXY 8080 8080 8080 webl (172.20.20.21) NGMX--- web2 (172.20.20.22) NGMX öocEQr web3 (172.20.20.23) consul-server (172.20.20.31) desky (172.20.20.1) ](001_Overview_002.png){width="8.116666666666667in" height="4.616666666666666in"}
+![80 lb (172.20.20.11) docier PROXY 8080 8080 8080 webl (172.20.20.21) NGMX--- web2 (172.20.20.22) NGMX öocEQr web3 (172.20.20.23) consul-server (172.20.20.31) desky (172.20.20.1) ](001_Overview_002.png)
 
  
 
@@ -72,7 +72,7 @@ To get things started we will use Vagrant to spin up all the VMs that we will us
 
  
 
-![VAGRANT Creating VMS wesmcclure/ubuntu1404-docker consul-server ](001_Overview_003.png){width="7.375in" height="4.691666666666666in"}
+![VAGRANT Creating VMS wesmcclure/ubuntu1404-docker consul-server ](001_Overview_003.png)
 
  
 
@@ -96,7 +96,7 @@ Inside the vagrant file we will need to define multiple VMs... the first one of 
 
  
 
-![Vagrantfile X Vagrantfile Vagrant. configure( \"2\") do I configl config. vm. box \"wesmcc1ure/ubuntu14e4-docker\" config.vm. define \"consul-server\" do I CSI cs .vm.hostname = \"consul-server\" cs .vm.network \"private_network\", ip: \"172.2e.2e.31\" end end ](001_Overview_004.png){width="5.558333333333334in" height="2.183333333333333in"}
+![Vagrantfile X Vagrantfile Vagrant. configure( \"2\") do I configl config. vm. box \"wesmcc1ure/ubuntu14e4-docker\" config.vm. define \"consul-server\" do I CSI cs .vm.hostname = \"consul-server\" cs .vm.network \"private_network\", ip: \"172.2e.2e.31\" end end ](001_Overview_004.png)
 
  
 
@@ -158,7 +158,7 @@ This should get things running BUT it will not allow us to see the web-ui for th
 
  
 
-![desky (172.20.20.1) consul-server (172.20.20.31) ](001_Overview_005.png){width="7.566666666666666in" height="0.8416666666666667in"}
+![desky (172.20.20.1) consul-server (172.20.20.31) ](001_Overview_005.png)
 
  
 
@@ -174,7 +174,7 @@ Instead of setting up flags on this command, we can ALSO use config file
 
  
 
-![local.consuI.Json \"ui\": true, \"retry_join\" \[\"172.2e.2e.31\"\], \" advertise addr : \" \"172.2e.2e.1\", \"data dir\" : \"/tmp/consul \" ](001_Overview_006.png){width="3.841666666666667in" height="1.6166666666666667in"}
+![local.consuI.Json \"ui\": true, \"retry_join\" \[\"172.2e.2e.31\"\], \" advertise addr : \" \"172.2e.2e.1\", \"data dir\" : \"/tmp/consul \" ](001_Overview_006.png)
 
  
 
@@ -200,7 +200,7 @@ Instead of setting up flags on this command, we can ALSO use config file
 
  
 
-![Nodes - Consul G) localhost:8500/ui/dc1/nodes O D ACL e Passing Checks Finances DESKTOP-SSG4UOA 172.20.20.1 Video Audio Software Documentation Images dcl Services Nodes Key/Value Intentions Nodes 2 total All (Any Status) Critical Checks Healthy Nodes consul-server 172.20.20.31 A Warning Checks ](001_Overview_007.png){width="8.083333333333334in" height="3.175in"}
+![Nodes - Consul G) localhost:8500/ui/dc1/nodes O D ACL e Passing Checks Finances DESKTOP-SSG4UOA 172.20.20.1 Video Audio Software Documentation Images dcl Services Nodes Key/Value Intentions Nodes 2 total All (Any Status) Critical Checks Healthy Nodes consul-server 172.20.20.31 A Warning Checks ](001_Overview_007.png)
 
  
 

@@ -6,7 +6,7 @@ Friday, April 29, 2016
 
  
 
-![](002_03_-_Setting_up_Gulp_000.png){width="5.0in" height="2.691666666666667in"}
+![](002_03_-_Setting_up_Gulp_000.png)
 
  
 
@@ -84,4 +84,4 @@ Monitor files... Whenever anything changes it will automatically restart the ser
 
  
 
-![](002_03_-_Setting_up_Gulp_001.png){width="5.0in" height="2.85in"}
+![](002_03_-_Setting_up_Gulp_001.png)

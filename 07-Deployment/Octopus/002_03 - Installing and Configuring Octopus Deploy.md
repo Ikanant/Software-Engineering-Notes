@@ -6,7 +6,7 @@ Thursday, November 17, 2016
 
  
 
-![Module Overview Install and configure the Octopus Deploy Server Create a QA and a Live environment Install Tentacles Connect deployment targets to the server ](002_03_-_Installing_and_Configuring_Octopus_Deploy_000.png){width="5.0in" height="2.4583333333333335in"}
+![Module Overview Install and configure the Octopus Deploy Server Create a QA and a Live environment Install Tentacles Connect deployment targets to the server ](002_03_-_Installing_and_Configuring_Octopus_Deploy_000.png)
 
  
 

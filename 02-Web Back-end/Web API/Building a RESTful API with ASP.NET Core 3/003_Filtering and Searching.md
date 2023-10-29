@@ -8,7 +8,7 @@ Tuesday, April 28, 2020
 
  
 
-![](003_Filtering_and_Searching_000.png){width="6.741666666666666in" height="1.9166666666666667in"}
+![](003_Filtering_and_Searching_000.png)
 
  
 
@@ -16,11 +16,11 @@ Tuesday, April 28, 2020
 
  
 
-![](003_Filtering_and_Searching_001.png){width="3.6416666666666666in" height="3.6333333333333333in"}
+![](003_Filtering_and_Searching_001.png)
 
  
 
-![](003_Filtering_and_Searching_002.png){width="6.05in" height="1.0916666666666666in"}
+![](003_Filtering_and_Searching_002.png)
 
  
 
@@ -36,7 +36,7 @@ Tuesday, April 28, 2020
 
 When using **\[ApiController\]:**
 
-![](003_Filtering_and_Searching_003.png){width="4.275in" height="3.2in"}
+![](003_Filtering_and_Searching_003.png)
 
  
 
@@ -46,11 +46,11 @@ This doesn\'t mean we can\'t use the attributes above though...
 
 **Filter / Searching**
 
-![](003_Filtering_and_Searching_004.png){width="4.2in" height="1.625in"}
+![](003_Filtering_and_Searching_004.png)
 
  
 
-![](003_Filtering_and_Searching_005.png){width="5.258333333333334in" height="2.0in"}
+![](003_Filtering_and_Searching_005.png)
 
  
 
@@ -60,7 +60,7 @@ Query exaction occurs sometime after the query is contracted. This is important 
 
  
 
-![](003_Filtering_and_Searching_006.png){width="6.541666666666667in" height="2.933333333333333in"}
+![](003_Filtering_and_Searching_006.png)
 
  
 

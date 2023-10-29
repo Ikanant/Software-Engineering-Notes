@@ -70,4 +70,4 @@ If we have an import inside the module of a package that is never used. then we 
 
  
 
-![](000_01_-_The_Beginning_000.png){width="5.0in" height="3.15in"}
+![](000_01_-_The_Beginning_000.png)

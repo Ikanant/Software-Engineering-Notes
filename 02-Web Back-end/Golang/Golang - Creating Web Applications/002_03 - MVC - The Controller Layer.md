@@ -20,7 +20,7 @@ Right now, we will relieve our main function of all the responsibilities we have
 
  
 
-![](002_03_-_MVC_-_The_Controller_Layer_000.png){width="5.0in" height="3.1666666666666665in"}
+![](002_03_-_MVC_-_The_Controller_Layer_000.png)
 
  
 
@@ -55,7 +55,7 @@ Controller main tasts:
 
 **[Parameterized Routes]{.underline}**
 
-![](002_03_-_MVC_-_The_Controller_Layer_001.png){width="5.0in" height="2.6166666666666667in"}
+![](002_03_-_MVC_-_The_Controller_Layer_001.png)
 
  
 
@@ -67,7 +67,7 @@ This toolkit consist of a collection of packages that are intended to augment th
 
 When generating a Page in our system, we are currently creating such page and sending it fully to our client. In many circumstances this can be a problem because pages can be large and occupy a big space. One tool we can use is to compress such file to make things more efficient
 
-![](002_03_-_MVC_-_The_Controller_Layer_002.png){width="5.0in" height="2.591666666666667in"}
+![](002_03_-_MVC_-_The_Controller_Layer_002.png)
 
 **[Unit Testing]{.underline}**
 
@@ -103,4 +103,4 @@ func Test_myFunctionThatStartsWithTEST(t \*testing.T) {
 
 AND BOOM GOES THE DYNAMITE
 
-![](002_03_-_MVC_-_The_Controller_Layer_003.png){width="5.0in" height="2.65in"}
+![](002_03_-_MVC_-_The_Controller_Layer_003.png)

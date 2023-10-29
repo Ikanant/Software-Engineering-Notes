@@ -44,7 +44,7 @@ Steps to do legacy linking:
 
 3.  Repeate for Additional Containers
 
-    a.  ![Machine generated alternative text: 3 Repeat for Additional Containers Run a Container Repeat with a name Link to Named Container ](004_05_-_Communicating_Between_Docker_Containers_000.png){width="5.0in" height="3.525in"}
+    a.  ![Machine generated alternative text: 3 Repeat for Additional Containers Run a Container Repeat with a name Link to Named Container ](004_05_-_Communicating_Between_Docker_Containers_000.png)
 
  
 
@@ -58,7 +58,7 @@ The idea is simple: As developers we can create a private Docker Isolated Networ
 
  
 
-![Machine generated alternative text: Isolated Network 1 o Docker Host Isolated Network 2 ](004_05_-_Communicating_Between_Docker_Containers_001.png){width="5.0in" height="3.533333333333333in"}
+![Machine generated alternative text: Isolated Network 1 o Docker Host Isolated Network 2 ](004_05_-_Communicating_Between_Docker_Containers_001.png)
 
  
 
@@ -68,13 +68,13 @@ Steps to Create a Container Network
 
     a.  docker **network create \--driver bridge \<network name\>**
 
-        i.  ![Machine generated alternative text: Name of custom network - -driver bridge isolated_network docker network create Create a custom use a bridge network network ](004_05_-_Communicating_Between_Docker_Containers_002.png){width="5.0in" height="2.1416666666666666in"}
+        i.  ![Machine generated alternative text: Name of custom network - -driver bridge isolated_network docker network create Create a custom use a bridge network network ](004_05_-_Communicating_Between_Docker_Containers_002.png)
 
 2.  Run Containers in the Network
 
     a.  docker run -d **\--net=isolated_network** \--name mongodb mongo
 
-        i.  ![Machine generated alternative text: docker run \"Link\" to this container by name -d ----net=isolated network \--name mongodb mongo Run container in network ](004_05_-_Communicating_Between_Docker_Containers_003.png){width="5.0in" height="2.5in"}
+        i.  ![Machine generated alternative text: docker run \"Link\" to this container by name -d ----net=isolated network \--name mongodb mongo Run container in network ](004_05_-_Communicating_Between_Docker_Containers_003.png)
 
  
 
@@ -88,4 +88,4 @@ Do we really need to type SO MANY commands to link containers....the answer is N
 
  
 
-![Machine generated alternative text: docker ](004_05_-_Communicating_Between_Docker_Containers_004.png){width="2.6666666666666665in" height="3.7583333333333333in"}
+![Machine generated alternative text: docker ](004_05_-_Communicating_Between_Docker_Containers_004.png)

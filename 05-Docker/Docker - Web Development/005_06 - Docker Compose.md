@@ -10,7 +10,7 @@ Great way to get multiple containers to be up and running with a minimal effort 
 
  
 
-![Machine generated alternative text: docker ](005_06_-_Docker_Compose_000.png){width="4.016666666666667in" height="3.5in"}
+![Machine generated alternative text: docker ](005_06_-_Docker_Compose_000.png)
 
  
 
@@ -44,7 +44,7 @@ It allows us to handle multiple images and turn those images into containers. Th
 
 **Whats the need of Docker Compose?**
 
-![Machine generated alternative text: The Need for Docker Compose NGMX nodeo redis nodeo nodeo mongoDB Docker Compose (docker-compose.yml) ](005_06_-_Docker_Compose_001.png){width="5.0in" height="3.35in"}
+![Machine generated alternative text: The Need for Docker Compose NGMX nodeo redis nodeo nodeo mongoDB Docker Compose (docker-compose.yml) ](005_06_-_Docker_Compose_001.png)
 
 >  
 
@@ -56,7 +56,7 @@ The **docker-compose.yml** is written in a very easy format
 
  
 
-![Machine generated alternative text: Docker Compose Workflow Build Services Start Up Services Tear Down Services ](005_06_-_Docker_Compose_002.png){width="5.0in" height="2.425in"}
+![Machine generated alternative text: Docker Compose Workflow Build Services Start Up Services Tear Down Services ](005_06_-_Docker_Compose_002.png)
 
  
 
@@ -68,13 +68,13 @@ The **docker-compose.yml** is written in a very easy format
 
 -   We can run it through docker-compose BUILD process...which, similarly to what we have seen before will generate docker images from our Dockerfiles.
 
-![Machine generated alternative text: The Role of the Docker Compose File o Docker Compose Build docker-compose.yml (service configuration) Docker Images (services) ](005_06_-_Docker_Compose_003.png){width="5.0in" height="2.9166666666666665in"}
+![Machine generated alternative text: The Role of the Docker Compose File o Docker Compose Build docker-compose.yml (service configuration) Docker Images (services) ](005_06_-_Docker_Compose_003.png)
 
  
 
 **What do we include in this Dockerfile?**
 
-![Machine generated alternative text: Docker Compose and Services version: \'2\' services: nedeo mongo DB docker-compose.yml ](005_06_-_Docker_Compose_004.png){width="5.0in" height="3.95in"}
+![Machine generated alternative text: Docker Compose and Services version: \'2\' services: nedeo mongo DB docker-compose.yml ](005_06_-_Docker_Compose_004.png)
 
  
 
@@ -102,7 +102,7 @@ The **docker-compose.yml** is written in a very easy format
 
  
 
-![Machine generated alternative text: docker-compose.yml version: \'2\' services: node: build: context: . Example dockerfile: node.dockerfile networks: -nodeapp-network mongodb: image: mongo networks: - nodeapp-network networks: nodeapp-network driver: bridge ](005_06_-_Docker_Compose_005.png){width="5.0in" height="3.9583333333333335in"}
+![Machine generated alternative text: docker-compose.yml version: \'2\' services: node: build: context: . Example dockerfile: node.dockerfile networks: -nodeapp-network mongodb: image: mongo networks: - nodeapp-network networks: nodeapp-network driver: bridge ](005_06_-_Docker_Compose_005.png)
 
  
 
@@ -142,36 +142,36 @@ The **docker-compose.yml** is written in a very easy format
 
 **Building Services**
 
-![](005_06_-_Docker_Compose_006.png){width="4.466666666666667in" height="2.558333333333333in"}
+![](005_06_-_Docker_Compose_006.png)
 
  
 
 Or we can build an individual Service:
 
-![](005_06_-_Docker_Compose_007.png){width="5.0in" height="2.283333333333333in"}
+![](005_06_-_Docker_Compose_007.png)
 
  
 
 **Service Start:**
 
-![](005_06_-_Docker_Compose_008.png){width="4.375in" height="2.45in"}
+![](005_06_-_Docker_Compose_008.png)
 
  
 
-![](005_06_-_Docker_Compose_009.png){width="5.0in" height="1.925in"}
+![](005_06_-_Docker_Compose_009.png)
 
  
 
 Teare Down Services
 
-![](005_06_-_Docker_Compose_010.png){width="4.216666666666667in" height="1.9583333333333333in"}
+![](005_06_-_Docker_Compose_010.png)
 
  
 
-![](005_06_-_Docker_Compose_011.png){width="5.0in" height="2.8916666666666666in"}
+![](005_06_-_Docker_Compose_011.png)
 
  
 
 **Docker-compose.yml Example:**
 
-![](005_06_-_Docker_Compose_012.png){width="2.933333333333333in" height="3.6333333333333333in"}
+![](005_06_-_Docker_Compose_012.png)

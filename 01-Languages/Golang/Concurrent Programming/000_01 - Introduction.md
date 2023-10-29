@@ -218,7 +218,7 @@ Disadvantages:
 
  
 
-![Machine generated alternative text: Concurrency in Go No Thread Primitives Goroutines Channels ](000_01_-_Introduction_000.png){width="7.791666666666667in" height="4.966666666666667in"}
+![Machine generated alternative text: Concurrency in Go No Thread Primitives Goroutines Channels ](000_01_-_Introduction_000.png)
 
  
 

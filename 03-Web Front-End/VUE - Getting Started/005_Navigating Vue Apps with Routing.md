@@ -30,7 +30,7 @@ Main benefits:
 
  
 
-![Adding Routing to Your Vue App Add the router to your Vue app Define your routes Tell your app about the routes Add nav links and a place for the components to display ](005_Navigating_Vue_Apps_with_Routing_000.png){width="5.925in" height="3.4833333333333334in"}
+![Adding Routing to Your Vue App Add the router to your Vue app Define your routes Tell your app about the routes Add nav links and a place for the components to display ](005_Navigating_Vue_Apps_with_Routing_000.png)
 
  
 
@@ -42,7 +42,7 @@ This command will install the router and add routing code to the app
 
  
 
-![Add the Router to Vue Import the route definitions Add the routes to the app The Vue CLI does the work for you vue add router main.js import import \*import Vue from \'vue\'i from \'@/app.vue\' ; App router from \' ./router\' ; new Vue({ router, render: h =\> h(App) .\$mount( • #app\' ) ; ](005_Navigating_Vue_Apps_with_Routing_001.png){width="6.425in" height="2.533333333333333in"}
+![Add the Router to Vue Import the route definitions Add the routes to the app The Vue CLI does the work for you vue add router main.js import import \*import Vue from \'vue\'i from \'@/app.vue\' ; App router from \' ./router\' ; new Vue({ router, render: h =\> h(App) .\$mount( • #app\' ) ; ](005_Navigating_Vue_Apps_with_Routing_001.png)
 
  
 
@@ -54,7 +54,7 @@ The mode of our router is set to **history** by default because we don\'t want t
 
  
 
-![Vue.use(Router); export default new Router({ : \'history\' , mode base: process.env.BASE URL, routes: \[ Add the router to this app Enable history mode redirect: \'/heroes\' } , path: Default route component: Heroes } , path: \'/heroes\' , : \'heroes\', name path: component: Villains } , \' /villains\', name: \'villains \' , component: NotFound } path: ](005_Navigating_Vue_Apps_with_Routing_002.png){width="6.133333333333334in" height="3.4833333333333334in"}
+![Vue.use(Router); export default new Router({ : \'history\' , mode base: process.env.BASE URL, routes: \[ Add the router to this app Enable history mode redirect: \'/heroes\' } , path: Default route component: Heroes } , path: \'/heroes\' , : \'heroes\', name path: component: Villains } , \' /villains\', name: \'villains \' , component: NotFound } path: ](005_Navigating_Vue_Apps_with_Routing_002.png)
 
  
 
@@ -64,7 +64,7 @@ The one important thing to note about routes in vue is that instead of inserting
 
  
 
-![1 2 3 4 5 6 7 8 9 10 \<template\> \<div id- \"app\" \> \<HeaderBar / \> \<div clan; \"main-section columns\" \> \<main \< router-view 8/ router-view \</main\> \</div\> \</div\> \< / template\> ](005_Navigating_Vue_Apps_with_Routing_003.png){width="6.375in" height="3.6in"}
+![1 2 3 4 5 6 7 8 9 10 \<template\> \<div id- \"app\" \> \<HeaderBar / \> \<div clan; \"main-section columns\" \> \<main \< router-view 8/ router-view \</main\> \</div\> \</div\> \< / template\> ](005_Navigating_Vue_Apps_with_Routing_003.png)
 
  
 
@@ -80,7 +80,7 @@ We will no longer need any import components in this vue file
 
  
 
-![Routing in the Template The Vue CLI adds the \<router-view\> and some \<router-link\> components Modify them as you need app.vue \<div \<div \<router-link \<router-link \</div\> \< router-view/ \> to=\"/\"\>Vi11ains\</router-1ink\>l to= \" /heroes \" link\> Navigate to this route Put the component that you navigate to, ](005_Navigating_Vue_Apps_with_Routing_004.png){width="5.933333333333334in" height="3.2666666666666666in"}
+![Routing in the Template The Vue CLI adds the \<router-view\> and some \<router-link\> components Modify them as you need app.vue \<div \<div \<router-link \<router-link \</div\> \< router-view/ \> to=\"/\"\>Vi11ains\</router-1ink\>l to= \" /heroes \" link\> Navigate to this route Put the component that you navigate to, ](005_Navigating_Vue_Apps_with_Routing_004.png)
 
  
 
@@ -88,7 +88,7 @@ We will no longer need any import components in this vue file
 
 If we wanted to have some parameter in our routing we do something like this:
 
-![path: \' / heroes/:id\' , \'hero-detail\', name: componet: HeroDetaiI, ](005_Navigating_Vue_Apps_with_Routing_005.png){width="4.583333333333333in" height="2.6in"}
+![path: \' / heroes/:id\' , \'hero-detail\', name: componet: HeroDetaiI, ](005_Navigating_Vue_Apps_with_Routing_005.png)
 
  
 
@@ -104,7 +104,7 @@ Now we can parse that parameter by doing something like
 
 But we want to do it cleaner like using props... easy:
 
-![\' /her path \'hero import HeroDetait name : component: HeroDetai1, props: true, 1, ](005_Navigating_Vue_Apps_with_Routing_006.png){width="3.975in" height="1.6916666666666667in"}
+![\' /her path \'hero import HeroDetait name : component: HeroDetai1, props: true, 1, ](005_Navigating_Vue_Apps_with_Routing_006.png)
 
  
 
@@ -120,7 +120,7 @@ When we are routing let\'s consider a component that we are routing too that tak
 
  
 
-![path \' / heroes/:id\' . \'hero-detail\', name • component: HeroDetai1, ( { i d: parselnt(r.paramo. } ) , ](005_Navigating_Vue_Apps_with_Routing_007.png){width="5.416666666666667in" height="1.8333333333333333in"}
+![path \' / heroes/:id\' . \'hero-detail\', name • component: HeroDetai1, ( { i d: parselnt(r.paramo. } ) , ](005_Navigating_Vue_Apps_with_Routing_007.png)
 
  
 
@@ -136,7 +136,7 @@ Eager loading: We load our components at once with all the JS it wants
 
  
 
-![29 30 31 32 33 34 35 36 37 \' / about\', path : \'about\', name // route -eevec code-opt it ting // thio generateo a aeparate chunk (about .jö) for thio route // which tazy-toaded when the route i 4 viöited. component : webpackChunkName: \"about\" . / views/ about. vue\'), ](005_Navigating_Vue_Apps_with_Routing_008.png){width="5.783333333333333in" height="1.65in"}
+![29 30 31 32 33 34 35 36 37 \' / about\', path : \'about\', name // route -eevec code-opt it ting // thio generateo a aeparate chunk (about .jö) for thio route // which tazy-toaded when the route i 4 viöited. component : webpackChunkName: \"about\" . / views/ about. vue\'), ](005_Navigating_Vue_Apps_with_Routing_008.png)
 
 Taking a look at the syntax we are using for our /about routing... we are doing lazy loading
 
@@ -150,7 +150,7 @@ Notice how we have a section of code that\'s commented out \'webpackChunkName\' 
 
  
 
-![.1ting \> begin \> vue-heroes \> src name -r router.js \> ycomponent path: \' / heroes\' , : \'heroes\', // component: Heroeö, component : import(/\* webpackChunkName: \"heroezs \" path: \' / heroes/:id\' , \'hero-detail\', name : \*/ // component: HeroDetaiC, component : webpackChunkName: props: parseProps, \"b eroeo \" \' . / views/ heroes.vue\') \' . / views/ hero-detail.vue\'), ](005_Navigating_Vue_Apps_with_Routing_009.png){width="5.625in" height="2.9166666666666665in"}
+![.1ting \> begin \> vue-heroes \> src name -r router.js \> ycomponent path: \' / heroes\' , : \'heroes\', // component: Heroeö, component : import(/\* webpackChunkName: \"heroezs \" path: \' / heroes/:id\' , \'hero-detail\', name : \*/ // component: HeroDetaiC, component : webpackChunkName: props: parseProps, \"b eroeo \" \' . / views/ heroes.vue\') \' . / views/ hero-detail.vue\'), ](005_Navigating_Vue_Apps_with_Routing_009.png)
 
  
 
@@ -168,7 +168,7 @@ There will be times where we want to route but also want to do something before 
 
  
 
-![methods: { cancelHero() { thiö .\$router . name: \'heroes\' cnync oaveHero() { await dataService.updateHero(thO.hero); thi4.\$router . name: \'heroes\' } ) ; ](005_Navigating_Vue_Apps_with_Routing_010.png){width="5.65in" height="2.7916666666666665in"}
+![methods: { cancelHero() { thiö .\$router . name: \'heroes\' cnync oaveHero() { await dataService.updateHero(thO.hero); thi4.\$router . name: \'heroes\' } ) ; ](005_Navigating_Vue_Apps_with_Routing_010.png)
 
  
 

@@ -32,11 +32,11 @@ Docker Images = Manifests
 
 Docker Containers = Shipping Containers
 
-![](001_02_-_Docker_Deep_Dive_-_Major_Docker_Components_000.png){width="5.0in" height="1.85in"}
+![](001_02_-_Docker_Deep_Dive_-_Major_Docker_Components_000.png)
 
  
 
-![](001_02_-_Docker_Deep_Dive_-_Major_Docker_Components_001.png){width="5.0in" height="2.283333333333333in"}
+![](001_02_-_Docker_Deep_Dive_-_Major_Docker_Components_001.png)
 
  
 
@@ -174,4 +174,4 @@ Always be extra careful before downloading random containers in our environment.
 
 **Module Recap**
 
-![](001_02_-_Docker_Deep_Dive_-_Major_Docker_Components_002.png){width="5.0in" height="2.441666666666667in"}
+![](001_02_-_Docker_Deep_Dive_-_Major_Docker_Components_002.png)

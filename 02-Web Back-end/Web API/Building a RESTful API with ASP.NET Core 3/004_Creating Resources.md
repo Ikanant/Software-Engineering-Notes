@@ -8,11 +8,11 @@ GET / HEAD are considered safe methods... they should be updating anything in th
 
  
 
-![](004_Creating_Resources_000.png){width="6.208333333333333in" height="3.3in"}
+![](004_Creating_Resources_000.png)
 
  
 
-![](004_Creating_Resources_001.png){width="6.116666666666666in" height="3.066666666666667in"}
+![](004_Creating_Resources_001.png)
 
  
 
@@ -20,7 +20,7 @@ When trying to figure out what HTTP method to use when creating an API, I should
 
  
 
-![](004_Creating_Resources_002.png){width="5.758333333333334in" height="2.875in"}
+![](004_Creating_Resources_002.png)
 
  
 
@@ -34,14 +34,14 @@ In the example above they created a brand new class for the author to be used as
 
  
 
-![](004_Creating_Resources_003.png){width="4.625in" height="1.425in"}
+![](004_Creating_Resources_003.png)
 
  
 
 This is really cool, because other than we successfully saving a row to the database, if we check the HEADER of our request we got:\
  
 
-![](004_Creating_Resources_004.png){width="6.416666666666667in" height="1.4583333333333333in"}
+![](004_Creating_Resources_004.png)
 
 \^\^\^ The URI that would load the very sae entry I just saved. Cool!
 
@@ -55,7 +55,7 @@ I can do that simply by having a POST method in my controller that handles a lis
 
  
 
-![](004_Creating_Resources_005.png){width="5.733333333333333in" height="2.316666666666667in"}
+![](004_Creating_Resources_005.png)
 
  
 
@@ -79,7 +79,7 @@ I was not understanding this too well... but what I am trying to do is have a fu
 
  
 
-![](004_Creating_Resources_006.png){width="4.375in" height="1.6583333333333334in"}
+![](004_Creating_Resources_006.png)
 
  
 
@@ -97,11 +97,11 @@ My method needs to be able to get a comma separated list of ids. In the template
 
  
 
-![](004_Creating_Resources_007.png){width="9.208333333333334in" height="5.225in"}
+![](004_Creating_Resources_007.png)
 
  
 
-![](004_Creating_Resources_008.png){width="9.216666666666667in" height="8.008333333333333in"}
+![](004_Creating_Resources_008.png)
 
  
 
@@ -143,7 +143,7 @@ An **OPTIONS** request represent a request for information about the communicati
 
  
 
-![](004_Creating_Resources_009.png){width="3.2083333333333335in" height="1.0166666666666666in"}
+![](004_Creating_Resources_009.png)
 
  
 

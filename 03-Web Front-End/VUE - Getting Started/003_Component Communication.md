@@ -6,7 +6,7 @@ Monday, January 20, 2020
 
  
 
-![000 How do we Create a parent and child component relationship? Pass values from a parent to a child component? Create and fire events in child components Listen to those events in the parent component Refactor one component into parent and child components Share logic across components ](003_Component_Communication_000.png){width="7.133333333333334in" height="4.391666666666667in"}
+![000 How do we Create a parent and child component relationship? Pass values from a parent to a child component? Create and fire events in child components Listen to those events in the parent component Refactor one component into parent and child components Share logic across components ](003_Component_Communication_000.png)
 
  
 
@@ -14,7 +14,7 @@ Creating component trees (or in other words consuming components from within ano
 
  
 
-![12 13 14 15 16 17 18 paagLEVS \< / template\> tmport heoderBar from \'û/components/headel-bar import Heroeô from ; export default { \'App\', name: components: { HeaderBar, \< / script\> Heroes output OEHLJG CONSOLE TERMINAL ](003_Component_Communication_001.png){width="5.175in" height="3.091666666666667in"}
+![12 13 14 15 16 17 18 paagLEVS \< / template\> tmport heoderBar from \'û/components/headel-bar import Heroeô from ; export default { \'App\', name: components: { HeaderBar, \< / script\> Heroes output OEHLJG CONSOLE TERMINAL ](003_Component_Communication_001.png)
 
  
 
@@ -24,7 +24,7 @@ Creating component trees (or in other words consuming components from within ano
 
  
 
-![\<HeroDetaiI v- \" selectedHero \" : hero=\" selectedHero\" hero-detail.vue export default props: { hero: { type: Object, default: ( ) o, ](003_Component_Communication_002.png){width="5.125in" height="2.6666666666666665in"}
+![\<HeroDetaiI v- \" selectedHero \" : hero=\" selectedHero\" hero-detail.vue export default props: { hero: { type: Object, default: ( ) o, ](003_Component_Communication_002.png)
 
  
 
@@ -32,11 +32,11 @@ Creating component trees (or in other words consuming components from within ano
 
  
 
-![Casing Types Dynamic vs Static Prop Tips camelCased prop names use kebab-cased equivalents in templates String, Number, Boolean, Array, Object, Function, Promise Dynamic: : title= \"hero. name\" Static: title=\"Mrs Awesome\" Use v-bind (or : ) with static non-strings ](003_Component_Communication_003.png){width="6.525in" height="3.308333333333333in"}
+![Casing Types Dynamic vs Static Prop Tips camelCased prop names use kebab-cased equivalents in templates String, Number, Boolean, Array, Object, Function, Promise Dynamic: : title= \"hero. name\" Static: title=\"Mrs Awesome\" Use v-bind (or : ) with static non-strings ](003_Component_Communication_003.png)
 
  
 
-![Validation Any string, or undefined, null Default value generated from a function Simple default value This prop is required Child Component props: { message: String, hero: { type: Object, default: ( ) =\> { } limit: { type: Number, default: lee title: { type: String, required: true ](003_Component_Communication_004.png){width="6.55in" height="4.341666666666667in"}
+![Validation Any string, or undefined, null Default value generated from a function Simple default value This prop is required Child Component props: { message: String, hero: { type: Object, default: ( ) =\> { } limit: { type: Number, default: lee title: { type: String, required: true ](003_Component_Communication_004.png)
 
  
 
@@ -44,7 +44,7 @@ Now when passing in props to our subcomponents we have to be very careful. In es
 
  
 
-![\<HeroDetai1 : hero= \" selectedHero \" \" saveHero\" Method in heroes.vue which accepts the parameters hero-detail.vue methods: { saveHero() { .\$emtt(\" save \" , this. theHero) ; Pass the hero from the child component Fire the event ](003_Component_Communication_005.png){width="5.508333333333334in" height="2.5in"}
+![\<HeroDetai1 : hero= \" selectedHero \" \" saveHero\" Method in heroes.vue which accepts the parameters hero-detail.vue methods: { saveHero() { .\$emtt(\" save \" , this. theHero) ; Pass the hero from the child component Fire the event ](003_Component_Communication_005.png)
 
  
 
@@ -60,7 +60,7 @@ Mixins allow us to share different parts of components across MULTIPLE component
 
  
 
-![Mixins Distribute reusable functionality across components Example: methods, computeds, life cycle hooks, data, watches my-mixins.Js export const mymix = { created() { console. log(\'created lifecycle methods: { clear: function() { this unselect\' ) ; hook\' ); heroes.vue import { mymix } from export default mixins: \[mymix\] , \' ./my-mixins\' ; This mixin is merged into this component ](003_Component_Communication_006.png){width="5.791666666666667in" height="2.8916666666666666in"}
+![Mixins Distribute reusable functionality across components Example: methods, computeds, life cycle hooks, data, watches my-mixins.Js export const mymix = { created() { console. log(\'created lifecycle methods: { clear: function() { this unselect\' ) ; hook\' ); heroes.vue import { mymix } from export default mixins: \[mymix\] , \' ./my-mixins\' ; This mixin is merged into this component ](003_Component_Communication_006.png)
 
  
 
@@ -68,4 +68,4 @@ Mixins will be MERGED into the component... what about if already have some of t
 
  
 
-![methods, components and computeds data watch and hooks Merged, precedence given to the component\'s method Merged superset, precedence given to component\'s data Both run, with mixins running before component ](003_Component_Communication_007.png){width="5.416666666666667in" height="2.3583333333333334in"}
+![methods, components and computeds data watch and hooks Merged, precedence given to the component\'s method Merged superset, precedence given to component\'s data Both run, with mixins running before component ](003_Component_Communication_007.png)

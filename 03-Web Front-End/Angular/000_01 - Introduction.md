@@ -12,7 +12,7 @@ Angular is a JavaScript library. It\'s falls under the category of MV\* framewor
 
  
 
-![Machine generated alternative text: View MV\* Frameworks Model Controller/ Presenter/ ViewModel/ ](000_01_-_Introduction_000.png){width="6.0in" height="4.525in"}
+![Machine generated alternative text: View MV\* Frameworks Model Controller/ Presenter/ ViewModel/ ](000_01_-_Introduction_000.png)
 
  
 
@@ -44,7 +44,7 @@ Angular was built with test in mind. Angular supports isolated Unit test and Int
 
  
 
-![Machine generated alternative text: Extended HTML Vocabulary \<input id=\"username\" type=\"text\" focus / \> \<mu1tiStateButton id=\"buttonl\" / \> \<userTi1e id=\"userTi1e1\" user=\"currentUser\" / \> ](000_01_-_Introduction_001.png){width="6.0in" height="5.041666666666667in"}
+![Machine generated alternative text: Extended HTML Vocabulary \<input id=\"username\" type=\"text\" focus / \> \<mu1tiStateButton id=\"buttonl\" / \> \<userTi1e id=\"userTi1e1\" user=\"currentUser\" / \> ](000_01_-_Introduction_001.png)
 
  
 

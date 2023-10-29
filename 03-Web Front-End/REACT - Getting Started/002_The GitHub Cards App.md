@@ -14,13 +14,13 @@ The first thing that we need to think of when creating a new REACT application i
 
 So, how do we turn a REACT component written like:
 
-![= ({tttle}) - const App \<dtv ](002_The_GitHub_Cards_App_000.png){width="3.575in" height="0.7833333333333333in"}
+![= ({tttle}) - const App \<dtv ](002_The_GitHub_Cards_App_000.png)
 
  
 
 As a class react component? Easy - we just make a JS class that extends React.Component
 
-![class App extends React_Component { ](002_The_GitHub_Cards_App_001.png){width="3.158333333333333in" height="0.8833333333333333in"}
+![class App extends React_Component { ](002_The_GitHub_Cards_App_001.png)
 
  
 
@@ -28,7 +28,7 @@ Each REACT component **MUST HAVE** a render() function! And we make the render f
 
  
 
-![I • class Card extends React. Component 2 render ( ) return sdiv One CitHub Profile\... 11• class App extends 12 render() { \<div The GitHub Cards App One Gitkub Profile.„ 20 23 return ( e/ div, render( CApp title;\" The GitHub Cards App mountNOde, ](002_The_GitHub_Cards_App_002.png){width="5.0in" height="3.1166666666666667in"}
+![I • class Card extends React. Component 2 render ( ) return sdiv One CitHub Profile\... 11• class App extends 12 render() { \<div The GitHub Cards App One Gitkub Profile.„ 20 23 return ( e/ div, render( CApp title;\" The GitHub Cards App mountNOde, ](002_The_GitHub_Cards_App_002.png)
 
  
 
@@ -48,7 +48,7 @@ There is a LOT of debates about whether or not this is similar to using inline s
 
  
 
-![I class ConditionatStyte extends 2 • render() { How do you like this? return ( ediv color: Math. random() O.S ? do you like this? 1 ReactDM. render ( green Il 14 ](002_The_GitHub_Cards_App_003.png){width="5.0in" height="2.1333333333333333in"}
+![I class ConditionatStyte extends 2 • render() { How do you like this? return ( ediv color: Math. random() O.S ? do you like this? 1 ReactDM. render ( green Il 14 ](002_The_GitHub_Cards_App_003.png)
 
 \^\^\^ This code will make the text appear red / green at random without the use of multiple class names.
 
@@ -60,7 +60,7 @@ Note: We can mix and match component types within an application. Essentially we
 
  
 
-![Const z (props) ( \<Card name:\"\" companF\"\" CCard 14 • class Card extends React-Component { 1 S render() // const profite testOata\[O\]; return ( cdiv ediv \<div c / div\* 1 ](002_The_GitHub_Cards_App_004.png){width="4.058333333333334in" height="3.5416666666666665in"}
+![Const z (props) ( \<Card name:\"\" companF\"\" CCard 14 • class Card extends React-Component { 1 S render() // const profite testOata\[O\]; return ( cdiv ediv \<div c / div\* 1 ](002_The_GitHub_Cards_App_004.png)
 
  
 
@@ -76,7 +76,7 @@ What is an instance in a REACT application? - Well, every time we use a class co
 
  
 
-![](002_The_GitHub_Cards_App_005.png){width="5.0in" height="3.0833333333333335in"}
+![](002_The_GitHub_Cards_App_005.png)
 
  
 
@@ -102,13 +102,13 @@ Once inside the constructor we have access to the special STATE object that reac
 
 ***Note:** Unlike useState in function components, this state instance property has to be an object in class components. It can\'t be a string or an integer for example.*
 
-![39 • class App extends React.Cævonent 40 • 46 54 constructor(props) { super(props); thfs.state profiles: testData, render() { return ( ediv CCardLtst profilesz{this.state.proftlesb ](002_The_GitHub_Cards_App_006.png){width="4.158333333333333in" height="3.0416666666666665in"}
+![39 • class App extends React.Cævonent 40 • 46 54 constructor(props) { super(props); thfs.state profiles: testData, render() { return ( ediv CCardLtst profilesz{this.state.proftlesb ](002_The_GitHub_Cards_App_006.png)
 
  
 
 There is a simpler and shorted syntax to handle things...
 
-![40 44 class App extends React.Cc•wonent // constructor(props) ( Super (props); this.state { profiles: testData, State { profiles: testData ](002_The_GitHub_Cards_App_007.png){width="3.0416666666666665in" height="2.225in"}
+![40 44 class App extends React.Cc•wonent // constructor(props) ( Super (props); this.state { profiles: testData, State { profiles: testData ](002_The_GitHub_Cards_App_007.png)
 
  
 
@@ -136,7 +136,7 @@ Now let\'s consider the case in which we want to pull in the value if what the u
 
  
 
-![28 • class Form extends React.Component userNaneInput handleSubnit React.createRef(); (event) { 39 36 event. preventDefauIt() ; log( this. userNameInput. current. valuel render() return ( cforn . handteSubmit)s \<inpu t type:\" text \" usern . userNaæInput) required ](002_The_GitHub_Cards_App_008.png){width="3.5in" height="3.283333333333333in"}
+![28 • class Form extends React.Component userNaneInput handleSubnit React.createRef(); (event) { 39 36 event. preventDefauIt() ; log( this. userNameInput. current. valuel render() return ( cforn . handteSubmit)s \<inpu t type:\" text \" usern . userNaæInput) required ](002_The_GitHub_Cards_App_008.png)
 
  
 
@@ -148,7 +148,7 @@ We can use the State object and use the value in the input box... Once we do thi
 
  
 
-![28 Class Form extends React. Component { 30 • 34 48 state userNaæ: \' \' l; handleSubnit (event) event. preventDefault() ; console. log() render() return ( ctnpu t type: \" text \" state. userNane} this. userName: event.target.vatue l)) username\" required outton»Add cards/button» c/forn» ](002_The_GitHub_Cards_App_009.png){width="5.0in" height="3.966666666666667in"}
+![28 Class Form extends React. Component { 30 • 34 48 state userNaæ: \' \' l; handleSubnit (event) event. preventDefault() ; console. log() render() return ( ctnpu t type: \" text \" state. userNane} this. userName: event.target.vatue l)) username\" required outton»Add cards/button» c/forn» ](002_The_GitHub_Cards_App_009.png)
 
  
 
@@ -168,7 +168,7 @@ Axios get function will return back a PROMISE... so in order to work with it pro
 
  
 
-![](002_The_GitHub_Cards_App_010.png){width="4.566666666666666in" height="1.05in"}
+![](002_The_GitHub_Cards_App_010.png)
 
  
 
@@ -176,7 +176,7 @@ Now, in the example we are dealing with we have a another problem. If we get the
 
  
 
-![](002_The_GitHub_Cards_App_011.png){width="5.0in" height="5.225in"}
+![](002_The_GitHub_Cards_App_011.png)
 
  
 

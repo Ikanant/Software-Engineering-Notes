@@ -10,11 +10,11 @@ The mechanism that allow us to accomplish the title of this section is Data Bind
 
  
 
-![How do we display data? How do we allow the user to edit data? How do we make the UI change based on data? How do we handle user interactions? ](001_Displaying_Data_and_Responding_to_Events_000.png){width="6.4in" height="3.425in"}
+![How do we display data? How do we allow the user to edit data? How do we make the UI change based on data? How do we handle user interactions? ](001_Displaying_Data_and_Responding_to_Events_000.png)
 
  
 
-![-bind github\" target=\" \_blank\' \> class= \" fab fa-github fa-2x\"\>\</i\> \<a \"twitter\" target= \" \_ blank \" \> \<i class=\"fab fa-twitter fa-2x\"\>\</i\> Full v-bind syntax Shortcut syntax ](001_Displaying_Data_and_Responding_to_Events_001.png){width="8.066666666666666in" height="2.2916666666666665in"}
+![-bind github\" target=\" \_blank\' \> class= \" fab fa-github fa-2x\"\>\</i\> \<a \"twitter\" target= \" \_ blank \" \> \<i class=\"fab fa-twitter fa-2x\"\>\</i\> Full v-bind syntax Shortcut syntax ](001_Displaying_Data_and_Responding_to_Events_001.png)
 
  
 
@@ -22,7 +22,7 @@ Looking at the above code it is pretty straight forward how we get things binded
 
  
 
-![](001_Displaying_Data_and_Responding_to_Events_002.png){width="6.491666666666666in" height="3.7583333333333333in"}
+![](001_Displaying_Data_and_Responding_to_Events_002.png)
 
  
 
@@ -50,7 +50,7 @@ One thing I noted a bit fast before is the DATA MODEL of our component... (the d
 
  
 
-![\<div\>Hello \< / template\> \<script\> export default name data() { return name : Display models with {{ model Can also use v-text=\"model\" Also known as interpolation The data() function identifies the data models \" John \" ](001_Displaying_Data_and_Responding_to_Events_003.png){width="6.95in" height="3.158333333333333in"}
+![\<div\>Hello \< / template\> \<script\> export default name data() { return name : Display models with {{ model Can also use v-text=\"model\" Also known as interpolation The data() function identifies the data models \" John \" ](001_Displaying_Data_and_Responding_to_Events_003.png)
 
  
 
@@ -66,7 +66,7 @@ Now, I would like to capture whenever an event happens inside my component. Like
 
  
 
-![heroes.vue Event Bindings Execute when an event occurs \<input v-model=\"name\" type= \"text\" \> v-on:event=\"method-name\" \<button /button\> @ is the shortcut syntax for v-on escript\> export default { data() { methods : ok() { return { name: \" John\" Y ; do something ](001_Displaying_Data_and_Responding_to_Events_004.png){width="7.258333333333334in" height="4.041666666666667in"}
+![heroes.vue Event Bindings Execute when an event occurs \<input v-model=\"name\" type= \"text\" \> v-on:event=\"method-name\" \<button /button\> @ is the shortcut syntax for v-on escript\> export default { data() { methods : ok() { return { name: \" John\" Y ; do something ](001_Displaying_Data_and_Responding_to_Events_004.png)
 
  
 
@@ -82,7 +82,7 @@ One other thing to not is that on the function name that we are passing to the \
 
  
 
-![Two-way Binding The hero.firstName is shown in the input The user types and the value of hero.firstName changes heroes.vue \<div class=\"field\"\> \<label class=\" label \" \<input class=\" input\' Two-way binding for:\" firstName\" \>first name\</label\> id=\"firstName\" v-model= \"hero . firstName \" ](001_Displaying_Data_and_Responding_to_Events_005.png){width="6.633333333333334in" height="3.8666666666666667in"}
+![Two-way Binding The hero.firstName is shown in the input The user types and the value of hero.firstName changes heroes.vue \<div class=\"field\"\> \<label class=\" label \" \<input class=\" input\' Two-way binding for:\" firstName\" \>first name\</label\> id=\"firstName\" v-model= \"hero . firstName \" ](001_Displaying_Data_and_Responding_to_Events_005.png)
 
  
 
@@ -92,7 +92,7 @@ One other thing to not is that on the function name that we are passing to the \
 
  
 
-![\@event :property v-model Interpolation Handle an event Bind to a property Two-way binding ](001_Displaying_Data_and_Responding_to_Events_006.png){width="4.8in" height="4.5in"}
+![\@event :property v-model Interpolation Handle an event Bind to a property Two-way binding ](001_Displaying_Data_and_Responding_to_Events_006.png)
 
  
 
@@ -112,7 +112,7 @@ Three main things to consider here:
 
 >  
 
-![\< Ii in heroes\' { { hero.name } } \</li\> Render a List : key- - \" hero . Iterate over a list of items in a model with v-for=\"item in item-list\" Repeats the HTML content for each item in the list Bind to a unique :key, for faster rendering ](001_Displaying_Data_and_Responding_to_Events_007.png){width="6.966666666666667in" height="3.966666666666667in"}
+![\< Ii in heroes\' { { hero.name } } \</li\> Render a List : key- - \" hero . Iterate over a list of items in a model with v-for=\"item in item-list\" Repeats the HTML content for each item in the list Bind to a unique :key, for faster rendering ](001_Displaying_Data_and_Responding_to_Events_007.png)
 
  
 

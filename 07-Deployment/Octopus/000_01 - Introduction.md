@@ -60,7 +60,7 @@ We will learn how to use Octopus Deploy to setup a
 
  
 
-![Web Application - Copy files (FTP) - Start IIS web site and application pool - Configure correct permissions Windows Service - Log on to the remote machine - Stop the running service - Uninstall the service - Install the new service ](000_01_-_Introduction_000.png){width="6.0in" height="3.6166666666666667in"}
+![Web Application - Copy files (FTP) - Start IIS web site and application pool - Configure correct permissions Windows Service - Log on to the remote machine - Stop the running service - Uninstall the service - Install the new service ](000_01_-_Introduction_000.png)
 
  
 
@@ -70,7 +70,7 @@ We will learn how to use Octopus Deploy to setup a
 
  
 
-![Environments Dashboard All Projects 1.0.0 Todo.Service Mercr 2016 1.0.2 Todo.Web Mare 2016 Dashboard Live 1.0.0 Merch 29th 2016 1.0.2 2016 Projects v Library Tasks Kenneth Configuration Configure dashboard ](000_01_-_Introduction_001.png){width="6.0in" height="1.7916666666666667in"}
+![Environments Dashboard All Projects 1.0.0 Todo.Service Mercr 2016 1.0.2 Todo.Web Mare 2016 Dashboard Live 1.0.0 Merch 29th 2016 1.0.2 2016 Projects v Library Tasks Kenneth Configuration Configure dashboard ](000_01_-_Introduction_001.png)
 
  
 
@@ -84,6 +84,6 @@ The first page we should familiarize ourselves with when using Octopus is the **
 
  
 
-![Summary Manual deployments Octopus Deploy - Automate - Visualize Next up: - Core Concepts - Architecture ](000_01_-_Introduction_002.png){width="6.0in" height="3.408333333333333in"}
+![Summary Manual deployments Octopus Deploy - Automate - Visualize Next up: - Core Concepts - Architecture ](000_01_-_Introduction_002.png)
 
  

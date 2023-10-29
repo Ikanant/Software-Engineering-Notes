@@ -20,7 +20,7 @@ Allows us to create our own custom html elements with embedded functionality.
 
  
 
-![Machine generated alternative text: \<element extends=\"button\" name=\"x-fancybutton\" constructor=\" FancyButton \" \> \<script\> FancyButton . prototype. razzle FancyButton. prototype. dazzle \</script\> \</element\> = function = function ](004_05_-_Creating_Custom_Angular_Directives_000.png){width="5.0in" height="2.05in"}
+![Machine generated alternative text: \<element extends=\"button\" name=\"x-fancybutton\" constructor=\" FancyButton \" \> \<script\> FancyButton . prototype. razzle FancyButton. prototype. dazzle \</script\> \</element\> = function = function ](004_05_-_Creating_Custom_Angular_Directives_000.png)
 
  
 
@@ -32,7 +32,7 @@ In the past notes of this course we have already seen many instances of Directiv
 
  
 
-![Machine generated alternative text: Uses for Directives Custom Elements Custom Events Observe and React to Changes ](004_05_-_Creating_Custom_Angular_Directives_001.png){width="5.0in" height="3.15in"}
+![Machine generated alternative text: Uses for Directives Custom Elements Custom Events Observe and React to Changes ](004_05_-_Creating_Custom_Angular_Directives_001.png)
 
 **How do we create a custom directive?**
 
@@ -78,7 +78,7 @@ The LINK function:
 >
 >  
 >
-> ![Machine generated alternative text: 4 5 6 8 9 10 11 \'use strict\' eventsApp. directive( \'myDirective\' , function(){ return { link: function (scope, element, attrs, controller) { \'\<input type=\"text\" name=\"apple\" ng---model(test)/\> ; var markup angular. element (element) . html (markup) ; ](004_05_-_Creating_Custom_Angular_Directives_002.png){width="5.0in" height="1.5in"}
+> ![Machine generated alternative text: 4 5 6 8 9 10 11 \'use strict\' eventsApp. directive( \'myDirective\' , function(){ return { link: function (scope, element, attrs, controller) { \'\<input type=\"text\" name=\"apple\" ng---model(test)/\> ; var markup angular. element (element) . html (markup) ; ](004_05_-_Creating_Custom_Angular_Directives_002.png)
 
  
 
@@ -86,7 +86,7 @@ The LINK function:
 >
 >  
 >
-> ![Machine generated alternative text: Home Create Event fsdff {{test}} ](004_05_-_Creating_Custom_Angular_Directives_003.png){width="1.9833333333333334in" height="1.3833333333333333in"}
+> ![Machine generated alternative text: Home Create Event fsdff {{test}} ](004_05_-_Creating_Custom_Angular_Directives_003.png)
 >
 >  
 >
@@ -94,7 +94,7 @@ The LINK function:
 >
 >  
 >
-> ![Machine generated alternative text: 2 3 4 5 6 8 9 10 11 eventsApp. directive( \'myDirective\' , function(\$compile){ return { link: function (scope, element, attrs, controller) { \'\<input type=\"text\" name=\"apple\" ng---model=\"test\"/\> ; var markup angular. element (element) . (scope) ) ; ](004_05_-_Creating_Custom_Angular_Directives_004.png){width="5.0in" height="1.2916666666666667in"}
+> ![Machine generated alternative text: 2 3 4 5 6 8 9 10 11 eventsApp. directive( \'myDirective\' , function(\$compile){ return { link: function (scope, element, attrs, controller) { \'\<input type=\"text\" name=\"apple\" ng---model=\"test\"/\> ; var markup angular. element (element) . (scope) ) ; ](004_05_-_Creating_Custom_Angular_Directives_004.png)
 >
 >  
 >
@@ -132,7 +132,7 @@ There is one issue with creating directives the how we have done it so far... im
 
  
 
-![Machine generated alternative text: Home Create Event test test test ](004_05_-_Creating_Custom_Angular_Directives_005.png){width="2.783333333333333in" height="1.8in"}
+![Machine generated alternative text: Home Create Event test test test ](004_05_-_Creating_Custom_Angular_Directives_005.png)
 
  
 
@@ -140,7 +140,7 @@ So, how do we fix this? Simple. When creating our custom directive we just need 
 
  
 
-![](004_05_-_Creating_Custom_Angular_Directives_006.png){width="6.0in" height="3.191666666666667in"}
+![](004_05_-_Creating_Custom_Angular_Directives_006.png)
 
  
 
@@ -152,11 +152,11 @@ Now, if we added the above code to our existing custom directive we would run in
 
  
 
-![](004_05_-_Creating_Custom_Angular_Directives_007.png){width="6.0in" height="0.7in"}
+![](004_05_-_Creating_Custom_Angular_Directives_007.png)
 
  
 
-![](004_05_-_Creating_Custom_Angular_Directives_008.png){width="1.9in" height="0.7583333333333333in"}
+![](004_05_-_Creating_Custom_Angular_Directives_008.png)
 
  
 
@@ -166,7 +166,7 @@ Keep in Mind that we are setting the event: \_\_\_\_\_ equal to the attribute: *
 >
 >  
 
-![](004_05_-_Creating_Custom_Angular_Directives_009.png){width="1.9666666666666666in" height="1.2416666666666667in"}
+![](004_05_-_Creating_Custom_Angular_Directives_009.png)
 
  
 
@@ -184,7 +184,7 @@ In the above picture we are passing in three different elements to our child sco
 
  
 
-![\'use strict\' eventsApp . directive( \' gravatar , 3 return { restrict : template: \'\<img / \> \' , replace: true, 1 1 14 1 1 function (gravatarUr1Bui1der) { link: function(scope, element, attrs, controller){ attrs .\$observe( \'email\' , function(newvalue, oldVa1ue) { if (newVa1ue !== oldVa1ue) { attrs.\$set( src gravatarUr1Bui Ider. buildGravatarUr1 (newVa1ue)) ; ](004_05_-_Creating_Custom_Angular_Directives_010.png){width="6.0in" height="3.4166666666666665in"}
+![\'use strict\' eventsApp . directive( \' gravatar , 3 return { restrict : template: \'\<img / \> \' , replace: true, 1 1 14 1 1 function (gravatarUr1Bui1der) { link: function(scope, element, attrs, controller){ attrs .\$observe( \'email\' , function(newvalue, oldVa1ue) { if (newVa1ue !== oldVa1ue) { attrs.\$set( src gravatarUr1Bui Ider. buildGravatarUr1 (newVa1ue)) ; ](004_05_-_Creating_Custom_Angular_Directives_010.png)
 
  
 
@@ -198,7 +198,7 @@ So far we have seen (with the up vote methods above) how to use the parent contr
 
  
 
-![events App . directive ( \'greeting\' , return restrict: \'E\' replace: true, function ( ) template: \"\<button class=\'btn\' sayHe110() \'\>Say controller: function (EZE) { Sscope.sayHe110 = function ( ) { alert ( ) ; 1 n: ](004_05_-_Creating_Custom_Angular_Directives_011.png){width="6.0in" height="2.4583333333333335in"}
+![events App . directive ( \'greeting\' , return restrict: \'E\' replace: true, function ( ) template: \"\<button class=\'btn\' sayHe110() \'\>Say controller: function (EZE) { Sscope.sayHe110 = function ( ) { alert ( ) ; 1 n: ](004_05_-_Creating_Custom_Angular_Directives_011.png)
 
  
 
@@ -206,7 +206,7 @@ Or even Simpler:
 
  
 
-![events App . directive ( \'greeting\' , return restrict: \'E\' replace: true, function ( ) template: \"\<button class=\'btn\' ng-click=\' sayHe110() \'\>Say controller: \'GreetingContrc11e eventsApp. controller ( GreetingContr011er , function GreetingContr011er(é.E.QE) sayHe11c = function ( ) alert ( ](004_05_-_Creating_Custom_Angular_Directives_012.png){width="6.0in" height="2.783333333333333in"}
+![events App . directive ( \'greeting\' , return restrict: \'E\' replace: true, function ( ) template: \"\<button class=\'btn\' ng-click=\' sayHe110() \'\>Say controller: \'GreetingContrc11e eventsApp. controller ( GreetingContr011er , function GreetingContr011er(é.E.QE) sayHe11c = function ( ) alert ( ](004_05_-_Creating_Custom_Angular_Directives_012.png)
 
  
 
@@ -226,7 +226,7 @@ Now, lets say we want to have some changes to the method we are trying to use in
 
  
 
-![events App . directive ( , function ( ) return restrict: \'E\' replace: true, template: \"\<button class=\'btn\' \'\>Say controller: function { Var greeting 3 = \[\'hello\'\] : = function() ( alert (greetings. join ( ) ; this. addGreeting = function gree tings . push ; 1 1) .directive ( \'finnish\' , function ( ) return restrict: requi re : \'greeting\' , Link: function ( scope, , addGreeting ( \' hei \' ; .directive( , function() return restrict: require : \'greeting\' , link: function gpntroller. addGreeting( ) ; ](004_05_-_Creating_Custom_Angular_Directives_013.png){width="6.0in" height="5.95in"}
+![events App . directive ( , function ( ) return restrict: \'E\' replace: true, template: \"\<button class=\'btn\' \'\>Say controller: function { Var greeting 3 = \[\'hello\'\] : = function() ( alert (greetings. join ( ) ; this. addGreeting = function gree tings . push ; 1 1) .directive ( \'finnish\' , function ( ) return restrict: requi re : \'greeting\' , Link: function ( scope, , addGreeting ( \' hei \' ; .directive( , function() return restrict: require : \'greeting\' , link: function gpntroller. addGreeting( ) ; ](004_05_-_Creating_Custom_Angular_Directives_013.png)
 
  
 
@@ -252,7 +252,7 @@ And this way our directive will go up the scope are currently dealing with until
 
  
 
-![.directive ( \'hindi \' , function ( ) return restrict: requi re : •greeting\' , link: function ](004_05_-_Creating_Custom_Angular_Directives_014.png){width="5.933333333333334in" height="2.066666666666667in"}
+![.directive ( \'hindi \' , function ( ) return restrict: requi re : •greeting\' , link: function ](004_05_-_Creating_Custom_Angular_Directives_014.png)
 
  
 
@@ -268,7 +268,7 @@ The word transclusion typically refers to taking a portion of a document and emb
 
  
 
-![event---App. directive ( , function ( ) return restrict: \'E\' replace: true, template: \'\<divxh4 {title) , sccpe: title: \'@\' n; ](004_05_-_Creating_Custom_Angular_Directives_015.png){width="6.0in" height="2.2583333333333333in"}
+![event---App. directive ( , function ( ) return restrict: \'E\' replace: true, template: \'\<divxh4 {title) , sccpe: title: \'@\' n; ](004_05_-_Creating_Custom_Angular_Directives_015.png)
 
  
 
@@ -282,7 +282,7 @@ Answer: Transclusion
 
  
 
-> ![return { restrict : replace: true, template: class=\"we11-tit1e\"\>{{tit1e}}\</h4\>\<div , transclude: true, scope: { title: ](004_05_-_Creating_Custom_Angular_Directives_016.png){width="6.0in" height="1.6333333333333333in"}
+> ![return { restrict : replace: true, template: class=\"we11-tit1e\"\>{{tit1e}}\</h4\>\<div , transclude: true, scope: { title: ](004_05_-_Creating_Custom_Angular_Directives_016.png)
 
  
 
@@ -298,7 +298,7 @@ So far we have used the link function all over our custom directives. The link f
 
  
 
-![eventsApp.directive ( repeatX\' , function (Eæüg) return for (var i=o; \< i\*+) \[ element. after clone ( ) . attr ( repeat---x\' , 1 ](004_05_-_Creating_Custom_Angular_Directives_017.png){width="5.0in" height="1.35in"}
+![eventsApp.directive ( repeatX\' , function (Eæüg) return for (var i=o; \< i\*+) \[ element. after clone ( ) . attr ( repeat---x\' , 1 ](004_05_-_Creating_Custom_Angular_Directives_017.png)
 
  
 
@@ -310,7 +310,7 @@ In the image above we see how we tried to compile the element every time we do a
 
  
 
-![eventsApp.directive( \'repeatx•, function(){ return { compile: function(element, attributes) { for (var i=e; i\<Number(attributes. repeatX)-1; i++){ element. . attr( \'repeat-x\', 8) ) ; ](004_05_-_Creating_Custom_Angular_Directives_018.png){width="5.0in" height="2.183333333333333in"}
+![eventsApp.directive( \'repeatx•, function(){ return { compile: function(element, attributes) { for (var i=e; i\<Number(attributes. repeatX)-1; i++){ element. . attr( \'repeat-x\', 8) ) ; ](004_05_-_Creating_Custom_Angular_Directives_018.png)
 
  
 
@@ -324,7 +324,7 @@ The compile function only runs ONCE and affect all instance of the directive in 
 
 Compile function can ALSO return values. From the compile function we can return the LINK function:
 
-![eventsApp.directive( \'repeatx•, function(){ return { compile: function(element, attributes) { for (var i=e; i\<Number(attributes. repeatX)-1; i++){ element. after(element.clone() . attr( \'repeat-x\', 8) ) ; return function (scope, element, attributes, controller){ attributes.\$observe( •text\' , function(newVa1ue) { if (newVa1u \'John element. css( color\' , \'red\'); ](004_05_-_Creating_Custom_Angular_Directives_019.png){width="5.0in" height="3.683333333333333in"}
+![eventsApp.directive( \'repeatx•, function(){ return { compile: function(element, attributes) { for (var i=e; i\<Number(attributes. repeatX)-1; i++){ element. after(element.clone() . attr( \'repeat-x\', 8) ) ; return function (scope, element, attributes, controller){ attributes.\$observe( •text\' , function(newVa1ue) { if (newVa1u \'John element. css( color\' , \'red\'); ](004_05_-_Creating_Custom_Angular_Directives_019.png)
 
  
 
@@ -348,7 +348,7 @@ We can use Jquery plugin alongside AngularJS directives and in fact directives c
 
  
 
-![Custom Elements Observe and React to Changes Handle Events Make jQuery Plugins Explicit ](004_05_-_Creating_Custom_Angular_Directives_020.png){width="5.0in" height="1.8333333333333333in"}
+![Custom Elements Observe and React to Changes Handle Events Make jQuery Plugins Explicit ](004_05_-_Creating_Custom_Angular_Directives_020.png)
 
  
 

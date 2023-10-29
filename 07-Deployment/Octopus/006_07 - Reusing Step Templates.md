@@ -18,7 +18,7 @@ We can also look into creating our own Step templates and also include various T
 
  
 
-![](006_07_-_Reusing_Step_Templates_000.png){width="6.0in" height="2.2416666666666667in"}
+![](006_07_-_Reusing_Step_Templates_000.png)
 
  
 
@@ -94,7 +94,7 @@ To do that:
 
     b.  Input to specify the Address To warm up our application:
 
-        -   ![](006_07_-_Reusing_Step_Templates_001.png){width="6.0in" height="3.5416666666666665in"}
+        -   ![](006_07_-_Reusing_Step_Templates_001.png)
 
     c.  Instead of using a FIX value, we can use the variable we set in in the IIS bindings from before:
 
@@ -134,7 +134,7 @@ We can see a huge amount of Scripts created by the community.
 
  
 
-![](006_07_-_Reusing_Step_Templates_002.png){width="6.0in" height="2.5166666666666666in"}
+![](006_07_-_Reusing_Step_Templates_002.png)
 
  
 

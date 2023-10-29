@@ -11,7 +11,7 @@ XML configuration was one of the first solutions ever implemented to configure S
 
  
 
-![XML First Approach Simpler Separation of Concerns ](002_Spring_XML_Configuration_000.png){width="2.816666666666667in" height="1.0583333333333333in"}
+![XML First Approach Simpler Separation of Concerns ](002_Spring_XML_Configuration_000.png)
 
  
 
@@ -21,7 +21,7 @@ XML configuration for Spring begins with a file that we will name applicationCon
 
  
 
-![Machine generated alternative text: XML applicationContext.xml Name doesn\'t matter Spring Context sort of a HashMap Can simply be a registry XML configuration begins with this file Namespaces aid in configuration/validation ](002_Spring_XML_Configuration_001.png){width="4.191666666666666in" height="1.925in"}
+![Machine generated alternative text: XML applicationContext.xml Name doesn\'t matter Spring Context sort of a HashMap Can simply be a registry XML configuration begins with this file Namespaces aid in configuration/validation ](002_Spring_XML_Configuration_001.png)
 
  
 
@@ -29,7 +29,7 @@ There are some namespaces that Spring developers have put together to help with 
 
  
 
-![](002_Spring_XML_Configuration_002.png){width="6.716666666666667in" height="2.091666666666667in"}
+![](002_Spring_XML_Configuration_002.png)
 
  
 
@@ -43,7 +43,7 @@ SchemaLocation: Added to our XML file and it\'s what gives us context sensitive 
 
  
 
-![XML Declaration \<bean name=\" customerService\" class=\"com.pluralsight.service.CustomerServiceImp1\" autowire=\" byName \" \> \<property name-\"0\" ref=\" customerRepository \" \</bean\> ](002_Spring_XML_Configuration_003.png){width="5.758333333333334in" height="3.033333333333333in"}
+![XML Declaration \<bean name=\" customerService\" class=\"com.pluralsight.service.CustomerServiceImp1\" autowire=\" byName \" \> \<property name-\"0\" ref=\" customerRepository \" \</bean\> ](002_Spring_XML_Configuration_003.png)
 
  
 
@@ -62,7 +62,7 @@ That\'s somewhere we can look into removing that configuration and placing it in
 
 By using beans, we can now change configurations without recompiling our code. We can switch from dev to test without recompiling. This technique is called **Separation of Concerns.**
 
-![\<bean name=\"customerRepository\" class= \" com . pluralsight . repository. HibernateCustomerRepositoryImp1 \" Beans Essentially Classes Replaces keyword new Define Class, use Interface ](002_Spring_XML_Configuration_004.png){width="4.95in" height="2.1416666666666666in"}
+![\<bean name=\"customerRepository\" class= \" com . pluralsight . repository. HibernateCustomerRepositoryImp1 \" Beans Essentially Classes Replaces keyword new Define Class, use Interface ](002_Spring_XML_Configuration_004.png)
 
  
 
@@ -97,7 +97,7 @@ Constructor injections are INDEX based on NOT NAME based.
 
  
 
-![14 \< bean n ame= \" customerServi ce \" \<constructor-arg \</beans ](002_Spring_XML_Configuration_005.png){width="5.691666666666666in" height="1.125in"}
+![14 \< bean n ame= \" customerServi ce \" \<constructor-arg \</beans ](002_Spring_XML_Configuration_005.png)
 
 >  
 
@@ -137,12 +137,12 @@ Early on (probably when I was originally working with Spring) Spring got a bad r
 
  
 
-![\< bean name= \"customerService \" \<constructor-gcg ](002_Spring_XML_Configuration_006.png){width="5.8in" height="0.9666666666666667in"}
+![\< bean name= \"customerService \" \<constructor-gcg ](002_Spring_XML_Configuration_006.png)
 
  
 
  
 
-![Summary applicationContext.xml Bean Definition Setter Injection Constructor Injection Auto wiring ](002_Spring_XML_Configuration_007.png){width="7.45in" height="3.783333333333333in"}
+![Summary applicationContext.xml Bean Definition Setter Injection Constructor Injection Auto wiring ](002_Spring_XML_Configuration_007.png)
 
  

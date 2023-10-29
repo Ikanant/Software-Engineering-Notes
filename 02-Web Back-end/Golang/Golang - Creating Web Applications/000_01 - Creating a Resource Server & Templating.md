@@ -482,7 +482,7 @@ Friday, April 29, 2016
 >
 > \`
 >
-> ![](000_01_-_Creating_a_Resource_Server_&_Templating_000.png){width="3.875in" height="2.65in"}
+> ![](000_01_-_Creating_a_Resource_Server_&_Templating_000.png)
 >
 >  
 >

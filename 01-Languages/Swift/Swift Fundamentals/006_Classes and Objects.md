@@ -18,7 +18,7 @@ Same as Structs if we provide initial values for the properties of the class, Sw
 
  
 
-![1 class Person { var name; String Playground execution failed: expression failed to parse: error: Classes class Person { error: class •person has no initializers ](006_Classes_and_Objects_000.png){width="5.0in" height="1.9583333333333333in"}
+![1 class Person { var name; String Playground execution failed: expression failed to parse: error: Classes class Person { error: class •person has no initializers ](006_Classes_and_Objects_000.png)
 
  
 
@@ -30,7 +30,7 @@ Methods are easy and will work the same as any other OOP language... only note i
 
  
 
-![\\ (self. lastName)\") 10 11 12 13 class Person { var firstName: String = \" var lastName: String = func printName() print (\"Hi, my name is: var user = person() user. firstName = \"Jonathan\" user. lastName = \"Snow\" user ](006_Classes_and_Objects_001.png){width="5.0in" height="2.1666666666666665in"}
+![\\ (self. lastName)\") 10 11 12 13 class Person { var firstName: String = \" var lastName: String = func printName() print (\"Hi, my name is: var user = person() user. firstName = \"Jonathan\" user. lastName = \"Snow\" user ](006_Classes_and_Objects_001.png)
 
  
 
@@ -38,7 +38,7 @@ Similar to constructors in any other language, if I write **init** in a class, I
 
  
 
-![class Person { var firs tName: String var lastName: String init (firstName: String, lastName: String) { self. firstName = firstName self. lastName lastName func printName() { print (\"Hi, my name is: \\(firstName) \\(se1f.1astName)\") var user = person(firstName: \"Jon\", lastName: \"Snow\") 14 user. printName( ) 15 ](006_Classes_and_Objects_002.png){width="5.0in" height="2.45in"}
+![class Person { var firs tName: String var lastName: String init (firstName: String, lastName: String) { self. firstName = firstName self. lastName lastName func printName() { print (\"Hi, my name is: \\(firstName) \\(se1f.1astName)\") var user = person(firstName: \"Jon\", lastName: \"Snow\") 14 user. printName( ) 15 ](006_Classes_and_Objects_002.png)
 
  
 
@@ -68,11 +68,11 @@ Swift uses something called ARC (Automatic Reference Counting). This will manage
 
     a.  Classes are REFERNCE TYPES
 
-    b.  ![Structs (and Enums) Value types Assign it to a new variable or constant? The value is copied. Pass it into a function? The value is copied. Classes Reference types Assign it to a new variable or constant? Not copied - a reference is passed. Pass it into a function? Not copied - a reference is passed. ](006_Classes_and_Objects_003.png){width="5.0in" height="1.575in"}
+    b.  ![Structs (and Enums) Value types Assign it to a new variable or constant? The value is copied. Pass it into a function? The value is copied. Classes Reference types Assign it to a new variable or constant? Not copied - a reference is passed. Pass it into a function? Not copied - a reference is passed. ](006_Classes_and_Objects_003.png)
 
     c.  UNDESTAND THAT WELL \^\^\^
 
-    d.  ![class PersonC1ass { var firstName: String var lastName: String init (firstName: String, lastName: String) { self. firstName = firstName self.1astName lastName 15 23 24 26 28 30 32 func printName() { print (\"Hi, my name is: \\(firstName) lastName)\" struct PersonStruct { var firstName: String var lastName: String func printName() { print (\"Hi, my name is: \\(firstName) lastName)\" var pl PersonC1ass(firstName: \"Jon\" , lastName: var sl = PersonStruct(firstName: \"Jon\", lastName var p2 = pl p2. firstName \"Peter\" print (pl. firstName ) var s2 = sl s2. firstName = \"Pedro\" print (sl. firstName) ](006_Classes_and_Objects_004.png){width="5.0in" height="5.1in"}
+    d.  ![class PersonC1ass { var firstName: String var lastName: String init (firstName: String, lastName: String) { self. firstName = firstName self.1astName lastName 15 23 24 26 28 30 32 func printName() { print (\"Hi, my name is: \\(firstName) lastName)\" struct PersonStruct { var firstName: String var lastName: String func printName() { print (\"Hi, my name is: \\(firstName) lastName)\" var pl PersonC1ass(firstName: \"Jon\" , lastName: var sl = PersonStruct(firstName: \"Jon\", lastName var p2 = pl p2. firstName \"Peter\" print (pl. firstName ) var s2 = sl s2. firstName = \"Pedro\" print (sl. firstName) ](006_Classes_and_Objects_004.png)
 
 >  
 
@@ -81,14 +81,14 @@ Swift uses something called ARC (Automatic Reference Counting). This will manage
 **INHERITANCE\
 ** 
 
-![2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 // Inheritance class Appliance { var make: String var model: String init() { self.make = \"default\" self .model = \"default\" func printDetai1s() { superclass print( \"Make: \\ (self. make) \\nModeI: \\ (self .model) // define a new class class Toaster: Appliance { subclass ](006_Classes_and_Objects_005.png){width="5.0in" height="2.75in"}
+![2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 // Inheritance class Appliance { var make: String var model: String init() { self.make = \"default\" self .model = \"default\" func printDetai1s() { superclass print( \"Make: \\ (self. make) \\nModeI: \\ (self .model) // define a new class class Toaster: Appliance { subclass ](006_Classes_and_Objects_005.png)
 
  
 
 One quick thing to note is the problem of properties if we decide to add more in the sub class... see image bellow:\
  
 
-![14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 // define a new class class Toaster: Appliance { // new property var slices: Int = d // new method func toast() { now\... var my Toaster = Toaster( ) myToaster.make = \"AcmeCorp\" myToaster.mode1 = \"Carbonizer\" my Toaster. printDetai1s ( ) my Toaster. toast( ) ](006_Classes_and_Objects_006.png){width="5.0in" height="3.5833333333333335in"}
+![14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 // define a new class class Toaster: Appliance { // new property var slices: Int = d // new method func toast() { now\... var my Toaster = Toaster( ) myToaster.make = \"AcmeCorp\" myToaster.mode1 = \"Carbonizer\" my Toaster. printDetai1s ( ) my Toaster. toast( ) ](006_Classes_and_Objects_006.png)
 
  
 
@@ -100,7 +100,7 @@ Note1: In swift I DO NOT need to add the super.init call from my child class ini
 
  
 
-![2 3 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 // Inheritance class Appliance { var make: String var model: String init() { self.make = \"default\" self .model = \"default\" func printDetai1s() { print( \"Make: \\(self.make) \\nMode1: // definJ a new class class Toaster: Appliance { // new property var slices: Int override init() { self. slices = 2 super. init( \\ (self .model)\") ](006_Classes_and_Objects_007.png){width="5.0in" height="3.225in"}
+![2 3 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 // Inheritance class Appliance { var make: String var model: String init() { self.make = \"default\" self .model = \"default\" func printDetai1s() { print( \"Make: \\(self.make) \\nMode1: // definJ a new class class Toaster: Appliance { // new property var slices: Int override init() { self. slices = 2 super. init( \\ (self .model)\") ](006_Classes_and_Objects_007.png)
 
  
 
@@ -110,7 +110,7 @@ Note2: If I want to prevent a method from the super class to ever be overriden, 
 
  
 
-![2 3 5 6 7 8 // Inheritance class Appliance { var make: String var model: String init() { \"default\" self . make = self .model = \"default\" final Ifunc printDetai1s() { XCSe1EhåkéVAnMode1 : 11 .model)\") ](006_Classes_and_Objects_008.png){width="5.0in" height="1.8833333333333333in"}
+![2 3 5 6 7 8 // Inheritance class Appliance { var make: String var model: String init() { \"default\" self . make = self .model = \"default\" final Ifunc printDetai1s() { XCSe1EhåkéVAnMode1 : 11 .model)\") ](006_Classes_and_Objects_008.png)
 
 Note3: If I want to prevent my class from being inherited at all... I can just use **final** before the class itself
 
@@ -124,7 +124,7 @@ Simple, and not sure if we have that in any other language that I know? At least
 
  
 
-![extension String { func removeSpaces() String { so can use filter function // I can treat strings are arrays of characters. // Filter Will take a closure, and I can do the same as I did on the Closures.swift file above let newStringArray = self. filter return String (newStringArray) var banana: String = \"Hello Banana\" banana = banana. removespaces() Drint(banana) ](006_Classes_and_Objects_009.png){width="5.0in" height="1.1166666666666667in"}
+![extension String { func removeSpaces() String { so can use filter function // I can treat strings are arrays of characters. // Filter Will take a closure, and I can do the same as I did on the Closures.swift file above let newStringArray = self. filter return String (newStringArray) var banana: String = \"Hello Banana\" banana = banana. removespaces() Drint(banana) ](006_Classes_and_Objects_009.png)
 
  
 
@@ -138,7 +138,7 @@ Don\'t have to watch video to know, this is just a variable that returns a mutat
 
 So computed properties are essentially properties with explicit getters and setters
 
-![// computed property var score: Int { get { set { ](006_Classes_and_Objects_010.png){width="2.7333333333333334in" height="2.125in"}
+![// computed property var score: Int { get { set { ](006_Classes_and_Objects_010.png)
 
  
 
@@ -146,7 +146,7 @@ If I do NOT specify the set function, then I will NOT be able to set the value o
 
  
 
-![15 16 17 18 19 20 21 22 23 set { passed in \\ (newVaIue) but I\'m going to ignore it. init (name: String) { self.name = name self. livesRemaining = 3 self. enemiesDestroyed self. penaltv The final score is: 365128 You passed in g5øøø but I •m going to ignore it. ](006_Classes_and_Objects_011.png){width="5.0in" height="1.6666666666666667in"}
+![15 16 17 18 19 20 21 22 23 set { passed in \\ (newVaIue) but I\'m going to ignore it. init (name: String) { self.name = name self. livesRemaining = 3 self. enemiesDestroyed self. penaltv The final score is: 365128 You passed in g5øøø but I •m going to ignore it. ](006_Classes_and_Objects_011.png)
 
  
 
@@ -158,7 +158,7 @@ IF we only have a GET computed property, then I won\'t even need to be explicit 
 
  
 
-![// computed property var score: Int { return (enemiesDestroyed \* 100) + bonus + (livesRemaining \* 5000) --- penalty ](006_Classes_and_Objects_012.png){width="5.0in" height="0.675in"}
+![// computed property var score: Int { return (enemiesDestroyed \* 100) + bonus + (livesRemaining \* 5000) --- penalty ](006_Classes_and_Objects_012.png)
 
  
 

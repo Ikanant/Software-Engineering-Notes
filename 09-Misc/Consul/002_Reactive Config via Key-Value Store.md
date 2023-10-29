@@ -20,7 +20,7 @@ When creating a folder simply add a / at the end of the key name and the value b
 
  
 
-![Explosion of Services Customers Portal ailuun Order Inventory Stripe Loggly ](002_Reactive_Config_via_Key-Value_Store_000.png){width="7.416666666666667in" height="4.75in"}
+![Explosion of Services Customers Portal ailuun Order Inventory Stripe Loggly ](002_Reactive_Config_via_Key-Value_Store_000.png)
 
  
 

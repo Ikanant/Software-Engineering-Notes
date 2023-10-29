@@ -14,7 +14,7 @@ Methods of a class and functions in Swift are pretty much the same thing. The sy
 
  
 
-![func helloWor1d (name: String) { print(\"He110 Indeed helloWor1d(name: \"Jon\") ](003_Constructing_Code-_Who_Does_What-_000.png){width="4.716666666666667in" height="1.8in"}
+![func helloWor1d (name: String) { print(\"He110 Indeed helloWor1d(name: \"Jon\") ](003_Constructing_Code-_Who_Does_What-_000.png)
 
  
 
@@ -22,13 +22,13 @@ Also, notice how each time I call a function, I ALWAYS need to include the argum
 
  
 
-![Calling Functions // C-style function call showMessage(123) ; // Swift style function call showMessage(number: 123) argument label // Swift style function showMessage(number: 123 , call with three arguments largeFont: true) name: \"Grace\" , ](003_Constructing_Code-_Who_Does_What-_001.png){width="5.0in" height="2.5083333333333333in"}
+![Calling Functions // C-style function call showMessage(123) ; // Swift style function call showMessage(number: 123) argument label // Swift style function showMessage(number: 123 , call with three arguments largeFont: true) name: \"Grace\" , ](003_Constructing_Code-_Who_Does_What-_001.png)
 
  
 
  
 
-![Function parameters are constants, and immutable by default. ](003_Constructing_Code-_Who_Does_What-_002.png){width="5.0in" height="1.7083333333333333in"}
+![Function parameters are constants, and immutable by default. ](003_Constructing_Code-_Who_Does_What-_002.png)
 
  
 
@@ -47,7 +47,7 @@ Simple. We will just use the return arrow... the Format is as follows:\
 
  
 
-![Functions Without Return Values func simpleFunction(number: Int) -s Void { // code ](003_Constructing_Code-_Who_Does_What-_003.png){width="5.0in" height="2.183333333333333in"}
+![Functions Without Return Values func simpleFunction(number: Int) -s Void { // code ](003_Constructing_Code-_Who_Does_What-_003.png)
 
  
 
@@ -59,13 +59,13 @@ One interesting thing to note is that Void (notice how we capitalize it since it
 
  
 
-![Swift Function Type (parameter \_ type) return\_ type (String) example functions playMP3 ( filename : playOGG( : showlmage(at url: loadVector(\_ url: Bool q) ](003_Constructing_Code-_Who_Does_What-_004.png){width="5.0in" height="3.1166666666666667in"}
+![Swift Function Type (parameter \_ type) return\_ type (String) example functions playMP3 ( filename : playOGG( : showlmage(at url: loadVector(\_ url: Bool q) ](003_Constructing_Code-_Who_Does_What-_004.png)
 
  
 
 Function types essentially are just defined as the string above... Input parameters in Parenthesis, followed by return arrow followed by return type.
 
-![Functions Without Return Values func verySimp1eFunction() { // code goes here Has the Function Type: o Void \"a function that takes no parameters and returns nothing\" ](003_Constructing_Code-_Who_Does_What-_005.png){width="5.0in" height="3.341666666666667in"}
+![Functions Without Return Values func verySimp1eFunction() { // code goes here Has the Function Type: o Void \"a function that takes no parameters and returns nothing\" ](003_Constructing_Code-_Who_Does_What-_005.png)
 
  
 
@@ -87,15 +87,15 @@ Also, for the function signature, I can make sure to include the label for the i
 
  
 
-![func showMessage(number: Defining and Calling Functions nickname: \"Grace\") Int, name: String) { name // later. showMessage(nX . 123, ](003_Constructing_Code-_Who_Does_What-_006.png){width="5.0in" height="2.5166666666666666in"}
+![func showMessage(number: Defining and Calling Functions nickname: \"Grace\") Int, name: String) { name // later. showMessage(nX . 123, ](003_Constructing_Code-_Who_Does_What-_006.png)
 
  
 
-![Naming Functions // in JavaScript typeof someVariab1e // in C# typeof( someVariab1e) // in Swift type (of: someVariab1e) ](003_Constructing_Code-_Who_Does_What-_007.png){width="5.0in" height="2.5166666666666666in"}
+![Naming Functions // in JavaScript typeof someVariab1e // in C# typeof( someVariab1e) // in Swift type (of: someVariab1e) ](003_Constructing_Code-_Who_Does_What-_007.png)
 
  
 
-![// could be written as a choice of strideThrough(E3, 256, 16) // or strideT0(e, 256, 16) // in Swift stride(from : // or stride(from: e, e, through • . 256, by: by: 16) to: 256, 16) ](003_Constructing_Code-_Who_Does_What-_008.png){width="5.0in" height="2.816666666666667in"}
+![// could be written as a choice of strideThrough(E3, 256, 16) // or strideT0(e, 256, 16) // in Swift stride(from : // or stride(from: e, e, through • . 256, by: by: 16) to: 256, 16) ](003_Constructing_Code-_Who_Does_What-_008.png)
 
  
 

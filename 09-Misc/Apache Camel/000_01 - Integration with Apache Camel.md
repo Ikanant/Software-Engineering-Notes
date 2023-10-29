@@ -99,7 +99,7 @@ Camel, as a mediation engine, uses all three of the mentioned approaches
 
  
 
-![Machine generated alternative text: Order Service run Fulfillment Processor execute Order Retrieval get orders send orders Order Processor Process Fulfillment File save orders get orders 1 save orders process orders Fulfillment Center 2 Fulfillment Center 1 Order Source Orders DB ](000_01_-_Integration_with_Apache_Camel_000.png){width="5.0in" height="2.625in"}
+![Machine generated alternative text: Order Service run Fulfillment Processor execute Order Retrieval get orders send orders Order Processor Process Fulfillment File save orders get orders 1 save orders process orders Fulfillment Center 2 Fulfillment Center 1 Order Source Orders DB ](000_01_-_Integration_with_Apache_Camel_000.png)
 
  
 
@@ -111,4 +111,4 @@ For this case study we already have an Order Processor working... but sadly, it 
 
  
 
-![Machine generated alternative text: Orders Apache Camel Endpoint Pipes and Filters Endpoint Fulfillment Center 1 Endpoint Fulfillment Center 2 Endpoint ](000_01_-_Integration_with_Apache_Camel_001.png){width="5.0in" height="2.5833333333333335in"}
+![Machine generated alternative text: Orders Apache Camel Endpoint Pipes and Filters Endpoint Fulfillment Center 1 Endpoint Fulfillment Center 2 Endpoint ](000_01_-_Integration_with_Apache_Camel_001.png)

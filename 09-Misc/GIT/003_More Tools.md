@@ -28,7 +28,7 @@ Now, image a case in which we have all of our work put together in our Working A
 
  
 
-![Stash Working Area menu. txt e guacamole. txt Index menu . txt e guacamole. txt Repository menu . txt ](003_More_Tools_000.png){width="5.0in" height="1.4333333333333333in"}
+![Stash Working Area menu. txt e guacamole. txt Index menu . txt e guacamole. txt Repository menu . txt ](003_More_Tools_000.png)
 
  
 
@@ -50,7 +50,7 @@ So what is actually happening? - Simple. GIT is copying ALL of the data from the
 
  
 
-![Stash menu. txt guacamole. txt Working Area o menu. txt Index o menu . txt Repository o menu . txt ](003_More_Tools_001.png){width="5.0in" height="1.3416666666666666in"}
+![Stash menu. txt guacamole. txt Working Area o menu. txt Index o menu . txt Repository o menu . txt ](003_More_Tools_001.png)
 
  
 
@@ -86,7 +86,7 @@ Note that when applying a Stash it DOES NOT delete it.
 
  
 
-![cookbook\> cat recipes/guacamole. txt Ingredients: Avocados Lime juice Serrano chiles Ci Ian tro Salt Black pepper cookbook\> git branch tomato cookbook\> git checkout tomato Swi tched to branch \'tomato\' cookbook\> vim recipes/guacamole. txt cookbook\> git add recipes/guacarnole . txt cookbook\> git commit -m \"Add tomato to guacamole \"1 ](003_More_Tools_002.png){width="4.808333333333334in" height="3.025in"}
+![cookbook\> cat recipes/guacamole. txt Ingredients: Avocados Lime juice Serrano chiles Ci Ian tro Salt Black pepper cookbook\> git branch tomato cookbook\> git checkout tomato Swi tched to branch \'tomato\' cookbook\> vim recipes/guacamole. txt cookbook\> git add recipes/guacarnole . txt cookbook\> git commit -m \"Add tomato to guacamole \"1 ](003_More_Tools_002.png)
 
  
 
@@ -106,7 +106,7 @@ Now, let\'s say that we want to merge our tomato change into our master branch\.
 
  
 
-![cookbook\> git merge tomato Auto-merging recipes/guacamole. txt CONFLICT (content): Merge conflict in recipes/guacamole. txt Automatic merge failed; fix conflicts and then commit the result. cookbook\> git Status On branch master Your branch is ahead of \'origin/master\' by 5 commits. (use \"git push\" to publish your local comnli ts) You have unmerged paths. (fix conflicts and run \"git comit\") (use \"git merge ---abort\" to abort the merge) (use \"git add \" to mark resolution) Unmerged paths: both modified: recipes/guacamole . txt no changes added to commit (use \"git add\" and/or \"git commit -a\") ](003_More_Tools_003.png){width="5.0in" height="2.875in"}
+![cookbook\> git merge tomato Auto-merging recipes/guacamole. txt CONFLICT (content): Merge conflict in recipes/guacamole. txt Automatic merge failed; fix conflicts and then commit the result. cookbook\> git Status On branch master Your branch is ahead of \'origin/master\' by 5 commits. (use \"git push\" to publish your local comnli ts) You have unmerged paths. (fix conflicts and run \"git comit\") (use \"git merge ---abort\" to abort the merge) (use \"git add \" to mark resolution) Unmerged paths: both modified: recipes/guacamole . txt no changes added to commit (use \"git add\" and/or \"git commit -a\") ](003_More_Tools_003.png)
 
  
 
@@ -128,7 +128,7 @@ Well, it knows because the merge commands creates files in the .git directory th
 
  
 
-![3 4 5 6 12 gredients: Avocados Line juice Serrano chi les Ci lantro salt HEAD Onion Tomato tomato ](003_More_Tools_004.png){width="2.3in" height="2.691666666666667in"}
+![3 4 5 6 12 gredients: Avocados Line juice Serrano chi les Ci lantro salt HEAD Onion Tomato tomato ](003_More_Tools_004.png)
 
  
 
@@ -178,7 +178,7 @@ Working with COMMITS can sometimes be rough\... if we sync back to what I mentio
 
  
 
-![Working Area menu . txt README . txt Index menu . txt README . txt Repository o menu. txt O README. txt ](003_More_Tools_005.png){width="5.0in" height="1.8416666666666666in"}
+![Working Area menu . txt README . txt Index menu . txt README . txt Repository o menu. txt O README. txt ](003_More_Tools_005.png)
 
  
 

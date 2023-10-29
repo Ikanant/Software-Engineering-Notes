@@ -234,4 +234,4 @@ Atom Work
 
  
 
-![](001_02_-_Data_Types_and_Operations_&_Branching_and_Looping_000.png){width="2.5416666666666665in" height="3.125in"}
+![](001_02_-_Data_Types_and_Operations_&_Branching_and_Looping_000.png)

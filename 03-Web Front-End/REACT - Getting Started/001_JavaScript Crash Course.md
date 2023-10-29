@@ -33,7 +33,7 @@ Note: We are saying references and NOT values. Defining an object with **const**
 
 A way to define a function without having to use the keyword function:
 
-![const X function () // \"this\" here is the caller of X const Y S NOT the caller Of Y // It\'s the sane \"thts\" found in Y\'s scope ](001_JavaScript_Crash_Course_000.png){width="3.533333333333333in" height="1.9083333333333334in"}
+![const X function () // \"this\" here is the caller of X const Y S NOT the caller Of Y // It\'s the sane \"thts\" found in Y\'s scope ](001_JavaScript_Crash_Course_000.png)
 
  
 
@@ -49,7 +49,7 @@ Regular functions ALWAYS binds the value for the \'this\' keyword, for its calle
 
  
 
-![](001_JavaScript_Crash_Course_001.png){width="5.0in" height="1.2in"}
+![](001_JavaScript_Crash_Course_001.png)
 
  
 
@@ -57,7 +57,7 @@ The \'this\' keyword on the function2 refers to what was available to the \'this
 
  
 
-![le e e z Ea.enbs asuoa za•enbs e u\'ruaJ ) (e) lauenbs asuoa ](001_JavaScript_Crash_Course_002.png){width="2.5083333333333333in" height="2.033333333333333in"}
+![le e e z Ea.enbs asuoa za•enbs e u\'ruaJ ) (e) lauenbs asuoa ](001_JavaScript_Crash_Course_002.png)
 
 \^\^\^ Syntax fun.
 
@@ -65,7 +65,7 @@ The \'this\' keyword on the function2 refers to what was available to the \'this
 
 **Object Literals**
 
-![const const const 10, 28 answer mystery = InverseOfPI - 1 / math_P1; obj = 10, 20, Cmystery): 42, InverseOfPI , console \_ log(obj \_ answer) ; console \_ log(obj \_ Inver seOfPI) ; ](001_JavaScript_Crash_Course_003.png){width="2.975in" height="3.283333333333333in"}
+![const const const 10, 28 answer mystery = InverseOfPI - 1 / math_P1; obj = 10, 20, Cmystery): 42, InverseOfPI , console \_ log(obj \_ answer) ; console \_ log(obj \_ Inver seOfPI) ; ](001_JavaScript_Crash_Course_003.png)
 
 \^ Notice Dynamic properties: \[mystery\]. It looks like an Array literal, but actually JS will evaluate what\'s inside the square bracket and make the result of that the property name.
 
@@ -75,7 +75,7 @@ The \'this\' keyword on the function2 refers to what was available to the \'this
 
 Works for both Arrays and objects. We need to think of Destructuring in terms of the cases in which we want to retrieve some values out of an object... we could do it trivially line by line, OR we can use the curly bracket syntax.
 
-![// const PI Hath.P1; // const E Hath.E; // const SQRT2 Hath.SQRT2; const (PI, E, - Hath; ](001_JavaScript_Crash_Course_004.png){width="2.3583333333333334in" height="1.05in"}
+![// const PI Hath.P1; // const E Hath.E; // const SQRT2 Hath.SQRT2; const (PI, E, - Hath; ](001_JavaScript_Crash_Course_004.png)
 
 It destructures the three properties out of the right object and into the left hand side scope.
 
@@ -85,21 +85,21 @@ It destructures the three properties out of the right object and into the left h
 
 Destructors also works inside function argumnets. If the argument we are passing to the function is an object, instead of using the name of the object, we can use the destructuring syntax within the function parenthesis to destruction just the properties we are worried about and make them local to that function.
 
-![Il const circle 14 16 19 label: \'circleX\', const circleArea z (radius)) (PI • radius • radius). toFtxed(2); console. Iog( circleArea(ctrcIe) ](001_JavaScript_Crash_Course_005.png){width="2.975in" height="2.2583333333333333in"}
+![Il const circle 14 16 19 label: \'circleX\', const circleArea z (radius)) (PI • radius • radius). toFtxed(2); console. Iog( circleArea(ctrcIe) ](001_JavaScript_Crash_Course_005.png)
 
  
 
 In the case of Arrays we got:
 
-![// const (first, second„ forth) z \[10, 20, 30, 40); ](001_JavaScript_Crash_Course_006.png){width="3.816666666666667in" height="0.6833333333333333in"}
+![// const (first, second„ forth) z \[10, 20, 30, 40); ](001_JavaScript_Crash_Course_006.png)
 
  
 
-![const \[first, . restofltems\] Cle, 20, 30, 40\] console. first) ; console. log(restOfItems) ; Hide network log Context Group Console cleared ](001_JavaScript_Crash_Course_007.png){width="5.0in" height="1.325in"}
+![const \[first, . restofltems\] Cle, 20, 30, 40\] console. first) ; console. log(restOfItems) ; Hide network log Context Group Console cleared ](001_JavaScript_Crash_Course_007.png)
 
  
 
-![const (first, ..restOfItems) = t 10, 20, 30, 40); console. log(first); console. log(restOfItems) ; 6 • const data tempt: \'001\', temp2: \'oe2\', firstNane: \'John\', LastNaæ: \'Doe\', const (tempt, temp2, 13 19 z data; \[ ..restofltems\]; const newArray const z person ](001_JavaScript_Crash_Course_008.png){width="3.625in" height="3.7in"}
+![const (first, ..restOfItems) = t 10, 20, 30, 40); console. log(first); console. log(restOfItems) ; 6 • const data tempt: \'001\', temp2: \'oe2\', firstNane: \'John\', LastNaæ: \'Doe\', const (tempt, temp2, 13 19 z data; \[ ..restofltems\]; const newArray const z person ](001_JavaScript_Crash_Course_008.png)
 
 \^\^\^ Notice how we will be dealing with Shallow Copies here. Any nested objects or arrays will be shared between these copies
 
@@ -115,7 +115,7 @@ Template strings can have dynamic values through something called INTERPOLATION.
 
  
 
-![const const const 7 htmll greeting z \"Hello World\"; answer html - • Forty TWO • ; ](001_JavaScript_Crash_Course_009.png){width="5.0in" height="0.875in"}
+![const const const 7 htmll greeting z \"Hello World\"; answer html - • Forty TWO • ; ](001_JavaScript_Crash_Course_009.png)
 
  
 
@@ -133,7 +133,7 @@ A class is template (or blueprint) for us to define shared structure and behavio
 
  
 
-![I • class Person ( Constructor (name) this.name z name; greet() console. tog( •Hello \${thts .name)! • 9 e, class Student extends Person ( Prwerve Ico Selected context only Group Simuar Console was cleared Hello Max! Hello Tina from 1st Grade I am special! 10 • 13 1B 19 24 constructor (name, Level) super(nane); this. level level; greet() const 01 const 03 = from ) ; const 02 new \"1st Grade\"); \"2nd Grade\"); ( ) console. log(\'l am special! • 03.greet 01. 02. greet(); 03. greet(); ](001_JavaScript_Crash_Course_010.png){width="5.0in" height="2.7083333333333335in"}
+![I • class Person ( Constructor (name) this.name z name; greet() console. tog( •Hello \${thts .name)! • 9 e, class Student extends Person ( Prwerve Ico Selected context only Group Simuar Console was cleared Hello Max! Hello Tina from 1st Grade I am special! 10 • 13 1B 19 24 constructor (name, Level) super(nane); this. level level; greet() const 01 const 03 = from ) ; const 02 new \"1st Grade\"); \"2nd Grade\"); ( ) console. log(\'l am special! • 03.greet 01. 02. greet(); 03. greet(); ](001_JavaScript_Crash_Course_010.png)
 
  
 
@@ -145,13 +145,13 @@ In regular JS I have already worked with plenty of promises. Utilizing the .then
 
  
 
-![I • const fetchData = C) 2 fetch( console. log(data) fetchData() ; ](001_JavaScript_Crash_Course_011.png){width="3.6666666666666665in" height="1.7833333333333334in"}
+![I • const fetchData = C) 2 fetch( console. log(data) fetchData() ; ](001_JavaScript_Crash_Course_011.png)
 
  
 
 We can simply the code above using the modern way to consume promises in JS. Essentially we just \*await\* on the asynchronous call the returns a promise. That will give us back the response object. To make these away calls, we simply **NEED** to label the function as **async** like the image bellow:
 
-![9 • const fetchData async 10 1B const resp z await fetch( const data await resp.json(); console. (data) ; fetchData() ; 1 ](001_JavaScript_Crash_Course_012.png){width="3.725in" height="2.2583333333333333in"}
+![9 • const fetchData async 10 1B const resp z await fetch( const data await resp.json(); console. (data) ; fetchData() ; 1 ](001_JavaScript_Crash_Course_012.png)
 
  
 

@@ -6,7 +6,7 @@ Sunday, May 1, 2016
 
  
 
-![Machine generated alternative text: Concurrency: \"the art of doing several things at the same time\" What does correct code mean in the concurrent world How to improve your code by leveraging multi-core CPUs Writing code, implementing patterns Race condition, synchronization, volatility Visibility, false sharing, happens-before ](000_Underestanding_Concurrency,_Threading_and_Synchronization_000.png){width="5.0in" height="2.5in"}
+![Machine generated alternative text: Concurrency: \"the art of doing several things at the same time\" What does correct code mean in the concurrent world How to improve your code by leveraging multi-core CPUs Writing code, implementing patterns Race condition, synchronization, volatility Visibility, false sharing, happens-before ](000_Underestanding_Concurrency,_Threading_and_Synchronization_000.png)
 
  
 
@@ -24,7 +24,7 @@ A Thread is defined at the Operating System Level. From the developer point of v
 
 We are considering that we have ONE Core CPU...which means that it can only do ONE thing at a time.
 
-![](000_Underestanding_Concurrency,_Threading_and_Synchronization_001.png){width="5.0in" height="2.283333333333333in"}
+![](000_Underestanding_Concurrency,_Threading_and_Synchronization_001.png)
 
  
 
@@ -44,7 +44,7 @@ On a multi-core system, we CAN have actions running at the same time.
 
  
 
-![Machine generated alternative text: Core 1 Core 2 ](000_Underestanding_Concurrency,_Threading_and_Synchronization_002.png){width="5.0in" height="2.475in"}
+![Machine generated alternative text: Core 1 Core 2 ](000_Underestanding_Concurrency,_Threading_and_Synchronization_002.png)
 
  
 
@@ -86,7 +86,7 @@ On a multi-core system, we CAN have actions running at the same time.
 
  
 
-![Machine generated alternative text: The Singleton Pattern public class Singleton Singleton private static private public static Singleton ± f (instance null instance new return instance instance ](000_Underestanding_Concurrency,_Threading_and_Synchronization_003.png){width="5.0in" height="3.2666666666666666in"}
+![Machine generated alternative text: The Singleton Pattern public class Singleton Singleton private static private public static Singleton ± f (instance null instance new return instance instance ](000_Underestanding_Concurrency,_Threading_and_Synchronization_003.png)
 
  
 
@@ -96,7 +96,7 @@ On a multi-core system, we CAN have actions running at the same time.
 
  
 
-![Machine generated alternative text: Thread Tl Checks if instance is null? The answer is yes Enters the if block The thread scheduler pauses Tl Create an instance of Singleton Thread T 2 Waiting Checks if instance is null? The answer is yes Enters if the block Creates an instance of Singleton The thread scheduler pauses T 2 ](000_Underestanding_Concurrency,_Threading_and_Synchronization_004.png){width="5.0in" height="2.7333333333333334in"}
+![Machine generated alternative text: Thread Tl Checks if instance is null? The answer is yes Enters the if block The thread scheduler pauses Tl Create an instance of Singleton Thread T 2 Waiting Checks if instance is null? The answer is yes Enters if the block Creates an instance of Singleton The thread scheduler pauses T 2 ](000_Underestanding_Concurrency,_Threading_and_Synchronization_004.png)
 
  
 
@@ -120,7 +120,7 @@ Prevents a block of code to be executed by more than one thread at the same time
 
  
 
-![Machine generated alternative text: pub 11 c class Singleton private static Singleton prxvate public static j f (instance instance instance Singleton null new return instance ](000_Underestanding_Concurrency,_Threading_and_Synchronization_005.png){width="7.533333333333333in" height="3.9in"}
+![Machine generated alternative text: pub 11 c class Singleton private static Singleton prxvate public static j f (instance instance instance Singleton null new return instance ](000_Underestanding_Concurrency,_Threading_and_Synchronization_005.png)
 
  
 
@@ -130,7 +130,7 @@ In JAVA, every instantiated object has a lock property that contains a key. In s
 
  
 
-![Machine generated alternative text: Singleton CLASS lock synchronized o O 0 getlnstance() ](000_Underestanding_Concurrency,_Threading_and_Synchronization_006.png){width="5.0in" height="3.4166666666666665in"}
+![Machine generated alternative text: Singleton CLASS lock synchronized o O 0 getlnstance() ](000_Underestanding_Concurrency,_Threading_and_Synchronization_006.png)
 
 So for synchronization to work we need a special technical object that will hold the key... In fact, every JAVA object play this role....But as developers we can make such key object ourselves.
 
@@ -146,15 +146,15 @@ There are 3 Different ways to achieve this:
 
 1.  Using a static method will allow us to use the class itself as a key:
 
-    a.  ![Machine generated alternative text: public static L f (instance instance Singleton null new return instance In this code, the key is the Singleton class itself A synchronized static method uses the class as a synchronization object ](000_Underestanding_Concurrency,_Threading_and_Synchronization_007.png){width="5.0in" height="2.0833333333333335in"}
+    a.  ![Machine generated alternative text: public static L f (instance instance Singleton null new return instance In this code, the key is the Singleton class itself A synchronized static method uses the class as a synchronization object ](000_Underestanding_Concurrency,_Threading_and_Synchronization_007.png)
 
 2.  If using a non-static method. Then the key will be held by the instance of the class itself
 
-    a.  ![Machine generated alternative text: public -eturn this. name String In this code, the key is the instance of the class A synchronized non-static method uses the instance as a synchronization object ](000_Underestanding_Concurrency,_Threading_and_Synchronization_008.png){width="5.0in" height="2.025in"}
+    a.  ![Machine generated alternative text: public -eturn this. name String In this code, the key is the instance of the class A synchronized non-static method uses the instance as a synchronization object ](000_Underestanding_Concurrency,_Threading_and_Synchronization_008.png)
 
 3.  We can write a dedicated, explicit object for the key (Synchronized block):
 
-    a.  ![Machine generated alternative text: public class Person private final Object key public String (key) { // do some stuff o; new Object A third possibility is to use a dedicated object to synchronize It is always a good idea to hide an object used for synchronization ](000_Underestanding_Concurrency,_Threading_and_Synchronization_009.png){width="5.0in" height="2.625in"}
+    a.  ![Machine generated alternative text: public class Person private final Object key public String (key) { // do some stuff o; new Object A third possibility is to use a dedicated object to synchronize It is always a good idea to hide an object used for synchronization ](000_Underestanding_Concurrency,_Threading_and_Synchronization_009.png)
 
  
 
@@ -164,7 +164,7 @@ Well, assuming we did not explicitly declare our own private key object, a singl
 
  
 
-![Machine generated alternative text: Synchronizing More Than One Method Mary lock synchronized 0 etName() synchronized o getAge() ](000_Underestanding_Concurrency,_Threading_and_Synchronization_010.png){width="5.0in" height="3.225in"}
+![Machine generated alternative text: Synchronizing More Than One Method Mary lock synchronized 0 etName() synchronized o getAge() ](000_Underestanding_Concurrency,_Threading_and_Synchronization_010.png)
 
  
 
@@ -174,7 +174,7 @@ We will have 2 different keys:
 
  
 
-![Machine generated alternative text: Synchronizing More Than One Method Mary lock synchronized o getName() synchronized John lock synchronized getName() synchronized get Age ( ) ](000_Underestanding_Concurrency,_Threading_and_Synchronization_011.png){width="5.0in" height="2.7in"}
+![Machine generated alternative text: Synchronizing More Than One Method Mary lock synchronized o getName() synchronized John lock synchronized getName() synchronized get Age ( ) ](000_Underestanding_Concurrency,_Threading_and_Synchronization_011.png)
 
  
 
@@ -182,7 +182,7 @@ If we want is to prevent to threads to use two different methods in a class at t
 
  
 
-![Machine generated alternative text: Synchronizing More Than One Method Person CLASS Mary synchronized o getName() synchronized getAge() lock synchronized getName() synchronized getAge() ](000_Underestanding_Concurrency,_Threading_and_Synchronization_012.png){width="5.0in" height="2.8in"}
+![Machine generated alternative text: Synchronizing More Than One Method Person CLASS Mary synchronized o getName() synchronized getAge() lock synchronized getName() synchronized getAge() ](000_Underestanding_Concurrency,_Threading_and_Synchronization_012.png)
 
  
 
@@ -200,7 +200,7 @@ Reentrant: Considering we have two different methods that are synchronized for t
 
  
 
-![Machine generated alternative text: Mary synchronized synchronized loc John synchronized synchronized o ](000_Underestanding_Concurrency,_Threading_and_Synchronization_013.png){width="5.0in" height="2.3583333333333334in"}
+![Machine generated alternative text: Mary synchronized synchronized loc John synchronized synchronized o ](000_Underestanding_Concurrency,_Threading_and_Synchronization_013.png)
 
  
 
@@ -212,7 +212,7 @@ Locks are reentrant when a thread holds a lock, it can enter a block synchronize
 
  
 
-![Machine generated alternative text: Mary synchronized o synchronized loc Deadlocks John synchronized synchronized loc ](000_Underestanding_Concurrency,_Threading_and_Synchronization_014.png){width="5.0in" height="2.95in"}
+![Machine generated alternative text: Mary synchronized o synchronized loc Deadlocks John synchronized synchronized loc ](000_Underestanding_Concurrency,_Threading_and_Synchronization_014.png)
 
  
 
@@ -242,9 +242,9 @@ Then call the start() method of this thread object.
 
  
 
-![Machine generated alternative text: Runnable runnable new Runnable public void String name System . out. Thread (\"I am running o. in thread name First create an instance of a Runnable This is the Java 7 way, with an instance of an anonymous class ](000_Underestanding_Concurrency,_Threading_and_Synchronization_015.png){width="5.0in" height="2.075in"}
+![Machine generated alternative text: Runnable runnable new Runnable public void String name System . out. Thread (\"I am running o. in thread name First create an instance of a Runnable This is the Java 7 way, with an instance of an anonymous class ](000_Underestanding_Concurrency,_Threading_and_Synchronization_015.png)
 
-![Machine generated alternative text: Demo Let us see some code! Let us create threads on simple examples See what can go wrong with a race condition Fix our code with synchronization ](000_Underestanding_Concurrency,_Threading_and_Synchronization_016.png){width="5.0in" height="1.65in"}
+![Machine generated alternative text: Demo Let us see some code! Let us create threads on simple examples See what can go wrong with a race condition Fix our code with synchronization ](000_Underestanding_Concurrency,_Threading_and_Synchronization_016.png)
 
  
 

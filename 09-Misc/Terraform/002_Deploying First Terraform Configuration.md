@@ -70,7 +70,7 @@ Terraform uses a push style of deployment to create the infrastructure. Terrafor
 This is an extremely high level view of the DEMO application the course is going to work on to setup a very simple web application in a AWS environment:\
  
 
-![Deployment Architecture Subnet-I VPC ](002_Deploying_First_Terraform_Configuration_000.png){width="5.0in" height="3.425in"}
+![Deployment Architecture Subnet-I VPC ](002_Deploying_First_Terraform_Configuration_000.png)
 
 *The image above is a bit vague... so from the course I noted:*
 
@@ -132,7 +132,7 @@ Each block starts with BLOCK TYPE that describes the object that\'s about to be 
 
  
 
-![block \_ type \"label\" = \"value\" key nested_block { key = \"value\' \' name \_ label \" ](002_Deploying_First_Terraform_Configuration_001.png){width="5.0in" height="3.0833333333333335in"}
+![block \_ type \"label\" = \"value\" key nested_block { key = \"value\' \' name \_ label \" ](002_Deploying_First_Terraform_Configuration_001.png)
 
  
 
@@ -148,7 +148,7 @@ Keep in mind that for the type of resource we are dealing with (an EC2 instance)
 
  
 
-![laws \_ instance\" \"web \_ server resource name = \"web -server ebs_volume { size = 40 ](002_Deploying_First_Terraform_Configuration_002.png){width="5.0in" height="2.825in"}
+![laws \_ instance\" \"web \_ server resource name = \"web -server ebs_volume { size = 40 ](002_Deploying_First_Terraform_Configuration_002.png)
 
  
 
@@ -167,7 +167,7 @@ Currently I am going over the main.tf file provided by Pluralsight and one impor
 
  
 
-![](002_Deploying_First_Terraform_Configuration_003.png){width="5.0in" height="2.1333333333333333in"}
+![](002_Deploying_First_Terraform_Configuration_003.png)
 
  
 
@@ -216,7 +216,7 @@ I will be using this command to save money when using AWS... but in the future, 
 
  
 
-![o ](002_Deploying_First_Terraform_Configuration_004.png){width="5.0in" height="2.1666666666666665in"}
+![o ](002_Deploying_First_Terraform_Configuration_004.png)
 
  
 

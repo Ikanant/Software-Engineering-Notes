@@ -364,4 +364,4 @@ To delete VOLUMES the only current way is to type from it\'s container:
 
 docker rm -v
 
-![](006_07_-_Docker_Deep_Dive_-_Diving_Deeper_with_Dockerfile_000.png){width="5.0in" height="2.7416666666666667in"}
+![](006_07_-_Docker_Deep_Dive_-_Diving_Deeper_with_Dockerfile_000.png)

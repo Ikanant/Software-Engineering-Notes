@@ -10,7 +10,7 @@ Sunday, May 15, 2022
 
  
 
-![\' TOD0 ---t ToDo AppDelegate,swift Scene Delegate. swift ContentView.swift Assets. xcassets LaunchScreen. storyboard Info.plist Preview Content Products 1 2 3 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 TODo ) TODo ) AppDelegate.swift ) No Selection AppDe1egate . swift ToDo Created by zappycode on 2/22/20. Copyright @ 2020 Nick Walter. All rights reserved. import UlKit 1 \@UIApp1icationMain class AppDeIegate: UIResponder, UIApp1icationDe1egate { func application(\_ application: UIApp1ication, didFinishLaunchingWithOptions launchOptions: \[UIApp1ication.LaunchOptionsKey: Any J?) Bool { // Override point for customization after application launch. return true ](000_Views_000.png){width="5.0in" height="2.6666666666666665in"}
+![\' TOD0 ---t ToDo AppDelegate,swift Scene Delegate. swift ContentView.swift Assets. xcassets LaunchScreen. storyboard Info.plist Preview Content Products 1 2 3 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 TODo ) TODo ) AppDelegate.swift ) No Selection AppDe1egate . swift ToDo Created by zappycode on 2/22/20. Copyright @ 2020 Nick Walter. All rights reserved. import UlKit 1 \@UIApp1icationMain class AppDeIegate: UIResponder, UIApp1icationDe1egate { func application(\_ application: UIApp1ication, didFinishLaunchingWithOptions launchOptions: \[UIApp1ication.LaunchOptionsKey: Any J?) Bool { // Override point for customization after application launch. return true ](000_Views_000.png)
 
  
 
@@ -68,7 +68,7 @@ SwiftUI at is core is just formed with STRUCTS called VIEW. These Struct has bee
 
  
 
-![struct Conter1tView: View { var body: some View { Code\" ](000_Views_001.png){width="3.783333333333333in" height="1.475in"}
+![struct Conter1tView: View { var body: some View { Code\" ](000_Views_001.png)
 
 One random swift thing I didn\'t know about is that when you have a single line inside of a closure like we have here, we don\'t need to type return... though we can.. The above would be the same if I did
 
@@ -80,7 +80,7 @@ BTW the file that states which is your first VIEW rendering is the Swift file th
 
  
 
-![10 11 Swi ftlJI_Fundamenta1sApp. swi ft Swi ftUI Fundamentals Created by Jonathan Hernandez on 5/14/22. import SwiftUI grain struct SwiftUI_Fundamenta1sApp: App { var body: some Scene { WindowGroup { ContentView() ](000_Views_002.png){width="5.0in" height="3.5416666666666665in"}
+![10 11 Swi ftlJI_Fundamenta1sApp. swi ft Swi ftUI Fundamentals Created by Jonathan Hernandez on 5/14/22. import SwiftUI grain struct SwiftUI_Fundamenta1sApp: App { var body: some Scene { WindowGroup { ContentView() ](000_Views_002.png)
 
 In my case \^\^\^ \@main I think it means, MAIN thread
 
@@ -93,7 +93,7 @@ In my case \^\^\^ \@main I think it means, MAIN thread
 So if I wanted to get multiple views going in my page, I could attempt to just add them to the body like so:\
  
 
-![struct MyFristView: View { var body: some View { O Functiondeclares an opaque re. \' ) of \'Text\' initializer is unu lext( \"Hello Code\' World\") 1 ](000_Views_003.png){width="5.0in" height="1.2in"}
+![struct MyFristView: View { var body: some View { O Functiondeclares an opaque re. \' ) of \'Text\' initializer is unu lext( \"Hello Code\' World\") 1 ](000_Views_003.png)
 
  
 
@@ -101,7 +101,7 @@ But I immediately see errors everywhere. How come? Well, here is where Vstacks a
 
  
 
-![struct MyFristView: View { var body: some View { HStack { Text( \"Hello Code\" Text( \"Hello World\" ](000_Views_004.png){width="5.0in" height="2.691666666666667in"}
+![struct MyFristView: View { var body: some View { HStack { Text( \"Hello Code\" Text( \"Hello World\" ](000_Views_004.png)
 
  
 
@@ -113,14 +113,14 @@ Stacks can also be place inside each other!
 
  
 
-![var body: some View { Text ( \'hello Text ( \"Hello Text ( \"Hello VStack { HStack { Text( HStack { Text ( HStack { Text ( \"#110 \"Hello \"Hello Code ) World \" Code ) World\" Code \" ) World\" ](000_Views_005.png){width="5.0in" height="5.5in"}
+![var body: some View { Text ( \'hello Text ( \"Hello Text ( \"Hello VStack { HStack { Text( HStack { Text ( HStack { Text ( \"#110 \"Hello \"Hello Code ) World \" Code ) World\" Code \" ) World\" ](000_Views_005.png)
 
  
 
 Seems like writing the code is not the only way... CMD+click will yield:\
  
 
-![11 13 struct MyFristView: View { Q var body: ex Actions Jump to Definition Show Quick Help Callers Edit All in Scope some View { \"Hello Code u views: s: som Show SwiftUl Inspector\... Embed in Stack Embed in VStack Embed in List Group Make Conditional Repeat Extract to Variable Extract to Method Extract All Occurrences ](000_Views_006.png){width="2.658333333333333in" height="3.3833333333333333in"}
+![11 13 struct MyFristView: View { Q var body: ex Actions Jump to Definition Show Quick Help Callers Edit All in Scope some View { \"Hello Code u views: s: som Show SwiftUl Inspector\... Embed in Stack Embed in VStack Embed in List Group Make Conditional Repeat Extract to Variable Extract to Method Extract All Occurrences ](000_Views_006.png)
 
  
 
@@ -132,7 +132,7 @@ Seems like writing the code is not the only way... CMD+click will yield:\
 
 The thing with SwiftUI is also that it wants to center things as much as possible...What if we want to alter? That\'s where Spaces come in inside of an Hstack or Vstack... spacers will take up as much space as it possibly can.
 
-![HStack { Text ( \"Hello Spacer ( ) Text( \"Hello Code \" World\" Heno Code ](000_Views_007.png){width="5.0in" height="1.2083333333333333in"}
+![HStack { Text ( \"Hello Spacer ( ) Text( \"Hello Code \" World\" Heno Code ](000_Views_007.png)
 
  
 
@@ -140,7 +140,7 @@ I can use this spacers as fun ways to get all my views Left or Right / Top or Bo
 
  
 
-![import SwiftU1 struct MyFristView: View { var body: some View { VStack { HStack { Text (\"Hello Code\" Text (\"Hello World\" Spacer() Spacer ( ) 1 \*euo Code Hello World ](000_Views_008.png){width="5.0in" height="2.75in"}
+![import SwiftU1 struct MyFristView: View { var body: some View { VStack { HStack { Text (\"Hello Code\" Text (\"Hello World\" Spacer() Spacer ( ) 1 \*euo Code Hello World ](000_Views_008.png)
 
  
 
@@ -156,7 +156,7 @@ The button consists of two simple things... the ACTION and the LABEL... pretty s
 
  
 
-![struct ContentView: View { var body: some View { return Button(action: label: { Circle() ](000_Views_009.png){width="3.975in" height="2.7in"}
+![struct ContentView: View { var body: some View { return Button(action: label: { Circle() ](000_Views_009.png)
 
  
 
@@ -167,7 +167,7 @@ The button consists of two simple things... the ACTION and the LABEL... pretty s
 This are the tools we have to modify any views we have in a page... A great way to access them is by going to the + at the top right of Xcode and:\
  
 
-![\'ort swiftU1 :uct ContentVie • t var body: sor @ Vociifiers return Bu print label: Circl :uct ContentVie static var pr Group { Conte te_l func content: (T) ---Y ActionSheet) Vie. \"here T Identifiable this -f\" \' with fm i uTTyp. title: ](000_Views_010.png){width="5.0in" height="2.2083333333333335in"}
+![\'ort swiftU1 :uct ContentVie • t var body: sor @ Vociifiers return Bu print label: Circl :uct ContentVie static var pr Group { Conte te_l func content: (T) ---Y ActionSheet) Vie. \"here T Identifiable this -f\" \' with fm i uTTyp. title: ](000_Views_010.png)
 
 Plenty of them to choose from. In order to use them we can just call them after the definition of a view.. With a DOT...
 
@@ -176,7 +176,7 @@ Plenty of them to choose from. In order to use them we can just call them after 
 An even easier way to pull our modifiers is by pressing CMD and clicking on the View we wish to modify... show the SwiftUI Inspector... and then:\
  
 
-![Rectangle() Suøer Cool Button\" . red) A-vs : PreviewProvider { some View { nterfaceorientation( Status ](000_Views_011.png){width="3.725in" height="6.5in"}
+![Rectangle() Suøer Cool Button\" . red) A-vs : PreviewProvider { some View { nterfaceorientation( Status ](000_Views_011.png)
 
  
 

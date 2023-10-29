@@ -6,7 +6,7 @@ Sunday, February 12, 2017
 
  
 
-![Xamarin.Android app Code Sharing Xamarin.iOS app Windows Phone app UI App layer Service access layer Data layer UI App layer UI Shareable code Business layer Data access layer App layer Models ](002_Code_Sharing_(Across_Platforms)_000.png){width="5.0in" height="2.4583333333333335in"}
+![Xamarin.Android app Code Sharing Xamarin.iOS app Windows Phone app UI App layer Service access layer Data layer UI App layer UI Shareable code Business layer Data access layer App layer Models ](002_Code_Sharing_(Across_Platforms)_000.png)
 
  
 
@@ -28,7 +28,7 @@ As the name implies, these are libraries that can be references from different v
 
  
 
-![PCL (Portable Class Library) Library shared across platforms Lowest common denominator Extendable to other platforms ](002_Code_Sharing_(Across_Platforms)_001.png){width="5.0in" height="2.341666666666667in"}
+![PCL (Portable Class Library) Library shared across platforms Lowest common denominator Extendable to other platforms ](002_Code_Sharing_(Across_Platforms)_001.png)
 
  
 
@@ -44,7 +44,7 @@ PCLs can be configured to work with different project types:
 
  
 
-![Change Targets largets: .NET Framework 4.5 Windows 8 Windows Phone Silverlight 8 ASP.NET core 5.0 Silverlight 5 Windows Phone 8.1 XamarinAndroid Xamarin.iOS Xamarin.iOS (Classic) Install additional targets\... OK ](002_Code_Sharing_(Across_Platforms)_002.png){width="5.0in" height="4.583333333333333in"}
+![Change Targets largets: .NET Framework 4.5 Windows 8 Windows Phone Silverlight 8 ASP.NET core 5.0 Silverlight 5 Windows Phone 8.1 XamarinAndroid Xamarin.iOS Xamarin.iOS (Classic) Install additional targets\... OK ](002_Code_Sharing_(Across_Platforms)_002.png)
 
 Another way of sharing logic between platform is using a **Shared Project.**
 
@@ -54,6 +54,6 @@ A shared project is a different prototype we can select in VS.
 
  
 
-![Summary Xamarin.Android allows us to build fully native Android applications Architecture often based on PCLs ](002_Code_Sharing_(Across_Platforms)_003.png){width="5.0in" height="2.158333333333333in"}
+![Summary Xamarin.Android allows us to build fully native Android applications Architecture often based on PCLs ](002_Code_Sharing_(Across_Platforms)_003.png)
 
  

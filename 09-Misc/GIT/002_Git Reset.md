@@ -58,11 +58,11 @@ If we are ONLY looking at the repository, RESET pretty much moves a branch to po
 
  
 
-![](002_Git_Reset_000.png){width="2.875in" height="1.6583333333333334in"}
+![](002_Git_Reset_000.png)
 
  
 
-![master HEAD ](002_Git_Reset_001.png){width="2.933333333333333in" height="2.1166666666666667in"}
+![master HEAD ](002_Git_Reset_001.png)
 
  
 
@@ -76,7 +76,7 @@ The weird thing that I find about RESET is not the repository step, instead I fo
 
 **\--hard:** The RESET will copy data from the new current commit to both the Index and the Working Area:
 
-![Working Area Index Repository \--hard ](002_Git_Reset_002.png){width="5.0in" height="2.066666666666667in"}
+![Working Area Index Repository \--hard ](002_Git_Reset_002.png)
 
  
 
@@ -84,7 +84,7 @@ The weird thing that I find about RESET is not the repository step, instead I fo
 
  
 
-![](002_Git_Reset_003.png){width="5.0in" height="2.066666666666667in"}
+![](002_Git_Reset_003.png)
 
 **\--soft:** It just updates the Repository side and does NOT touch anything in the WorkingArea/Index\... just move the branch and skip everything else
 
@@ -106,7 +106,7 @@ This will show the current commit and the previous commit as a parent\...
 
  
 
-![Working Area menu. txt recipes Index menu. txt recipes HEAD fbe535 Repository menu. txt recipes commit fbe53568fadc55b5f2f22617c57d320878aØ8767 Author: Paolo \"Nusco\" Perrotta Thu Jul 28 2016 +0200 Date: Well, I changed my mind about that renaming commit lcb2137eb1bf282ff87aae82c2fcc3405aaøae91 Author: Paolo \"Nusco\" Perrotta \<paolo.nusco.perrotta@gmail.com\> Thu Jul 28 2016 +0200 Date: Use Markdown for the menu commit 8Øf2a48777ffe5ab3cOccd2d3eba2c06ce4a7f2e Author: Paolo \"Nusco\" Perrotta \<paolo. wed Jul 27 13:11:37 2016 +0200 Date: cookbook\> ](002_Git_Reset_004.png){width="5.0in" height="3.066666666666667in"}
+![Working Area menu. txt recipes Index menu. txt recipes HEAD fbe535 Repository menu. txt recipes commit fbe53568fadc55b5f2f22617c57d320878aØ8767 Author: Paolo \"Nusco\" Perrotta Thu Jul 28 2016 +0200 Date: Well, I changed my mind about that renaming commit lcb2137eb1bf282ff87aae82c2fcc3405aaøae91 Author: Paolo \"Nusco\" Perrotta \<paolo.nusco.perrotta@gmail.com\> Thu Jul 28 2016 +0200 Date: Use Markdown for the menu commit 8Øf2a48777ffe5ab3cOccd2d3eba2c06ce4a7f2e Author: Paolo \"Nusco\" Perrotta \<paolo. wed Jul 27 13:11:37 2016 +0200 Date: cookbook\> ](002_Git_Reset_004.png)
 
  
 
@@ -120,7 +120,7 @@ Though we need to keep in mind that the first thing that happens is that git mov
 
  
 
-![Working Area o menu. txt o recipes Index O menu. txt O recipes Repository Obe2a5 ](002_Git_Reset_005.png){width="5.0in" height="1.3416666666666666in"}
+![Working Area o menu. txt o recipes Index O menu. txt O recipes Repository Obe2a5 ](002_Git_Reset_005.png)
 
  
 

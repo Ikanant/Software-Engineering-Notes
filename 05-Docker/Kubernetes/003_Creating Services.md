@@ -20,7 +20,7 @@ Monday, April 19, 2021
 
  
 
-![Deployment Container ReplicaSet pod Container Container Service ](003_Creating_Services_000.png){width="6.491666666666666in" height="2.175in"}
+![Deployment Container ReplicaSet pod Container Container Service ](003_Creating_Services_000.png)
 
  
 
@@ -30,7 +30,7 @@ Monday, April 19, 2021
 
  
 
-![External caller Front-end Pod Coma 10.0.0.43 Back-end Pod Cot&üer 10.0.0.45 ](003_Creating_Services_001.png){width="4.591666666666667in" height="1.1166666666666667in"}
+![External caller Front-end Pod Coma 10.0.0.43 Back-end Pod Cot&üer 10.0.0.45 ](003_Creating_Services_001.png)
 
 *IP addresses change a lot... and so relying on it would not be a good idea.*
 
@@ -50,7 +50,7 @@ Monday, April 19, 2021
 
  
 
-![my-app Pod Container my-app 10.0.0.43:80 Service 10.0.0.1:80 my-app Pod Container 10.0.0.53:80 ](003_Creating_Services_002.png){width="2.466666666666667in" height="2.691666666666667in"}
+![my-app Pod Container my-app 10.0.0.43:80 Service 10.0.0.1:80 my-app Pod Container 10.0.0.53:80 ](003_Creating_Services_002.png)
 
 *LABELS are going to be what we use to associate PODS with a SERVICE*
 
@@ -76,7 +76,7 @@ Monday, April 19, 2021
 
  
 
-![Calling Services External Service Caller 10.0.0.1:80 Pod Container 10.0.0.43:8080 fronten Pod Container 10.0.0.53:8080 Service 10.2.0.1:9000 Pod Container 10.2.0.10:27017 ](003_Creating_Services_003.png){width="6.216666666666667in" height="3.1333333333333333in"}
+![Calling Services External Service Caller 10.0.0.1:80 Pod Container 10.0.0.43:8080 fronten Pod Container 10.0.0.53:8080 Service 10.2.0.1:9000 Pod Container 10.2.0.10:27017 ](003_Creating_Services_003.png)
 
  
 
@@ -84,7 +84,7 @@ Monday, April 19, 2021
 
  
 
-![](003_Creating_Services_004.png){width="5.658333333333333in" height="2.8916666666666666in"}
+![](003_Creating_Services_004.png)
 
  
 
@@ -110,7 +110,7 @@ Monday, April 19, 2021
 
         iii. Allows Pods to talk to other Pods
 
-        iv. ![Cluster pod Container Service Container Service Container ](003_Creating_Services_005.png){width="4.25in" height="1.6666666666666667in"}
+        iv. ![Cluster pod Container Service Container Service Container ](003_Creating_Services_005.png)
 
 2.  NodePort
 
@@ -122,7 +122,7 @@ Monday, April 19, 2021
 
         iii. Each Node proxies the allocated port
 
-        iv. ![External Caller Node (port 30100) Service (NodePort) Pod Container Pod Container ](003_Creating_Services_006.png){width="5.258333333333334in" height="1.5833333333333333in"}
+        iv. ![External Caller Node (port 30100) Service (NodePort) Pod Container Pod Container ](003_Creating_Services_006.png)
 
 3.  LoadBalancer
 
@@ -136,7 +136,7 @@ Monday, April 19, 2021
 
         iii. NodePort and ClusterIP Services are created
 
-        iv. ![Node (30105) LoadBaIancer Extemal Caller x.x.x.x:80 Node (30105) Service (NodePort) Service (NodePort) ](003_Creating_Services_007.png){width="6.266666666666667in" height="1.8416666666666666in"}
+        iv. ![Node (30105) LoadBaIancer Extemal Caller x.x.x.x:80 Node (30105) Service (NodePort) Service (NodePort) ](003_Creating_Services_007.png)
 
         v.  This kind of utilizes the other services we already went over... We have cluster IP services behind the scenes and nodePort services on the Nodes that are setup and then a LoadBalancer knows how to talk to those.
 
@@ -152,7 +152,7 @@ Monday, April 19, 2021
 
         iii. External service details are hidden from cluster (easier to change)
 
-        iv. ![Cluster Pod Service pod Container Service (ExternalName) External Service ](003_Creating_Services_008.png){width="6.083333333333333in" height="2.1416666666666666in"}
+        iv. ![Cluster Pod Service pod Container Service (ExternalName) External Service ](003_Creating_Services_008.png)
 
  
 
@@ -192,7 +192,7 @@ Monday, April 19, 2021
 
  
 
-![apiVersion: VI kind: Service metadata : spec : type : selector : ports : Kubernetes API version and resource type (Service) Metadata about the Service \< Type of service (ClusterlP, NodePort, LoadBalancer) - defaults to ClusterlP \< Select Pod template label(s) that service will apply to Define container target port and the port for the service ](003_Creating_Services_009.png){width="6.133333333333334in" height="2.95in"}
+![apiVersion: VI kind: Service metadata : spec : type : selector : ports : Kubernetes API version and resource type (Service) Metadata about the Service \< Type of service (ClusterlP, NodePort, LoadBalancer) - defaults to ClusterlP \< Select Pod template label(s) that service will apply to Define container target port and the port for the service ](003_Creating_Services_009.png)
 
  
 
@@ -202,7 +202,7 @@ Monday, April 19, 2021
 
  
 
-![](003_Creating_Services_010.png){width="7.191666666666666in" height="3.9in"}
+![](003_Creating_Services_010.png)
 
  
 
@@ -214,7 +214,7 @@ Monday, April 19, 2021
 
 *It is a clusterIP type when we DO NOT specify the type*
 
-![apiVersion: VI kind: Service metadata : name: frontend apiVersion: VI kind: Service metadata : name: backend Name of Service (each Service gets a DNS entry) \< A frontend Pod can access a backend Pod using backend:port ](003_Creating_Services_011.png){width="6.166666666666667in" height="3.0416666666666665in"}
+![apiVersion: VI kind: Service metadata : name: frontend apiVersion: VI kind: Service metadata : name: backend Name of Service (each Service gets a DNS entry) \< A frontend Pod can access a backend Pod using backend:port ](003_Creating_Services_011.png)
 
  
 
@@ -228,7 +228,7 @@ Doing this will make our lives a million times easier because we won\'t need to 
 
 **NodePort Service Example**
 
-![apiVersion: VI kind: Service metadata : spec : type: NodePort selector : app: nginx ports: - port: 80 targetPort: 80 nodePort: 31 øøø Set Service type to NodePort Optionally set NodePort value (defaults between 30000-32767) ](003_Creating_Services_012.png){width="5.891666666666667in" height="3.1666666666666665in"}
+![apiVersion: VI kind: Service metadata : spec : type: NodePort selector : app: nginx ports: - port: 80 targetPort: 80 nodePort: 31 øøø Set Service type to NodePort Optionally set NodePort value (defaults between 30000-32767) ](003_Creating_Services_012.png)
 
  
 
@@ -238,7 +238,7 @@ This NodePort is what we have been doing this WHOLE TIME... but now we just wrot
 
 **LoadBalancer Service Example**
 
-![apiVersion: VI kind: Service metadata : spec : type: LoadBa1ancer Set Service type to LoadBalancer (normally used with cloud providers) selector : app: nginx ports: - port: 80 targetPort : 80 ](003_Creating_Services_013.png){width="6.208333333333333in" height="3.216666666666667in"}
+![apiVersion: VI kind: Service metadata : spec : type: LoadBa1ancer Set Service type to LoadBalancer (normally used with cloud providers) selector : app: nginx ports: - port: 80 targetPort : 80 ](003_Creating_Services_013.png)
 
  
 
@@ -252,7 +252,7 @@ Not as common... We are essentially creating an ALIAS.... In the example bellow 
 
  
 
-![apiVersion: VI kind: Service metadata : name: external-service spec : type: ExternalName externalName: api . acmecorp.com ports: - port: 9000 Other Pods can use this FQDN to access the external service Set type to ExternalName Service will proxy to FQDN ](003_Creating_Services_014.png){width="6.158333333333333in" height="2.933333333333333in"}
+![apiVersion: VI kind: Service metadata : name: external-service spec : type: ExternalName externalName: api . acmecorp.com ports: - port: 9000 Other Pods can use this FQDN to access the external service Set type to ExternalName Service will proxy to FQDN ](003_Creating_Services_014.png)
 
  
 
@@ -310,7 +310,7 @@ The answer will shock you... We can simply just exec to shell into the Pod/Conta
 
 SO, without even needing to setup fancy services we can simply do something like this:
 
-![](003_Creating_Services_015.png){width="12.241666666666667in" height="4.3in"}
+![](003_Creating_Services_015.png)
 
  
 
@@ -330,7 +330,7 @@ SO, without even needing to setup fancy services we can simply do something like
 
  
 
-![](003_Creating_Services_016.png){width="11.75in" height="6.375in"}
+![](003_Creating_Services_016.png)
 
  
 
@@ -340,7 +340,7 @@ SO, without even needing to setup fancy services we can simply do something like
 
 **NodePort Service**
 
-![Terminal Help ! basic-pod.yml ! basic-deployment.yml node-port-service.yml - Kubern node-port-service.yml X Welcome to nginx! node-port-serv\'ice.yml \> {} spec \> \[ Services \> ! ! basic-serviceyml \] ports \> { } O \> \# nodePort 1 2 3 4 5 6 7 8 9 10 11 12 13 14 io.k8s.api.core.v1 .Serv•ice (VI \@service.json) apiVersion: VI kind: Service metadata name: myapp spec : type: NodePort selector : app: myapp ports : port: 80 targetPort: 80 nodePort: 30001 localhost :30001 Welcome to nginx! If you see this page, the nginx web server is successfully installed and working. Further configuration is required. For online documentation and support please refer to nginx.org. Commercial support is available at nginx.com. Thank you for using nginx. PROBLEMS OUTPUT TERMINAL DEBUG CONSOLE PS E: k apply -f .\\node-port-service.yml service/myapp created PS E: k get all pod / ba s ic - d eployment - name- 55dccd476f-6kb24 pod / basic -d eployment-name- 55dccd476f-jb27n READY 1/1 1/1 1/1 STATUS Running Running Running pod/basic-pod service/kubernetes service/myapp TYPE ClusterIP NodePort RESTARTS PORT(S) 443/TCP AGE 8m21s 14m 32h CLUSTER-IP 10.96.ø.1 10.98.66.169 READY EXTERNAL-IP \<none\> \<none\> UP-TO-DATE 2 DESIRED 2 80: 3øøø1/TCP 30s AVAILABLE AGE deployment . apps / basic -deployment -name 2/2 2 CURRENT 2 READY 2 AGE 8m21s replicaset . apps/ basic-deployment-name-55dccd476f PS E: ](003_Creating_Services_017.png){width="9.35in" height="6.008333333333334in"}
+![Terminal Help ! basic-pod.yml ! basic-deployment.yml node-port-service.yml - Kubern node-port-service.yml X Welcome to nginx! node-port-serv\'ice.yml \> {} spec \> \[ Services \> ! ! basic-serviceyml \] ports \> { } O \> \# nodePort 1 2 3 4 5 6 7 8 9 10 11 12 13 14 io.k8s.api.core.v1 .Serv•ice (VI \@service.json) apiVersion: VI kind: Service metadata name: myapp spec : type: NodePort selector : app: myapp ports : port: 80 targetPort: 80 nodePort: 30001 localhost :30001 Welcome to nginx! If you see this page, the nginx web server is successfully installed and working. Further configuration is required. For online documentation and support please refer to nginx.org. Commercial support is available at nginx.com. Thank you for using nginx. PROBLEMS OUTPUT TERMINAL DEBUG CONSOLE PS E: k apply -f .\\node-port-service.yml service/myapp created PS E: k get all pod / ba s ic - d eployment - name- 55dccd476f-6kb24 pod / basic -d eployment-name- 55dccd476f-jb27n READY 1/1 1/1 1/1 STATUS Running Running Running pod/basic-pod service/kubernetes service/myapp TYPE ClusterIP NodePort RESTARTS PORT(S) 443/TCP AGE 8m21s 14m 32h CLUSTER-IP 10.96.ø.1 10.98.66.169 READY EXTERNAL-IP \<none\> \<none\> UP-TO-DATE 2 DESIRED 2 80: 3øøø1/TCP 30s AVAILABLE AGE deployment . apps / basic -deployment -name 2/2 2 CURRENT 2 READY 2 AGE 8m21s replicaset . apps/ basic-deployment-name-55dccd476f PS E: ](003_Creating_Services_017.png)
 
  
 
@@ -350,13 +350,13 @@ SO, without even needing to setup fancy services we can simply do something like
 
 **Load Balancer Service**
 
-![i•rminal Help ! basic-pod.yml load-balancer-service.yml - Kube Welcome to nginx! ! basic-deployment.yml ! basic-serviceyml \] ports node-port-service.yml load-bala Services \> ! load-balancer-sewice.yml \> { } spec \> \[ 1 2 3 4 5 6 7 8 9 10 11 12 13 io.k8s.api.core.v1 .Serv•ice (VI \@service.json) apiVersion: VI kind: Service metadata name: myapp spec LoadBa1ancer type : selector : app: myapp localhost Welcome to nginx! If you see this page, the nginx web server is successfully installed and working. Further configuration is required. For online documentation and support please refer to nginx.org. Commercial support is available at nginx.com. Thank you for using nginx. ports : name port 80 targetPort : 80 PROBLEMS OUTPUT TERMINAL DEBUG CONSOLE PS E: k READY basic -deployment -name-55dccd476f-6kb24 1/1 basic -deployment -name-55dccd476f-jb27n 1/1 od PS E: k service/myapp created PS E: k get pods STATUS Running Running apply \_ f get all -show-labels RESTARTS AGE LABELS app=myapp , pod -templa t app---my app , pod -templa t . \\node-port-service. yml READY STATUS RESTARTS AGE PS E: k apply -f .\\load-balancer-service.yml service/myapp created PS E: ](003_Creating_Services_018.png){width="9.025in" height="5.033333333333333in"}
+![i•rminal Help ! basic-pod.yml load-balancer-service.yml - Kube Welcome to nginx! ! basic-deployment.yml ! basic-serviceyml \] ports node-port-service.yml load-bala Services \> ! load-balancer-sewice.yml \> { } spec \> \[ 1 2 3 4 5 6 7 8 9 10 11 12 13 io.k8s.api.core.v1 .Serv•ice (VI \@service.json) apiVersion: VI kind: Service metadata name: myapp spec LoadBa1ancer type : selector : app: myapp localhost Welcome to nginx! If you see this page, the nginx web server is successfully installed and working. Further configuration is required. For online documentation and support please refer to nginx.org. Commercial support is available at nginx.com. Thank you for using nginx. ports : name port 80 targetPort : 80 PROBLEMS OUTPUT TERMINAL DEBUG CONSOLE PS E: k READY basic -deployment -name-55dccd476f-6kb24 1/1 basic -deployment -name-55dccd476f-jb27n 1/1 od PS E: k service/myapp created PS E: k get pods STATUS Running Running apply \_ f get all -show-labels RESTARTS AGE LABELS app=myapp , pod -templa t app---my app , pod -templa t . \\node-port-service. yml READY STATUS RESTARTS AGE PS E: k apply -f .\\load-balancer-service.yml service/myapp created PS E: ](003_Creating_Services_018.png)
 
  
 
 *Boom we can now access our application from the browser...what this does is a BIT of magic....*
 
-![PS C: WIE kubernetes k get services TYPE AGE ClusteriP CLUSTER-IP le.%.e.l EXTERNAL-IP PORT(S) 443/TCP 80 : 30865 nginx-loadbalancer LoadBalancer 10. løe. 187.151 localhost TCP 22s PS C: \\Users\\dwah1\\Dropbox\\Projects\\GitHub\\Courses\\DockerKubernetesCourseCod e\\samples\\services\> ](003_Creating_Services_019.png){width="7.408333333333333in" height="2.325in"}
+![PS C: WIE kubernetes k get services TYPE AGE ClusteriP CLUSTER-IP le.%.e.l EXTERNAL-IP PORT(S) 443/TCP 80 : 30865 nginx-loadbalancer LoadBalancer 10. løe. 187.151 localhost TCP 22s PS C: \\Users\\dwah1\\Dropbox\\Projects\\GitHub\\Courses\\DockerKubernetesCourseCod e\\samples\\services\> ](003_Creating_Services_019.png)
 
  
 
@@ -366,7 +366,7 @@ SO, without even needing to setup fancy services we can simply do something like
 
  
 
-![Summary Pods live and die so their IP address can change Services abstract Pod IP addresses from consumers Labels associate a Service with a Pod Service types: ClusterlP (internal to cluster - default) NodePort (exposes Service on each\'s Node\'s LoadBalancer (exposes a Service externally) ExternalName (proxies to an external service) ](003_Creating_Services_020.png){width="6.125in" height="2.9916666666666667in"}
+![Summary Pods live and die so their IP address can change Services abstract Pod IP addresses from consumers Labels associate a Service with a Pod Service types: ClusterlP (internal to cluster - default) NodePort (exposes Service on each\'s Node\'s LoadBalancer (exposes a Service externally) ExternalName (proxies to an external service) ](003_Creating_Services_020.png)
 
  
 

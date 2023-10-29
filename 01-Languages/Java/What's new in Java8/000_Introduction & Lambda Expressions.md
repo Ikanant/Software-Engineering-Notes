@@ -26,13 +26,13 @@ Course Goals:
 
 Let\'s look at a simple interface \'FileFilter\' being implemented and used in the classic Java way:
 
-![• Let\'s implement this interface public class JavaFi1eFi1ter implements FileFi1ter { public boolean accept(Fi1e file) { return file. getName() . endsWith(\" . java\"); And use it: JavaFi1eFi1ter fileFi1ter = new JavaFi1eFi1ter(); File dir new /tmp\"); File\[\] javaFi1es = dir. listFi1es(fi1eFi1ter); ](000_Introduction_&_Lambda_Expressions_000.png){width="4.425in" height="2.841666666666667in"}
+![• Let\'s implement this interface public class JavaFi1eFi1ter implements FileFi1ter { public boolean accept(Fi1e file) { return file. getName() . endsWith(\" . java\"); And use it: JavaFi1eFi1ter fileFi1ter = new JavaFi1eFi1ter(); File dir new /tmp\"); File\[\] javaFi1es = dir. listFi1es(fi1eFi1ter); ](000_Introduction_&_Lambda_Expressions_000.png)
 
  
 
 Now let\'s do the same (most common way of handling this) is to create not a concrete class but an anonymous class instead. Anonymous classes are simply classes with no name. This will allow us to put the technical code that will filter out the technical source code at the same place as the place where the code is used.
 
-![• Let\'s use an anonymous class FileFi1ter fileFi1ter = new FileFi1ter() { \@Override public boolean accept(Fi1e file) { return file. getName() .endsWith(\" . java\"); File dir new /tmp\"); File\[\] javaFi1es = dir. listFi1es(fi1eFi1ter) ; ](000_Introduction_&_Lambda_Expressions_001.png){width="4.341666666666667in" height="2.0in"}
+![• Let\'s use an anonymous class FileFi1ter fileFi1ter = new FileFi1ter() { \@Override public boolean accept(Fi1e file) { return file. getName() .endsWith(\" . java\"); File dir new /tmp\"); File\[\] javaFi1es = dir. listFi1es(fi1eFi1ter) ; ](000_Introduction_&_Lambda_Expressions_001.png)
 
  
 
@@ -44,7 +44,7 @@ Now let\'s do the same (most common way of handling this) is to create not a con
 
  
 
-![This is a Java 8 lambda expression: FileFi1ter filter = (File file) -Y file.getName() .endsWith(\". java\"); ](000_Introduction_&_Lambda_Expressions_002.png){width="4.95in" height="0.7166666666666667in"}
+![This is a Java 8 lambda expression: FileFi1ter filter = (File file) -Y file.getName() .endsWith(\". java\"); ](000_Introduction_&_Lambda_Expressions_002.png)
 
  
 
@@ -54,7 +54,7 @@ Just another way of writing instances of anonymous classes, and hopefully a more
 
  
 
-![Several Ways of Writing a Lambda Expression The simplest way: FileFi1ter filter = (File file) -Y file .getName() .endsWith(\". java If I have more than one line of code: Runnable r for (int i = 0; i \< 5; i++) { System. out .println( \"Hello world! \" ) ; ](000_Introduction_&_Lambda_Expressions_003.png){width="5.975in" height="3.425in"}
+![Several Ways of Writing a Lambda Expression The simplest way: FileFi1ter filter = (File file) -Y file .getName() .endsWith(\". java If I have more than one line of code: Runnable r for (int i = 0; i \< 5; i++) { System. out .println( \"Hello world! \" ) ; ](000_Introduction_&_Lambda_Expressions_003.png)
 
  
 
@@ -94,13 +94,13 @@ Let\'s Dive in:
 
             2.  One important thing to not is that though functional interface is a concept newly introduced in JAVA8, old interfaces (which follow the pattern of having only ONE abstract method declared for them are now considered Functional interfaces as well
 
-            3.  ![public interface Runnable { run ( ) ; public interface Comparator\<T\> { int compare(T t1, T t2); public interface FileFi1ter { boolean accept( File pathname); ](000_Introduction_&_Lambda_Expressions_004.png){width="2.0833333333333335in" height="2.2in"}
+            3.  ![public interface Runnable { run ( ) ; public interface Comparator\<T\> { int compare(T t1, T t2); public interface FileFi1ter { boolean accept( File pathname); ](000_Introduction_&_Lambda_Expressions_004.png)
 
         ii. Methods from the Object class don\'t count!
 
             1.  When we count the method of an interface to check if that interface is functional or not, the method from the object class don\'t count. This can be confusing because technically all the object in Java are extending the Object class so why would they need to declare the methods from the object class into the interface? - When someone declares a method from the object class in the interface, it is usually to define some documentation to give some special semantic and to add some JavaDoc that might be different from the object class.
 
-            2.  ![public interface MyFunctiona11nterface { someMethod ( ) ; \* Some more documentation equals(Object o); ](000_Introduction_&_Lambda_Expressions_005.png){width="2.6666666666666665in" height="1.5333333333333334in"}
+            2.  ![public interface MyFunctiona11nterface { someMethod ( ) ; \* Some more documentation equals(Object o); ](000_Introduction_&_Lambda_Expressions_005.png)
 
         iii. \@FunctionalInterface - Functional Interfaces can be annotated, BUT this is not a requirement. It is just here for convenience, the compiler can tell me whether the interface is functional or not
 
@@ -111,11 +111,11 @@ Let\'s Dive in:
 
     a.  I can easily put a Lambda expression in a variable. In fact, we did that across the 3 sample codes I wrote in this course. The consequences of this, is that a lambda expression can be taken is a parameter by a method, returned by a method and it can be moved around easily.
 
-    b.  ![Comparator\<String\> c --- (String sl, String s2) -Y Integer s2.1ength()); ](000_Introduction_&_Lambda_Expressions_006.png){width="4.0in" height="0.9in"}
+    b.  ![Comparator\<String\> c --- (String sl, String s2) -Y Integer s2.1ength()); ](000_Introduction_&_Lambda_Expressions_006.png)
 
 3.  **This question is tougher:**
 
-    a.  ![Comparator\<String\> c --- (String sl, String s2) -Y Integer. s2.1ength()); Comparator\<String\> c = new Comparator\<String\>(String sl, String s2) { public boolean compareTo(String sl, String s2) { Integer s2. length()); ](000_Introduction_&_Lambda_Expressions_007.png){width="4.275in" height="2.3in"}
+    a.  ![Comparator\<String\> c --- (String sl, String s2) -Y Integer. s2.1ength()); Comparator\<String\> c = new Comparator\<String\>(String sl, String s2) { public boolean compareTo(String sl, String s2) { Integer s2. length()); ](000_Introduction_&_Lambda_Expressions_007.png)
 
         i.  What is the biggest differences between the above two solutions? - The difference is that the instance of the anonymous class is created using the keyword **new** so we are explicitly telling the JVM to create a new object in this case. Creating a new object is NOT free. We need to create/allocate/clean memory, execute static initializers etc.... And once all of this is done it will execute the constructor from the object class and all their inheritance. This can be HEAVY... This is NOT the case when creating a Lambda expression!
 
@@ -137,7 +137,7 @@ In Java 8 we also got a pretty fancy package full of functional interfaces... mo
 
     a.  Single interfaces that doesn\'t take any object but that provides a new object
 
-    b.  ![\@Functiona11nterface public interface Supplier\<T\> { T get(); ](000_Introduction_&_Lambda_Expressions_008.png){width="2.925in" height="1.25in"}
+    b.  ![\@Functiona11nterface public interface Supplier\<T\> { T get(); ](000_Introduction_&_Lambda_Expressions_008.png)
 
 2.  Consumer
 
@@ -149,19 +149,19 @@ In Java 8 we also got a pretty fancy package full of functional interfaces... mo
 
         i.  This is a special kind of consumer. This type of interface takes 2 objects instead of 1. (they can be of different types)
 
-    d.  ![unctionallnterface public interface { void accept(T t); \@Functiona11nterface public interface BiConsumer\<T, void accept(T t, U u); ](000_Introduction_&_Lambda_Expressions_009.png){width="2.8916666666666666in" height="2.125in"}
+    d.  ![unctionallnterface public interface { void accept(T t); \@Functiona11nterface public interface BiConsumer\<T, void accept(T t, U u); ](000_Introduction_&_Lambda_Expressions_009.png)
 
 3.  Predicate / BiPredicate
 
     a.  Takes an object as a parameter and then returns a boolean.
 
-    b.  ![\@Functiona11nterface public interface Predicate\<T\> { boolean test(T t); \@Functiona11nterface public interface BiPredicate\<T, { boolean test(T t, U u); ](000_Introduction_&_Lambda_Expressions_010.png){width="2.8916666666666666in" height="2.175in"}
+    b.  ![\@Functiona11nterface public interface Predicate\<T\> { boolean test(T t); \@Functiona11nterface public interface BiPredicate\<T, { boolean test(T t, U u); ](000_Introduction_&_Lambda_Expressions_010.png)
 
 4.  Function / BiFunction
 
     a.  Takes an object as a parameter and returns another object
 
-    b.  ![\@Functiona11nterface public interface Function\<T, R apply (T t); \@Functiona11nterface public interface BiFunction\<T, R apply (T t, U u); U, ](000_Introduction_&_Lambda_Expressions_011.png){width="2.925in" height="2.066666666666667in"}
+    b.  ![\@Functiona11nterface public interface Function\<T, R apply (T t); \@Functiona11nterface public interface BiFunction\<T, R apply (T t, U u); U, ](000_Introduction_&_Lambda_Expressions_011.png)
 
     c.  Notice how in the above shot of the BiFunction we are dealing with 3 generic types T U R so we need to have some knowledge of generics in order to understand what\'s going on.
 
@@ -175,7 +175,7 @@ In Java 8 we also got a pretty fancy package full of functional interfaces... mo
 
 Also:
 
-![More Lambda Expressions Syntax Most of the time, parameter types can be omitted • • Comparator\<String\> c = (String sl, String s2) -Y Integer. compare (sl. 1 ength ( ) , Becomes: (sl, s2) -Y Integer. compare (s 1.1 ength ( ) , s2. length ( ) ) ; s2.1ength()); ](000_Introduction_&_Lambda_Expressions_012.png){width="6.15in" height="3.1333333333333333in"}
+![More Lambda Expressions Syntax Most of the time, parameter types can be omitted • • Comparator\<String\> c = (String sl, String s2) -Y Integer. compare (sl. 1 ength ( ) , Becomes: (sl, s2) -Y Integer. compare (s 1.1 ength ( ) , s2. length ( ) ) ; s2.1ength()); ](000_Introduction_&_Lambda_Expressions_012.png)
 
 This is the first time in Java that we can declare a variable without declaring the type!
 
@@ -185,7 +185,7 @@ This is the first time in Java that we can declare a variable without declaring 
 
 Here we can see yet another way of dealing with Lambda expressions.
 
-![This lambda expression: Consumer\<String\> c = s -Y System.out .println(s); • Can be written like that: Consumer\<String\> c = System.out: :println; ](000_Introduction_&_Lambda_Expressions_013.png){width="6.025in" height="2.5833333333333335in"}
+![This lambda expression: Consumer\<String\> c = s -Y System.out .println(s); • Can be written like that: Consumer\<String\> c = System.out: :println; ](000_Introduction_&_Lambda_Expressions_013.png)
 
 This new syntax is composed of the object (in our case System.out), the ColonColon and then the name of the method that is invoked by this lambda expression. Note: We can use STATIC and non-STATIC method with this syntax.
 
@@ -203,7 +203,7 @@ First concern. Where are our objects when we are in a JAVA application. The answ
 
 **Can I process this data with lambdas?**
 
-![List\<Customer\> list = list. forEach(customer • Or: List\<Customer\> list = list. forEach(System. out : : -Y System.out.println(customer)); println) ; ](000_Introduction_&_Lambda_Expressions_014.png){width="5.908333333333333in" height="2.2in"}
+![List\<Customer\> list = list. forEach(customer • Or: List\<Customer\> list = list. forEach(System. out : : -Y System.out.println(customer)); println) ; ](000_Introduction_&_Lambda_Expressions_014.png)
 
  
 
@@ -211,7 +211,7 @@ But.... Then where does this forEach method come from? Recall that the way inter
 
  
 
-![How to Add Methods to Iterable? • Without breaking all the existing implementations? public interface Iterab1e\<E\> { // the usual methods void forEach(Consumer\<E\> consumer); ](000_Introduction_&_Lambda_Expressions_015.png){width="5.925in" height="2.925in"}
+![How to Add Methods to Iterable? • Without breaking all the existing implementations? public interface Iterab1e\<E\> { // the usual methods void forEach(Consumer\<E\> consumer); ](000_Introduction_&_Lambda_Expressions_015.png)
 
  
 
@@ -219,20 +219,20 @@ Woah, if I can\'t put the implementation of a forEach in the ArrayList (for exam
 
  
 
-![public interface Iterab1e\<E\> { // the usual methods default void forEach(Consumer\<E\> consumer) { for (E e : this) { consumer. accept (e) ; ](000_Introduction_&_Lambda_Expressions_016.png){width="8.666666666666666in" height="4.841666666666667in"}
+![public interface Iterab1e\<E\> { // the usual methods default void forEach(Consumer\<E\> consumer) { for (E e : this) { consumer. accept (e) ; ](000_Introduction_&_Lambda_Expressions_016.png)
 
  
 
-![Default Methods This is a new Java 8 concept • It allows to change the old interfaces without breaking the existing implementations It also allows new patterns! • And by the way\... Static methods are also allowed in Java 8 interfaces! ](000_Introduction_&_Lambda_Expressions_017.png){width="8.658333333333333in" height="4.783333333333333in"}
+![Default Methods This is a new Java 8 concept • It allows to change the old interfaces without breaking the existing implementations It also allows new patterns! • And by the way\... Static methods are also allowed in Java 8 interfaces! ](000_Introduction_&_Lambda_Expressions_017.png)
 
  
 
 \-
 
-![Examples Of New Patterns Predicates Predicate\<String\> pl Predicate\<String\> p2 Predicate\<String\> p3 \@Functiona11nterface = s -Y s.length() \< 20; = s -Y s. length() \> 10; = pl. and(p2); public interface Predicate\<T\> { boolean test(T t); default Predicate\<T\> and(Predicate\<? super T \> other) { Objects. requireNonNuLL (other) ; return (t) - \> test(t) && other. test(t); ](000_Introduction_&_Lambda_Expressions_018.png){width="8.833333333333334in" height="7.341666666666667in"}
+![Examples Of New Patterns Predicates Predicate\<String\> pl Predicate\<String\> p2 Predicate\<String\> p3 \@Functiona11nterface = s -Y s.length() \< 20; = s -Y s. length() \> 10; = pl. and(p2); public interface Predicate\<T\> { boolean test(T t); default Predicate\<T\> and(Predicate\<? super T \> other) { Objects. requireNonNuLL (other) ; return (t) - \> test(t) && other. test(t); ](000_Introduction_&_Lambda_Expressions_018.png)
 
  
 
-![• Summary The new « lambda expression » syntax A lambda expression has a type :a functional interface Definition of a functional interface, examples Method and constructor references Iterable.forEach method Default and static methods in interfaces, examples ](000_Introduction_&_Lambda_Expressions_019.png){width="9.258333333333333in" height="5.883333333333334in"}
+![• Summary The new « lambda expression » syntax A lambda expression has a type :a functional interface Definition of a functional interface, examples Method and constructor references Iterable.forEach method Default and static methods in interfaces, examples ](000_Introduction_&_Lambda_Expressions_019.png)
 
  

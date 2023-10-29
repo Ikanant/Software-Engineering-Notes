@@ -32,7 +32,7 @@ What actually happens behind the scenes here is that GIT will create a BRAND new
 
  
 
-![master 5de2465 5127436 a8e182e ](005_Fixing_Mistakes_000.png){width="5.0in" height="3.441666666666667in"}
+![master 5de2465 5127436 a8e182e ](005_Fixing_Mistakes_000.png)
 
  
 
@@ -84,7 +84,7 @@ This is where an Interactive Rebase comes into place\.... Interactive REBASES is
 
  
 
-![WIP (Work In Progress) ](005_Fixing_Mistakes_001.png){width="5.0in" height="4.466666666666667in"}
+![WIP (Work In Progress) ](005_Fixing_Mistakes_001.png)
 
  
 
@@ -94,7 +94,7 @@ Here is what we need to keep in mind\... if we do an INTERACTIVE REBASE\... the 
 
  
 
-![cookbook\> \* 2c74ea2 \* 5127436 \* a8e182e git log \--oneline \--decorate ---graph (HEAD master) Add missing chicken tikka masala placeholde Add Caesar Salad to menu Make README all uppercase \* f22døad Merge branch \' tomato\' I \* øc55d2f (tomato) Add tomato to guacamole \* 1 7fd9bb2 Add onion to guacamole 1 fc6aef \* \* fbe5356 lcb2137 \* \* 80f2a48 \* 704182f \* 5d4a817 ca760f8 \* \* bf36d97 fced3af \* Add guacamole Well, I changed my mind about that renaming Use Markdown for the menu Add Tikka Masala to menu (origin/master, origin/HEAD) Add lemon juice to the apple pi (origin/spaghetti, spaghetti) Add carbonara ingredients Add spaghetti alla carbonara Tweak apple pie some more Tweak apple pie ecbebe6 (origin/lisa, lisa) Merge branch \'lisa\' I \* 07ffe9 Add Lisa\'s version of the pie \* I e268621 Add recipe \* 5720fdf Add cake \* 11779f4 cookbook\> git rebase -i origin/masterl ](005_Fixing_Mistakes_002.png){width="5.0in" height="4.458333333333333in"}
+![cookbook\> \* 2c74ea2 \* 5127436 \* a8e182e git log \--oneline \--decorate ---graph (HEAD master) Add missing chicken tikka masala placeholde Add Caesar Salad to menu Make README all uppercase \* f22døad Merge branch \' tomato\' I \* øc55d2f (tomato) Add tomato to guacamole \* 1 7fd9bb2 Add onion to guacamole 1 fc6aef \* \* fbe5356 lcb2137 \* \* 80f2a48 \* 704182f \* 5d4a817 ca760f8 \* \* bf36d97 fced3af \* Add guacamole Well, I changed my mind about that renaming Use Markdown for the menu Add Tikka Masala to menu (origin/master, origin/HEAD) Add lemon juice to the apple pi (origin/spaghetti, spaghetti) Add carbonara ingredients Add spaghetti alla carbonara Tweak apple pie some more Tweak apple pie ecbebe6 (origin/lisa, lisa) Merge branch \'lisa\' I \* 07ffe9 Add Lisa\'s version of the pie \* I e268621 Add recipe \* 5720fdf Add cake \* 11779f4 cookbook\> git rebase -i origin/masterl ](005_Fixing_Mistakes_002.png)
 
  
 
@@ -116,7 +116,7 @@ Now we enter the text editor to rewrite a computer program. The program will go 
 
  
 
-![2 3 4 5 6 7 8 pick pick pick pick pick pick pick pick sef2a48 lcb21 37 fbe5356 1 fc6aef 7fd9bb2 Oc55d2f a8e182e 5127436 2c74ea2 Use Markdown for the menu Well, I changed my mind about that renaming Add guacamole Add onion to guacamole Add tomato to guacamole Make README all uppercase Add Caesar Salad to menu Add missing chicken tikka masala placeholder ](005_Fixing_Mistakes_003.png){width="5.0in" height="1.675in"}
+![2 3 4 5 6 7 8 pick pick pick pick pick pick pick pick sef2a48 lcb21 37 fbe5356 1 fc6aef 7fd9bb2 Oc55d2f a8e182e 5127436 2c74ea2 Use Markdown for the menu Well, I changed my mind about that renaming Add guacamole Add onion to guacamole Add tomato to guacamole Make README all uppercase Add Caesar Salad to menu Add missing chicken tikka masala placeholder ](005_Fixing_Mistakes_003.png)
 
  
 
@@ -124,7 +124,7 @@ WHICH THEN WE CHANGE TO:
 
  
 
-![2 3 4 5 6 7 8 9 pick 80f2a48 Add Tikka Masala to menu squash 2c74ea2 Add missing chicken tikka masala placeholder pick lcb2137 Use Markdown for the menu reword fbe5356 Well, I changed my mind about that renaming pick 1 fc6aef Add guacamole squash 7fd9bb2 Add onion to guacamole squash Oc55d2f Add tomato to guacamole pick a8e182e Make README all uppercase pick 5127436 Add Caesar Salad to menu ](005_Fixing_Mistakes_004.png){width="5.0in" height="1.5in"}
+![2 3 4 5 6 7 8 9 pick 80f2a48 Add Tikka Masala to menu squash 2c74ea2 Add missing chicken tikka masala placeholder pick lcb2137 Use Markdown for the menu reword fbe5356 Well, I changed my mind about that renaming pick 1 fc6aef Add guacamole squash 7fd9bb2 Add onion to guacamole squash Oc55d2f Add tomato to guacamole pick a8e182e Make README all uppercase pick 5127436 Add Caesar Salad to menu ](005_Fixing_Mistakes_004.png)
 
  
 
@@ -132,7 +132,7 @@ Whenever there is an item that needs a decision from us (the developers) that\'s
 
  
 
-![2 3 4 5 6 8 This is a combination of 2 commits. \# The first commit\'s message is: Add Tikka Masala to menu \# This is the 2nd commit message: Add missing chicken tikka masala placeholder ](005_Fixing_Mistakes_005.png){width="5.0in" height="1.8in"}
+![2 3 4 5 6 8 This is a combination of 2 commits. \# The first commit\'s message is: Add Tikka Masala to menu \# This is the 2nd commit message: Add missing chicken tikka masala placeholder ](005_Fixing_Mistakes_005.png)
 
  
 
@@ -154,7 +154,7 @@ The one thing to keep in mind with this process is that, let\'s consider the cas
 
  
 
-![master HEAD ](005_Fixing_Mistakes_006.png){width="5.0in" height="3.8666666666666667in"}
+![master HEAD ](005_Fixing_Mistakes_006.png)
 
  
 
@@ -174,7 +174,7 @@ This command will show me EVERYTHING that has happened in my GIT command history
 
  
 
-![1762c e 5d4a81 7 1762cfe -i -i dec24ed -i -i 772089c -i 8e579e1 c89f9fd -i 3Ø3e282 -i -i 319e02e dØa6bfe 8Øf2a48 2c74ea2 51 27436 a8e182e 7160d61 a8e182e f22dØad 7fd9bb2 I fc6aef 1 fc6aef I fc6aef fbe5356 beb74ØØ fbe5356 checkout : checkout : 1762cfe 1Øfd574 5de2465 Oc55d2f rebase rebase rebase rebase rebase rebase rebase rebase rebase rebase rebase commi t : commi t commi t : moving from spaghetti to master moving from master to spaghetti (finish): returning to refs/heads/master (pick): Add Caesar Salad to menu (pick): Make README all uppercase (continue): Add guacamole (squash): \# This is a combination of 2 commits. (pick): Add guacamole (reword): Fix bad renaming (reword): Well, I changed my mind about that renaming -i (pick): Use Markdown for the menu -i (squash): Add Tikka Masala to menu -i (start): checkout origin/master Add missing chicken tikka masala placeholder (amend): Add Caesar Salad to menu Added Caesar Salad to menu checkout: moving from nogood to master checkout: moving from master to nogood commit: Make README all uppercase commit (merge): Merge branch \'tomato\' commit: Add onion to guacamole checkout: moving from tomato to master commit: Add tomato to guacamole checkout: moving from master to tomato commi t : reset: commi t : commi t : Add guacamole moving to fbe53568 Add placeholder recipe for squids Well, I changed my mind about that renaming ](005_Fixing_Mistakes_007.png){width="5.666666666666667in" height="3.966666666666667in"}
+![1762c e 5d4a81 7 1762cfe -i -i dec24ed -i -i 772089c -i 8e579e1 c89f9fd -i 3Ø3e282 -i -i 319e02e dØa6bfe 8Øf2a48 2c74ea2 51 27436 a8e182e 7160d61 a8e182e f22dØad 7fd9bb2 I fc6aef 1 fc6aef I fc6aef fbe5356 beb74ØØ fbe5356 checkout : checkout : 1762cfe 1Øfd574 5de2465 Oc55d2f rebase rebase rebase rebase rebase rebase rebase rebase rebase rebase rebase commi t : commi t commi t : moving from spaghetti to master moving from master to spaghetti (finish): returning to refs/heads/master (pick): Add Caesar Salad to menu (pick): Make README all uppercase (continue): Add guacamole (squash): \# This is a combination of 2 commits. (pick): Add guacamole (reword): Fix bad renaming (reword): Well, I changed my mind about that renaming -i (pick): Use Markdown for the menu -i (squash): Add Tikka Masala to menu -i (start): checkout origin/master Add missing chicken tikka masala placeholder (amend): Add Caesar Salad to menu Added Caesar Salad to menu checkout: moving from nogood to master checkout: moving from master to nogood commit: Make README all uppercase commit (merge): Merge branch \'tomato\' commit: Add onion to guacamole checkout: moving from tomato to master commit: Add tomato to guacamole checkout: moving from master to tomato commi t : reset: commi t : commi t : Add guacamole moving to fbe53568 Add placeholder recipe for squids Well, I changed my mind about that renaming ](005_Fixing_Mistakes_007.png)
 
  
 

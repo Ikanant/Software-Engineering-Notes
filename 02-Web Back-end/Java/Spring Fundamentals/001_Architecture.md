@@ -26,7 +26,7 @@ In the repo above I will start to setup a project (at first doing things manual 
 
  
 
-![Getting Spring No direct download Maven Source, Javadocs, Binaries Transitive dependencies Spring Boot ](001_Architecture_000.png){width="4.5in" height="2.6166666666666667in"}
+![Getting Spring No direct download Maven Source, Javadocs, Binaries Transitive dependencies Spring Boot ](001_Architecture_000.png)
 
  
 

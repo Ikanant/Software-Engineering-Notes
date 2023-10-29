@@ -4,7 +4,7 @@ Sunday, February 12, 2017
 
 7:17 PM
 
-![You\'ll Learn More About\... Xamarin & Xamarin.Android List Views Creation of a Real-world Application Integration with the Android OS Activities & Views Store Deployment ](000_Introduction_000.png){width="5.0in" height="2.5083333333333333in"}
+![You\'ll Learn More About\... Xamarin & Xamarin.Android List Views Creation of a Real-world Application Integration with the Android OS Activities & Views Store Deployment ](000_Introduction_000.png)
 
  
 
@@ -14,7 +14,7 @@ We will be using Xamarin. Which is in essence C#. Knowledge of it is 100% requir
 
  
 
-![Or We Could Use the Lowest Common Denominator\... HTML css JS ](000_Introduction_001.png){width="5.175in" height="2.558333333333333in"}
+![Or We Could Use the Lowest Common Denominator\... HTML css JS ](000_Introduction_001.png)
 
  
 
@@ -32,11 +32,11 @@ One of the solutions to this problem is trying to identify the code that would r
 
  
 
-![Advantages of Xamarin Leverage your .NET and C# knowledge Native user interface Native performance Code sharing ](000_Introduction_002.png){width="5.0in" height="2.575in"}
+![Advantages of Xamarin Leverage your .NET and C# knowledge Native user interface Native performance Code sharing ](000_Introduction_002.png)
 
  
 
-![Disadvantages of Xamarin Not a Shared UI Platform Learning curve Price ](000_Introduction_003.png){width="5.0in" height="2.5416666666666665in"}
+![Disadvantages of Xamarin Not a Shared UI Platform Learning curve Price ](000_Introduction_003.png)
 
  
 

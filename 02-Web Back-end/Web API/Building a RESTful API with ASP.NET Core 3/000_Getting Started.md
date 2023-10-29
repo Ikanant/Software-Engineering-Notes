@@ -20,7 +20,7 @@ Starting point of my application... We are starting a web application and it NEE
 
  
 
-![\[S namespace CourseLibray.API public class Program public static void Main (string\[\] args) CreateHostauiIder(args) . Build . Run ; public static IHostauiIder Cre eHostauiIder(stringC\] args) Host. CreateDefauIt8uiIder(a . Conf igu reWebHostDef a u It s Builder webau ilder. LlseSta rtup\<Sta rtup\> ; ](000_Getting_Started_000.png){width="5.816666666666666in" height="3.825in"}
+![\[S namespace CourseLibray.API public class Program public static void Main (string\[\] args) CreateHostauiIder(args) . Build . Run ; public static IHostauiIder Cre eHostauiIder(stringC\] args) Host. CreateDefauIt8uiIder(a . Conf igu reWebHostDef a u It s Builder webau ilder. LlseSta rtup\<Sta rtup\> ; ](000_Getting_Started_000.png)
 
  
 
@@ -100,7 +100,7 @@ Before I start changing things into the official Photography API ... I will foll
 
     -   Exposes TWO DB sets... One of Authors and one of Courses and it ALSO contains some code to SEED the DB with some dummy data for testing purposes . This will need to run with a migration
 
-    -   ![public Authors { get; public Courses { get; set; set; protected override void modelauilder) // seed the database with dummy data modelauilder. ) . HasData ( new Author() Guid . Parse (\"d28888e9-2ba9-473a-a4øf-e38cb54f9b35\"), FirstName = \"8ery\" \"Griffin Beak Eldritch\", LastName --- DateOfairth new DateTime(165ø, 7, 23), Maincategoty = \"Ships\" new Author() Guid . Parse ( \"da2fd6ß9-d754-4feb-8acd- c4f9ff13ba96\" ) , FirstName = \"Nancy\" \"Swashbuckler Rye\", LastName --- DateOfairth new DateTime(1668, 5, 21), Maincategoty = \"Rum\" ](000_Getting_Started_001.png){width="5.3in" height="4.175in"}
+    -   ![public Authors { get; public Courses { get; set; set; protected override void modelauilder) // seed the database with dummy data modelauilder. ) . HasData ( new Author() Guid . Parse (\"d28888e9-2ba9-473a-a4øf-e38cb54f9b35\"), FirstName = \"8ery\" \"Griffin Beak Eldritch\", LastName --- DateOfairth new DateTime(165ø, 7, 23), Maincategoty = \"Ships\" new Author() Guid . Parse ( \"da2fd6ß9-d754-4feb-8acd- c4f9ff13ba96\" ) , FirstName = \"Nancy\" \"Swashbuckler Rye\", LastName --- DateOfairth new DateTime(1668, 5, 21), Maincategoty = \"Rum\" ](000_Getting_Started_001.png)
 
 -   Repository:
 
@@ -112,7 +112,7 @@ Before I start changing things into the official Photography API ... I will foll
 
     -   For now I am hard coding the connection string:
 
-    -   ![public void ConfigureSetwices (ISe:wiceCoIIection setwices) services . AddControIIers ; services .AddScoped\<ICourseLibrayReposit0D\', CourseLibrayReposit0D\' services . option s . LlseSq ISen•er ( ( Id b ) sq Iloca b ; Data ba se=Cou rseLibra ; Tru sted_Con nection=True ; \" ) ](000_Getting_Started_002.png){width="7.25in" height="2.216666666666667in"}
+    -   ![public void ConfigureSetwices (ISe:wiceCoIIection setwices) services . AddControIIers ; services .AddScoped\<ICourseLibrayReposit0D\', CourseLibrayReposit0D\' services . option s . LlseSq ISen•er ( ( Id b ) sq Iloca b ; Data ba se=Cou rseLibra ; Tru sted_Con nection=True ; \" ) ](000_Getting_Started_002.png)
 
 -   **Program.cs** changes:
 
@@ -120,7 +120,7 @@ Before I start changing things into the official Photography API ... I will foll
 
     -   We then ensure is created and migrated
 
-> ![// migrate using (var try the database. aest practice = in Main, scope = host.Setwices .CreateScope()) using service scope var context = // for demo purposes, delete the database & migrate on startup so // we can start with a clean slate context. Database. EnsureDeIeted ( ) ; context. Database. Migrate ( ) ; catch (Exception ex) var logger s cope. Setwiceprovider. GetReq u iredSetwic I Logger\< ( ) ; logger. LogError(ex, \"An error occurred while migrating the database. // run the web app host. Run(); ](000_Getting_Started_003.png){width="4.808333333333334in" height="2.716666666666667in"}
+> ![// migrate using (var try the database. aest practice = in Main, scope = host.Setwices .CreateScope()) using service scope var context = // for demo purposes, delete the database & migrate on startup so // we can start with a clean slate context. Database. EnsureDeIeted ( ) ; context. Database. Migrate ( ) ; catch (Exception ex) var logger s cope. Setwiceprovider. GetReq u iredSetwic I Logger\< ( ) ; logger. LogError(ex, \"An error occurred while migrating the database. // run the web app host. Run(); ](000_Getting_Started_003.png)
 
 -   In order to get the migration part to work I will first have to add a Migration:
 
@@ -128,7 +128,7 @@ Before I start changing things into the official Photography API ... I will foll
 
     -   Add-Migration \<Name of my migration\>
 
-    -   ![ackage Manager Console Package source: All Default project HdezPhotography.Api Each package is licensed to you by its owner. NuGet is not responsible to determine any dependencies . Package Manager Console Host Version 5.5.0.6473 Type •get-help NuGet\' to see all available NuGet connands. Add-Migration InitialMigration ](000_Getting_Started_004.png){width="5.991666666666666in" height="2.575in"}
+    -   ![ackage Manager Console Package source: All Default project HdezPhotography.Api Each package is licensed to you by its owner. NuGet is not responsible to determine any dependencies . Package Manager Console Host Version 5.5.0.6473 Type •get-help NuGet\' to see all available NuGet connands. Add-Migration InitialMigration ](000_Getting_Started_004.png)
 
  
 
@@ -150,7 +150,7 @@ Definition: **Representational State Transfers** intended to evoke an image of h
 
  
 
-![Introducing REST REST is an architectural style, not a standard We use standards to implement this architectural style REST is protocol agnostic ](000_Getting_Started_005.png){width="6.091666666666667in" height="3.683333333333333in"}
+![Introducing REST REST is an architectural style, not a standard We use standards to implement this architectural style REST is protocol agnostic ](000_Getting_Started_005.png)
 
  
 
@@ -158,7 +158,7 @@ Definition: **Representational State Transfers** intended to evoke an image of h
 
  
 
-![Learning What the REST Constraints Are About REST is defined by 6 constraints (one optional) A constraint is a design decision that can have positive and negative impacts ](000_Getting_Started_006.png){width="8.033333333333333in" height="2.183333333333333in"}
+![Learning What the REST Constraints Are About REST is defined by 6 constraints (one optional) A constraint is a design decision that can have positive and negative impacts ](000_Getting_Started_006.png)
 
  
 
@@ -191,7 +191,7 @@ Definition: **Representational State Transfers** intended to evoke an image of h
 
             2.  This just drives HOW to consume and use the API. It tells the consumer what I can do with the API. Can I delete the resource or edit it? How can I create.... This allows for a self-documenting API
 
-            3.  ![](000_Getting_Started_007.png){width="5.083333333333333in" height="2.558333333333333in"}
+            3.  ![](000_Getting_Started_007.png)
 
             4.  Through these links we drive application state
 

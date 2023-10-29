@@ -22,7 +22,7 @@ Spring uses AOPs / Proxies to apply things like transactions to our code.
 
  
 
-![JEE POJO Based Unobtrusive AOP/Proxies Best Practices ](000_Introduction_000.png){width="4.341666666666667in" height="2.425in"}
+![JEE POJO Based Unobtrusive AOP/Proxies Best Practices ](000_Introduction_000.png)
 
  
 
@@ -42,7 +42,7 @@ What does SPRING helps us with?\
 -   Put\'s the focus on the business\
      
 
-![Business FOCUS public Car getById(String id) { Connection con = null; PreparedStatement stmt = null; ResultSet rs = null; try { String sql = \"select \* from CAR where ID = con = DriverMa etConnection \"l stmt = con .prepareStatement sq stmt. setString(1, id); rs = stmt. executeQuery(); if(rs. next()) { car. setMake(rs. getString( return car; else { return null; } catch (SQLException e) { e.printStackTrace();} finally { try { if(rs null && { rs.close(); } catch (Exception e) {Y return null; : 33Ø6/cars \" ) ; ](000_Introduction_001.png){width="5.5in" height="4.525in"}
+![Business FOCUS public Car getById(String id) { Connection con = null; PreparedStatement stmt = null; ResultSet rs = null; try { String sql = \"select \* from CAR where ID = con = DriverMa etConnection \"l stmt = con .prepareStatement sq stmt. setString(1, id); rs = stmt. executeQuery(); if(rs. next()) { car. setMake(rs. getString( return car; else { return null; } catch (SQLException e) { e.printStackTrace();} finally { try { if(rs null && { rs.close(); } catch (Exception e) {Y return null; : 33Ø6/cars \" ) ; ](000_Introduction_001.png)
 
 \^\^\^ Lots of junk for configuration
 
@@ -50,7 +50,7 @@ What does SPRING helps us with?\
 
  
 
-![public Car getById(String id) { Connection con = null; PreparedStatement stmt = null; ResultSet rs = null; try { String sql = \"select \* from CAR where ID = ?\"; con = DriverManager 33Ø6/cars \" ) ; stmt = con.prepareStatement(sql); stmt. setString(1, id); rs = stmt. executeQuery(); Car car new Car(); car. . getString(1)) ; return car; else { return null; } catch (SQLException e) { e.printStackTrace();} finally { try { if(rs null && { rs.close(); } catch (Exception e) return null; public Car findCar(String id) { return Id) ](000_Introduction_002.png){width="7.175in" height="3.875in"}
+![public Car getById(String id) { Connection con = null; PreparedStatement stmt = null; ResultSet rs = null; try { String sql = \"select \* from CAR where ID = ?\"; con = DriverManager 33Ø6/cars \" ) ; stmt = con.prepareStatement(sql); stmt. setString(1, id); rs = stmt. executeQuery(); Car car new Car(); car. . getString(1)) ; return car; else { return null; } catch (SQLException e) { e.printStackTrace();} finally { try { if(rs null && { rs.close(); } catch (Exception e) return null; public Car findCar(String id) { return Id) ](000_Introduction_002.png)
 
  
 
@@ -67,6 +67,6 @@ The image bellow is what a Spring container would look like if we crafted it all
 
  
 
-![雀로口투口毒 ](000_Introduction_003.png){width="4.125in" height="3.2916666666666665in"}
+![雀로口투口毒 ](000_Introduction_003.png)
 
  

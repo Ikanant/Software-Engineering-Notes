@@ -38,7 +38,7 @@ Last but not least, there is **Azure Advisor**, which is a built in tool that te
 
  
 
-![.9 Azure - Physical Deployment Azure Regions High Availability Azure Geographies Availability Zones Disaster Recovery Region Pairs ](000_Architecture_and_Management_000.png){width="5.0in" height="2.783333333333333in"}
+![.9 Azure - Physical Deployment Azure Regions High Availability Azure Geographies Availability Zones Disaster Recovery Region Pairs ](000_Architecture_and_Management_000.png)
 
  
 
@@ -62,7 +62,7 @@ A **Geography** can be a single country OR a set of countries. Within a Geograph
 
  
 
-![Azure Geography Azure Region Availability Zone Availability Zone Availability Zone Azure Region ](000_Architecture_and_Management_001.png){width="5.0in" height="2.425in"}
+![Azure Geography Azure Region Availability Zone Availability Zone Availability Zone Azure Region ](000_Architecture_and_Management_001.png)
 
  
 
@@ -95,7 +95,7 @@ A Resource is simply a manageable item in Azure:\
 
 A Resource group on the other hand is a container that holds resources.
 
-![Resource Group Virtual Machines Databases Storage Accounts VNETs ](000_Architecture_and_Management_002.png){width="5.0in" height="3.066666666666667in"}
+![Resource Group Virtual Machines Databases Storage Accounts VNETs ](000_Architecture_and_Management_002.png)
 
  
 
@@ -174,7 +174,7 @@ I am going to choose to work with the Azure CLI from my Mac terminal. Seems stra
 
         i.  The \--out table will make things look nicer
 
-![• Install the Azure CLI for Windowj X My Dashboard (2) - Microsoft A: X Overview of the Azure Micr X + ---s\' C aa-4c13-8940-c2c2dek P Search resources services and docs (G+/) Microsoft Azure My Dashboard (2) + Z ö \[b O O Create a resource H«ne Dashboard All services FMRITES (C) Resource groups Azure Active Directory Powersnell v Connecting termi • Welccne to Azure Cloud Shell Type \"az\" to use Azure CLI Auto refresh : Off UTC Time : 24 Type \"help\" to learn about Cloud Shell t•OTD: Cmdlet help is available: help \<cmdlet nne\> VERBOSE: Authenticating to Azure VERBOSE: Building your Azure drive \... PS /hcme/neil\> ](000_Architecture_and_Management_003.png){width="5.0in" height="4.033333333333333in"}
+![• Install the Azure CLI for Windowj X My Dashboard (2) - Microsoft A: X Overview of the Azure Micr X + ---s\' C aa-4c13-8940-c2c2dek P Search resources services and docs (G+/) Microsoft Azure My Dashboard (2) + Z ö \[b O O Create a resource H«ne Dashboard All services FMRITES (C) Resource groups Azure Active Directory Powersnell v Connecting termi • Welccne to Azure Cloud Shell Type \"az\" to use Azure CLI Auto refresh : Off UTC Time : 24 Type \"help\" to learn about Cloud Shell t•OTD: Cmdlet help is available: help \<cmdlet nne\> VERBOSE: Authenticating to Azure VERBOSE: Building your Azure drive \... PS /hcme/neil\> ](000_Architecture_and_Management_003.png)
 
  
 
@@ -190,14 +190,14 @@ Create plan:
 
  
 
-![az appservice plan create - -resource-group NewTestRG - -nane TestAppSvcPIan \--sku SI ](000_Architecture_and_Management_004.png){width="5.0in" height="0.325in"}
+![az appservice plan create - -resource-group NewTestRG - -nane TestAppSvcPIan \--sku SI ](000_Architecture_and_Management_004.png)
 
  
 
 THEN, create webApp:\
  
 
-![uełd\-- dnoug-axłnosau- - ddeqaM ze ](000_Architecture_and_Management_005.png){width="5.0in" height="0.24166666666666667in"}
+![uełd\-- dnoug-axłnosau- - ddeqaM ze ](000_Architecture_and_Management_005.png)
 
  
 
@@ -223,7 +223,7 @@ Instead of writing templates from scratch, a neat trick is to just export existi
 
  
 
-![-+- Add Edit columns Subscription (change) Visual Studio Professional Subscription ID -z all Delete resource group Oef1dba3-743c-4fe2-97bf-8d81c3e64c20 Refresh Move v Export to CSV Deployments No deployments +7 Add filter Type App Service plan App Service Open query e Assign tags Delete Export template Feedback View as ISON Tags (change) Click here to add tags Essentials Showing 1 to 2 of 2 records. Name TestAppSvcPlan webappnmcli Type = = all X Location --- Show hidden types @ X Location Canada Central Canada Central ](000_Architecture_and_Management_006.png){width="5.0in" height="2.2583333333333333in"}
+![-+- Add Edit columns Subscription (change) Visual Studio Professional Subscription ID -z all Delete resource group Oef1dba3-743c-4fe2-97bf-8d81c3e64c20 Refresh Move v Export to CSV Deployments No deployments +7 Add filter Type App Service plan App Service Open query e Assign tags Delete Export template Feedback View as ISON Tags (change) Click here to add tags Essentials Showing 1 to 2 of 2 records. Name TestAppSvcPlan webappnmcli Type = = all X Location --- Show hidden types @ X Location Canada Central Canada Central ](000_Architecture_and_Management_006.png)
 
  
 
@@ -268,7 +268,7 @@ Microsoft refers to it as a personalized cloud consultant that helps you optimiz
 
  
 
-![All services Advisor Overview Recommendations Cost Security Reliability R Operational Excellence Performance All recommendations Monitoring Alerts (Preview) Recommendation digests Settings configuration Feedback Download as CSV Download as PDF o Your recommendations have been loaded Subscriptions: Visual Studio Professional --- Don\'t see a subscription? Open Directory + Subscription settings Cost You are following all of our cost recommendations See list of cost recommendations Security 13 Recommendations High 5 impact Medium 6 2 impact impact 10 Impacted resources ](000_Architecture_and_Management_007.png){width="5.0in" height="3.158333333333333in"}
+![All services Advisor Overview Recommendations Cost Security Reliability R Operational Excellence Performance All recommendations Monitoring Alerts (Preview) Recommendation digests Settings configuration Feedback Download as CSV Download as PDF o Your recommendations have been loaded Subscriptions: Visual Studio Professional --- Don\'t see a subscription? Open Directory + Subscription settings Cost You are following all of our cost recommendations See list of cost recommendations Security 13 Recommendations High 5 impact Medium 6 2 impact impact 10 Impacted resources ](000_Architecture_and_Management_007.png)
 
  
 

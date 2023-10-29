@@ -12,7 +12,7 @@ Sunday, April 18, 2021
 
  
 
-![Deployment ReplicaSet Pod Container Pod Container Service Pod Container ](001_Creating_Pods_000.png){width="6.616666666666666in" height="2.341666666666667in"}
+![Deployment ReplicaSet Pod Container Pod Container Service Pod Container ](001_Creating_Pods_000.png)
 
  
 
@@ -28,7 +28,7 @@ It is important to think of Pods as the way to organize the different parts of o
 
  
 
-![Kubernetes Pods Node Pod Container Pod Container Smallest object of the Kubernetes object model Environment for containers Organize application \"parts\" into Pods (server, caching, APIs, database, etc.) Pod IP, memory, volumes, etc. shared across containers Scale horizontally by adding Pod replicas Pods live and die but never come back to life ](001_Creating_Pods_001.png){width="6.283333333333333in" height="2.9166666666666665in"}
+![Kubernetes Pods Node Pod Container Pod Container Smallest object of the Kubernetes object model Environment for containers Organize application \"parts\" into Pods (server, caching, APIs, database, etc.) Pod IP, memory, volumes, etc. shared across containers Scale horizontally by adding Pod replicas Pods live and die but never come back to life ](001_Creating_Pods_001.png)
 
  
 
@@ -36,11 +36,11 @@ It is important to think of Pods as the way to organize the different parts of o
 
  
 
-![Master Node Pod ](001_Creating_Pods_002.png){width="3.1333333333333333in" height="4.941666666666666in"}
+![Master Node Pod ](001_Creating_Pods_002.png)
 
  
 
-![Node Pod Container Pod Container ](001_Creating_Pods_003.png){width="3.4833333333333334in" height="2.3583333333333334in"}
+![Node Pod Container Pod Container ](001_Creating_Pods_003.png)
 
  
 
@@ -56,7 +56,7 @@ Containers within the SAME Pod NEED to have a different port of course.
 
  
 
-![Node Pod Container Port 80 10.0.0.43 Pod Container Port 80 10.0.0.53 ](001_Creating_Pods_004.png){width="4.458333333333333in" height="2.95in"}
+![Node Pod Container Port 80 10.0.0.43 Pod Container Port 80 10.0.0.53 ](001_Creating_Pods_004.png)
 
  
 
@@ -66,7 +66,7 @@ Ports can be reused by containers in separate Pods
 
 **Pods do NOT span nodes**
 
-![Node Pod Container Node Pod Container ](001_Creating_Pods_005.png){width="7.0in" height="2.216666666666667in"}
+![Node Pod Container Node Pod Container ](001_Creating_Pods_005.png)
 
  
 
@@ -88,7 +88,7 @@ There are various ways to create a Pod, but the most straight forward way (Imper
 
  
 
-![\# List only kubectl get \# List all kubectl get Pods pods resources all Get Information about a Pod The kubectl get command can be used to retrieve information about Pods and many other Kubernetes objects ](001_Creating_Pods_006.png){width="6.591666666666667in" height="3.158333333333333in"}
+![\# List only kubectl get \# List all kubectl get Pods pods resources all Get Information about a Pod The kubectl get command can be used to retrieve information about Pods and many other Kubernetes objects ](001_Creating_Pods_006.png)
 
  
 
@@ -106,7 +106,7 @@ Looks familiar? This is resembles the same way we deal with ports in docker
 
  
 
-![Internal port \# Enable Pod container to be \# called externally kubectl port-forward \[name-of-pod\] 8080:80 External port ](001_Creating_Pods_007.png){width="6.366666666666666in" height="2.3833333333333333in"}
+![Internal port \# Enable Pod container to be \# called externally kubectl port-forward \[name-of-pod\] 8080:80 External port ](001_Creating_Pods_007.png)
 
  
 
@@ -134,7 +134,7 @@ A Pod can also be easily deleted by doing something like:
 
 **NOW THIS IS THE WHERE THE FUN PART BEGINS:**
 
-![Windows PowerSheII PS C: Set-Alias PS C: k get all Falcon and Winter Soldier F X k ---Name le.96.e.1 kubectl Docker Desktop for Mac a F localhost:1 234 O o \'000\' X Web UI (Dashboard) Kube X Kubernetes Dashboard Finances Photography Gig Video x Welcome to nginx! NAME service/kubernetes TYPE Cluster IP CLUSTER-IP EXTERNAL \<none\> - -image=nginx : alpine -IP PORT(S) 443/TCP diaServer Audio Software Documentation 74m PS C: k run my-first-pod pod/my-first-pod created PS C: k get pods NAME my-first-pod READY 1/1 STATUS RESTARTS Running e PS C: k get services Welcome to nginx! If you see this page, the nginx web server is successfully installed and working. Further configuration is required. For online documentation and support please refer to nginx:ocg. Commercial support is available at nginx.com. Thank you for using nginx. NAME kubernetes TYPE CLUSTER-IP EXTERNAL-IP PORT(S) Cluster IP le.96.e.1 \<none\> 443/TCP 76m PS C: k port-forward Forwarding from 127.e.e.1:1234 8e Forwarding from \[::1\]:1234 -\> 80 Handling connection for 1234 Handling connection for 1234 my-first-pod 1234: 80 ](001_Creating_Pods_008.png){width="8.216666666666667in" height="1.85in"}
+![Windows PowerSheII PS C: Set-Alias PS C: k get all Falcon and Winter Soldier F X k ---Name le.96.e.1 kubectl Docker Desktop for Mac a F localhost:1 234 O o \'000\' X Web UI (Dashboard) Kube X Kubernetes Dashboard Finances Photography Gig Video x Welcome to nginx! NAME service/kubernetes TYPE Cluster IP CLUSTER-IP EXTERNAL \<none\> - -image=nginx : alpine -IP PORT(S) 443/TCP diaServer Audio Software Documentation 74m PS C: k run my-first-pod pod/my-first-pod created PS C: k get pods NAME my-first-pod READY 1/1 STATUS RESTARTS Running e PS C: k get services Welcome to nginx! If you see this page, the nginx web server is successfully installed and working. Further configuration is required. For online documentation and support please refer to nginx:ocg. Commercial support is available at nginx.com. Thank you for using nginx. NAME kubernetes TYPE CLUSTER-IP EXTERNAL-IP PORT(S) Cluster IP le.96.e.1 \<none\> 443/TCP 76m PS C: k port-forward Forwarding from 127.e.e.1:1234 8e Forwarding from \[::1\]:1234 -\> 80 Handling connection for 1234 Handling connection for 1234 my-first-pod 1234: 80 ](001_Creating_Pods_008.png)
 
  
 
@@ -142,7 +142,7 @@ A Pod can also be easily deleted by doing something like:
 
 Zoomed in:
 
-![Windows PowerSheII PS C: Set-Alias PS C: k get all NAME service/kubernetes TYPE Cluster IP k kubectl ---Name CLUSTER-IP EXTERNAL-IP le.96.e.1 \<none\> PORT(S) 443/TCP 74m PS C: k run my-first-pod pod/my-first-pod created PS C: k get pods - -image=nginx : alpine NAME my-first-pod READY STATUS RESTARTS Running e 1/1 PS C: k get services NAME kubernetes TYPE CLUSTER-IP EXTERNAL-IP Cluster IP le.96.e.1 \<none\> PORT(S) 443/TCP 76m PS C: k port-forward my-first-pod 1234: 80 Forwarding from 127.e.e.1:1234 8e Forwarding from \[::1\]:1234 -\> 80 Handling connection for 1234 Handling connection for 1234 ](001_Creating_Pods_009.png){width="6.216666666666667in" height="3.308333333333333in"}
+![Windows PowerSheII PS C: Set-Alias PS C: k get all NAME service/kubernetes TYPE Cluster IP k kubectl ---Name CLUSTER-IP EXTERNAL-IP le.96.e.1 \<none\> PORT(S) 443/TCP 74m PS C: k run my-first-pod pod/my-first-pod created PS C: k get pods - -image=nginx : alpine NAME my-first-pod READY STATUS RESTARTS Running e 1/1 PS C: k get services NAME kubernetes TYPE CLUSTER-IP EXTERNAL-IP Cluster IP le.96.e.1 \<none\> PORT(S) 443/TCP 76m PS C: k port-forward my-first-pod 1234: 80 Forwarding from 127.e.e.1:1234 8e Forwarding from \[::1\]:1234 -\> 80 Handling connection for 1234 Handling connection for 1234 ](001_Creating_Pods_009.png)
 
  
 
@@ -158,7 +158,7 @@ Zoomed in:
 
  
 
-![1.18+ \"run\" only creates the Pod \< 1.18 \"run\" creates the Pod and other resources ](001_Creating_Pods_010.png){width="9.566666666666666in" height="1.25in"}
+![1.18+ \"run\" only creates the Pod \< 1.18 \"run\" creates the Pod and other resources ](001_Creating_Pods_010.png)
 
 *Turns out the note above is outdated... because Kubernetes no longer creates a deployment when running a simple run command. Interesting*
 
@@ -192,7 +192,7 @@ Zoomed in:
 
  
 
-![key: value complexMap : keyl : value key2 : subKey: value items : - iteml - item2 itemsMap : - mapl : value maplProp: value - map2: value map2Prop: value \< YAML maps define a key and value \< More complicated map structures can be defined using a key that references another map \< YAML lists can be used to define a sequence of items \< YAML lists can define a sequence maps Note: • Indentation matters • Use spaces not tabs ](001_Creating_Pods_011.png){width="7.7in" height="4.316666666666666in"}
+![key: value complexMap : keyl : value key2 : subKey: value items : - iteml - item2 itemsMap : - mapl : value maplProp: value - map2: value map2Prop: value \< YAML maps define a key and value \< More complicated map structures can be defined using a key that references another map \< YAML lists can be used to define a sequence of items \< YAML lists can define a sequence maps Note: • Indentation matters • Use spaces not tabs ](001_Creating_Pods_011.png)
 
  
 
@@ -202,7 +202,7 @@ Zoomed in:
 
  
 
-![apiVersion : kind: Pod metadata : name: my-nginx spec : containers: - name: my-nginx image: nginx:alpine Kubernetes API version \< Type of Kubernetes resource Metadata about the Pod \< The spec/blueprint for the Pod Information about the containers that will run in the pod ](001_Creating_Pods_012.png){width="7.55in" height="3.4in"}
+![apiVersion : kind: Pod metadata : name: my-nginx spec : containers: - name: my-nginx image: nginx:alpine Kubernetes API version \< Type of Kubernetes resource Metadata about the Pod \< The spec/blueprint for the Pod Information about the containers that will run in the pod ](001_Creating_Pods_012.png)
 
  
 
@@ -242,7 +242,7 @@ Use the **apply** action using the same yml file... This is more preferable almo
 
  
 
-![\# Alternate way to create or apply changes to a \# Pod from YAML kubectl apply -f file. pod .yml Store current properties in resource\'s annotations \--save-config when you want to use \# Use \# kubectl apply in the future kubectl create -f file. pod .yml - -save-config ](001_Creating_Pods_013.png){width="7.25in" height="2.05in"}
+![\# Alternate way to create or apply changes to a \# Pod from YAML kubectl apply -f file. pod .yml Store current properties in resource\'s annotations \--save-config when you want to use \# Use \# kubectl apply in the future kubectl create -f file. pod .yml - -save-config ](001_Creating_Pods_013.png)
 
  
 
@@ -250,7 +250,7 @@ Use the **apply** action using the same yml file... This is more preferable almo
 
     -   *Create some annotations so when we do apply later, it will take whatever we are trying to APPLY and compare it to what is there in the first place and overwrite specific settings.*
 
-    -   ![apiVersion : kind: Pod metadata : annotations : kubectl. kube rnetes . io/ last-applied-configu ration : { \" apiVersion \" : \"VI \" , \"kind\" : \" Pod \"metadata \" : { \" name\" : \" my-nginx\" \--save-config causes the resource\'s configuration settings to be saved in the annotations Example of saved configuration Having this allows in-place changes to be made to a Pod in the future using kubectl apply ](001_Creating_Pods_014.png){width="7.2in" height="3.1666666666666665in"}
+    -   ![apiVersion : kind: Pod metadata : annotations : kubectl. kube rnetes . io/ last-applied-configu ration : { \" apiVersion \" : \"VI \" , \"kind\" : \" Pod \"metadata \" : { \" name\" : \" my-nginx\" \--save-config causes the resource\'s configuration settings to be saved in the annotations Example of saved configuration Having this allows in-place changes to be made to a Pod in the future using kubectl apply ](001_Creating_Pods_014.png)
 
  
 
@@ -267,14 +267,14 @@ There are OTHER options too.... There is a
 If in the future I want to delete Pod but don\'t know it\'s name... we can also use the source yaml file to accomplish this:\
  
 
-![\# Delete Pod kubectl delete pod \[name-of-pod\] \# Delete Pod using YAML file that created it kubectl delete -f file. pod.yml ](001_Creating_Pods_015.png){width="7.25in" height="1.9in"}
+![\# Delete Pod kubectl delete pod \[name-of-pod\] \# Delete Pod using YAML file that created it kubectl delete -f file. pod.yml ](001_Creating_Pods_015.png)
 
  
 
 **Putting things into practice\
 ** 
 
-![Pods \> 1 2 3 4 5 6 7 8 9 10 11 12 13 ! basic-pod.yml apiVersion: VI kind: Pod metadata name: my-cool -nginx labels: app: nglnx rel: stable spec containers : name: my-cool-nginx nginx: alpine Image ports containerPort: 8 ](001_Creating_Pods_016.png){width="3.25in" height="3.4833333333333334in"}
+![Pods \> 1 2 3 4 5 6 7 8 9 10 11 12 13 ! basic-pod.yml apiVersion: VI kind: Pod metadata name: my-cool -nginx labels: app: nglnx rel: stable spec containers : name: my-cool-nginx nginx: alpine Image ports containerPort: 8 ](001_Creating_Pods_016.png)
 
 *I just want to not here that I am adding a metadata property here called [labels.]{.underline} Currently these labels are not doing anything... BUT we can use these labels to link resources to each other, whether they are pods, deployments or even services.*
 
@@ -286,7 +286,7 @@ If we run the yaml file above, and THEN run the command: **kubectl get pod \[pod
 
 *-o means Output*
 
-![\'S E: \\Workspaces\\KubernetesTraining\\Pods\> apiVersion: VI Kind: Pod netadata : annotations : k get pod my-cool-nginx -o yaml kubectl. kubernetes. io/last-applied-configuration: I { \" apiVersion\" : \"VI \" , \" kind\" : \"Pod\" , \"metadata\" : { \" annotations\" : { } , \" labels\" : { \" app\" • \"nginx\" , \" rel \" : \" stable\"}, \"name\" : \"my-cool -nginx\" , \"namespace\" : \"default\"} \' \' 301 -nginx\" , \"ports\" : \[ {\"containerport\" : creationTimestamp : labels: app: nginx rel: stable managedFie1ds : - apiVersion: VI \'spec\' \' : {\"containers\' \' : \[ image\" : \"nginx : alpine\" , \"name\" : \"my- ](001_Creating_Pods_017.png){width="10.791666666666666in" height="1.625in"}
+![\'S E: \\Workspaces\\KubernetesTraining\\Pods\> apiVersion: VI Kind: Pod netadata : annotations : k get pod my-cool-nginx -o yaml kubectl. kubernetes. io/last-applied-configuration: I { \" apiVersion\" : \"VI \" , \" kind\" : \"Pod\" , \"metadata\" : { \" annotations\" : { } , \" labels\" : { \" app\" • \"nginx\" , \" rel \" : \" stable\"}, \"name\" : \"my-cool -nginx\" , \"namespace\" : \"default\"} \' \' 301 -nginx\" , \"ports\" : \[ {\"containerport\" : creationTimestamp : labels: app: nginx rel: stable managedFie1ds : - apiVersion: VI \'spec\' \' : {\"containers\' \' : \[ image\" : \"nginx : alpine\" , \"name\" : \"my- ](001_Creating_Pods_017.png)
 
  
 
@@ -300,7 +300,7 @@ Among some other information that comes up whenever we run the command, it is re
 
  
 
-![Windows PowerS PS E: \\Workspaces\\KubernetesTraining\\Pods\> k describe pod my-cool-nginx Name : Namespace : Priority: Node : Start Time: Labels: Annotations : Status : IPs: my-cool-nginx default e docker-desktop/192.168.65.4 sun, 18 Apr 2e21 -e4ee app=nginx rel=stable \<none\> Running le.1.e.9 le.1.e.9 Containers : my-cool-nginx: Container ID: Image : Image ID: Port : Host Port: State : Started : Ready : Restart Count: Environment : Mounts : docker : / /5ad8eee5991e336fcbcad3a5389d36ca54633fbbe2681a7c134c4e6f63ee63fa nginx : alpine : e7ab71a2c8e4ecb19a5a5abcfb3a4f175946cee1c8af288b1aa766d67bede5d2 8e/TCP e/TCP Running sun, 18 Apr 2e21 True e \<none\> -e4ee /var/run/secrets/kubernetes.io/serviceaccount from default-token-4hz7x (ro) Conditions : Type Initialized Ready ContainersReady PodSchedu1ed Volumes : Status True True True True default -token -4hz7x: Type : SecretName : Optional : QoS Class: Node -Selectors : Tolerations : Secret (a volume populated by a Secret) default-token-4hz7x false BestEffort \<none\> node. kubernetes. io/not-ready:NoExecute op=Exists for 3ees node. kubernetes. io/unreachab1e:NoExecute op=Exists for 3ees Events : Type Normal Normal Normal Normal Reason Scheduled Pulled Created Started Age 6m56s 6m55s 6m55s 6m55s From default-scheduler kubelet kubelet kubelet Message Successfully assigned default/my-cool-nginx to docker-desktop Container image \"nginx:alpine\" already present on machine Created container my-cool-nginx Started container my-cool-nginx PS E: \\Workspaces\\KubernetesTraining\\Pods\> ](001_Creating_Pods_018.png){width="9.491666666666667in" height="9.291666666666666in"}
+![Windows PowerS PS E: \\Workspaces\\KubernetesTraining\\Pods\> k describe pod my-cool-nginx Name : Namespace : Priority: Node : Start Time: Labels: Annotations : Status : IPs: my-cool-nginx default e docker-desktop/192.168.65.4 sun, 18 Apr 2e21 -e4ee app=nginx rel=stable \<none\> Running le.1.e.9 le.1.e.9 Containers : my-cool-nginx: Container ID: Image : Image ID: Port : Host Port: State : Started : Ready : Restart Count: Environment : Mounts : docker : / /5ad8eee5991e336fcbcad3a5389d36ca54633fbbe2681a7c134c4e6f63ee63fa nginx : alpine : e7ab71a2c8e4ecb19a5a5abcfb3a4f175946cee1c8af288b1aa766d67bede5d2 8e/TCP e/TCP Running sun, 18 Apr 2e21 True e \<none\> -e4ee /var/run/secrets/kubernetes.io/serviceaccount from default-token-4hz7x (ro) Conditions : Type Initialized Ready ContainersReady PodSchedu1ed Volumes : Status True True True True default -token -4hz7x: Type : SecretName : Optional : QoS Class: Node -Selectors : Tolerations : Secret (a volume populated by a Secret) default-token-4hz7x false BestEffort \<none\> node. kubernetes. io/not-ready:NoExecute op=Exists for 3ees node. kubernetes. io/unreachab1e:NoExecute op=Exists for 3ees Events : Type Normal Normal Normal Normal Reason Scheduled Pulled Created Started Age 6m56s 6m55s 6m55s 6m55s From default-scheduler kubelet kubelet kubelet Message Successfully assigned default/my-cool-nginx to docker-desktop Container image \"nginx:alpine\" already present on machine Created container my-cool-nginx Started container my-cool-nginx PS E: \\Workspaces\\KubernetesTraining\\Pods\> ](001_Creating_Pods_018.png)
 
  
 
@@ -311,7 +311,7 @@ These list of Events will show different failures that can occur with our Pod. T
 Notice that when I run the apply command now it says that nothing has changed... cool!\
  
 
-![Windows PowerSh PS E: \\Workspaces\\KubernetesTraining\\Pods\> pod/my-cool-nginx unchanged PS E: \\Workspaces\\KubernetesTraining\\Pods\> k apply . \\basic-pod .yml ](001_Creating_Pods_019.png){width="9.066666666666666in" height="1.425in"}
+![Windows PowerSh PS E: \\Workspaces\\KubernetesTraining\\Pods\> pod/my-cool-nginx unchanged PS E: \\Workspaces\\KubernetesTraining\\Pods\> k apply . \\basic-pod .yml ](001_Creating_Pods_019.png)
 
  
 
@@ -323,13 +323,13 @@ If we wished to jump inside the container itself, we can do this VERY similarly 
 
  
 
-![PS E: \\Workspaces\\KubernetesTraining\\Pods\> k exec my-cool-nginx kubectl exec \[POD\] \[COMBAND\] is DEPRECATED and will be removed MAND\] instead. -it sh in a future version. Use kubectl exec \[POD\] - .COM ](001_Creating_Pods_020.png){width="10.016666666666667in" height="1.1in"}
+![PS E: \\Workspaces\\KubernetesTraining\\Pods\> k exec my-cool-nginx kubectl exec \[POD\] \[COMBAND\] is DEPRECATED and will be removed MAND\] instead. -it sh in a future version. Use kubectl exec \[POD\] - .COM ](001_Creating_Pods_020.png)
 
  
 
 **AND LAST BUT NOT LEAST FOR DELETING**
 
-![PS E pod PS E : \\Workspaces \\KubernetesTraining\\Pods\> \"my-cool-nginx\" deleted : \\Workspaces \\KubernetesTraining\\Pods\> k delete . \\basic-pod. yml ](001_Creating_Pods_021.png){width="8.225in" height="0.8583333333333333in"}
+![PS E pod PS E : \\Workspaces \\KubernetesTraining\\Pods\> \"my-cool-nginx\" deleted : \\Workspaces \\KubernetesTraining\\Pods\> k delete . \\basic-pod. yml ](001_Creating_Pods_021.png)
 
  
 
@@ -397,7 +397,7 @@ Let\'s assume we are dealing with an API of some sort.. Or even nginx ... One of
 
  
 
-![](001_Creating_Pods_022.png){width="7.383333333333334in" height="4.608333333333333in"}
+![](001_Creating_Pods_022.png)
 
  
 
@@ -407,7 +407,7 @@ This is a BIG deal! Why?! Because as developers WE are now going to define what 
 
 Another great example straight from the Kubernetes documentation:
 
-![Defining an ExecAction Liveness Probe apiVe rsion : kind: Pod spec : VI containers : - name: liveness image: k8s .gcr. io/busybox a rgs : - /bin/sh - touch /tmp/healthy; sleep 30; rm -rf /tmp/healthy; livenessProbe: exec : command : - cat - /tmp/healthy initialDe1aySeconds: periodSeconds: 5 sleep 600 5 Define args for container \< Define liveness probe \< Define action/command to execute ](001_Creating_Pods_023.png){width="7.783333333333333in" height="4.5in"}
+![Defining an ExecAction Liveness Probe apiVe rsion : kind: Pod spec : VI containers : - name: liveness image: k8s .gcr. io/busybox a rgs : - /bin/sh - touch /tmp/healthy; sleep 30; rm -rf /tmp/healthy; livenessProbe: exec : command : - cat - /tmp/healthy initialDe1aySeconds: periodSeconds: 5 sleep 600 5 Define args for container \< Define liveness probe \< Define action/command to execute ](001_Creating_Pods_023.png)
 
  
 
@@ -421,7 +421,7 @@ What our Liveness probe is going to do is TRY to get to that healthy file and th
 
 **Readiness Probe Example:**
 
-![](001_Creating_Pods_024.png){width="7.883333333333334in" height="4.55in"}
+![](001_Creating_Pods_024.png)
 
  
 
@@ -429,17 +429,17 @@ In the example above we are essentially doing the exact same check as the one ab
 
  
 
-![Readiness Probe: When should a container start receiving traffic? Liveness Probe: When should a container restart? ](001_Creating_Pods_025.png){width="8.875in" height="4.458333333333333in"}
+![Readiness Probe: When should a container start receiving traffic? Liveness Probe: When should a container restart? ](001_Creating_Pods_025.png)
 
  
 
  
 
-![](001_Creating_Pods_026.png){width="10.55in" height="3.775in"}
+![](001_Creating_Pods_026.png)
 
  
 
-![](001_Creating_Pods_027.png){width="10.625in" height="1.9833333333333334in"}
+![](001_Creating_Pods_027.png)
 
  
 

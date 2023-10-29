@@ -172,4 +172,4 @@ We are talking about the local IP tables firewall on the Docker Host. By default
 
     -   Determines whether our Docker will make any modification to IP tables rules.
 
-![](008_09_-_Docker_Deep_Dive_-_Troubleshooting_000.png){width="5.0in" height="2.7416666666666667in"}
+![](008_09_-_Docker_Deep_Dive_-_Troubleshooting_000.png)

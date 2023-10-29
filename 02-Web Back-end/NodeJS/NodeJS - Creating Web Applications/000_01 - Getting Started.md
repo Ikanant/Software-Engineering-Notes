@@ -10,7 +10,7 @@ Friday, April 29, 2016
 
  
 
-![Machine generated alternative text: nodeo express What You Will Learn Building Web Apps From the beginning. Node and NPM Gulp Templating Engines Routing Databases ](000_01_-_Getting_Started_000.png){width="5.0in" height="3.3333333333333335in"}
+![Machine generated alternative text: nodeo express What You Will Learn Building Web Apps From the beginning. Node and NPM Gulp Templating Engines Routing Databases ](000_01_-_Getting_Started_000.png)
 
  
 
@@ -18,13 +18,13 @@ What is **Node.js**
 
  
 
-![Machine generated alternative text: Open Source server side runtime environment What Is Node.js? Truly cross platform Uses JavaScript as its language! ](000_01_-_Getting_Started_001.png){width="5.0in" height="2.2in"}
+![Machine generated alternative text: Open Source server side runtime environment What Is Node.js? Truly cross platform Uses JavaScript as its language! ](000_01_-_Getting_Started_001.png)
 
  
 
  
 
-![Machine generated alternative text: Web Development Framework So, What Is Express? nedeo nprn express Unopinionated minimalist ](000_01_-_Getting_Started_002.png){width="5.0in" height="2.45in"}
+![Machine generated alternative text: Web Development Framework So, What Is Express? nedeo nprn express Unopinionated minimalist ](000_01_-_Getting_Started_002.png)
 
  
 

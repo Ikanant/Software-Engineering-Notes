@@ -9,7 +9,7 @@ Monday, May 16, 2022
 So in SwiftUI, by changing the property \@State, you can trigger UI reloads... this is something cool for making things interactive in live iOS application. We can do something like:\
  
 
-![Created by Brian Advent on 14.06. 19. Copyright s 2e19 Brian Advent. All rights reserved. Swi ContentView View \@State var favsOnIy = false \@State displayAIert = - \@EnuironmentObject dataStore:DataStore ](010_Property_Wrappers_000.png){width="5.0in" height="1.5666666666666667in"}
+![Created by Brian Advent on 14.06. 19. Copyright s 2e19 Brian Advent. All rights reserved. Swi ContentView View \@State var favsOnIy = false \@State displayAIert = - \@EnuironmentObject dataStore:DataStore ](010_Property_Wrappers_000.png)
 
  
 

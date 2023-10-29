@@ -272,4 +272,4 @@ return result
 
  
 
-![](001_02_-_MVC_-_The_View_Layer_000.png){width="5.0in" height="2.5in"}
+![](001_02_-_MVC_-_The_View_Layer_000.png)

@@ -64,7 +64,7 @@ Angular will know how to handle such request BUT our server (any server) will no
 
  
 
-![Machine generated alternative text: 17 app. get( /data/event/ : id , events. get) ; app.post( /data/event/ : id\' , events. save) ; app. get( /data/event\', events. getA11); function(req, res) { res. sendFi1e(rootpath + \'app/ index. html • ) ; ](003_04_-_Routing_000.png){width="6.0in" height="0.9166666666666666in"}
+![Machine generated alternative text: 17 app. get( /data/event/ : id , events. get) ; app.post( /data/event/ : id\' , events. save) ; app. get( /data/event\', events. getA11); function(req, res) { res. sendFi1e(rootpath + \'app/ index. html • ) ; ](003_04_-_Routing_000.png)
 
  
 

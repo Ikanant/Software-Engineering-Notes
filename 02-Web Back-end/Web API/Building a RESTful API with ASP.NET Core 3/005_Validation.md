@@ -6,7 +6,7 @@ Wednesday, April 29, 2020
 
  
 
-![](005_Validation_000.png){width="5.558333333333334in" height="2.6166666666666667in"}
+![](005_Validation_000.png)
 
  
 
@@ -14,15 +14,15 @@ When reporting back to the user the validation errors we encountered, I do not n
 
  
 
-![](005_Validation_001.png){width="5.933333333333334in" height="1.7in"}
+![](005_Validation_001.png)
 
  
 
-![](005_Validation_002.png){width="5.966666666666667in" height="1.8in"}
+![](005_Validation_002.png)
 
  
 
-![](005_Validation_003.png){width="7.0in" height="2.091666666666667in"}
+![](005_Validation_003.png)
 
  
 
@@ -34,11 +34,11 @@ Let\'s assume I send in a post body with various properties as null... propertie
 
  
 
-![](005_Validation_004.png){width="7.908333333333333in" height="2.475in"}
+![](005_Validation_004.png)
 
  
 
-![](005_Validation_005.png){width="7.075in" height="3.175in"}
+![](005_Validation_005.png)
 
  
 
@@ -52,7 +52,7 @@ Often times my validation does not get covered by some of the possible data anno
 
  
 
-![](005_Validation_006.png){width="4.2in" height="1.7666666666666666in"}
+![](005_Validation_006.png)
 
  
 
@@ -64,11 +64,11 @@ One thing to note is that in .Net Core, our custom validation will not get fired
 
  
 
-![](005_Validation_007.png){width="4.966666666666667in" height="2.816666666666667in"}
+![](005_Validation_007.png)
 
  
 
-![](005_Validation_008.png){width="5.05in" height="2.341666666666667in"}
+![](005_Validation_008.png)
 
  
 
@@ -78,6 +78,6 @@ One thing to note is that in .Net Core, our custom validation will not get fired
 
  
 
-![](005_Validation_009.png){width="7.341666666666667in" height="2.6333333333333333in"}
+![](005_Validation_009.png)
 
  

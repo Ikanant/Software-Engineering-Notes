@@ -6,7 +6,7 @@ Wednesday, January 15, 2020
 
  
 
-![000 000 000 define data models? define functions to for a component? tap into specific events in the component life cycle? define custom properties that react to model changes? run custom logic when model\'s change? format data for the users? ](002_Interacting_within_a_Component_000.png){width="6.441666666666666in" height="3.6166666666666667in"}
+![000 000 000 define data models? define functions to for a component? tap into specific events in the component life cycle? define custom properties that react to model changes? run custom logic when model\'s change? format data for the users? ](002_Interacting_within_a_Component_000.png)
 
  
 
@@ -27,7 +27,7 @@ VUE\'s reactivity system keeps and eye on these properties in order to update th
 
  
 
-![data() { return { heroes: selectedHero: message: undefined, Component\'s data model Function as a best practice Vue reacts to changes in all defined properties ](002_Interacting_within_a_Component_001.png){width="6.425in" height="1.6666666666666667in"}
+![data() { return { heroes: selectedHero: message: undefined, Component\'s data model Function as a best practice Vue reacts to changes in all defined properties ](002_Interacting_within_a_Component_001.png)
 
  
 
@@ -41,7 +41,7 @@ These are properties that can calculate their value. A computed property is crea
 
  
 
-![heroes.vue computed: { fuLLName() { When either dependency changes, the computed evaluates return hero. firstName} \${this .hero. LastNameF ; ](002_Interacting_within_a_Component_002.png){width="6.75in" height="1.8666666666666667in"}
+![heroes.vue computed: { fuLLName() { When either dependency changes, the computed evaluates return hero. firstName} \${this .hero. LastNameF ; ](002_Interacting_within_a_Component_002.png)
 
  
 
@@ -49,7 +49,7 @@ These are properties that can calculate their value. A computed property is crea
 
  
 
-![Computed get/set Use get() to compute the value Create getter and setter functions Use set() to modify computed dependencies computed: { fullName: { get() { Let value = this. first; value this. Last ? \${this. Last}\' return value; set(value) { Let names this. first this. Last = vaLue.spLit(\' = names\[0\]; = names . length names \[names . length - 1\]; ](002_Interacting_within_a_Component_003.png){width="6.216666666666667in" height="3.35in"}
+![Computed get/set Use get() to compute the value Create getter and setter functions Use set() to modify computed dependencies computed: { fullName: { get() { Let value = this. first; value this. Last ? \${this. Last}\' return value; set(value) { Let names this. first this. Last = vaLue.spLit(\' = names\[0\]; = names . length names \[names . length - 1\]; ](002_Interacting_within_a_Component_003.png)
 
  
 
@@ -83,7 +83,7 @@ Hooks:
 
  
 
-![created Invoked when the component is created Frequently used to fetch data for your component Templates and virtual DOM are not yet mounted nor rendered eroes.vue created() { this. getHeroes() . then (heroes this. heroes = heroes ; ](002_Interacting_within_a_Component_004.png){width="5.8in" height="3.45in"}
+![created Invoked when the component is created Frequently used to fetch data for your component Templates and virtual DOM are not yet mounted nor rendered eroes.vue created() { this. getHeroes() . then (heroes this. heroes = heroes ; ](002_Interacting_within_a_Component_004.png)
 
  
 
@@ -105,7 +105,7 @@ If we need to watch dotted properties, then we just use quotes.
 
  
 
-![watch: { hero(newVaIue, oldVaIue) { console. log( old=\$ {oldVaIue}, // execute Logic \' selectedHero. capeCounter \' : immediate: true, handler(newVa1ue, oldVa1ue) { // execute Logic ---\${newVaIue} new--- React when this model changes React to data changes Named same as reactive value Accepts new and old values Ideal for asynchronous operations i Use quotes when needed ](002_Interacting_within_a_Component_005.png){width="5.383333333333334in" height="2.716666666666667in"}
+![watch: { hero(newVaIue, oldVaIue) { console. log( old=\$ {oldVaIue}, // execute Logic \' selectedHero. capeCounter \' : immediate: true, handler(newVa1ue, oldVa1ue) { // execute Logic ---\${newVaIue} new--- React when this model changes React to data changes Named same as reactive value Accepts new and old values Ideal for asynchronous operations i Use quotes when needed ](002_Interacting_within_a_Component_005.png)
 
  
 
@@ -113,10 +113,10 @@ If we need to watch dotted properties, then we just use quotes.
 
 **Filters**
 
-![filters: { capitalize: function(value) { if (!value) return value = vaLue.toString(); return value . charAt(Ø) .toUpperCase() + vaLue.sLice(I); Filters Local filters are defined in a component Apply in the template {{ firstName I capitalize Filters can be chained {{ firstName I capitalize I reverse Optionally pass arguments {{ someDate I myDateFilter(\'MM-DD-YY\') ](002_Interacting_within_a_Component_006.png){width="5.508333333333334in" height="2.025in"}
+![filters: { capitalize: function(value) { if (!value) return value = vaLue.toString(); return value . charAt(Ø) .toUpperCase() + vaLue.sLice(I); Filters Local filters are defined in a component Apply in the template {{ firstName I capitalize Filters can be chained {{ firstName I capitalize I reverse Optionally pass arguments {{ someDate I myDateFilter(\'MM-DD-YY\') ](002_Interacting_within_a_Component_006.png)
 
  
 
-![import Vue from •vue• ; Vue.fiLter( capitalize\', function(value) { if (!value) return value = value. toString(); return value. charAt(Ø) .toUpperCase() + value.sLice(1); Global Filters Define once, use everywhere When defining a global filter, it must come before the Vue instance ](002_Interacting_within_a_Component_007.png){width="5.591666666666667in" height="3.2583333333333333in"}
+![import Vue from •vue• ; Vue.fiLter( capitalize\', function(value) { if (!value) return value = value. toString(); return value. charAt(Ø) .toUpperCase() + value.sLice(1); Global Filters Define once, use everywhere When defining a global filter, it must come before the Vue instance ](002_Interacting_within_a_Component_007.png)
 
  

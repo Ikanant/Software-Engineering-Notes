@@ -6,7 +6,7 @@ Friday, April 29, 2016
 
  
 
-![](004_05_-_Relay-_Getting_Started_000.png){width="5.0in" height="4.033333333333333in"}
+![](004_05_-_Relay-_Getting_Started_000.png)
 
  
 
@@ -28,7 +28,7 @@ Friday, April 29, 2016
         iv. CacheManager: Can be any storage engine (like local storage).\
             ** **
 
-        v.  ![](004_05_-_Relay-_Getting_Started_001.png){width="5.0in" height="3.8583333333333334in"}
+        v.  ![](004_05_-_Relay-_Getting_Started_001.png)
 
     ```{=html}
     <!-- -->
@@ -57,22 +57,22 @@ Friday, April 29, 2016
 
         i.  Offset/Limit
 
-            1.  ![](004_05_-_Relay-_Getting_Started_002.png){width="5.0in" height="3.95in"}
+            1.  ![](004_05_-_Relay-_Getting_Started_002.png)
 
 >  
 
-1.  ![](004_05_-_Relay-_Getting_Started_003.png){width="5.0in" height="3.7083333333333335in"}
+1.  ![](004_05_-_Relay-_Getting_Started_003.png)
 
 ```{=html}
 <!-- -->
 ```
 ii. After/First
 
-    1.  ![](004_05_-_Relay-_Getting_Started_004.png){width="5.0in" height="3.8333333333333335in"}
+    1.  ![](004_05_-_Relay-_Getting_Started_004.png)
 
 >  
 >
-> ![](004_05_-_Relay-_Getting_Started_005.png){width="5.0in" height="2.9166666666666665in"}
+> ![](004_05_-_Relay-_Getting_Started_005.png)
 >
 >  
 >

@@ -8,7 +8,7 @@ Friday, November 18, 2016
 
  
 
-![](003_04_-_Deploying_Web_Applications_000.png){width="6.0in" height="3.1333333333333333in"}
+![](003_04_-_Deploying_Web_Applications_000.png)
 
  
 
@@ -86,7 +86,7 @@ Friday, November 18, 2016
 
 4.  Create Public Packages
 
-![](003_04_-_Deploying_Web_Applications_001.png){width="6.0in" height="2.933333333333333in"}
+![](003_04_-_Deploying_Web_Applications_001.png)
 
 **Options for creating Public Packages:**
 
@@ -117,7 +117,7 @@ Friday, November 18, 2016
 
  
 
-![](003_04_-_Deploying_Web_Applications_002.png){width="6.0in" height="1.85in"}
+![](003_04_-_Deploying_Web_Applications_002.png)
 
 >  
 
@@ -125,7 +125,7 @@ Friday, November 18, 2016
 
 5.  **Create and Push a Package**
 
-    -   ![](003_04_-_Deploying_Web_Applications_003.png){width="6.0in" height="3.5833333333333335in"}
+    -   ![](003_04_-_Deploying_Web_Applications_003.png)
 
 >  
 
@@ -135,7 +135,7 @@ Friday, November 18, 2016
 
     -   Beware that these API key is hatched inside the Octo Database and cannot be retrieved.. Make sure to NOT lose it
 
--   ![](003_04_-_Deploying_Web_Applications_004.png){width="6.0in" height="1.8in"}
+-   ![](003_04_-_Deploying_Web_Applications_004.png)
 
  
 
@@ -159,7 +159,7 @@ Friday, November 18, 2016
 
         4.  Now that the Deploy is NOW finished... let\'s head to the DEPLOYMENT TARGET and see what has happened:
 
-            -   ![](003_04_-_Deploying_Web_Applications_005.png){width="6.0in" height="2.4in"}
+            -   ![](003_04_-_Deploying_Web_Applications_005.png)
 
  
 
@@ -173,6 +173,6 @@ Friday, November 18, 2016
 
 >  
 
-![](003_04_-_Deploying_Web_Applications_006.png){width="6.0in" height="2.975in"}
+![](003_04_-_Deploying_Web_Applications_006.png)
 
  

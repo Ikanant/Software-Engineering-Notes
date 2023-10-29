@@ -10,7 +10,7 @@ Beans ARE NOT Patterns
 
  
 
-![Scopes 5 Scopes Valid in any configuration Singleton Prototype Valid only in web-aware Spring projects Request Session Global ](005_Bean_Scopes_000.png){width="4.966666666666667in" height="2.75in"}
+![Scopes 5 Scopes Valid in any configuration Singleton Prototype Valid only in web-aware Spring projects Request Session Global ](005_Bean_Scopes_000.png)
 
  
 
@@ -30,11 +30,11 @@ The singleton design pattern restricts the instantiation of a class to ONE objec
 
  
 
-![\@Service( \" customerService \" ) \@Scope ( \" singleton\" ) public class CustomerServiceImp1 implements CustomerService { Singleton - Java Config \@Scope Requires AOP jar ](005_Bean_Scopes_001.png){width="4.058333333333334in" height="1.3916666666666666in"}
+![\@Service( \" customerService \" ) \@Scope ( \" singleton\" ) public class CustomerServiceImp1 implements CustomerService { Singleton - Java Config \@Scope Requires AOP jar ](005_Bean_Scopes_001.png)
 
  
 
-![\<bean name=\"customerService\" class=\"com.pluralsight.service.CustomerServiceImpI\" autowire= \" by Type \" scope=\" singleton\" \> Singleton - XML Config ](005_Bean_Scopes_002.png){width="4.216666666666667in" height="1.2916666666666667in"}
+![\<bean name=\"customerService\" class=\"com.pluralsight.service.CustomerServiceImpI\" autowire= \" by Type \" scope=\" singleton\" \> Singleton - XML Config ](005_Bean_Scopes_002.png)
 
  
 

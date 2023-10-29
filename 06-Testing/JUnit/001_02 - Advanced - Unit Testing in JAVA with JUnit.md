@@ -12,7 +12,7 @@ There will be a time were we are going to want to run multiple test classes toge
 
 We will create test suite classes by annotating them with the \@RunWith annotation and then tell it to use the Suite.class. This tells JUnit to run this particular test suite using the suite runner. The suite runner is capable of reading the Suite class annotation and running any test classes contained in it
 
-![](001_02_-_Advanced_-_Unit_Testing_in_JAVA_with_JUnit_000.png){width="5.0in" height="3.8in"}
+![](001_02_-_Advanced_-_Unit_Testing_in_JAVA_with_JUnit_000.png)
 
 **import** org.junit.runner.RunWith;
 
@@ -36,7 +36,7 @@ We will create test suite classes by annotating them with the \@RunWith annotati
 
 Are similar to Suites in JUnit, in fact, the categories runner is just a special kind of suite in JUnit. Keep in mind that the \@Category method can be added to both test methods and test classes
 
-![](001_02_-_Advanced_-_Unit_Testing_in_JAVA_with_JUnit_001.png){width="5.0in" height="3.966666666666667in"}
+![](001_02_-_Advanced_-_Unit_Testing_in_JAVA_with_JUnit_001.png)
 
 \@RunWith(Categories.**class**)
 

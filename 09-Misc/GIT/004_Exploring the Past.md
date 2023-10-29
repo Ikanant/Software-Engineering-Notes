@@ -30,7 +30,7 @@ Starting out simple, if we have a certain branch checked out in our working area
 
  
 
-![cookbook\> git log \--graph \--decorate \--oneline 716ød61 (HEAD -\> nogood , origin/nogood) Remove sugar \* a87f2cc Add more apples \* ecbebe6 (origin/lisa, lisa) Merge branch \' lisa\' \* ee7ffe9 Add Lisa\'s version of the pie I e268621 Add recipe l/ \* 572efdf Add cake \* 11779f4 First commit! cookbook\> I ](004_Exploring_the_Past_000.png){width="4.058333333333334in" height="1.9666666666666666in"}
+![cookbook\> git log \--graph \--decorate \--oneline 716ød61 (HEAD -\> nogood , origin/nogood) Remove sugar \* a87f2cc Add more apples \* ecbebe6 (origin/lisa, lisa) Merge branch \' lisa\' \* ee7ffe9 Add Lisa\'s version of the pie I e268621 Add recipe l/ \* 572efdf Add cake \* 11779f4 First commit! cookbook\> I ](004_Exploring_the_Past_000.png)
 
  
 
@@ -64,7 +64,7 @@ SO, if we do something along the lines of **\<git show HEAD\^\^\>** we would be 
 
  
 
-![HEAD nogood 7160d61 a87f2cc 6 e268621 007ffe9 5720fdf 11779f4 ](004_Exploring_the_Past_001.png){width="1.8416666666666666in" height="2.558333333333333in"}
+![HEAD nogood 7160d61 a87f2cc 6 e268621 007ffe9 5720fdf 11779f4 ](004_Exploring_the_Past_001.png)
 
  
 
@@ -102,7 +102,7 @@ Now let\'s say we want to check the specific person who committed a line in a fi
 
  
 
-![cookbook\> git blame recipes/apple_pie. txt 05-13 2e15-1ø-03 •4e:11 2e15-1ø-03 18:40. 2e15-1ø-ø3 2e15-1ø-ø3 2e15-1ø-03 2e15-1ø-e4 1779f4 e2686215 e2686215 e2686215 e2686215 ee7ffe99 a87f2ccb (Paolo (Paolo (Paolo (Paolo (Paolo (Paolo (Paolo \"Nusco\" Perrotta 2e15 Perrotta per rotta Perrotta Perrotta perrotta Perrotta 18. 18. 18 .11 402eo .e2eø \*02eo 402ea .e2eø -te2eo .e2eø I) 2) 3) 4) 5) 6) 7) Apple Pie pre-made pastry 1/2 cup butter 3 tablespoons flour 1 tbsp cinnamon 2e Granny Smith apples ](004_Exploring_the_Past_002.png){width="5.0in" height="1.0583333333333333in"}
+![cookbook\> git blame recipes/apple_pie. txt 05-13 2e15-1ø-03 •4e:11 2e15-1ø-03 18:40. 2e15-1ø-ø3 2e15-1ø-ø3 2e15-1ø-03 2e15-1ø-e4 1779f4 e2686215 e2686215 e2686215 e2686215 ee7ffe99 a87f2ccb (Paolo (Paolo (Paolo (Paolo (Paolo (Paolo (Paolo \"Nusco\" Perrotta 2e15 Perrotta per rotta Perrotta Perrotta perrotta Perrotta 18. 18. 18 .11 402eo .e2eø \*02eo 402ea .e2eø -te2eo .e2eø I) 2) 3) 4) 5) 6) 7) Apple Pie pre-made pastry 1/2 cup butter 3 tablespoons flour 1 tbsp cinnamon 2e Granny Smith apples ](004_Exploring_the_Past_002.png)
 
  
 

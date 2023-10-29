@@ -14,7 +14,7 @@ Now let\'s do the same but this time we will use Annotations without necessarily
 
  
 
-![](003_Annotation_Configuration_Using_XML_000.png){width="6.25in" height="2.975in"}
+![](003_Annotation_Configuration_Using_XML_000.png)
 
  
 
@@ -22,7 +22,7 @@ There are 3 main annotations for CORE spring that help us define components or b
 
  
 
-![XML Stereotype Annotations \@Component, \@Service, \@Repository Semantically the same \@Component - any POJO \@Service - business logic layer \@Repository - data layer ](003_Annotation_Configuration_Using_XML_001.png){width="7.833333333333333in" height="3.941666666666667in"}
+![XML Stereotype Annotations \@Component, \@Service, \@Repository Semantically the same \@Component - any POJO \@Service - business logic layer \@Repository - data layer ](003_Annotation_Configuration_Using_XML_001.png)
 
  
 
@@ -38,23 +38,23 @@ We can autowire at three places:
 
 1.  Member variables
 
-    a.  ![Autowired Member Variable \@Autowired private CustomerRepository customerRepository; ](003_Annotation_Configuration_Using_XML_002.png){width="3.2666666666666666in" height="1.3333333333333333in"}
+    a.  ![Autowired Member Variable \@Autowired private CustomerRepository customerRepository; ](003_Annotation_Configuration_Using_XML_002.png)
 
 2.  Constructor
 
-    a.  ![Autowired Constructor Injection \@Autowired public CustomerServiceImp1(CustomerRepository customerRepository) { System. out . are using constructor injection\"); this. customerRepository = customerRepository; ](003_Annotation_Configuration_Using_XML_003.png){width="3.3in" height="1.2833333333333334in"}
+    a.  ![Autowired Constructor Injection \@Autowired public CustomerServiceImp1(CustomerRepository customerRepository) { System. out . are using constructor injection\"); this. customerRepository = customerRepository; ](003_Annotation_Configuration_Using_XML_003.png)
 
     b.  We create a constructor for the type of object we want to inject in (OR objects) and simply mark that constructor with autowire. This approach can be problematic if we at some point switch back to Setter injection since we would have eliminated our default constructor.
 
 3.  Setter injection
 
-    a.  ![Autowired Setter Injection private CustomerRepository customerRepository; \@Autowired public void setCustomerRepository(CustomerRepository customerRepository) { System. out. print1n(\"We are using setter injection\"); this . customerRepository = customerRepository; ](003_Annotation_Configuration_Using_XML_004.png){width="3.3333333333333335in" height="1.7166666666666666in"}
+    a.  ![Autowired Setter Injection private CustomerRepository customerRepository; \@Autowired public void setCustomerRepository(CustomerRepository customerRepository) { System. out. print1n(\"We are using setter injection\"); this . customerRepository = customerRepository; ](003_Annotation_Configuration_Using_XML_004.png)
 
     b.  It is somewhat interesting to go with this route, because if we were to apply test driven development to our workload, this would be the right approach.
 
  
 
-![O JSR-330 Dependency Injection for Java Beyond our scope Why Spring? ](003_Annotation_Configuration_Using_XML_005.png){width="6.641666666666667in" height="3.8583333333333334in"}
+![O JSR-330 Dependency Injection for Java Beyond our scope Why Spring? ](003_Annotation_Configuration_Using_XML_005.png)
 
  
 

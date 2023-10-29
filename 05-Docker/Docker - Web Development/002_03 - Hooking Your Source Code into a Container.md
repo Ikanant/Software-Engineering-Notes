@@ -8,7 +8,7 @@ Friday, April 29, 2016
 
 **The Layered File System**
 
-![](002_03_-_Hooking_Your_Source_Code_into_a_Container_000.png){width="5.0in" height="3.4in"}
+![](002_03_-_Hooking_Your_Source_Code_into_a_Container_000.png)
 
  
 
@@ -30,7 +30,7 @@ This comes into place with what I mentioned before regarding Re-usability of lay
 
  
 
-![](002_03_-_Hooking_Your_Source_Code_into_a_Container_001.png){width="5.0in" height="3.6166666666666667in"}
+![](002_03_-_Hooking_Your_Source_Code_into_a_Container_001.png)
 
  
 
@@ -66,7 +66,7 @@ The way we can think about Volumes is as separate folders stored in the Docker H
 
  
 
-![](002_03_-_Hooking_Your_Source_Code_into_a_Container_002.png){width="5.0in" height="2.908333333333333in"}
+![](002_03_-_Hooking_Your_Source_Code_into_a_Container_002.png)
 
  
 
@@ -78,11 +78,11 @@ For our example we are actually going to drop our source code for our applicatio
 
  
 
-![](002_03_-_Hooking_Your_Source_Code_into_a_Container_003.png){width="5.0in" height="2.6333333333333333in"}
+![](002_03_-_Hooking_Your_Source_Code_into_a_Container_003.png)
 
  
 
-![](002_03_-_Hooking_Your_Source_Code_into_a_Container_004.png){width="5.0in" height="1.9in"}
+![](002_03_-_Hooking_Your_Source_Code_into_a_Container_004.png)
 
  
 
@@ -96,19 +96,19 @@ NOTE: pwd = current working directory
 
  
 
-![](002_03_-_Hooking_Your_Source_Code_into_a_Container_005.png){width="5.0in" height="2.3666666666666667in"}
+![](002_03_-_Hooking_Your_Source_Code_into_a_Container_005.png)
 
 So what this will do is create a VOLUME in the container which is going to be var/www
 
  
 
-![](002_03_-_Hooking_Your_Source_Code_into_a_Container_006.png){width="5.0in" height="2.441666666666667in"}
+![](002_03_-_Hooking_Your_Source_Code_into_a_Container_006.png)
 
  
 
  
 
-![](002_03_-_Hooking_Your_Source_Code_into_a_Container_007.png){width="5.0in" height="0.25833333333333336in"}
+![](002_03_-_Hooking_Your_Source_Code_into_a_Container_007.png)
 
  
 

@@ -22,7 +22,7 @@ On our game example we know that the play numbers will have the exact same behav
 
  
 
-![const Number = props ( \<button 2 const StarMatch = const \[stars, setStars\] return ( div \<div Pick I or \*\'re numbers that sum to the number of stars e/ div, \<div \<div {uttls. range(l, stars) .map(starld \<div •div {utns.range(l, CNumber e/ divs \<div Remaining: 1 ](003_Star_Match_Game_000.png){width="5.0in" height="4.675in"}
+![const Number = props ( \<button 2 const StarMatch = const \[stars, setStars\] return ( div \<div Pick I or \*\'re numbers that sum to the number of stars e/ div, \<div \<div {uttls. range(l, stars) .map(starld \<div •div {utns.range(l, CNumber e/ divs \<div Remaining: 1 ](003_Star_Match_Game_000.png)
 
  
 
@@ -30,7 +30,7 @@ On our game example we know that the play numbers will have the exact same behav
 
  
 
-![const PlayNumber = props \<button console. log( \'Num\' , props.number)Y {props. c/button\> 7 • const Starmatch z const \[stars, setStars\] useState(utiIs. random(l, 9)); return ( \<div Pick 1 or more numbers that sum to the number of stars 2 5 8 3 6 9 Group similz Cons o t e cleared 4 7 ediv Pick I or mre numbers ediv •div that sun to the number Of stars Time Remaining: 10 {utus. range(l, stars) -map(starld div Question : handlers (Pause and What JavaScript concept to report their numbers thi nk) enabled 9 di fferent click ](003_Star_Match_Game_001.png){width="5.0in" height="2.5833333333333335in"}
+![const PlayNumber = props \<button console. log( \'Num\' , props.number)Y {props. c/button\> 7 • const Starmatch z const \[stars, setStars\] useState(utiIs. random(l, 9)); return ( \<div Pick 1 or more numbers that sum to the number of stars 2 5 8 3 6 9 Group similz Cons o t e cleared 4 7 ediv Pick I or mre numbers ediv •div that sun to the number Of stars Time Remaining: 10 {utus. range(l, stars) -map(starld div Question : handlers (Pause and What JavaScript concept to report their numbers thi nk) enabled 9 di fferent click ](003_Star_Match_Game_001.png)
 
  
 
@@ -96,7 +96,7 @@ Here we will only end up using
 
  
 
-![•div {availableNuns.Iength G ? ( «pIayAgatn eStarsDispIay ](003_Star_Match_Game_002.png){width="2.6in" height="1.5666666666666667in"}
+![•div {availableNuns.Iength G ? ( «pIayAgatn eStarsDispIay ](003_Star_Match_Game_002.png)
 
  
 
@@ -104,7 +104,7 @@ Now let\'s consider the case in which we want to display a GAME OVER screen or s
 
  
 
-![19• const Starmatch z const \[stars, setStars\] = useState(utiIs. random(l, 9)); Const z const (candidateNums, setCandidateNumsJ z useState(t\]); 9)); 27. ) stars; const ganeIsDone avaLLabIeNums . length Const number Status number If (!avaitabIeNums. includes(nunber)) return •used\'; If (candidateNums. includes(nunber)) return candidatesAreHrong ? •wrong • : \'candidate\'; ](003_Star_Match_Game_003.png){width="5.0in" height="2.8666666666666667in"}
+![19• const Starmatch z const \[stars, setStars\] = useState(utiIs. random(l, 9)); Const z const (candidateNums, setCandidateNumsJ z useState(t\]); 9)); 27. ) stars; const ganeIsDone avaLLabIeNums . length Const number Status number If (!avaitabIeNums. includes(nunber)) return •used\'; If (candidateNums. includes(nunber)) return candidatesAreHrong ? •wrong • : \'candidate\'; ](003_Star_Match_Game_003.png)
 
  
 
@@ -128,7 +128,7 @@ This useEffect hook is a tool real offers to introduce some side effects to our 
 
  
 
-![25 • const Starhatch C) const \[stars, setstarsl 9)); const \[availableUuns, setAvauabLeNumsJ Const \[candidateUuns, setCandtdateNumsl useState(Cl); const \[secondsLeft, setSecondsLeftJ useState(10); 31 setSecOndsLeft(secondsLeft - I) ](003_Star_Match_Game_004.png){width="5.0in" height="2.2083333333333335in"}
+![25 • const Starhatch C) const \[stars, setstarsl 9)); const \[availableUuns, setAvauabLeNumsJ Const \[candidateUuns, setCandtdateNumsl useState(Cl); const \[secondsLeft, setSecondsLeftJ useState(10); 31 setSecOndsLeft(secondsLeft - I) ](003_Star_Match_Game_004.png)
 
  
 
@@ -192,7 +192,7 @@ Custom hooks can return anything.
 
  
 
-![const setGameState = (newCandtdateNums) - if stars) { setCandtdateNums(newCandtdateNums); } else { const newAvatIabIeNums = availableNums \_ filter ( n !newCandtdateNums \_tncludes(n) sets tars(u tus \_ randonSumIn(newAvatIabIeNums , setAvatla bleNums ( newAvatIa bleNums) ; setCandtdateNums(C\]); g)); return { stars, availableNums , candida teNums , secondsLeft, setGameState } ; 62 const Game = const { stars, props = availableNums , candida teNums , secondsLeft, setGameState , } = useGameState(); ](003_Star_Match_Game_005.png){width="5.0in" height="4.133333333333334in"}
+![const setGameState = (newCandtdateNums) - if stars) { setCandtdateNums(newCandtdateNums); } else { const newAvatIabIeNums = availableNums \_ filter ( n !newCandtdateNums \_tncludes(n) sets tars(u tus \_ randonSumIn(newAvatIabIeNums , setAvatla bleNums ( newAvatIa bleNums) ; setCandtdateNums(C\]); g)); return { stars, availableNums , candida teNums , secondsLeft, setGameState } ; 62 const Game = const { stars, props = availableNums , candida teNums , secondsLeft, setGameState , } = useGameState(); ](003_Star_Match_Game_005.png)
 
  
 

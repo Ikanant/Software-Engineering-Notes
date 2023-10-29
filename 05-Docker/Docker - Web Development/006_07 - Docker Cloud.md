@@ -14,7 +14,7 @@ Docker cloud, similar to Docker Toolbox and Docker Hub, that help us manage our 
 
 Simplify things like:
 
-![Machine generated alternative text: Deploying Containers to the Cloud NGMX node s redis o mongo DB Microsoft Azure Amazon Web Services Digital Ocean Others\... ](006_07_-_Docker_Cloud_000.png){width="5.0in" height="3.158333333333333in"}
+![Machine generated alternative text: Deploying Containers to the Cloud NGMX node s redis o mongo DB Microsoft Azure Amazon Web Services Digital Ocean Others\... ](006_07_-_Docker_Cloud_000.png)
 
  
 

@@ -22,7 +22,7 @@ The real question, at least for me, is how is Kubernetes any different than dock
 
  
 
-![It Would Be Nice if We Could\... Package up an app and let something else manage it for us Not worry about the management of containers Eliminate single points of failure Scale containers Update containers without bringing down the application Have robust networking and persistent storage options ](000_Introduction_000.png){width="6.341666666666667in" height="2.908333333333333in"}
+![It Would Be Nice if We Could\... Package up an app and let something else manage it for us Not worry about the management of containers Eliminate single points of failure Scale containers Update containers without bringing down the application Have robust networking and persistent storage options ](000_Introduction_000.png)
 
  
 
@@ -30,7 +30,7 @@ All of the things above can be done by using Kubernetes... or in other words (li
 
  
 
-![Key Kubernetes Features Service Discovery/ Load Balancing Self-healing Storage Orchestration Secret and Configuration Management Automate Rollouts/Rollbacks Horizontal Scaling ](000_Introduction_001.png){width="6.966666666666667in" height="4.2in"}
+![Key Kubernetes Features Service Discovery/ Load Balancing Self-healing Storage Orchestration Secret and Configuration Management Automate Rollouts/Rollbacks Horizontal Scaling ](000_Introduction_001.png)
 
 ... these are NOT the only tools Kubernetes does for us BUT, these are some of the main ones we often focus on as developers when working with Kubernetes.
 
@@ -50,7 +50,7 @@ Kubernetes moves you to a desired state....
 
  
 
-![Current State Container Kubernetes Desired State Container Container ](000_Introduction_002.png){width="7.3in" height="1.9083333333333334in"}
+![Current State Container Kubernetes Desired State Container Container ](000_Introduction_002.png)
 
 So you can start with a certain state, and if you wish to change it somehow, that\'s what Kubernetes can help you to do... like a GPS map... it will take you from point A to point B.
 
@@ -124,19 +124,19 @@ So you can start with a certain state, and if you wish to change it somehow, tha
 
  
 
-![The Master Node Store (etcd) API Server Node Pod Master Node Pod Cluster Controller Manager Scheduler Node Pod ](000_Introduction_003.png){width="4.0in" height="3.066666666666667in"}
+![The Master Node Store (etcd) API Server Node Pod Master Node Pod Cluster Controller Manager Scheduler Node Pod ](000_Introduction_003.png)
 
  
 
-![Pod Container Pod Container Pod Container ](000_Introduction_004.png){width="3.683333333333333in" height="1.075in"}
+![Pod Container Pod Container Pod Container ](000_Introduction_004.png)
 
  
 
-![Pod Deployment ReplicaSet Pod Container Service Pod Container ](000_Introduction_005.png){width="3.7916666666666665in" height="1.425in"}
+![Pod Deployment ReplicaSet Pod Container Service Pod Container ](000_Introduction_005.png)
 
  
 
-![Node Kubelet Container Runtime Pod Container Pod Kube-Proxy Container ](000_Introduction_006.png){width="4.45in" height="2.0416666666666665in"}
+![Node Kubelet Container Runtime Pod Container Pod Kube-Proxy Container ](000_Introduction_006.png)
 
  
 
@@ -278,13 +278,13 @@ There are tons of options out there to get started...
 
  
 
-![\$kubectl Node Pod Master Node Pod Node Pod ](000_Introduction_007.png){width="5.208333333333333in" height="2.875in"}
+![\$kubectl Node Pod Master Node Pod Node Pod ](000_Introduction_007.png)
 
  
 
  
 
-![Getting Started with kubectl Commands kubectl version kubectl cluster-info kubectl get all kubectl run \[container-name\] - image-name\] kubectl kubectl kubectl kubectl port-forward \[pod\] \[ports\] expose create \[resource\] apply \[resource\] Check Kubernetes version View cluster information Retrieve information about Kubernetes Pods, Deployments, Services, and more Simple way to create a Deployment for a Pod Forward a port to allow external access Expose a port for a Deployment/Pod Create a resource Create or modify a resource ](000_Introduction_008.png){width="7.133333333333334in" height="3.191666666666667in"}
+![Getting Started with kubectl Commands kubectl version kubectl cluster-info kubectl get all kubectl run \[container-name\] - image-name\] kubectl kubectl kubectl kubectl port-forward \[pod\] \[ports\] expose create \[resource\] apply \[resource\] Check Kubernetes version View cluster information Retrieve information about Kubernetes Pods, Deployments, Services, and more Simple way to create a Deployment for a Pod Forward a port to allow external access Expose a port for a Deployment/Pod Create a resource Create or modify a resource ](000_Introduction_008.png)
 
  
 
@@ -326,7 +326,7 @@ One that it is not fully specified above is that we might end up using **kubectl
 
     -   Today the service we care about is at the very top... so just scroll up and copy token
 
-    -   ![Data ca.crt: kube metes . io/ service- account -token 1066 bytes namespace: 11 bytes oken : eyJhbGci0iJSUz11Ni1s1mtpZC161kN0d28zcXB4YWhtYU11NktWkdrekktT2g1VIBLS05mVmpPbUNaS2pEeFkifQ. eyJpc3Mi0iJ lcm51dGV zL3N1cnZpY2VhY2NvdW501iwia3ViZXJuZXR1cy5pby9zZXJ2aWNIYWNjb3VudC9uYW11c3BhY2UiOiJ ILXN5c3R1bS1s1mt1YmVybmVOZXMuaW8vc2Vydm1jZ FjY291bnQvc2VjcmVOLm5hbWUiOiJhdHRhY2hkZXRhY2gtY29udHJvbGx1ci10b2t1bi13N2tqYy1s1mt1YmVybmvozxmuaW8vc2Vydm1jZWFjY291bnQvc2Vydm1 jZS1hY2NvdW50Lm5hbWUiOiJhdHRhY2hkZXRhY2gtY29udHJvbGx1ci1s1mt1YmVybmVOZWuaW8vc2Vydm1jZWFjY291bnQvc2Vydm1jZS1hY2NvdW50LnVpZC161 mNhZTMzNjYOLTNjNTgtNDY2Zi1hMzczLTNhODYzMzQ3NTczMC1s1nNIYi161nN5c3R1bTpzZXJ2aWNIYWNjb3VudDprdWJILXN5c3R1bTphdHRhY2hkZXRhY2gtY29 udHJvbGx1ciJ9.Y9MhiJygQLtbdm6EQn-s1xenbS15bWzOJtkOTk8UmymY72SPe09URQ3F-Tz4NZzzmJjUZXeD7cu01haON8AZ7V2vRCtMxDi u9EMRon2GOu1VQty I hXK4T95CHZL03Y6i7n3DK AubN64CEC01t1Z5h7VF-QJZtHC1chhZuB3Gae6GYDvq1D-smudc1A J9ERGIGnQe9Bs7i8DpsNh2DppYmKSnETt2pRfHtLy6jftpoS6X pCPjxViQGEfxGG025pSiF17c1gf8QXhWJD8QTd20t2t3rxoxG PW-AiSbGA3nADtr1cTRJPHgouBj5BBSB-41erRDMBOGne-TCN15sg ](000_Introduction_009.png){width="7.125in" height="2.033333333333333in"}
+    -   ![Data ca.crt: kube metes . io/ service- account -token 1066 bytes namespace: 11 bytes oken : eyJhbGci0iJSUz11Ni1s1mtpZC161kN0d28zcXB4YWhtYU11NktWkdrekktT2g1VIBLS05mVmpPbUNaS2pEeFkifQ. eyJpc3Mi0iJ lcm51dGV zL3N1cnZpY2VhY2NvdW501iwia3ViZXJuZXR1cy5pby9zZXJ2aWNIYWNjb3VudC9uYW11c3BhY2UiOiJ ILXN5c3R1bS1s1mt1YmVybmVOZXMuaW8vc2Vydm1jZ FjY291bnQvc2VjcmVOLm5hbWUiOiJhdHRhY2hkZXRhY2gtY29udHJvbGx1ci10b2t1bi13N2tqYy1s1mt1YmVybmvozxmuaW8vc2Vydm1jZWFjY291bnQvc2Vydm1 jZS1hY2NvdW50Lm5hbWUiOiJhdHRhY2hkZXRhY2gtY29udHJvbGx1ci1s1mt1YmVybmVOZWuaW8vc2Vydm1jZWFjY291bnQvc2Vydm1jZS1hY2NvdW50LnVpZC161 mNhZTMzNjYOLTNjNTgtNDY2Zi1hMzczLTNhODYzMzQ3NTczMC1s1nNIYi161nN5c3R1bTpzZXJ2aWNIYWNjb3VudDprdWJILXN5c3R1bTphdHRhY2hkZXRhY2gtY29 udHJvbGx1ciJ9.Y9MhiJygQLtbdm6EQn-s1xenbS15bWzOJtkOTk8UmymY72SPe09URQ3F-Tz4NZzzmJjUZXeD7cu01haON8AZ7V2vRCtMxDi u9EMRon2GOu1VQty I hXK4T95CHZL03Y6i7n3DK AubN64CEC01t1Z5h7VF-QJZtHC1chhZuB3Gae6GYDvq1D-smudc1A J9ERGIGnQe9Bs7i8DpsNh2DppYmKSnETt2pRfHtLy6jftpoS6X pCPjxViQGEfxGG025pSiF17c1gf8QXhWJD8QTd20t2t3rxoxG PW-AiSbGA3nADtr1cTRJPHgouBj5BBSB-41erRDMBOGne-TCN15sg ](000_Introduction_009.png)
 
 -   **Kubectl proxy**
 
@@ -340,7 +340,7 @@ One that it is not fully specified above is that we might end up using **kubectl
 
 -   **Visit the dashboard with the URL and LOGIN using the token**
 
-> ![O kUbernetes Overview Cluster Cluster Roles Namespaces Nodes Persistent Volumes Storage Classes Namespace default Overview Workloads Cron Jobs Daemon Sets Deployments Jobs Pods Replica Sets Replication Controllers Stateful Sets Discovery and Load Balancing Ingresses Services Config and Storage Config Maps Persistent Volume Claims Secrets Custom Resource Definitions Settings About Q Search Discovery and Load Balancing Services Name kubernetes Config and Storage Secrets Name default-token-4hz7x Namespace default Namespace default Labels component: apiserver provider: kubernetes Labels Internal Cluster IP Endpoints kubernetes:443 TCP 10.96.0.1 kubernetes:o External Endpoints TCP Type -10f1 Created 33 minutes ago Created 33 minutes ago kubernetes.io/service account-token -10f1 ](000_Introduction_010.png){width="5.508333333333334in" height="5.116666666666666in"}
+> ![O kUbernetes Overview Cluster Cluster Roles Namespaces Nodes Persistent Volumes Storage Classes Namespace default Overview Workloads Cron Jobs Daemon Sets Deployments Jobs Pods Replica Sets Replication Controllers Stateful Sets Discovery and Load Balancing Ingresses Services Config and Storage Config Maps Persistent Volume Claims Secrets Custom Resource Definitions Settings About Q Search Discovery and Load Balancing Services Name kubernetes Config and Storage Secrets Name default-token-4hz7x Namespace default Namespace default Labels component: apiserver provider: kubernetes Labels Internal Cluster IP Endpoints kubernetes:443 TCP 10.96.0.1 kubernetes:o External Endpoints TCP Type -10f1 Created 33 minutes ago Created 33 minutes ago kubernetes.io/service account-token -10f1 ](000_Introduction_010.png)
 >
 >  
 

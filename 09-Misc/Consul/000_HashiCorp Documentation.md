@@ -113,7 +113,7 @@ A Service can be registered either by providing a service definition (MOST COMMO
 
 Service definition configuration file. Let\'s look at the following line:
 
-![\[II rails\"\], \"port\": echo \"web\" \"tagsll: I {\"service\" : name ](000_HashiCorp_Documentation_000.png){width="7.283333333333333in" height="0.4083333333333333in"}
+![\[II rails\"\], \"port\": echo \"web\" \"tagsll: I {\"service\" : name ](000_HashiCorp_Documentation_000.png)
 
  
 
@@ -143,7 +143,7 @@ By DEFAULT all of the DNS names are always in the consul namespace (though this 
 
  
 
-![, flags: qr aa rd; QUERY: 1, ANSWER: 1, AUTHORITY: WAN\'IING: recursion requested but not available o, ADDITIONAL: 2 , OPT PSEUDOSECTION: EDNS: version: 0, flags: ; QUESTION SECTION: ; web. service. consul. ANSWER SECTION: web. service. consul. , ADDITIONAL SECTION: web. service. consul. Query time: 0 msec , SERVER: udp: 4096 IN IN IN TXT 127.0.0.1 \"consul-network-segment=\" ; WHEN: Wed Nov 14 PST 2018 MSG SIZE rcvd: 99 ](000_HashiCorp_Documentation_001.png){width="9.675in" height="4.766666666666667in"}
+![, flags: qr aa rd; QUERY: 1, ANSWER: 1, AUTHORITY: WAN\'IING: recursion requested but not available o, ADDITIONAL: 2 , OPT PSEUDOSECTION: EDNS: version: 0, flags: ; QUESTION SECTION: ; web. service. consul. ANSWER SECTION: web. service. consul. , ADDITIONAL SECTION: web. service. consul. Query time: 0 msec , SERVER: udp: 4096 IN IN IN TXT 127.0.0.1 \"consul-network-segment=\" ; WHEN: Wed Nov 14 PST 2018 MSG SIZE rcvd: 99 ](000_HashiCorp_Documentation_001.png)
 
  
 
@@ -191,7 +191,7 @@ The HTTP API can also be used to add/delete/edit services dynamically.
 
  
 
-![Sidecar Proxy App 1 TLS 1 Sidecar Proxy App 2 ](000_HashiCorp_Documentation_002.png){width="8.325in" height="4.725in"}
+![Sidecar Proxy App 1 TLS 1 Sidecar Proxy App 2 ](000_HashiCorp_Documentation_002.png)
 
  
 
@@ -229,7 +229,7 @@ We can register this new service with consul easily by adding another service de
 
  
 
-![\"service\" : \"name\": \"socat\", \"port\": 8181, { \"sidecar_service\": \"connect\" : ](000_HashiCorp_Documentation_003.png){width="4.741666666666666in" height="1.45in"}
+![\"service\" : \"name\": \"socat\", \"port\": 8181, { \"sidecar_service\": \"connect\" : ](000_HashiCorp_Documentation_003.png)
 
  
 
@@ -249,7 +249,7 @@ We can register this new service with consul easily by adding another service de
 
 Now time for the big picture:
 
-![Static Host-based networking O Dynamic Service-based networking ](000_HashiCorp_Documentation_004.png){width="9.308333333333334in" height="4.091666666666667in"}
+![Static Host-based networking O Dynamic Service-based networking ](000_HashiCorp_Documentation_004.png)
 
  
 
@@ -277,13 +277,13 @@ More info on Vagrant:
 
  
 
-![VAGRANT ](000_HashiCorp_Documentation_005.png){width="3.3666666666666667in" height="1.9in"}
+![VAGRANT ](000_HashiCorp_Documentation_005.png)
 
 [Docker Vs Vagrant](https://www.youtube.com/watch?v=9QGkJvbLpRA)
 
  
 
-![LXC Easier to cr ](000_HashiCorp_Documentation_006.png){width="3.408333333333333in" height="1.9083333333333334in"}
+![LXC Easier to cr ](000_HashiCorp_Documentation_006.png)
 
  
 

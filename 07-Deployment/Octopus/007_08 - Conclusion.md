@@ -6,27 +6,13 @@ Friday, November 18, 2016
 
  
 
-![](007_08_-_Conclusion_000.png){width="6.0in" height="3.15in"}
+![](007_08_-_Conclusion_000.png)
 
  
 
  
 
-![](007_08_-_Conclusion_001.png){width="6.0in" height="2.625in"}
-
- 
-
- 
-
- 
-
-![](007_08_-_Conclusion_002.png){width="6.0in" height="3.2416666666666667in"}
-
- 
-
- 
-
-![](007_08_-_Conclusion_003.png){width="6.0in" height="3.3666666666666667in"}
+![](007_08_-_Conclusion_001.png)
 
  
 
@@ -34,13 +20,27 @@ Friday, November 18, 2016
 
  
 
-![](007_08_-_Conclusion_004.png){width="6.0in" height="3.908333333333333in"}
+![](007_08_-_Conclusion_002.png)
 
  
 
  
 
-![](007_08_-_Conclusion_004.png){width="6.0in" height="3.908333333333333in"}
+![](007_08_-_Conclusion_003.png)
+
+ 
+
+ 
+
+ 
+
+![](007_08_-_Conclusion_004.png)
+
+ 
+
+ 
+
+![](007_08_-_Conclusion_004.png)
 
  
 

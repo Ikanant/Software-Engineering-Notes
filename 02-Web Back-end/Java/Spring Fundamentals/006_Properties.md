@@ -10,6 +10,6 @@ Property files are a great way to take out environment specific information (lik
 
  
 
-![XML Config \<context:property-placeholder . properties\" / \> \<bean class=\"com.pluralsight . repository. HibernateCustomerRepositoryImp1 \" \> \<property name=\"dbUsername\" \</bean\> \@Va1ue(\"\${dbUsername}\") private String dbUsername; ](006_Properties_000.png){width="9.166666666666666in" height="4.158333333333333in"}
+![XML Config \<context:property-placeholder . properties\" / \> \<bean class=\"com.pluralsight . repository. HibernateCustomerRepositoryImp1 \" \> \<property name=\"dbUsername\" \</bean\> \@Va1ue(\"\${dbUsername}\") private String dbUsername; ](006_Properties_000.png)
 
  

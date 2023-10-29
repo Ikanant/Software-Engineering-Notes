@@ -8,7 +8,7 @@ Saturday, September 21, 2019
 
 Note goals:
 
-![Get Vue from a CDN Create the HTML Create a Vue instance Bind a model from the Vue instance to the HTML ](000_Introduction_000.png){width="5.5in" height="3.15in"}
+![Get Vue from a CDN Create the HTML Create a Vue instance Bind a model from the Vue instance to the HTML ](000_Introduction_000.png)
 
 CDN = Content Delivery Network
 
@@ -110,7 +110,7 @@ Are the defaults when creating a vue project through the vue-cli.
 Well when all this happens, is inside the src folder and it\'s the **main.js** file. Inside this file is where we see this:\
  
 
-![1 2 3 4 5 6 7 8 9 import Vue import App new from from \'vue\'; \'@/app\' , Vue . config. productionTip False; render: h h(App), j\]) . \$mount( \'#app\' ) ; ](000_Introduction_001.png){width="4.658333333333333in" height="2.466666666666667in"}
+![1 2 3 4 5 6 7 8 9 import Vue import App new from from \'vue\'; \'@/app\' , Vue . config. productionTip False; render: h h(App), j\]) . \$mount( \'#app\' ) ; ](000_Introduction_001.png)
 
  
 
@@ -135,7 +135,7 @@ And one important thing to notice here as well is that after we import the compo
 
  
 
-![import HeaderBar from \'@/components/headel-bar\' ; export default { App name : components: { HeaderBar } , ](000_Introduction_002.png){width="5.0in" height="2.1333333333333333in"}
+![import HeaderBar from \'@/components/headel-bar\' ; export default { App name : components: { HeaderBar } , ](000_Introduction_002.png)
 
  
 
@@ -143,7 +143,7 @@ And one important thing to notice here as well is that after we import the compo
 
 No. We could also have a \<style\> section... This style can be done with lots of various css frameworks like scss, less, stylus, etc...
 
-![\<style scoped\> ](000_Introduction_003.png){width="2.875in" height="0.975in"}
+![\<style scoped\> ](000_Introduction_003.png)
 
  
 

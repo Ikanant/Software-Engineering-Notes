@@ -6,7 +6,7 @@ Friday, April 26, 2019
 
  
 
-![React\'s design concepts JSX and events handlers, data, and APIs React hooks Communicating between components Creating a local development environment ](000_The_BASICS_000.png){width="4.566666666666666in" height="2.1166666666666667in"}
+![React\'s design concepts JSX and events handlers, data, and APIs React hooks Communicating between components Creating a local development environment ](000_The_BASICS_000.png)
 
  
 
@@ -144,7 +144,7 @@ Both types can be STATEFUL and/or have side effects...or they can be purely pres
 
  
 
-![= (props) { const MyComponent return ( \<domE1ementOrComponent Props State class MyComponent extends React . Component { render ( ) { return ( \<domE1ementOrComponent . DOM ](000_The_BASICS_001.png){width="5.0in" height="2.6666666666666665in"}
+![= (props) { const MyComponent return ( \<domE1ementOrComponent Props State class MyComponent extends React . Component { render ( ) { return ( \<domE1ementOrComponent . DOM ](000_The_BASICS_001.png)
 
  
 
@@ -162,7 +162,7 @@ The STATE input is an internal one. It is the one that REACT uses to auto reflec
 
  
 
-![JSX Is NOT HTML class Hello extends React. Component { class Hello extends React .Component { render { render ( ) { return ( return ( div React. createE1enent( \"div\" , { classNane: \"container\"} , React. null, \"Getting Started\") ReactDOM. render(React . createE1ement(He110, null) , mountNode) ; ReactDOM. mountNode) ; ](000_The_BASICS_002.png){width="5.0in" height="2.6166666666666667in"}
+![JSX Is NOT HTML class Hello extends React. Component { class Hello extends React .Component { render { render ( ) { return ( return ( div React. createE1enent( \"div\" , { classNane: \"container\"} , React. null, \"Getting Started\") ReactDOM. render(React . createE1ement(He110, null) , mountNode) ; ReactDOM. mountNode) ; ](000_The_BASICS_002.png)
 
  
 
@@ -170,7 +170,7 @@ The STATE input is an internal one. It is the one that REACT uses to auto reflec
 
 <https://jscomplete.com/playground/rgs1.1>
 
-![function return ReactDOM 110 He110() { React! \_ render( Hello React! document \_ getEIemen tById( noun tNode ) , ](000_The_BASICS_003.png){width="5.0in" height="1.3333333333333333in"}
+![function return ReactDOM 110 He110() { React! \_ render( Hello React! document \_ getEIemen tById( noun tNode ) , ](000_The_BASICS_003.png)
 
 We have a simple REACT function component that returns a DIV. This component has NO input... and no state either...we call these components: PURE components... to display a REACT component in the browser, we need to tell the REACT DOM Library to do that.
 
@@ -198,7 +198,7 @@ The function designed to do that is the ReactDOM.render( ... ) which takes in 2 
 
  
 
-![Docs Setup 1 Reacct\</div\> Try it out 1 Videos Blog \'use strict\", Search Donate Team GitHub React. createE1ement(\" div null, \"Hello Reacct\"); ](000_The_BASICS_004.png){width="5.0in" height="0.6in"}
+![Docs Setup 1 Reacct\</div\> Try it out 1 Videos Blog \'use strict\", Search Donate Team GitHub React. createE1ement(\" div null, \"Hello Reacct\"); ](000_The_BASICS_004.png)
 
  
 
@@ -220,7 +220,7 @@ In the Code example above, the browser is not actually executing that JSX... ins
 
 **REACT Hooks:**
 
-![useState() results: a) state object (getter) b) updater function (setter) ](000_The_BASICS_005.png){width="3.2583333333333333in" height="2.5833333333333335in"}
+![useState() results: a) state object (getter) b) updater function (setter) ](000_The_BASICS_005.png)
 
 >  
 
@@ -236,7 +236,7 @@ JS Descructuring feature is what helps us assign the 2 variables into one line
 
  
 
-![](000_The_BASICS_006.png){width="3.308333333333333in" height="0.375in"}
+![](000_The_BASICS_006.png)
 
 >  
 
@@ -248,7 +248,7 @@ If we want to use the setCounter updater function declared above, we need to int
 
  
 
-![\"Complete Home cmst return O but tm s ; O Help ](000_The_BASICS_007.png){width="4.033333333333333in" height="4.333333333333333in"}
+![\"Complete Home cmst return O but tm s ; O Help ](000_The_BASICS_007.png)
 
  
 
@@ -260,7 +260,7 @@ Now you can also inline the function inside the onClick curlyBrackets and that w
 
  
 
-![I •L function Button() { const \[counter, setCounterJ = useState(O); return render ( sButton docuænt .getEIementById( \'mountNode \' ) , ](000_The_BASICS_008.png){width="5.0in" height="1.2in"}
+![I •L function Button() { const \[counter, setCounterJ = useState(O); return render ( sButton docuænt .getEIementById( \'mountNode \' ) , ](000_The_BASICS_008.png)
 
  
 
@@ -268,7 +268,7 @@ This **useState** function is called a HOOK in the REACT world. It is similar to
 
  
 
-![I • function Button() 10 12 13 const \[counter, setCounterJ z useState(O); return ( \<button (counter) C/ button\> ReacttM. render ( eButton getEIenentById( ) , return return o; X ](000_The_BASICS_009.png){width="2.466666666666667in" height="2.7333333333333334in"}
+![I • function Button() 10 12 13 const \[counter, setCounterJ z useState(O); return ( \<button (counter) C/ button\> ReacttM. render ( eButton getEIenentById( ) , return return o; X ](000_The_BASICS_009.png)
 
  
 
@@ -286,7 +286,7 @@ We can:
 
 2.  Make the REACT components we want to include the children of a REACT component we want to include
 
-    a.  ![rende r ( \<Button / \> kDtspIay \' nountNode ) , ](000_The_BASICS_010.png){width="2.975in" height="1.3416666666666666in"}
+    a.  ![rende r ( \<Button / \> kDtspIay \' nountNode ) , ](000_The_BASICS_010.png)
 
     b.  In fact... REACT has a special object for these type of cases... if we need to enclose components without introducing a new DIV parent... we can use React.Fragment
 
@@ -298,7 +298,7 @@ We can:
 
  
 
-![14 23 function Button() { const \[counter, setCounter) - useSta te(ß); return ( \<button {counter} function Display() { return ( function App() { return ( C\<8utton \<Dtsplay ReactDOM\_ render ( document \_ getEIemen tById( nountNode ) , ](000_The_BASICS_011.png){width="2.65in" height="3.5in"}
+![14 23 function Button() { const \[counter, setCounter) - useSta te(ß); return ( \<button {counter} function Display() { return ( function App() { return ( C\<8utton \<Dtsplay ReactDOM\_ render ( document \_ getEIemen tById( nountNode ) , ](000_The_BASICS_011.png)
 
 >  
 
@@ -322,7 +322,7 @@ To access the props we would do something like:
 
  
 
-![I function Button(props) // const handleCIick setCounter(counter• return ( \<button c/ button\> function Display(props) return ( 16 • function App() { Const \[counter, return ( \<Button cm splay render ( CApp Is, nter\] useState(42); ](000_The_BASICS_012.png){width="2.2583333333333333in" height="3.425in"}
+![I function Button(props) // const handleCIick setCounter(counter• return ( \<button c/ button\> function Display(props) return ( 16 • function App() { Const \[counter, return ( \<Button cm splay render ( CApp Is, nter\] useState(42); ](000_The_BASICS_012.png)
 
  
 
@@ -330,7 +330,7 @@ What we did here is called **The One Way Flow of Data**... Parents components ca
 
  
 
-![function Button(props) { return ( \<button function Display(props) { return ( \_ message} 24 26 function App() { const \[counter, setCounter) - useState(1); const incrementCounter = O setcounter(counter+l); return ( \<8utton \<Dtsplay ReactDOM\_ render ( document \_ getEIemen tById( nountNode ) , ](000_The_BASICS_013.png){width="2.875in" height="3.6166666666666667in"}
+![function Button(props) { return ( \<button function Display(props) { return ( \_ message} 24 26 function App() { const \[counter, setCounter) - useState(1); const incrementCounter = O setcounter(counter+l); return ( \<8utton \<Dtsplay ReactDOM\_ render ( document \_ getEIemen tById( nountNode ) , ](000_The_BASICS_013.png)
 
  
 
@@ -344,7 +344,7 @@ The Button component has NO CLUE what happens when it gets clicked. It just foll
 
 Passing in values to functions in our components...
 
-![function Button(props) { // const handleCltck () setcounter(counter+l); return ( \<button +{props \_ incremen t} ](000_The_BASICS_014.png){width="4.341666666666667in" height="1.9in"}
+![function Button(props) { // const handleCltck () setcounter(counter+l); return ( \<button +{props \_ incremen t} ](000_The_BASICS_014.png)
 
  
 
@@ -352,7 +352,7 @@ Notice how this will not work. Assuming that the function declaration for our on
 
  
 
-![function Button(props) { // const handleCltck () setcounter(counter+l); return ( \<button props \_onCItckFunctton(props +{props \_ incremen t} ](000_The_BASICS_015.png){width="5.0in" height="1.625in"}
+![function Button(props) { // const handleCltck () setcounter(counter+l); return ( \<button props \_onCItckFunctton(props +{props \_ incremen t} ](000_The_BASICS_015.png)
 
 \^\^\^ Note how if we just set the handleClick function to our new onClick handler, things are a bit cleaner.
 
@@ -360,7 +360,7 @@ Notice how this will not work. Assuming that the function declaration for our on
 
 **Tree Reconciliation in Action**
 
-![I w const render 10 22 docuænt.getEtementById( •mountNode\').tnnerHTHL = • Hello HTML \<input Date) ReactD(h4. render ( null, \"Hello React\" , React.createEIenent( \'input\', null), React.createElement( \'pre\', null, (new Date) . toLocaIeTtmeStrtng( ) ) , document. getElementById( \' • ) , setlnterval(render , 1000); ](000_The_BASICS_016.png){width="4.116666666666666in" height="4.283333333333333in"}
+![I w const render 10 22 docuænt.getEtementById( •mountNode\').tnnerHTHL = • Hello HTML \<input Date) ReactD(h4. render ( null, \"Hello React\" , React.createEIenent( \'input\', null), React.createElement( \'pre\', null, (new Date) . toLocaIeTtmeStrtng( ) ) , document. getElementById( \' • ) , setlnterval(render , 1000); ](000_The_BASICS_016.png)
 
  
 
@@ -374,4 +374,4 @@ However, if we try to type anything in the textbox that is rendered with REACT, 
 
  
 
-![I • const render z docuænt.getEIementById( \'mountNode\' ) . innerHTHL = • Hello HTML Hello HTML \<input Date) • .24 pm 1:45. 10 ReactDOM. render ( null, \"Hello React\" , React-createEIenent( \'input\', null), React-createElement( \'pre\', null, (new document. getEIementById( \' nountNOde2 • ) , Hello React Hello!! html div Styles Computed eleent.style { C Lass:\" container---fluid\" cdIQJ id2\"mountNode\" class= cdiv class= React\' • einput\> c,\'diw \< script type\" •text/ javascript••»--- c/ scripts Event Listeners DOM Breaks»ints : hov CLS Date) . toLocaIeTLmeStrLng ( ) ) , :before, box---sizing :before, 8:\' after { rent. css ](000_The_BASICS_017.png){width="5.0in" height="1.725in"}
+![I • const render z docuænt.getEIementById( \'mountNode\' ) . innerHTHL = • Hello HTML Hello HTML \<input Date) • .24 pm 1:45. 10 ReactDOM. render ( null, \"Hello React\" , React-createEIenent( \'input\', null), React-createElement( \'pre\', null, (new document. getEIementById( \' nountNOde2 • ) , Hello React Hello!! html div Styles Computed eleent.style { C Lass:\" container---fluid\" cdIQJ id2\"mountNode\" class= cdiv class= React\' • einput\> c,\'diw \< script type\" •text/ javascript••»--- c/ scripts Event Listeners DOM Breaks»ints : hov CLS Date) . toLocaIeTLmeStrLng ( ) ) , :before, box---sizing :before, 8:\' after { rent. css ](000_The_BASICS_017.png)

@@ -6,7 +6,7 @@ Saturday, April 25, 2020
 
  
 
-![](002_Getting_Resources_000.png){width="6.958333333333333in" height="1.525in"}
+![](002_Getting_Resources_000.png)
 
  
 
@@ -14,13 +14,13 @@ As noted before, REST stops at the level of the outer facing contract... Whateve
 
  
 
-![](002_Getting_Resources_001.png){width="6.9in" height="2.158333333333333in"}
+![](002_Getting_Resources_001.png)
 
  
 
  
 
-![](002_Getting_Resources_002.png){width="6.441666666666666in" height="3.825in"}
+![](002_Getting_Resources_002.png)
 
  
 
@@ -52,7 +52,7 @@ This will contain extensions that will make auto mapper work nicely with ASP.NET
 
  
 
-![](002_Getting_Resources_003.png){width="6.033333333333333in" height="0.425in"}
+![](002_Getting_Resources_003.png)
 
  
 
@@ -74,7 +74,7 @@ To create an automapper map we just need to run the CreateMap (from within the P
 
  
 
-![](002_Getting_Resources_004.png){width="5.8in" height="2.7in"}
+![](002_Getting_Resources_004.png)
 
  
 
@@ -86,7 +86,7 @@ AutoMapper will take the properties with the SAME name from one entity to the ne
 
  
 
-![](002_Getting_Resources_005.png){width="6.5in" height="1.175in"}
+![](002_Getting_Resources_005.png)
 
  
 
@@ -94,7 +94,7 @@ That\'s what I am doing in the code above. I am stating that:
 
 -   For member \<Name\> on the DESTINATION object I want it to be mapped from the SOURCE First and Last name...
 
-![](002_Getting_Resources_006.png){width="7.25in" height="1.5333333333333334in"}
+![](002_Getting_Resources_006.png)
 
  
 
@@ -116,7 +116,7 @@ So in our API I would end up with something like:
 
  
 
-![](002_Getting_Resources_007.png){width="9.95in" height="1.3666666666666667in"}
+![](002_Getting_Resources_007.png)
 
 So far so good... BUT I do have a problem. One of the constraints I noted before for a REST api is that the response from the API should have enough information to modify it OR delete.... Is that the case from the image above? More or less... We have the ID which should be enough BUT we can also include the resource URI... the Identifier of the resource. The way to do this is by implementing HATEOAS... For now I plan to skip this.
 
@@ -130,7 +130,7 @@ So there is much to be said about this, but the main thing right now is that if 
 
 Custom behavior can be accomplished too...
 
-![](002_Getting_Resources_008.png){width="10.666666666666666in" height="2.7583333333333333in"}
+![](002_Getting_Resources_008.png)
 
  
 
@@ -140,7 +140,7 @@ Custom behavior can be accomplished too...
 
  
 
-![](002_Getting_Resources_009.png){width="7.666666666666667in" height="3.033333333333333in"}
+![](002_Getting_Resources_009.png)
 
  
 
@@ -150,7 +150,7 @@ Looking back to the table above... HEAD is IDENTICAL to GET except that the API 
 
 The creators of Dotnet Core wanted to make our lifes easier, so by just adding the attribute to our existing GET methods we should be covered.
 
-![](002_Getting_Resources_010.png){width="2.216666666666667in" height="0.9083333333333333in"}
+![](002_Getting_Resources_010.png)
 
  
 

@@ -10,11 +10,11 @@ Monday, November 8, 2021
 
 -   Unlike many other languages, Swift does NOT need a **main** method or function. By default the compiler just begins at the top and moves its way down.
 
-    -   ![no required import / include / using no required main print(\"He110, Pluralsight\" ) no required return A basic Swift program ](000_The_Basic_Structure_000.png){width="5.0in" height="2.7083333333333335in"}
+    -   ![no required import / include / using no required main print(\"He110, Pluralsight\" ) no required return A basic Swift program ](000_The_Basic_Structure_000.png)
 
 -   Swift IS a type safe language. Even though **var** is commonly used to define variables... once defined, this variables cannot be changed.
 
--   ![var var var var playerName = \" Alice \" age = 21 temperature = 72 6 activeMember = true inferred inferred inferred inferred as a a a a Swift Swift Swift Swift String Int Double BOOI Type Inference Swift infers the type from the initial value ](000_The_Basic_Structure_001.png){width="5.0in" height="1.6083333333333334in"}
+-   ![var var var var playerName = \" Alice \" age = 21 temperature = 72 6 activeMember = true inferred inferred inferred inferred as a a a a Swift Swift Swift Swift String Int Double BOOI Type Inference Swift infers the type from the initial value ](000_The_Basic_Structure_001.png)
 
 -   **Var** is required.... And it is the ONLY keyword we need/use to declare a variable.
 
@@ -30,10 +30,10 @@ The concept of a REPL started with LISP. This feature is what lets us write and 
 
 **The Swift Compilation Process**
 
-![DEVELOPER COMPILED LANGUAGES (C++, C) SOURCE CODE \> FULL COMPILATION INTERMEDIATE (C#, JAVA) SOURCE CODE \> PARTIAL COMPILATION INTERPRETED LANGUAGES (JAVASCRIPT, RUBY) SOURCE CODE - NO COMPILATION BYTECODE USER RUN JIT COMPILE\' \> RUN • VM Runtime Engine required INTERPRET• \> RUN • Interpreter required ](000_The_Basic_Structure_002.png){width="5.0in" height="2.5in"}
+![DEVELOPER COMPILED LANGUAGES (C++, C) SOURCE CODE \> FULL COMPILATION INTERMEDIATE (C#, JAVA) SOURCE CODE \> PARTIAL COMPILATION INTERPRETED LANGUAGES (JAVASCRIPT, RUBY) SOURCE CODE - NO COMPILATION BYTECODE USER RUN JIT COMPILE\' \> RUN • VM Runtime Engine required INTERPRET• \> RUN • Interpreter required ](000_The_Basic_Structure_002.png)
 
  
 
  
 
-![DEVELOPER SWIFT IS A COMPILED LANGUAGE SOURCE CODE \> FULL COMPILATION INTERMEDIATE SOURCE CODE \> PARTIAL COMPILATION INTERPRETED LANGUAGES SOURCE CODE - NO COMPILATION BYTECODE USER RUN JIT COMPILE• \> RUN • VM / Runtime Engine required INTERPRET• \> RUN •Intergreter reauired ](000_The_Basic_Structure_003.png){width="5.0in" height="2.5in"}
+![DEVELOPER SWIFT IS A COMPILED LANGUAGE SOURCE CODE \> FULL COMPILATION INTERMEDIATE SOURCE CODE \> PARTIAL COMPILATION INTERPRETED LANGUAGES SOURCE CODE - NO COMPILATION BYTECODE USER RUN JIT COMPILE• \> RUN • VM / Runtime Engine required INTERPRET• \> RUN •Intergreter reauired ](000_The_Basic_Structure_003.png)

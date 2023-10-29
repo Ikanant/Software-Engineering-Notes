@@ -10,7 +10,7 @@ Anyone that has developed for Android knows that the native language is JAVA. So
 
  
 
-![Available APIs in Xamarin.Android System System.Xml C# System.lO System.Net System.Linq ](001_Xamarin_and_Xamarin.Android_000.png){width="5.0in" height="2.4583333333333335in"}
+![Available APIs in Xamarin.Android System System.Xml C# System.lO System.Net System.Linq ](001_Xamarin_and_Xamarin.Android_000.png)
 
  
 
@@ -20,7 +20,7 @@ The framework we will use for the course is the Mono Framework. Mono is the open
 
  
 
-![ActionBar System Maps System.Xml Camera System.lO Sensors System.Net Phone System.Linq ](001_Xamarin_and_Xamarin.Android_001.png){width="5.0in" height="1.9166666666666667in"}
+![ActionBar System Maps System.Xml Camera System.lO Sensors System.Net Phone System.Linq ](001_Xamarin_and_Xamarin.Android_001.png)
 
  
 
@@ -28,7 +28,7 @@ Basically, Xamarin contains a wrapper implementation of native Android tools tha
 
  
 
-![Your Choice of IDEs Visual Studio App Xamarin Studio ](001_Xamarin_and_Xamarin.Android_002.png){width="5.0in" height="2.8333333333333335in"}
+![Your Choice of IDEs Visual Studio App Xamarin Studio ](001_Xamarin_and_Xamarin.Android_002.png)
 
  
 

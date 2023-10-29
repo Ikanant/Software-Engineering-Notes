@@ -6,11 +6,11 @@ Wednesday, April 29, 2020
 
  
 
-![](006_Updating_Resources_000.png){width="5.0in" height="2.658333333333333in"}
+![](006_Updating_Resources_000.png)
 
  
 
-![](006_Updating_Resources_001.png){width="5.841666666666667in" height="1.9in"}
+![](006_Updating_Resources_001.png)
 
  
 
@@ -22,11 +22,11 @@ Wednesday, April 29, 2020
 
 **Side Note:**
 
-![](006_Updating_Resources_002.png){width="8.166666666666666in" height="2.1333333333333333in"}
+![](006_Updating_Resources_002.png)
 
  
 
-![](006_Updating_Resources_003.png){width="7.983333333333333in" height="3.725in"}
+![](006_Updating_Resources_003.png)
 
  
 
@@ -38,7 +38,7 @@ Getting an order with some complex logic might be advisable to use ADO.NET.... O
 
  
 
-![](006_Updating_Resources_004.png){width="7.041666666666667in" height="1.6166666666666667in"}
+![](006_Updating_Resources_004.png)
 
  
 
@@ -46,7 +46,7 @@ The reason why I am writing about the repository contract right now is because w
 
  
 
-![](006_Updating_Resources_005.png){width="8.216666666666667in" height="2.8666666666666667in"}
+![](006_Updating_Resources_005.png)
 
  
 
@@ -60,7 +60,7 @@ As far as returning something out of an update in my controller is all relative.
 
 Now let\'s assume I send a PUT request and I only specify the value of the Title of my object and NOT the Description... then we end up with something like:
 
-![](006_Updating_Resources_006.png){width="4.875in" height="1.75in"}
+![](006_Updating_Resources_006.png)
 
  
 
@@ -76,7 +76,7 @@ For most resources (if not most) this will behave exactly like POST... but, it d
 
 **Updating Collection Resources**
 
-![](006_Updating_Resources_007.png){width="7.408333333333333in" height="3.1083333333333334in"}
+![](006_Updating_Resources_007.png)
 
  
 
@@ -86,13 +86,13 @@ Doing this can be quite destructive... while it seems like we are updating the e
 
 **Upserting**
 
-![](006_Updating_Resources_008.png){width="8.4in" height="4.366666666666666in"}
+![](006_Updating_Resources_008.png)
 
  
 
  
 
-![](006_Updating_Resources_009.png){width="11.633333333333333in" height="7.55in"}
+![](006_Updating_Resources_009.png)
 
  
 
@@ -102,15 +102,15 @@ Doing this can be quite destructive... while it seems like we are updating the e
 
  
 
-![](006_Updating_Resources_010.png){width="8.033333333333333in" height="3.225in"}
+![](006_Updating_Resources_010.png)
 
  
 
-![](006_Updating_Resources_011.png){width="7.1in" height="3.158333333333333in"}
+![](006_Updating_Resources_011.png)
 
  
 
-![](006_Updating_Resources_012.png){width="6.75in" height="2.45in"}
+![](006_Updating_Resources_012.png)
 
  
 
@@ -146,11 +146,11 @@ There are 6 operations possible:
 
 >  
 
-![](006_Updating_Resources_013.png){width="8.716666666666667in" height="3.0416666666666665in"}
+![](006_Updating_Resources_013.png)
 
  
 
-![](006_Updating_Resources_014.png){width="8.658333333333333in" height="3.0in"}
+![](006_Updating_Resources_014.png)
 
  
 
@@ -166,7 +166,7 @@ Jumping into code... the first thing I noted from what I wrote above, is that my
 
  
 
-![](006_Updating_Resources_015.png){width="7.058333333333334in" height="2.966666666666667in"}
+![](006_Updating_Resources_015.png)
 
  
 
@@ -174,7 +174,7 @@ Jumping into code... the first thing I noted from what I wrote above, is that my
 
  
 
-![](006_Updating_Resources_016.png){width="6.616666666666666in" height="0.6in"}
+![](006_Updating_Resources_016.png)
 
  
 
@@ -200,7 +200,7 @@ Then the only thing to do is to chain the newtonsoftjson to the IMvcBuilder insi
 
 One side effect of
 
-![](006_Updating_Resources_017.png){width="5.316666666666666in" height="2.283333333333333in"}
+![](006_Updating_Resources_017.png)
 
  
 
@@ -216,7 +216,7 @@ Validation for PATCHing is also somewhat tricky. Main problem lies on the fact w
 
  
 
-![](006_Updating_Resources_018.png){width="7.366666666666666in" height="1.8083333333333333in"}
+![](006_Updating_Resources_018.png)
 
 \^\^\^ How about if we try to edit/remove a property that does not exist? For that I just simply pass in the ModelState to my ApplyTo method... if I do this any errors in the PATCH document will make the model state invalid! - so later when I do my check (tryValidateMode) will take care of returning the error.
 
@@ -237,6 +237,6 @@ Technically we still have memberID and photoID....
 
  
 
-![](006_Updating_Resources_019.png){width="11.95in" height="2.825in"}
+![](006_Updating_Resources_019.png)
 
  

@@ -78,22 +78,22 @@ When going over specifically over the JVM garbage collector we need to consider 
 
  
 
-![Memory - Young Generation Eden The Players Tenured Permanent Generation Permanent Old Generation ](000_How_Garbage_Collection_Works_in_the_Oracle_JVM_000.png){width="4.75in" height="3.283333333333333in"}
+![Memory - Young Generation Eden The Players Tenured Permanent Generation Permanent Old Generation ](000_How_Garbage_Collection_Works_in_the_Oracle_JVM_000.png)
 
  
 
-![Basic Ideas • Has a \'young generation\' and an \'old generation\' • Most initial objects allocated in \'Eden space\' Part of young generation • Young generation also has two \'survivor\' spaces Objects that survive a GC get moved to the survivor space Only one survivor space in use at a time Objects copied between survivor spaces Old generation is where long lived objects go to die ](000_How_Garbage_Collection_Works_in_the_Oracle_JVM_001.png){width="4.758333333333334in" height="3.2916666666666665in"}
+![Basic Ideas • Has a \'young generation\' and an \'old generation\' • Most initial objects allocated in \'Eden space\' Part of young generation • Young generation also has two \'survivor\' spaces Objects that survive a GC get moved to the survivor space Only one survivor space in use at a time Objects copied between survivor spaces Old generation is where long lived objects go to die ](000_How_Garbage_Collection_Works_in_the_Oracle_JVM_001.png)
 
  
 
-![Young Generation • Most objects live for a very short time The \'turtle\' theory of garbage collection i.e. you die young or live \'forever\' ](000_How_Garbage_Collection_Works_in_the_Oracle_JVM_002.png){width="4.783333333333333in" height="1.7083333333333333in"}
+![Young Generation • Most objects live for a very short time The \'turtle\' theory of garbage collection i.e. you die young or live \'forever\' ](000_How_Garbage_Collection_Works_in_the_Oracle_JVM_002.png)
 
  
 
-![Copying to Old Generation • JVM will eventually promote to old generation After a certain number of garbage collects If survivor space is full If JVM has been told to always create objects in old space -XX:+AlwaysTenure flag to JVM ](000_How_Garbage_Collection_Works_in_the_Oracle_JVM_003.png){width="4.116666666666666in" height="2.1416666666666666in"}
+![Copying to Old Generation • JVM will eventually promote to old generation After a certain number of garbage collects If survivor space is full If JVM has been told to always create objects in old space -XX:+AlwaysTenure flag to JVM ](000_How_Garbage_Collection_Works_in_the_Oracle_JVM_003.png)
 
  
 
-![What Does Live Mean? • Live roots From stack frames Static variables Others such as JNI and synchronization \'monitors\' • References from live rooted objects are followed to other objects What about references from Old Generation to Young? ](000_How_Garbage_Collection_Works_in_the_Oracle_JVM_004.png){width="4.133333333333334in" height="2.1666666666666665in"}
+![What Does Live Mean? • Live roots From stack frames Static variables Others such as JNI and synchronization \'monitors\' • References from live rooted objects are followed to other objects What about references from Old Generation to Young? ](000_How_Garbage_Collection_Works_in_the_Oracle_JVM_004.png)
 
  

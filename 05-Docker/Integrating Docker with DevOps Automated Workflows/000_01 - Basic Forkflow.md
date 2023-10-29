@@ -10,6 +10,6 @@ Course taught by: *Nigel Poulton*
 
 ***Course Overview***
 
-![](000_01_-_Basic_Forkflow_000.png){width="5.0in" height="2.033333333333333in"}
+![](000_01_-_Basic_Forkflow_000.png)
 
 Node App that uses the Express Web Framework

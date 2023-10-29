@@ -307,4 +307,4 @@ GO support functions as first class citizens of the language...this means that t
 
  
 
-![](002_03_-_Branching_and_Looping_&_Functions_000.png){width="4.158333333333333in" height="2.225in"}
+![](002_03_-_Branching_and_Looping_&_Functions_000.png)

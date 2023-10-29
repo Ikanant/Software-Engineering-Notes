@@ -82,4 +82,4 @@ The lesson is on a Debian based system running Docker
 
 *[I did not write notes on this because this is changing and we don\'t really need to get too deep into it. It pretty much means that instead go pushing our code to the docker hub public registry, we can have our own personal one. It\'s not complicated.]{.underline}*
 
-![](005_06_-_Docker_Deep_Dive_-_Working_with_Registries_000.png){width="5.0in" height="2.7416666666666667in"}
+![](005_06_-_Docker_Deep_Dive_-_Working_with_Registries_000.png)

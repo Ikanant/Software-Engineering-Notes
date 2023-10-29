@@ -10,7 +10,7 @@ This module will just cover the configuration of Spring using JUST Java. Java co
 
  
 
-![No applicationContext.xml JAVA Too much XML Namespaces helped Enter Java Configuration ](004_Java_Configuration_000.png){width="4.166666666666667in" height="2.4166666666666665in"}
+![No applicationContext.xml JAVA Too much XML Namespaces helped Enter Java Configuration ](004_Java_Configuration_000.png)
 
  
 
@@ -18,7 +18,7 @@ This module will just cover the configuration of Spring using JUST Java. Java co
 
  
 
-![\@Configuration public class AppConfig { \@Bean(name = \" customerRepository\" public CustomerRepository getCustomerRepository() { return new HibernateCustomerRepositoryImp1(); \@Configuration applicationContext replaced by \@Configuration \@Configuration at class level Spring Beans defined by \@Bean \@Bean at method level ](004_Java_Configuration_001.png){width="4.958333333333333in" height="3.3333333333333335in"}
+![\@Configuration public class AppConfig { \@Bean(name = \" customerRepository\" public CustomerRepository getCustomerRepository() { return new HibernateCustomerRepositoryImp1(); \@Configuration applicationContext replaced by \@Configuration \@Configuration at class level Spring Beans defined by \@Bean \@Bean at method level ](004_Java_Configuration_001.png)
 
  
 
@@ -26,7 +26,7 @@ This module will just cover the configuration of Spring using JUST Java. Java co
 
  
 
-![\@Bean ( name= \" customerService \" ) public Customerservice getCustomerService() CustomerServiceImp1 customerService - w CustomerServiceImp customerservice. setCustomerReposito (getCustomerRepository()) ; return customeöService; = \"customerRe ory\" ) public CustomerReposit y getCustomerRepository() { return new HibernateCu rRe ositorylm 1 Setter Injection Simple as a method call \"Mystery\" of injection goes away Setter Injection simply calling a setter ](004_Java_Configuration_002.png){width="5.875in" height="3.816666666666667in"}
+![\@Bean ( name= \" customerService \" ) public Customerservice getCustomerService() CustomerServiceImp1 customerService - w CustomerServiceImp customerservice. setCustomerReposito (getCustomerRepository()) ; return customeöService; = \"customerRe ory\" ) public CustomerReposit y getCustomerRepository() { return new HibernateCu rRe ositorylm 1 Setter Injection Simple as a method call \"Mystery\" of injection goes away Setter Injection simply calling a setter ](004_Java_Configuration_002.png)
 
 With XML there is a lot of wondering with what\'s going on... a lot of that goes away with JAVA configuration approach. Setter injection is just a matter of calling a setter on a Bean. We will define a bean of type CustomerService that will return a bean of type CustomerService (OR a bean named customerService).
 
@@ -52,7 +52,7 @@ The main difference to note is that now we have things stored in a container and
 
  
 
-![\" customerService \" ) public CustomerService getCustomerService() { CustomerServiceImp1 customerservice = new return customerService; \@Bean(name = \"customerRepository\") public CustomerRepository getCustomerRepository() { return new HibernateCustomerRepositoryImp1(); Constructor Injection Just like setter injection ](004_Java_Configuration_003.png){width="4.291666666666667in" height="2.825in"}
+![\" customerService \" ) public CustomerService getCustomerService() { CustomerServiceImp1 customerservice = new return customerService; \@Bean(name = \"customerRepository\") public CustomerRepository getCustomerRepository() { return new HibernateCustomerRepositoryImp1(); Constructor Injection Just like setter injection ](004_Java_Configuration_003.png)
 
  
 

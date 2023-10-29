@@ -4,7 +4,7 @@ Thursday, July 12, 2018
 
 6:51 AM
 
-![Module Real-time web applications Polling and long polling Server sent events WebSockets ](000_1_-_Real-time_web_applications_000.png){width="6.283333333333333in" height="2.625in"}
+![Module Real-time web applications Polling and long polling Server sent events WebSockets ](000_1_-_Real-time_web_applications_000.png)
 
  
 
@@ -30,7 +30,7 @@ SignalR can work with web applications, installed applications or even mobile so
 
  
 
-![04 」 」 OS ](000_1_-_Real-time_web_applications_001.png){width="7.083333333333333in" height="3.3in"}
+![04 」 」 OS ](000_1_-_Real-time_web_applications_001.png)
 
  
 
@@ -67,15 +67,15 @@ The idea of LONG POLLING is that the browser will make a request to the server, 
 
  
 
-![](000_1_-_Real-time_web_applications_002.png){width="6.283333333333333in" height="3.2in"}
+![](000_1_-_Real-time_web_applications_002.png)
 
  
 
-![adocument . .addEventListener(\"c1ick\", e { e. preventDefau1t() ; const product = document . getE1ementById( \" product \" ) . value; --- document .getE1ementById( \"size\") .value; const size --- fetch( \" /Coffee \" , method : \"POST\", body: { product, Size } . then(response response. text()) . then(text poll(text)); ](000_1_-_Real-time_web_applications_003.png){width="7.5in" height="3.225in"}
+![adocument . .addEventListener(\"c1ick\", e { e. preventDefau1t() ; const product = document . getE1ementById( \" product \" ) . value; --- document .getE1ementById( \"size\") .value; const size --- fetch( \" /Coffee \" , method : \"POST\", body: { product, Size } . then(response response. text()) . then(text poll(text)); ](000_1_-_Real-time_web_applications_003.png)
 
  
 
-![• WiredB•ain JavaScript Files 1 2 4 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 24 pollWithTimeout (url, options, return Promise. fetch(url, options), new reject) timeout - - 9090) setTimeout(() reject(new Error( \'timeout\' j); = (orderld) { poll pollWithTimeout(• /coffee/\${orderld}• ) timeout) . then(response { if (response. status 200) { const statusDiv = document.getE1ementById(\"status\"); response.json().then(j { statusDiv. innerHTML j.update; if . finished) poll (orderld) ; . catc response poll orderld 152 % ](000_1_-_Real-time_web_applications_004.png){width="8.533333333333333in" height="5.183333333333334in"}
+![• WiredB•ain JavaScript Files 1 2 4 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 24 pollWithTimeout (url, options, return Promise. fetch(url, options), new reject) timeout - - 9090) setTimeout(() reject(new Error( \'timeout\' j); = (orderld) { poll pollWithTimeout(• /coffee/\${orderld}• ) timeout) . then(response { if (response. status 200) { const statusDiv = document.getE1ementById(\"status\"); response.json().then(j { statusDiv. innerHTML j.update; if . finished) poll (orderld) ; . catc response poll orderld 152 % ](000_1_-_Real-time_web_applications_004.png)
 
  
 
@@ -94,11 +94,11 @@ The server creates an HTTP connection to the browser... and then the browser wil
 
  
 
-![](000_1_-_Real-time_web_applications_005.png){width="8.533333333333333in" height="4.833333333333333in"}
+![](000_1_-_Real-time_web_applications_005.png)
 
  
 
-![1 2 4 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 listen = (id) { var eventSource = new EventSource(• /Coffee/\${id}\" ); (event) { E eventsource .onmessage - const statusDiv = document.getE1ementById( \"status\" statusDiv. innerHTML = event. data; gdocument.getE1ementById( \" submit\") e { e. preventDefau1t(); const product document .getE1ementById( \"product\") . value; const size = . value; fetch( \" /Coffee\" , method: \"POST\" , body: { product, size } .then(response response.text()) .then(text listen(text)); ](000_1_-_Real-time_web_applications_006.png){width="8.575in" height="4.716666666666667in"}
+![1 2 4 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 listen = (id) { var eventSource = new EventSource(• /Coffee/\${id}\" ); (event) { E eventsource .onmessage - const statusDiv = document.getE1ementById( \"status\" statusDiv. innerHTML = event. data; gdocument.getE1ementById( \" submit\") e { e. preventDefau1t(); const product document .getE1ementById( \"product\") . value; const size = . value; fetch( \" /Coffee\" , method: \"POST\" , body: { product, size } .then(response response.text()) .then(text listen(text)); ](000_1_-_Real-time_web_applications_006.png)
 
  
 
@@ -155,7 +155,7 @@ TCP Socket remains open until the stream of messages gets done. Most modern site
 
  
 
-![](000_1_-_Real-time_web_applications_007.png){width="6.025in" height="3.975in"}
+![](000_1_-_Real-time_web_applications_007.png)
 
  
 
@@ -165,11 +165,11 @@ Every web socket starts its life as a simple HTTP socket. Once the server gets t
 
  
 
-![](000_1_-_Real-time_web_applications_008.png){width="5.575in" height="3.0833333333333335in"}
+![](000_1_-_Real-time_web_applications_008.png)
 
  
 
-![](000_1_-_Real-time_web_applications_009.png){width="5.583333333333333in" height="2.65in"}
+![](000_1_-_Real-time_web_applications_009.png)
 
  
 

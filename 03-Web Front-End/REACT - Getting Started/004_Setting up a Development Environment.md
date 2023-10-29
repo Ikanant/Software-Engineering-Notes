@@ -8,7 +8,7 @@ Thursday, May 02, 2019
 
  
 
-![Dragons Ahead Multiple tools - APIs Configurations Releases Multiple environments Development - Production - Test Different renderers - DOM - SSR ](004_Setting_up_a_Development_Environment_000.png){width="5.0in" height="3.441666666666667in"}
+![Dragons Ahead Multiple tools - APIs Configurations Releases Multiple environments Development - Production - Test Different renderers - DOM - SSR ](004_Setting_up_a_Development_Environment_000.png)
 
  
 
@@ -49,7 +49,7 @@ Package that will let us automatically restart node when we change anything in o
 
  
 
-![4. Creating an Initial Directory Structure This really depends on your style and preferences, but a simple structure would be something like: fulljs/ dist/ main \_ js src/ index \_ js components/ App \_ js server/ server \_ js ](004_Setting_up_a_Development_Environment_001.png){width="5.0in" height="2.3833333333333333in"}
+![4. Creating an Initial Directory Structure This really depends on your style and preferences, but a simple structure would be something like: fulljs/ dist/ main \_ js src/ index \_ js components/ App \_ js server/ server \_ js ](004_Setting_up_a_Development_Environment_001.png)
 
  
 

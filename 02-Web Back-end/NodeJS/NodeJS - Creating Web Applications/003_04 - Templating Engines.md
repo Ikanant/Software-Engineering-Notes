@@ -22,18 +22,18 @@ Templating Engines:
 
 >  
 
--   ![](003_04_-_Templating_Engines_000.png){width="5.0in" height="2.7916666666666665in"}
+-   ![](003_04_-_Templating_Engines_000.png)
 
 >  
 
 -   Whitespace and Tab logic\
      
 
--   ![](003_04_-_Templating_Engines_001.png){width="3.375in" height="4.175in"}
+-   ![](003_04_-_Templating_Engines_001.png)
 
 >  
 
--   ![](003_04_-_Templating_Engines_002.png){width="3.575in" height="0.225in"}
+-   ![](003_04_-_Templating_Engines_002.png)
 
  
 
@@ -52,7 +52,7 @@ Templating Engines:
     -   **Allows variables to be passed\
         ** 
 
-    -   ![](003_04_-_Templating_Engines_003.png){width="3.8833333333333333in" height="3.191666666666667in"}
+    -   ![](003_04_-_Templating_Engines_003.png)
 
  
 
@@ -65,7 +65,7 @@ Templating Engines:
     -   Main difference between EJS and Handlebars is that within our HTML we are going to write \<% %\> symbols\
          
 
-    -   ![](003_04_-_Templating_Engines_004.png){width="5.0in" height="3.15in"}
+    -   ![](003_04_-_Templating_Engines_004.png)
 
  
 
@@ -73,4 +73,4 @@ Templating Engines:
 
  
 
-![](003_04_-_Templating_Engines_005.png){width="5.0in" height="2.7333333333333334in"}
+![](003_04_-_Templating_Engines_005.png)

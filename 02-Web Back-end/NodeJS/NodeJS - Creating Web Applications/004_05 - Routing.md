@@ -10,7 +10,7 @@ When dealing with Express, we can use multiple Routes under one express Router:
 
  
 
-![](004_05_-_Routing_000.png){width="5.0in" height="2.033333333333333in"}
+![](004_05_-_Routing_000.png)
 
  
 
@@ -40,4 +40,4 @@ Now, when dealing with single book pages, we are going to deal with routes that 
 
  
 
-![](004_05_-_Routing_001.png){width="5.0in" height="2.7333333333333334in"}
+![](004_05_-_Routing_001.png)

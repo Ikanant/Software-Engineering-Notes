@@ -208,7 +208,7 @@ How to call functions asynchronously using tools that GO offers us.
 
 *[Concurrency is NOT the same as Parallelism.]{.underline}*
 
-![](003_04_-_OOP_&_Asynchronous_Programming_000.png){width="5.0in" height="2.5in"}
+![](003_04_-_OOP_&_Asynchronous_Programming_000.png)
 
  
 
@@ -224,6 +224,6 @@ We will work with two things about channels:
 
 **[PLEASE LOOK OVER DEMO CODE]{.underline}**
 
-![](003_04_-_OOP_&_Asynchronous_Programming_001.png){width="5.0in" height="3.2083333333333335in"}
+![](003_04_-_OOP_&_Asynchronous_Programming_001.png)
 
 THE END

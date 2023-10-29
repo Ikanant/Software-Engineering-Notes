@@ -114,7 +114,7 @@ When we launch containers with "docker run" command, the docker engine reads the
 
 An interesting thing: **The ROOTFS of a CONTAINER, is actually never made WRITABLE.**
 
-![](002_03_-_Docker_Deep_Dive_-_A_Closer_Look_at_Images_and_Containers_000.png){width="5.0in" height="2.625in"}
+![](002_03_-_Docker_Deep_Dive_-_A_Closer_Look_at_Images_and_Containers_000.png)
 
 **One Process per Container (usually)**
 
@@ -170,4 +170,4 @@ To exit, we can press CTRL + C
 
 Let\'s say that we have a container doing a process like pinging 8.8.8.8. If we press CTRL+C we would cancel....the process AND the container itself.
 
-![](002_03_-_Docker_Deep_Dive_-_A_Closer_Look_at_Images_and_Containers_001.png){width="5.0in" height="2.6in"}
+![](002_03_-_Docker_Deep_Dive_-_A_Closer_Look_at_Images_and_Containers_001.png)

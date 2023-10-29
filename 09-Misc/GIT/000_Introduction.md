@@ -10,7 +10,7 @@ These notes will not be focused on a list of git commands and their respective a
 
  
 
-![Git Commands git filter-branch git diff git ref log git commit git rerere git add git log git clean git bisect git help git pull git grep git git clone git status git merge git rebase rm git revert git push git remote git init git branch git cherry-pick git config ](000_Introduction_000.png){width="3.675in" height="1.6583333333333334in"}
+![Git Commands git filter-branch git diff git ref log git commit git rerere git add git log git clean git bisect git help git pull git grep git git clone git status git merge git rebase rm git revert git push git remote git init git branch git cherry-pick git config ](000_Introduction_000.png)
 
  
 
@@ -44,7 +44,7 @@ The one thing to keep in mind when dealing with GIT, is that in each project the
 
 >  
 
-![Stash Working Area Index Repository ](000_Introduction_001.png){width="5.0in" height="0.5916666666666667in"}
+![Stash Working Area Index Repository ](000_Introduction_001.png)
 
  
 
@@ -74,7 +74,7 @@ There are a few different kind of objects in the DB. Some objects represent the 
 
  
 
-![blob blob tree commit tree commi t tree blob ](000_Introduction_002.png){width="5.0in" height="2.625in"}
+![blob blob tree commit tree commi t tree blob ](000_Introduction_002.png)
 
  
 
@@ -96,7 +96,7 @@ There is a special POINTER called the HEAD. There can be ONLY ONE HEAD\... and i
 
  
 
-![branch2 HEAD commi t 1 commi t c 1 commit commit commi t commi t ](000_Introduction_003.png){width="5.0in" height="3.908333333333333in"}
+![branch2 HEAD commi t 1 commi t c 1 commit commit commi t commi t ](000_Introduction_003.png)
 
  
 
@@ -128,7 +128,7 @@ Let\'s say we are working with a checked out code in our local and we run the co
 
  
 
-![Working Area menu. txt O recipes Index Repository menu. txt recipes 1 ](000_Introduction_004.png){width="5.0in" height="1.8333333333333333in"}
+![Working Area menu. txt O recipes Index Repository menu. txt recipes 1 ](000_Introduction_004.png)
 
  
 

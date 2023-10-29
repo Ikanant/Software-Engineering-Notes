@@ -68,7 +68,7 @@ An un-buffered channel is a channel we create using the **make** keyboard BUT we
 
 The important thing about un-boffered channels is that when a Go_Routine wants to share some data through such channel, it will wait (locK) until another go_routine grabs such data... Forcing some kind of Synchronous criteria:
 
-![](002_03_-_Channels_000.png){width="2.908333333333333in" height="1.85in"}
+![](002_03_-_Channels_000.png)
 
  
 
@@ -88,13 +88,13 @@ For **BOTH** cases, if a Go_Routine tries to READ from a Channel (Buffered or Un
 
  
 
-![](002_03_-_Channels_001.png){width="5.0in" height="2.775in"}
+![](002_03_-_Channels_001.png)
 
  
 
  
 
-![](002_03_-_Channels_002.png){width="5.0in" height="3.1333333333333333in"}
+![](002_03_-_Channels_002.png)
 
  
 
