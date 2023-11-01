@@ -4,8 +4,6 @@ Friday, April 29, 2016
 
 12:13 PM
 
- 
-
 **The First Program**
 
 For easy access to a simple playground to experiment with Go, please visit: *play.golang.org*
@@ -65,9 +63,5 @@ or
 *)*
 
 If we have an import inside the module of a package that is never used. then we will get an error. This is meant for clean code.
-
- 
-
- 
 
 ![](000_01_-_The_Beginning_000.png)

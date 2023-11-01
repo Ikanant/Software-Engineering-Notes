@@ -4,8 +4,6 @@ Friday, April 29, 2016
 
 11:06 AM
 
- 
-
 > Go is not specifically design for Web server development, but it is really good at it.
 >
 > Why this course?
@@ -18,7 +16,7 @@ Friday, April 29, 2016
 
 -   Curious
 
-> **[Goals of the course]{.underline}**
+> **[Goals of the course]**
 
 -   Working with Templates
 
@@ -32,11 +30,11 @@ Friday, April 29, 2016
 
 -   Only Core
 
-> **[Demonstration Application]{.underline}**
+> **[Demonstration Application]**
 >
 > Our web application will sell and lead the web market for Lemonade Stand Supply businesses.
 >
-> **[Setting up the Environment]{.underline}**
+> **[Setting up the Environment]**
 
 -   Go Dev tool
 
@@ -46,7 +44,7 @@ Friday, April 29, 2016
 
 >  
 >
-> **[Defining a Resource Server]{.underline}**
+> **[Defining a Resource Server]**
 >
 > A resource server was one of the first type of server. A server is setup to receive request via HTTP or a similar protocol. It determines if the request resource such as a file in the requested resource exists. If it does then the server sends the requested file back to the client. This process is a basic concept that we are going to use in this example\...
 >
@@ -60,7 +58,7 @@ Friday, April 29, 2016
 
     -   Return a file if it is found or an error if it isn\'t.
 
-> **[Basic HTTP Objects]{.underline}**
+> **[Basic HTTP Objects]**
 >
 > Go is gonna make this really easy for us. Most of what we will need is already located in the net/http package of the standard library. Specifically:
 
@@ -88,7 +86,7 @@ Friday, April 29, 2016
 
 >  
 >
-> **[Handling Request with http.Handler]{.underline}**
+> **[Handling Request with http.Handler]**
 >
 > package main
 >
@@ -214,15 +212,15 @@ Friday, April 29, 2016
 >
 >  
 >
-> **[HTML Templates]{.underline}**
+> **[HTML Templates]**
 >
-> **[Delivering Static Content with Templates]{.underline}**
+> **[Delivering Static Content with Templates]**
 >
 > In the past module we already worked on returning static content from our web application. We did by either returning a string literal, or a file retrieved from the file system.
 >
 > Now, we are gonna start our investigation of templates by returning static content, but using templates instead. While this is a very inefficient way to return static content, it will lay the foundation that we will build on upon this module and the next.
 >
-> So, whats inside the [Templating Library?]{.underline}
+> So, whats inside the [Templating Library?]
 
 -   template.New
 
@@ -248,7 +246,7 @@ Friday, April 29, 2016
 
     -   Finally it will stream the resulting text into the provided writer
 
-> **[Demo: Static Tempaltes]{.underline}**
+> **[Demo: Static Tempaltes]**
 >
 > package main
 >
@@ -298,7 +296,7 @@ Friday, April 29, 2016
 >
 > \`
 >
-> **[Making Dynamic Templates using Strings]{.underline}**
+> **[Making Dynamic Templates using Strings]**
 >
 > {{.}} The period here is what is called a PIPELINE in GOs templating terms. It is a path that the template will take through the data context to get to the value that needs to be injected.
 >
@@ -336,7 +334,7 @@ Friday, April 29, 2016
 >
 >  
 >
-> **[Adding Branching Logic to Templates]{.underline}**
+> **[Adding Branching Logic to Templates]**
 >
 > The main branching logic used for templates are:
 
@@ -378,7 +376,7 @@ Friday, April 29, 2016
 >
 >  
 >
-> **[Looping & Sub-templates (FULL CODE TO STUDY)]{.underline}**
+> **[Looping & Sub-templates (FULL CODE TO STUDY)]**
 >
 > package main
 >

@@ -4,24 +4,14 @@ Thursday, November 17, 2016
 
 8:49 PM
 
- 
-
 ![Module Overview Install and configure the Octopus Deploy Server Create a QA and a Live environment Install Tentacles Connect deployment targets to the server ](002_03_-_Installing_and_Configuring_Octopus_Deploy_000.png)
 
- 
-
- 
-
 For the application we will use for the Demo we will use:\
- 
-
 -   Window Server 2008 or Later
 
 -   SQL Server (including Express and SQL Azure)
 
 -   .NET framework 4.5 or later
-
- 
 
 1.  We will download the Server package for the Octopus component
 
@@ -133,8 +123,6 @@ For the application we will use for the Demo we will use:\
 
             -   Once we click DISCOVER, the server will attempt to make a connection with our created tentacle
 
- 
-
 -   Once verified we will proceed to configure the deployment target:
 
     -   Name: (we name it whatever we want)
@@ -149,10 +137,4 @@ For the application we will use for the Demo we will use:\
 >
 >  
 
- 
-
- 
-
 >  
-
- 

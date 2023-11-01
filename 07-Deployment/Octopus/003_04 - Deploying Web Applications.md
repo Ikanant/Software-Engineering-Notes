@@ -4,21 +4,9 @@ Friday, November 18, 2016
 
 9:47 AM
 
- 
-
- 
-
 ![](003_04_-_Deploying_Web_Applications_000.png)
 
- 
-
- 
-
- 
-
 **Create a Project**
-
- 
 
 1.  **Head over to the PROJECT Tab and click ADD PROJEC T**
 
@@ -82,8 +70,6 @@ Friday, November 18, 2016
 
         v.  Now that we have the Project Created and Defined how it should be deployed, we need a RELEASE to deploy.... BUT before we can do this however, we first need a package from which we can create a release.
 
- 
-
 4.  Create Public Packages
 
 ![](003_04_-_Deploying_Web_Applications_001.png)
@@ -115,13 +101,9 @@ Friday, November 18, 2016
 
     b.  When we install it into the project we want to deploy, it will add an MS build task that will allow us to create and publish our packages
 
- 
-
 ![](003_04_-_Deploying_Web_Applications_002.png)
 
 >  
-
- 
 
 5.  **Create and Push a Package**
 
@@ -136,8 +118,6 @@ Friday, November 18, 2016
     -   Beware that these API key is hatched inside the Octo Database and cannot be retrieved.. Make sure to NOT lose it
 
 -   ![](003_04_-_Deploying_Web_Applications_004.png)
-
- 
 
 6.  **Create and Deploy a Release**
 
@@ -161,8 +141,6 @@ Friday, November 18, 2016
 
             -   ![](003_04_-_Deploying_Web_Applications_005.png)
 
- 
-
 -   In the Directory we can see that a Package was SAVED. This is done so that later deployments of the SAME package DON\'T need to send the same package again.
 
 -   Also on the Applications Directory we can see that our application was unpacked. In IIS we can see that a new website was created and it\'s physical PATH is pointing to the Deployed Web App.
@@ -174,5 +152,3 @@ Friday, November 18, 2016
 >  
 
 ![](003_04_-_Deploying_Web_Applications_006.png)
-
- 

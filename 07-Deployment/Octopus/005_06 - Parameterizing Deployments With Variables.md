@@ -6,83 +6,39 @@ Friday, November 18, 2016
 
 ![](005_06_-_Parameterizing_Deployments_With_Variables_000.png)
 
- 
-
- 
-
 **Build Variables vs. Deployment Variables**
-
- 
 
 Mixing both types of variables in the deployment variables is a common trap. But it is important we don\'t configure our application at built time. By configuring the application at deployment time we avoid having to re-build our binaries when we want to deploy the application to a different environment. It also insures that we store potential sensitive information such as connection string s in a single place with control access instead of in Source Control where potential of leak is way higher.
 
- 
-
 ![](005_06_-_Parameterizing_Deployments_With_Variables_001.png)
-
- 
-
- 
-
- 
 
 ![](005_06_-_Parameterizing_Deployments_With_Variables_002.png)
 
- 
-
 We can easily create Variables in the VARIABLES tab in our Project. When creating a variable we can specify various elements to them (Environment, Role, Steps, Targets). This will allow us to have multiple variables with the same name that will apply to different projects:
-
- 
 
 ![](005_06_-_Parameterizing_Deployments_With_Variables_003.png)
 
- 
-
 Another thing that we can do is use another variable as a part of our new vvariable. Like this:
-
- 
 
 ![](005_06_-_Parameterizing_Deployments_With_Variables_004.png)
 
- 
-
 Keep in mind we need to make sure we are using the proper syntax to accomplish this.
-
- 
 
 Now when we go to the STEP template for a certain process, we can specify values there based in our application. **Note:** When changing a variable or any other setting in the STEP template, we will need to do a RELEASE in order to see our changes.
 
- 
-
 ![](005_06_-_Parameterizing_Deployments_With_Variables_005.png)
-
- 
-
- 
 
 After this we MOST again create a new RELEASE. Octopus Deploy will gather again the STEP templates and the Values of all variables so that the release will always execute in the same way. So... EVERY time we add, remove or edit a variable we need to create a new release to apply the new values.
 
- 
-
 **Note 2:** To store password we can check the SENSITIVE option to mask the variable.
 
- 
-
 **Note 3:** We can also mark the variables to ask for a value at deployment time. We just need to specify the prompt link
-
- 
-
- 
 
 **Configuration Variables**
 
 We have just seen how we can parameterize the steps in the Deployment process, another part we usually want to configure is the Application itself. Namely the values used in the Web.config and App.config files.
 
- 
-
 Octopus Deploy allow us two different ways for doing this:
-
- 
 
 1.  Configuration Transformations
 
@@ -107,35 +63,17 @@ Octopus Deploy allow us two different ways for doing this:
 
 2.  In the video example, we know that the app.config file contains a variable name to determine the url set for our application... since we want the URL to be different for QA and Live environment, we just need to create two variables that MATCH the name of the variable in our app.config file. When we do a new Release, the application will replace whatever data is in the app.config file with the value found in our Octo Server environment. The two variables that we create need to also be set for different roles to make sure we don\'t overwrite the wrong Release.
 
- 
-
- 
-
 **Variable Sets**
-
- 
 
 Sometimes we might have settings that expand more than one project. For this Octopus Depoy offers VARIABLE SETS.
 
- 
-
 A Variable Set is a group of variables that can be shared across multiple projects. We can import this into any project and re-use them. This allows us to make changes to all of our applications at once.
-
- 
 
 Variable Sets can easily be used in our previous example:
 
- 
-
 ![](005_06_-_Parameterizing_Deployments_With_Variables_006.png)
 
- 
-
- 
-
 **Create Variable Sets**
-
- 
 
 1.  Go to the **Library** tab \> Variable Sets \> Add Variable set
 
@@ -149,32 +87,12 @@ Variable Sets can easily be used in our previous example:
 
     a.  ![](005_06_-_Parameterizing_Deployments_With_Variables_008.png)
 
- 
-
 **Built-in System Variables**
-
- 
 
 ![](005_06_-_Parameterizing_Deployments_With_Variables_009.png)
 
- 
-
- 
-
 In the case that we want to Debug and inspect the values of the Variables we are using in the Logs...we can just define two variables and set them as true in our setting:
-
- 
 
 ![](005_06_-_Parameterizing_Deployments_With_Variables_010.png)
 
- 
-
- 
-
- 
-
 ![](005_06_-_Parameterizing_Deployments_With_Variables_011.png)
-
- 
-
- 

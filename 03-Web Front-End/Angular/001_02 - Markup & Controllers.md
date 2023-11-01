@@ -4,35 +4,19 @@ Wednesday, August 24, 2016
 
 4:43 PM
 
- 
-
 **Controllers & Scope**
-
- 
 
 Controllers primary responsibility is to create a SCOPE object.
 
- 
-
 A scope object is how we communicate with the VIEW. The Scope is able to communicate with the View through 2-way communication. The can bind combines the properties &results of functions in the Scope. Events on the View can call methods on the Scope. Data passes in this way through the Controller to the Scope, and form the Scope to the View.
-
- 
 
 The Scope is used to expose the MODEL to the view. But the Scope is not the model. The model is the data that is put on the Scope. If we want to modify the Model we can either use methods that are found on the Scope (perhaps in response to Events fired by the View) or using 2-way bindings. In this way users through the view can make modifications to the model (or data).
 
- 
-
 **Built-in Directives**
-
- 
 
 Directives: Directives are a way to teach HTML new tricks. Directives give HTML new functionality. As Angular parses through our HTML it will look for Directives and then activate some actions based on what it finds. For example if it finds an \"ng-click\" it will register **a click handler event** on that DOM object.
 
- 
-
 There are actually **FOUR** ways to specify directories in Angular:
-
- 
 
 1.  \<ng-form /\>
 
@@ -46,19 +30,11 @@ There are actually **FOUR** ways to specify directories in Angular:
 
     a.  As a class itself.
 
- 
-
 Keep in mind not all directives can be written in all three of these forms...More often than not we can only write certain directives in 1 or 2 ways shown above.
-
- 
 
 4.  The fourth way of way of writing a directive is inside an HTML comment. This way of doing things is outside of the scope of this course so it will only be mentioned but not down in actual code.
 
- 
-
 **Event Directives**
-
- 
 
 -   ngClick
 
@@ -82,11 +58,7 @@ Keep in mind not all directives can be written in all three of these forms...Mor
 
     -   **Requires** that the ngModel directive is ALSO present on the TAG.
 
- 
-
 **Other Directives**
-
- 
 
 -   ngApp
 
@@ -134,8 +106,6 @@ Keep in mind not all directives can be written in all three of these forms...Mor
 
         -   These can be used for cases in which
 
- 
-
 -   ngDisabled
 
 -   ngChecked
@@ -174,27 +144,15 @@ Keep in mind not all directives can be written in all three of these forms...Mor
 
     -   Lets say we have {{1 + 2}} inside a text field, if we add ngNonBindable to to that field, the result in our page will display {{1 + 2}} instead of 3. Angular will simply just skip that element and not consider it an expression
 
- 
-
 **Expressions**
-
- 
 
 Are JavaScript like code snippets that we can put inside the HTML of our page. They are generally placed inside of bindings.
 
- 
-
 Expression can incorporate more than just variable names
-
- 
 
 Expressions are NOT fully using JavaScript syntax. We cannot call functions on the object or call an alert inside of an expression
 
- 
-
 **Filters**
-
- 
 
 Filters are a way to tell Angular that we want to modify something for output. Filters can do 3 main things:
 
@@ -206,41 +164,21 @@ Filters are a way to tell Angular that we want to modify something for output. F
 
     c.  Filter the records in the data set
 
- 
-
 **Using Filters**
-
- 
 
 To do a filter we just need to add \'\|\' character and then name the filter we want to use.
 
- 
-
 ![Machine generated alternative text: Using Filters expression I filter } } ](001_02_-_Markup_&_Controllers_000.png)
-
- 
 
 **Writing Custom Filters**
 
- 
-
 ![Machine generated alternative text: module. filter( \'name\' , function() { return function(input / \* , filter parameters \*/) { // modify input return modifiedOutput; ](001_02_-_Markup_&_Controllers_001.png)
-
- 
-
- 
 
 **Two Way Binding**
 
- 
-
 Allow us to use the Typical Form controls and keep our model up to date automatically.
 
- 
-
 This capability revolves around the **ngModel**
-
- 
 
 **ngModel:** The model directive works with three main html elements.
 
@@ -250,39 +188,19 @@ This capability revolves around the **ngModel**
 
 3.  Textarea
 
- 
-
 We can add the Model directive to all three of these html elements. These will automatically hook up the two way binding between the html form fields and some items on our scope.
-
- 
 
 ![](001_02_-_Markup_&_Controllers_002.png)
 
- 
-
 **Validation**
-
- 
 
 ![](001_02_-_Markup_&_Controllers_003.png)
 
- 
-
- 
-
 ![](001_02_-_Markup_&_Controllers_004.png)
-
- 
-
- 
 
 If we have a certain input element that we mark as \"required\" angular will take care of marking the form that input value is in as \"invalid\" using this method we can go ahead and send out the info from such form over to our controller and perform deeper validations for the user.
 
- 
-
 When sending a form out to our controller for validation we will be getting all of the services shown in the picture above. The most relevant ones that we want are:
-
- 
 
 -   \$dirty
 
@@ -300,14 +218,8 @@ When sending a form out to our controller for validation we will be getting all 
 
     -   Exact opposite of valid
 
- 
-
 CSS: Angular also takes care of adding CSS classes on our angular fields and our forms to indicate what field and state those forms are at. As developers we can use such classes to our advantage to further help the user navigate through our page.
-
- 
 
 Example: *\<style\> input.ng-invalid.ng-dirty { background-color: pink;} \</style\>*
 
 For this case, any element in our form that has been modified in any way that is not valid with our validation will change its background to pink until fixed.
-
- 

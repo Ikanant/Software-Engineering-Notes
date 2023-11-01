@@ -4,13 +4,7 @@ Friday, April 29, 2016
 
 11:50 AM
 
- 
-
 ![](004_05_-_Relay-_Getting_Started_000.png)
-
- 
-
- 
 
 **Relay Core Principles:\
 ** 
@@ -49,8 +43,6 @@ Friday, April 29, 2016
 
         ii. \--\> **This is where we need to implement the NODE interface**
 
- 
-
 3.  **Connection Model**
 
     a.  Related to Pagination
@@ -78,26 +70,16 @@ ii. After/First
 >
 >  
 
- 
-
 **Tagged Template Strings**
-
- 
 
 This is an ES2015 feature...
 
- 
-
 Any template string can be tagged with a function name... This will allow us to preprocess the string before using...
-
- 
 
 -   **Let** titleCase = strings =\> strings.join().replace(/\\b\\w/g, match =\> match.toUpperCase());
 
 -   titleCase\'abc apple\';
 
     -   \'Abc Apple\'
-
- 
 
 The titleCase function was invoked with the template string provided. The difference between just using a regular function is that the tag function will deal with a process argument list.

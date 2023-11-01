@@ -4,9 +4,7 @@ Friday, April 29, 2016
 
 11:19 AM
 
- 
-
-**[Model View Controller (Design pattern)]{.underline}**
+**[Model View Controller (Design pattern)]**
 
 -   Model
 
@@ -20,13 +18,9 @@ Friday, April 29, 2016
 
     -   Has the responsibility to determine how the other two layers work
 
- 
-
-**[Creating the Template Cache & Delivering Static Assets:]{.underline}**
+**[Creating the Template Cache & Delivering Static Assets:]**
 
 package main
-
- 
 
 import (
 
@@ -36,23 +30,17 @@ import (
 
 \"text/template\" // Gives the templating functionallity we need
 
- 
-
 \"bufio\"  // Allows us to buffer the output
 
 \"strings\" // We will use it to compare the requested file extensions
 
 )
 
- 
-
 func main() {
 
 // Define a templates variable to get the results of that function
 
 templates := populateTemplates()
-
- 
 
 // Handler that will listen to page requests and return the correct template when found.
 
@@ -62,8 +50,6 @@ http.HandleFunc(\"/\",
 
 func(w http.ResponseWriter, req \*http.Request) {
 
- 
-
 // Get the request file path from the URL of the request.
 
 // This path is always prefix with the / which don\'t want
@@ -72,13 +58,9 @@ func(w http.ResponseWriter, req \*http.Request) {
 
 requestFile := req.URL.Path\[1:\]
 
- 
-
 // Match the request file with the template
 
 template := templates.Lookup(requestFile + \".html\")
-
- 
 
 if template != nil {
 
@@ -94,13 +76,9 @@ w.WriteHeader(404)
 
 })
 
- 
-
 // use HandleFunc to register routes that will use the serveResource function
 
 // Since this route is more specific than the handler above (listening to ROOT), it will take presedence
-
- 
 
 http.HandleFunc(\"/images/\", serveResource)
 
@@ -110,15 +88,11 @@ http.HandleFunc(\"/fonts/\", serveResource)
 
 http.HandleFunc(\"/js/\", serveResource)
 
- 
-
 // Change second parameter to nil so that the default server mux is used
 
 http.ListenAndServe(\":8000\", nil)
 
 }
-
- 
 
 // Responsible for processing the resource request and returning them to the requester
 
@@ -127,8 +101,6 @@ func serveResource(w http.ResponseWriter, req \*http.Request) {
 path := \"public\" + req.URL.Path
 
 var contentType string
-
- 
 
 if strings.HasSuffix(path, \".css\") {
 
@@ -156,13 +128,9 @@ contentType = \"text/plain\"
 
 }
 
- 
-
 // Will receive the response on the call to open a file with the requested path
 
 f, err := os.Open(path)
-
- 
 
 if err == nil{
 
@@ -171,8 +139,6 @@ if err == nil{
 defer f.Close()
 
 w.Header().Add(\"Content-Type\", contentType)
-
- 
 
 // Create new buffer reader to wrap the file handle
 
@@ -192,37 +158,25 @@ w.WriteHeader(404)
 
 }
 
- 
-
 // Will return a pointer to a template object (A tempalte cache that we are creating)
 
 func populateTemplates() \*template.Template {
-
- 
 
 // equal a new template. This one name will not matter yet
 
 result := template.New(\"templates\")
 
- 
-
 // Gives the location of the tempalte folder relative to the project ROOT
 
 basePath := \"templates\"
-
- 
 
 // Open up that folder. We can ignore the error since we know that this function exists
 
 templateFolder, \_ := os.Open(basePath)
 
- 
-
 // Defer keyboard will allow us to tell the app to close the handle but only after this function has finished executing
 
 defer templateFolder.Close()
-
- 
 
 // We need to grab its content and find any template inside
 
@@ -235,8 +189,6 @@ defer templateFolder.Close()
 templatePathsRaw, \_ := templateFolder.Readdir(-1)
 
 templatePaths := new(\[\]string)
-
- 
 
 // LOOP through the file info objects and, if it ISNT a directory, added to our templatePath slices
 
@@ -252,8 +204,6 @@ if !pathInfo.IsDir() {
 
 }
 
- 
-
 // Load these in as child templates. We can pass in an arbitrary number of characters into the method and they will be processed one by one
 
 // The type of the parameters must me strings
@@ -262,14 +212,8 @@ if !pathInfo.IsDir() {
 
 result.ParseFiles(\*templatePaths\...)
 
- 
-
 return result
 
 }
-
- 
-
- 
 
 ![](001_02_-_MVC_-_The_View_Layer_000.png)

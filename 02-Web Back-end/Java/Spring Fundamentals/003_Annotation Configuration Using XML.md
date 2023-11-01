@@ -4,35 +4,19 @@ Sunday, February 10, 2019
 
 5:03 PM
 
- 
-
 Annotations were the second option for Spring to wire up our application. In the last samples we did we used autowiring in order for our classes to be dynamically discovered through our XML classes.
-
- 
 
 Now let\'s do the same but this time we will use Annotations without necessarily use BEANs inside of our application context.
 
- 
-
 ![](003_Annotation_Configuration_Using_XML_000.png)
-
- 
 
 There are 3 main annotations for CORE spring that help us define components or beans inside of our application. The main ones are:
 
- 
-
 ![XML Stereotype Annotations \@Component, \@Service, \@Repository Semantically the same \@Component - any POJO \@Service - business logic layer \@Repository - data layer ](003_Annotation_Configuration_Using_XML_001.png)
-
- 
-
- 
 
 **Autowire**
 
 A lot of developers feel like AUTOWIRING using annotations is way more straight forward. autowiring a method is hidden because it is tied from where you place the annotation tag.
-
- 
 
 We can autowire at three places:
 
@@ -52,10 +36,6 @@ We can autowire at three places:
 
     b.  It is somewhat interesting to go with this route, because if we were to apply test driven development to our workload, this would be the right approach.
 
- 
-
 ![O JSR-330 Dependency Injection for Java Beyond our scope Why Spring? ](003_Annotation_Configuration_Using_XML_005.png)
-
- 
 
 JSR-330 is not covered within this lecture. BUT it is important to note that JAVA started to noticed the importance of dependency injection and decided to offer a built in solution for JAVA project. Sadly, this tool (JSR-330) is not as feature full as Spring is... so though it does offer some convenience, for enterprise web development, Spring is the way to go.

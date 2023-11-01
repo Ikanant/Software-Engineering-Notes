@@ -4,13 +4,9 @@ Sunday, August 25, 2019
 
 7:58 PM
 
- 
-
 **From the Lerna official site:**
 
 Lerna is a tool that allows you to maintain **MULTIPLE** npm packages within **ONE** repository. This paradigm is knows as a **monorepo.**
-
- 
 
 **Things to note:**
 
@@ -36,8 +32,6 @@ Lerna is a tool that allows you to maintain **MULTIPLE** npm packages within **O
 
     -   ??? Etc
 
- 
-
 **Who uses this?!**
 
 React, Meteor, Ember, etc...
@@ -55,11 +49,3 @@ React, Meteor, Ember, etc...
 -   \<lerna \--version\>
 
     -   Simple way to make sure things were installed properly
-
- 
-
- 
-
- 
-
- 

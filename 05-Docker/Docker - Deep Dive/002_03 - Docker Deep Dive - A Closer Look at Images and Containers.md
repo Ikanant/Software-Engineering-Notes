@@ -4,8 +4,6 @@ Friday, April 29, 2016
 
 11:43 AM
 
- 
-
 Course taught by: *Nigel Poulton*
 
 **Image Layers**
@@ -76,7 +74,7 @@ What we just did is that we started a container, and created a new file with a s
 
 -   What this has done is to create a NEW image from the changes that we just made inside of our container. 
 
--   *[Docker commit takes the changes that we make and creates a new IMAGE.]{.underline}*
+-   *[Docker commit takes the changes that we make and creates a new IMAGE.]*
 
 \- docker images
 
@@ -110,7 +108,7 @@ Open it:
 
 Images are used to launch containers. So Containers are run-time instances of Images.
 
-When we launch containers with "docker run" command, the docker engine reads the image and any metadata and builds the container by stacking the different image layers and stacks them, as per the instructions found in the Image metadata. And then... **Each and every container get\'s it\'s own [Thin Writable]{.underline} layer that slaps on top of the READ only image layers below it.** It is here, in this top layer, where all the changes to the containers are made. (Installing and updating applications, writing new files, config changes like IP address) it all goes there. This top layer is where all the container state is stored. These top layer is INITIALLY empty, and then it only consumes space as and when we make changes in our container.
+When we launch containers with "docker run" command, the docker engine reads the image and any metadata and builds the container by stacking the different image layers and stacks them, as per the instructions found in the Image metadata. And then... **Each and every container get\'s it\'s own [Thin Writable] layer that slaps on top of the READ only image layers below it.** It is here, in this top layer, where all the changes to the containers are made. (Installing and updating applications, writing new files, config changes like IP address) it all goes there. This top layer is where all the container state is stored. These top layer is INITIALLY empty, and then it only consumes space as and when we make changes in our container.
 
 An interesting thing: **The ROOTFS of a CONTAINER, is actually never made WRITABLE.**
 
@@ -132,7 +130,7 @@ For this example, when we type "docker ps" We will see the container still runni
 
 // Nothing. The container we just created EXITED. **Container exist while the processes running inside of them exist.**
 
-[Recall]{.underline}**:** So far we have not specified the version of the image we are using to create our container. In order to be careful with that we will type
+[Recall]**:** So far we have not specified the version of the image we are using to create our container. In order to be careful with that we will type
 
 Command:
 

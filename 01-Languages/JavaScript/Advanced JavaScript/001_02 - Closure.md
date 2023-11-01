@@ -4,13 +4,9 @@ Friday, April 29, 2016
 
 11:05 AM
 
- 
-
 Closure is a mathematical concept. But thats not what we need to know.
 
- 
-
-**[Definition]{.underline}:** Closure is when a function "remembers" its lexical scope even when the function is executed outside that lexical scope.
+**[Definition]:** Closure is when a function "remembers" its lexical scope even when the function is executed outside that lexical scope.
 
 Example:
 
@@ -35,8 +31,6 @@ Example:
 **}**
 
 **foo();**
-
- 
 
 Now lets consider the following example. Within the given for loop we would expect to have 1 through 5 printed every second. But what is happening? Here we need to understand that when using Closure, we dont simply take a snapshot of the variable we are trying to use. We directly access whatever value that variable has in real time... 
 
@@ -74,9 +68,7 @@ Another solution is just using **let**
 
 This would also work
 
- 
-
-**[Classic Module Pattern]{.underline}**
+**[Classic Module Pattern]**
 
 Two main characteristics:
 
@@ -84,9 +76,7 @@ Two main characteristics:
 
 2.  There most be ONE or more functions that get return from that function call...that have a closure over the inner private scope
 
- 
-
-**[Modern Pattern]{.underline}**
+**[Modern Pattern]**
 
 **define("foo", function() {**
 
@@ -103,8 +93,6 @@ Two main characteristics:
 **     };**
 
 **});**
-
- 
 
 IMPORTANT: Future & ES6+ Module Pattern:
 

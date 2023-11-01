@@ -4,8 +4,6 @@ Friday, April 29, 2016
 
 11:45 AM
 
- 
-
 Course taught by: *Nigel Poulton*
 
 **Docker Daemon Logging**
@@ -104,7 +102,7 @@ Example:
 
 Let\'s say we ignore our previous suggestion and we went straight into creating our Dockerfile for our ping container image. But then we make a typo mistake in our Dockerfile\'
 
-RUN apt-get install -y *[ping]{.underline}*
+RUN apt-get install -y *[ping]*
 
 Ok, so what happens is that we get an error half way through the build of our image....but let\'s remember something from a while ago...When creating an image from a Dockerfile, we Docker Daemon creates containers, commits images and then deletes the containers. In our case, we got an error BUT if we do 
 
@@ -113,8 +111,6 @@ Ok, so what happens is that we get an error half way through the build of our im
 We will see an image there that was created.....the cool thing is that THAT is the last image that was created from the Dockerfile before we got an error. So, this image is the PERFECT template to test what went wrong. In this example we are only dealing with a typo but in the future some of these errors might not be as obvious. We jus need to spin up a container based on this image and THERE... start testing\...
 
 **The docker0 Bridge**
-
- 
 
 So, when the docker daemon starts, no the host machine, it does a bit of very basic network checking before it decides which network IP addresses to assign the docker0 bridge. So the docker damon knows exactly what IP addresses assign to which container. BUT, there will be time where we will explicitly tell which network address range to assign tot he bridge. This get\'s done when the daemon starts. For this, the cleanest way to do it now is by:
 

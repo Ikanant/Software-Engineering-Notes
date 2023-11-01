@@ -4,13 +4,11 @@ Friday, April 29, 2016
 
 12:16 PM
 
- 
-
-**[Structs and Fields]{.underline}**
+**[Structs and Fields]**
 
 For most people, this topic will be somewhat related to Classes... but instead we will explain how Go has a different take on Object Orientation than those languages. It uses the term: STRUCT to represent the same more or less concept than classes do in other languages.
 
-*[Keep in mind though:]{.underline}* Structs are not another name for classes. They are different things.
+*[Keep in mind though:]* Structs are not another name for classes. They are different things.
 
 **func main() {**
 
@@ -28,7 +26,7 @@ For most people, this topic will be somewhat related to Classes... but instead w
 
 **}**
 
-We can also just assign the values to fields when initializing the object, but we need to be careful. We need to assign values of the fields *[In the same order they are declared in the struct.]{.underline}* 
+We can also just assign the values to fields when initializing the object, but we need to be careful. We need to assign values of the fields *[In the same order they are declared in the struct.]* 
 
 **foo := myStruct{"John"}**
 
@@ -44,27 +42,23 @@ In this case, foo is already a memory address. We might have expected us to dere
 
 **fmt.Println(foo)**
 
-*[&{John}]{.underline}*
+*[&{John}]*
 
 **foo := myStruct{"John\"}**
 
 **fmt.Println(foo)**
 
-*[{John}]{.underline}*
+*[{John}]*
 
 **foo := &myStruct{"John\"}**
 
 **fmt.Println(foo)**
 
-*[&{John}]{.underline}*
+*[&{John}]*
 
 This is a way to create an object in the HEAP a simpler way
 
- 
-
- 
-
-**[Constructor Functions]{.underline}**
+**[Constructor Functions]**
 
 In many object oriented languages, methods are created inside of the class definition. Often there is a special type of method Constructor that allows the object to be set up while is being created so that the user of the object don\'t have to worry about initializing variables, etc... GO does NOT use any methods like this and; therefore, does not have the concept of a constructor. Instead, plain old functions are tapped to work as constructors. These so called constructor functions are not special in any way but they are a common pattern in GO.
 
@@ -86,11 +80,11 @@ In many object oriented languages, methods are created inside of the class defin
 
 If we take a look at the above code, we would get an error. We try to work with an object inside our myStruct struct that has not been initialized. So, what to do ?
 
-*[We are going to create a function whose only purpose is to create a properly initialized object and return it to the caller.]{.underline}* Functions that have this responsibility are called **[Responsive Functions]{.underline}** in GO.
+*[We are going to create a function whose only purpose is to create a properly initialized object and return it to the caller.]* Functions that have this responsibility are called **[Responsive Functions]** in GO.
 
 By convention, the name of Responsive Functions are called ***new+\[nameOfStruct\]***
 
-The return type could be a Struct, or a pointer to a struct. *[Normally, the author returns a pointer since that is generally the better way to create objects that are going to have a non-trivial live span.]{.underline}*
+The return type could be a Struct, or a pointer to a struct. *[Normally, the author returns a pointer since that is generally the better way to create objects that are going to have a non-trivial live span.]*
 
 **func main() {**
 
@@ -118,9 +112,7 @@ The return type could be a Struct, or a pointer to a struct. *[Normally, the aut
 
 **}**
 
- 
-
-**[Methods]{.underline}**
+**[Methods]**
 
 So far, the only thing that we can do with objects is store data in them. It also often helpful to create methods that execute in the context of an object.
 
@@ -160,7 +152,7 @@ While this syntax can be a little odd, there are several advantages:
 
 2.  New methods to the struct can be added from anywhere in the package
 
-**[Object Composition]{.underline}**
+**[Object Composition]**
 
 One of the main topics when discussing Object Oriented Programming is Inheritance. While this is a power concept, it is easy to abuse. THe designers of GO decided that it should not follow this pattern and used instead a different technique to share functionality.
 
@@ -196,9 +188,7 @@ Instead of a CLASS (or SRTUCT) inheriting a child sort of relationship, GO allow
 
 **}**
 
- 
-
-**[Asynchronous Programming]{.underline}**
+**[Asynchronous Programming]**
 
 How to call functions asynchronously using tools that GO offers us.
 
@@ -206,13 +196,9 @@ How to call functions asynchronously using tools that GO offers us.
 
 **channels** = Channels are designed to address on of the most difficult challenges of this type of program. Sharing DATA between threads. We pretty much use channels to set the bridge for the gaps between goroutines.
 
-*[Concurrency is NOT the same as Parallelism.]{.underline}*
+*[Concurrency is NOT the same as Parallelism.]*
 
 ![](003_04_-_OOP_&_Asynchronous_Programming_000.png)
-
- 
-
- 
 
 **Channels are a construct in GO that allow messages to be passed between TWO goroutines in a matter that insures that the data is safely transferred between them. That means that only one goroutine at a time owns the messages content and is able to work with it.**
 
@@ -222,7 +208,7 @@ We will work with two things about channels:
 
 2.  Ranging over channels** **
 
-**[PLEASE LOOK OVER DEMO CODE]{.underline}**
+**[PLEASE LOOK OVER DEMO CODE]**
 
 ![](003_04_-_OOP_&_Asynchronous_Programming_001.png)
 

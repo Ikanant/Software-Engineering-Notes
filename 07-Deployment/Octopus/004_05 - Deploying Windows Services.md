@@ -4,19 +4,9 @@ Friday, November 18, 2016
 
 11:02 AM
 
- 
-
 The Process to accomplish this step is LARGELY similar to what we did for our previous WEB application.
 
- 
-
- 
-
 ![](004_05_-_Deploying_Windows_Services_000.png)
-
- 
-
- 
 
 1.  We start off again by creating a Project & adding a package deployment STEP to it.
 

@@ -4,8 +4,6 @@ Friday, April 29, 2016
 
 12:24 PM
 
- 
-
 JUnit is design to be a unit testing framework for JAVA. JUnit is packaged as a single JAR file that is basically a library of functionalities that makes it easier for a developer to create Unit tests in JAVA and verify the results of those tests. JUnit can be thought of as the set of common things required for doing UNIT testing in JAVA (we can perform such tests in many other ways).
 
 **JUnit Features:**
@@ -116,8 +114,6 @@ For JUnit 4 all we have to do is to define a method that is PUBLIC and that it h
 
 }
 
- 
-
 Using the BEFORE and AFTER annotations tend to be VERY useful to avoid having duplications in our code. When Unit test have too much duplication it tends to be really hard to troubleshoot.
 
 One major thing about the BEFORE annotation is that it will run EVERY TIME a test is ran. This means that if we place a \"new\" object in the before\...it will be a clear object for every time it enters a test. We do not have to worry about one test having some left over values that might affect the second test that runs afterwards.
@@ -153,8 +149,6 @@ In the advanced module we will also check for the message that the exception wil
 \@test(timeout = -)
 
 We will deal with timeout tests whenever we want a specific test to run for a certain amount of time only. If the test takes too long we can then do something/ The value given for the timeout will be measured in milliseconds
-
- 
 
 **Assertions (Basic):**
 

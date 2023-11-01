@@ -4,8 +4,6 @@ Friday, April 29, 2016
 
 11:41 AM
 
- 
-
 Course taught by: *Nigel Poulton*
 
 **The Ugly Virtual Machine**
@@ -55,8 +53,6 @@ In order to achieve this, we need to be able to create our own isolated instance
 What all this means is that, one container needs to have it\'s own view of a root file system:
 
 ![](000_01_-_Docker_Deep_Dive_-_PluralSight_-_INTRO_002.png)
-
- 
 
 As shown in the picture above, containers will pretty much have their own file root system. What this means is that certain containers will have the freedom to modify in any way it\'s environment without necessarily affecting any of the other application running on the same OS. The same goes for the process tree or for the network stack. A process inside one container cannot send a signal to another process inside another container.
 
@@ -114,7 +110,7 @@ At it\'s core, Docker is a container runtime
 
 Docker is an actual implementation to a container technology. It groups all of the elements we have previously talked about into a product.
 
-*[Author\'s personal analogy]{.underline}*
+*[Author\'s personal analogy]*
 
 Docker is to Containers is what RedHat or Ubuntu is to the Linux Kernel. It is a packaged shipping implementation that you can get support for.
 
@@ -158,7 +154,7 @@ This command will grant us sudo access for the rest of the session.
 
 Why do the need docker.io? Well, when creating the docker package, the developers ran into an existing tool within linux called Docker....so they had to rename their service accordingly.
 
-*[Recall:]{.underline}* Docker is written in **GO** language (created by Google)
+*[Recall:]* Docker is written in **GO** language (created by Google)
 
 \$docker info
 
@@ -169,8 +165,6 @@ We will get some basic information including **Storage Driver**, which will be d
 -   CentOS: **devicemapper**
 
     -   CentOS does not use aufs mainly because AUFS isn\'t in the mainline of upstream kernel (and it\'s likely it will never be). RedHat policies are to only take from upstream.
-
- 
 
 This command will also show Execution Driver....which remember can be native (lip container) or LXC (which Docker didn\'t want to use it set them dependent of another product)
 
@@ -250,7 +244,7 @@ var/run is a link to run, so if we do
 
 We can see the docker socket there. The little S at the start of the line is what tells us that it is a socket. We can see that its bound by ROOT but, the GROUP OWNER on the second column is a group called Docker. So, instead of needing to be root to run Docker, we can add normal users to the Docker group...which has GROUP ownership of the socket. Effectively giving any users that amend to that group ROOT, because the DOCKER group has full control of the Docker UNIX socket.
 
-In summary: *[We can grant normal users the ability to make and break containers without having to give them ROOT.]{.underline}* (no need of sudo anymore!).
+In summary: *[We can grant normal users the ability to make and break containers without having to give them ROOT.]* (no need of sudo anymore!).
 
 **BUT:** Doing this is not without security concerns. We need to have strict control to know which users are within that group.
 
@@ -327,8 +321,6 @@ Things started to get a little confusing because \'-d\' is deprecated. I will on
 -   /bin/bash: Run the bash process
 
 // After this step we are successfully inside the root of our container. A normal bash prompt in shell. We can ping stuff, for example: ping 8.8.8.8
-
- 
 
 \- ps -elf
 

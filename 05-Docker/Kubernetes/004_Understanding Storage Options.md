@@ -4,25 +4,13 @@ Tuesday, April 20, 2021
 
 3:50 PM
 
- 
-
 *Super common question that people in the training will most likely ask for... If a container goes down.... How can we handle having access to a certain file system?*
-
- 
 
 ![Deployment ReplicaSet Container 8 Storage Pod Container Container ](004_Understanding_Storage_Options_000.png)
 
- 
-
- 
-
 Even without taking K8s into the conversation, if you asked anyone about how to properly store things when using docker containers they will most likely say: VOLUMES...
 
- 
-
-[A Volume can be used to hold data and state for Pods and containers.]{.underline}
-
- 
+[A Volume can be used to hold data and state for Pods and containers.]
 
 -   Pods live and die. Their file system is SHORT-LIVED
 
@@ -43,10 +31,6 @@ Even without taking K8s into the conversation, if you asked anyone about how to 
     -   PersistentVolumeClaims
 
     -   StorageClasses
-
- 
-
- 
 
 **Volumes**
 
@@ -88,31 +72,19 @@ Even without taking K8s into the conversation, if you asked anyone about how to 
 
             -   Cluster-wide storage
 
- 
-
 ![Volume Types awsElasticBlockStore csi flocker local quobyte vsphereVolume azureDisk downwardAPl gcePersistentDisk rbd azureFile empty Dir glusterfs persistentVolumeClaim scalelO cephfs fc hostPath projected secret configMap flexVolume iscsi portworxVolume storageos ](004_Understanding_Storage_Options_001.png)
 
 >  
 
 *It really comes down as the administrators to decide which type of volume we will end up using*
 
- 
-
 **EmptyDir Volume**
 
 ![apiVersion : kind: Pod spec : volumes : VI --- name: html emptyDir: containers : - name: nginx image: nginx : alpine volumemounts : - name: html mountPath: /usr/share/nginx/html readOn1y: true --- name: html-updater image: alpine command: \[\"/bin/sh\", \" c \] args : - while true; sleep 10; volumemounts : - name: html mountPath : do date done \'html \[html/ index. html ; Define initial Volume named \"html\" that is an empty directory (lifetime of the Pod) Reference \"html\" Volume and define a mountPath Update file in Volume mount /html path with latest date every 10 seconds Reference \"html\" Volume (defined above) and define a mountPath ](004_Understanding_Storage_Options_002.png)
 
- 
-
 **HostPath Volume**
 
 ![apiVersion : kind: Pod spec : volumes: VI --- name: docker-socket hostPath : path: /var/ run/docker. sock type: Socket containers : - name: docker image: docker command: \[ \" sleep\" \] args: \[\"100000\" \] volumeMounts : - name: docker-socket mountPath: /var/ run/docker. sock Define a socket volume on host that points to /var/run/docker.sock \< Reference \"docker-socket\" Volume and define mountPath ](004_Understanding_Storage_Options_003.png)
-
- 
-
- 
-
- 
 
 ![Cloud Volumes Pod volume Container Cloud providers (Azure, AWS, GCP, etc.) support different types of Volumes: Azure - Azure Disk and Azure File AWS - Elastic Block Store GCP - GCE Persistent Disk ](004_Understanding_Storage_Options_004.png)
 
@@ -129,31 +101,19 @@ Even without taking K8s into the conversation, if you asked anyone about how to 
 
 ![apiVersion: kind: Pod metadata : name: my-pod spec : volumes : - name: data gcePe rsistentDisk : pdName: datastorage fsType: ext4 containers : - Image: somexmage name: my-app volumeMounts : - name: data mountPath : Define initial Volume named \"data\" that is a gcePersistentDisk Reference \"data\" Volume and define a mountPath /data/storage ](004_Understanding_Storage_Options_007.png)
 
- 
-
 *Guess one question I have is, how do I know which Pod has a volume?* Just use DESCRIBE
 
 ![\# Describe Pod kubectl describe pod \[pod-name\] Vo lumes: html: Type: Medium: EmptyDir (a temporary directory that shares a pod\'s lifetime) \# Get Pod YAML kubectl get pod \[pod-name\] vo lumeMounts : - mountPath: /html name: html ---o yaml ](004_Understanding_Storage_Options_008.png)
 
- 
-
 ![](004_Understanding_Storage_Options_009.png)
-
- 
 
 **PersistentVolumes AND PersistentVolumeClaims**
 
- 
-
-**PersistentVolume:** [(PV) is a cluster-wide storage unit provisioned by an administrator with a lifecycle independent from a Pod.]{.underline}
+**PersistentVolume:** [(PV) is a cluster-wide storage unit provisioned by an administrator with a lifecycle independent from a Pod.]
 
 *This could talk to cloud or local storage... In order to use one of these we essentially would use a PersistentVolumeClaim*
 
- 
-
-**PersistentVolumeClain:** [(PVC) is a request for a storage unit (PV)]{.underline}
-
- 
+**PersistentVolumeClain:** [(PVC) is a request for a storage unit (PV)]
 
 -   A PersistentVolume is cluster-wide! It is a resource that relies on some type of network-attached storage (NAS)
 
@@ -167,47 +127,25 @@ Even without taking K8s into the conversation, if you asked anyone about how to 
 
 -   Associated with a Pod by using a PersistentVolumeClaim (PVC)
 
- 
-
 ![](004_Understanding_Storage_Options_010.png)
 
- 
-
 ![PVC Pod Container Storage kubernetes ](004_Understanding_Storage_Options_011.png)
-
- 
-
- 
 
 **PV YAML**
 
 *People often complain about PV due to the complexity of the YAML file... or at least how specific we need to be to get it running properly... for this I just encourage people to look in the online examples on github.*
 
- 
-
 ![](004_Understanding_Storage_Options_012.png)
 
- 
-
 *Checkout:* <https://github.com/kubernetes/examples>
-
- 
-
- 
 
 ![apiVersion: VI kind: PersistentV01ume metadata : name: my-pv spec: capacity: IOGi accessModes : - ReadWriteOnce - ReadOn1yMany persistentV01umeRe1aimP01icy : azureFiIe : secretName: \<azure-secret\> shareName: \<name_from_azure\> readOn1y: false Retain Create PersistentVolume kind Define storage capacity One client can mount for read/write Many clients can mount for reading Retain even after claim is deleted (not erased/deleted) Reference storage to use (specific to Cloud provider, NFS setup, etc.) ](004_Understanding_Storage_Options_013.png)
 
 *This is using Azure... but plenty of other examples out there for other options.*
 
- 
-
 **PVC YAML**
 
 ![](004_Understanding_Storage_Options_014.png)
-
- 
-
- 
 
 ![kind: PersistentV01umeC1aim apiVersion: VI metadata : name: pv-dd-account-hdd-5g annotations : volume. beta.kubernetes.io/storage-class: accounthdd spec : accessModes : - ReadWriteOnce resources : requests : storage : 5Gi Define a PersistentVoIume( Define access mode Request storage amount ](004_Understanding_Storage_Options_015.png)
 
@@ -215,53 +153,31 @@ Even without taking K8s into the conversation, if you asked anyone about how to 
 
 *Here we determine we need 5Gbs of storage, but recall the PV had 10Gb max*
 
- 
-
 **Pod YAML**
 
- 
-
 ![PVC pod Container ](004_Understanding_Storage_Options_016.png)
-
- 
 
 ![kind: Pod apiVersion: VI metadata : name: pod-uses-account-hdd-5g labels : name: storage spec : containe rs : - image: nginx name: az-c-el command : - /bin/sh - while true; do echo \$(date) /mnt/blobdisk/outfile; sleep volumes : - name: blobdisk01 persistentV01umeC1aim: claimName: pv-dd-account-hdd-5g done Create Volume that binds to PersistentVolumeClaim ](004_Understanding_Storage_Options_017.png)
 
 *Very similar to what we have done in the other Volumes examples, except we are setting it as a persistentVolumeClaim with the name we provided the PVC from the screenshot above.*
 
- 
-
 ![volumeM0unts : - name: blobdiskØ1 mountPath: /mnt/blobdisk ](004_Understanding_Storage_Options_018.png)
 
- 
-
 ![command : - /bin/sh --- while true; do echo S(date) /mnt/blobdisk/outfile; sleep 1 ; done ](004_Understanding_Storage_Options_019.png)
-
- 
 
 *SUMMARY:*
 
 ![kind: Pod apiVersion: VI metadata : name: pod-uses-account-hdd-5g labels : name: storage spec : containe rs : - image: nginx name: az-c-el command : - /bin/sh --- while true; do echo S(date) /mnt/blobdisk/outfile; sleep volumeM0unts : - name: blobdiskØ1 mountPath: /mnt/blobdisk volumes : - name: blobdisk01 persistentV01umeC1aim: claimName: pv-dd-account-hdd-5g done Mount to Volume Create Volume that binds to PersistentVolumeClaim ](004_Understanding_Storage_Options_020.png)
 
- 
-
 *There is one little piece we are missing... and that is a StorageClass*
-
- 
 
 **StorageClasses**
 
 *While it is straight forward to create a set of PV and PVC resources... there is something else we can use called StorageClasses*
 
- 
-
-***StorageClass:*** [A StorageClass is a type of storage template that can be used to dynamically provision storage.]{.underline}
-
- 
+***StorageClass:*** [A StorageClass is a type of storage template that can be used to dynamically provision storage.]
 
 *Similar as before... StorageClasses can certainly be setup locally... BUT in the real world, an administrator of some kind usually manages these resources*
-
- 
 
 ![III ı ](004_Understanding_Storage_Options_021.png)
 
@@ -279,33 +195,17 @@ Even without taking K8s into the conversation, if you asked anyone about how to 
 
 -   *Administrators don\'t have to create PVs in advance*
 
- 
-
- 
-
 ![ιιι ι ](004_Understanding_Storage_Options_022.png)
-
- 
-
- 
 
 ![apiVersion: storage.k8s.io/vI kind: StorageCIass metadata : name: local-storage reclaimPoIicy: Retain provisioner: kubernetes. io/no-provisioner volumeBindingMode: WaitForFirstConsumer API version A StorageCIass resource Retain storage or delete (default) after PVC is released Provisioner (volume plugin) that will be used to create PersistentVoIume resource Wait to create until Pod making PVC is created. Default is Immediate (create once PVC is created) ](004_Understanding_Storage_Options_023.png)
 
 *Notice how we currently have the provisioner to have \*no provisioner... Essentially this is where we would choose depending of the type of storage we would need. At this point we would have too research and look at the docs.*
 
- 
-
 ![apiVersion: VI kind: PersistentV01ume metadata : name: my-pv spec : capacity : storage: 1BGi volumeMode: Block accessModes : - ReadWriteOnce storageC1assName: local-storage local : path: /data/storage nodeAffinity : required : nodeSe1ecto r Te rms : - matchExpressions: - key: kubernetes . io/hostname operator: In values : - cnode-name\> One client can mount for read/write Reference StorageClass Path where data is stored on Node Select the Node where the local storage PV is created ](004_Understanding_Storage_Options_024.png)
-
- 
 
 ![apiVersion: VI Define a PersistentVolumeClaim (PVC) kind: PersistentVoIumeCIaim metadata : name: my-pvc spec : accessModes : - ReadWriteOnce storageCIassName : resources : requests : storage : Access Mode and storage classification PV needs to support local-storage \< Storage request information ](004_Understanding_Storage_Options_025.png)
 
- 
-
 ![apiVersion: apps/vl kind: \[Pod I Statefu1Set I Deployment\] spec : volumes : Define a Volume - name: my-volume Use a PVC to claim the required persistentV01umeC1aim: storage claimName: my-pvc ](004_Understanding_Storage_Options_026.png)
-
- 
 
 *I am going to skip noting and screenshotting the example. I will come back to it if necessary*
 

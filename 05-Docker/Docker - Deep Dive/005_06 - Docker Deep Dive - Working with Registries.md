@@ -4,8 +4,6 @@ Friday, April 29, 2016
 
 11:44 AM
 
- 
-
 Course taught by: *Nigel Poulton*
 
 **Creating a Public Repo on Docker Hub**
@@ -14,15 +12,13 @@ This is simple, the same way we pull images from the Docker Hub onto our machine
 
 **Using Our Public Repo on Docker Hub**
 
- 
-
 Let\'s start simple:
 
 \- docker images
 
 // Boom, that\'s it, we see our docker hub image.
 
-[Notice:]{.underline}
+[Notice:]
 
 Before we do this, this is something about Docker that can be non-intuitive at first---\> In order to push an image to my Ikanant/helloworld repo that we created we first need to TAG our image like:
 
@@ -36,17 +32,17 @@ Now if we look for images again:
 
 \- docker images
 
-// We see the new Image tagged. *[We can\'t tag images at build time.]{.underline}*
+// We see the new Image tagged. *[We can\'t tag images at build time.]*
 
 \- docker push ikanant/helloworld:1.0
 
-*[Remember to LOGIN:]{.underline}*
+*[Remember to LOGIN:]*
 
 \- docker login
 
 Docker hub will skip certain layers because they might already exist on docker hub. (This actually didn\'t happen to me). Only new layers get pushed.
 
-*[JUMP TO OUR CentOS:]{.underline}*
+*[JUMP TO OUR CentOS:]*
 
 To clean things out a little bit we will delete all the images we got going on right now. We check with:
 
@@ -80,6 +76,6 @@ Note: We can have multiple Repos inside a registry.
 
 The lesson is on a Debian based system running Docker
 
-*[I did not write notes on this because this is changing and we don\'t really need to get too deep into it. It pretty much means that instead go pushing our code to the docker hub public registry, we can have our own personal one. It\'s not complicated.]{.underline}*
+*[I did not write notes on this because this is changing and we don\'t really need to get too deep into it. It pretty much means that instead go pushing our code to the docker hub public registry, we can have our own personal one. It\'s not complicated.]*
 
 ![](005_06_-_Docker_Deep_Dive_-_Working_with_Registries_000.png)

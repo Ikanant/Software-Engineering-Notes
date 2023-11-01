@@ -4,11 +4,7 @@ Tuesday, February 19, 2019
 
 9:02 PM
 
- 
-
 There are many ways the garbage collection works within the JVM... One quick thing to keep in mind is that there are various different TYPES of Garbage Collectors working with our memory:\
- 
-
 -   Reference Counted Garbage Collector
 
     -   It will keep a counter of each object initialized in our application and it will add a count and decrease a count accordingly for every reference that calls the object... Once count goes to 0 the Garbage Collector takes care of the clean up properly
@@ -37,21 +33,11 @@ There are many ways the garbage collection works within the JVM... One quick thi
 
     -   Generational is a form of Incremental GC. Incremental GC is one that doesn\'t look at the memory ALL THE TIME.
 
- 
-
 Important Note: Most garbage collectors have a mix of all the types mentioned above.
-
- 
-
- 
 
 **Introduction**
 
- 
-
 When going over specifically over the JVM garbage collector we need to consider a few things:\
- 
-
 -   Stop the world events
 
     -   GC pauses the entire application and proceeds to run. We want to minimize this type of work
@@ -72,28 +58,14 @@ When going over specifically over the JVM garbage collector we need to consider 
 
 -   Multi-core
 
- 
-
 **Basic Ideas**
-
- 
 
 ![Memory - Young Generation Eden The Players Tenured Permanent Generation Permanent Old Generation ](000_How_Garbage_Collection_Works_in_the_Oracle_JVM_000.png)
 
- 
-
 ![Basic Ideas • Has a \'young generation\' and an \'old generation\' • Most initial objects allocated in \'Eden space\' Part of young generation • Young generation also has two \'survivor\' spaces Objects that survive a GC get moved to the survivor space Only one survivor space in use at a time Objects copied between survivor spaces Old generation is where long lived objects go to die ](000_How_Garbage_Collection_Works_in_the_Oracle_JVM_001.png)
-
- 
 
 ![Young Generation • Most objects live for a very short time The \'turtle\' theory of garbage collection i.e. you die young or live \'forever\' ](000_How_Garbage_Collection_Works_in_the_Oracle_JVM_002.png)
 
- 
-
 ![Copying to Old Generation • JVM will eventually promote to old generation After a certain number of garbage collects If survivor space is full If JVM has been told to always create objects in old space -XX:+AlwaysTenure flag to JVM ](000_How_Garbage_Collection_Works_in_the_Oracle_JVM_003.png)
 
- 
-
 ![What Does Live Mean? • Live roots From stack frames Static variables Others such as JNI and synchronization \'monitors\' • References from live rooted objects are followed to other objects What about references from Old Generation to Young? ](000_How_Garbage_Collection_Works_in_the_Oracle_JVM_004.png)
-
- 

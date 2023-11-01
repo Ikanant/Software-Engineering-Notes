@@ -4,8 +4,6 @@ Friday, April 29, 2016
 
 12:25 PM
 
- 
-
 The real power of JUnit relies on creating automated regression tests. In order to do this, we need to learn how to integrate JUnit to systems like Ant and Maven.
 
 **Alternative Runners**
@@ -32,7 +30,7 @@ junit.run(TrackingServiceTest.class);
 
 Continues testing: Will monitor your source code and when it detects a change automatically run a JUnit test that is related to that code.
 
-Simple useful tool for continuous testing: **[Infinitest]{.underline}**
+Simple useful tool for continuous testing: **[Infinitest]**
 
 Infinitest is a simple plugin that can be added to Eclipse to auto determine when something that is connected to a test has been changed. Just by clicking save we can see a bar at the bottom of eclipse that describes how many tests were affected by the latest change and if something went wrong with it.
 
@@ -64,13 +62,13 @@ We can even use JUnit to drive other testing frameworks such as Selenium to enab
 
 **public class** ConsoleRunner {
 
-       **public** **static** **void** [main(String\[\]]{.underline} [args)]{.underline} {
+       **public** **static** **void** [main(String\[\]] [args)] {
 
-             [WebDriver]{.underline} driver = **new** [FirefoxDriver]{.underline}();
+             [WebDriver] driver = **new** [FirefoxDriver]();
 
              driver.get(\"http://google.com\" );
 
-             [WebElement]{.underline} searchBox = driver.findElement([By]{.underline}.name( \"q\"));
+             [WebElement] searchBox = driver.findElement([By].name( \"q\"));
 
              searchBox.sendKeys(\"Pluralsight\" );
 

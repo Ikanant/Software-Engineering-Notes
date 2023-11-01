@@ -4,13 +4,11 @@ Friday, April 29, 2016
 
 10:53 AM
 
- 
-
 Author: Kyle Simpson
 
 **The Advanced \"Basic\" Class\...**
 
-**[Agenda:]{.underline}**
+**[Agenda:]**
 
 -   **Scope, Closures**
 
@@ -22,10 +20,6 @@ Author: Kyle Simpson
 
     -   Closure
 
- 
-
- 
-
 **SCOPE**
 
 The WHERE to look for things
@@ -34,7 +28,7 @@ JavaScript has function scope only (until now but this might change)
 
 LHS & RHS = Left hand side & Right hand side
 
-Global variable leakage: When in non-strict mode with JavaScript, if we make a call like *[bam = \"hello\"]{.underline} *where bam is an undefined variable, JavaScript will try to be the \"Good\" guy for you and create such variable in the GLOBAL scope.
+Global variable leakage: When in non-strict mode with JavaScript, if we make a call like *[bam = \"hello\"] *where bam is an undefined variable, JavaScript will try to be the \"Good\" guy for you and create such variable in the GLOBAL scope.
 
 Undefined and Undeclared are VERY DIFFERENT
 
@@ -43,8 +37,6 @@ Undeclared: There is no present declaration for the variable in any of the scope
 Undefined: It was declared, but it has a special empty value mistakingly called undefined but is more like: Uninitialized
 
 Keep in mind that when dealing with LHS calls, JavaScript will automatically create what we need and place it in the global scope. On the other hand, when dealing with RHS calls, JavaScript will NOT do the same, instead it will throw a reference error.
-
- 
 
 Function Declaration VS Function Expressions: The way to figure this out is whether or not the function keyboard is the very first word in the statement (Not the first thing on the line - remember that statements can break into multi-lines)
 
@@ -88,10 +80,6 @@ It has the power to modify the existing Lexical scope of functions
 
 Using eval to cheat on JavaScript, you will make your code run SLOWER.
 
- 
-
- 
-
 **IIFE pattern**
 
 We can wrap a function expression with parenthesis.
@@ -119,8 +107,6 @@ There are various ways to deal with IIFEs but we can send inputs to the IIFEs:
 ***     console.log(foo) // \"foo\"***
 
 ***})(foo);***
-
- 
 
 **Block Scope**
 
@@ -150,10 +136,6 @@ A solution to this is creating explicit blocks\....** Depricated**:
 
 **console.log(baz); // Error**
 
- 
-
- 
-
 **Dynamic Scope:**
 
 This is not present in current JavaScript
@@ -174,15 +156,13 @@ This is not present in current JavaScript
 
 **baz();**
 
- 
-
 **Hoisting**
 
 Hoisting is not actually a thing\...it\'s a mental construct we have actually invented to explain the behaviors of JavaScript\...
 
 Hoisting is a beautiful way to understand what goes on with JavaScript and how the Compiler deals with things before execution time.
 
-**[example:]{.underline}**
+**[example:]**
 
 **a;**
 
@@ -218,7 +198,7 @@ This process will be the SAME with functions.
 
 Do realize that function expression will NOT Hoist
 
-[Functions are HOISTED before variables !]{.underline}
+[Functions are HOISTED before variables !]
 
 **foo()**
 
@@ -242,13 +222,11 @@ The above code will log \"foo\"
 
 **mutual recursion:** Two or more classes can only each other\...
 
- 
-
 **this** (detour)
 
 This topic will seem weird in this section of code but it makes sense to talk about it now because it will give us a great sense of contrast with the Lexical Scoping model.
 
-*[Every function, while **executing**, has a reference to its current execution context, called **this.**]{.underline}*
+*[Every function, while **executing**, has a reference to its current execution context, called **this.**]*
 
 In order to really understand how to properly use the **this** keyboard, we will have to set aside all known fact about using **this** in other programming languages like the ones designed for OOP. 
 
@@ -308,14 +286,12 @@ Take this code into consideration
 
 3.  Implicit Binding Rule
 
-    -   That object at the call site (or the context object) becomes the **this** keyboard\.... [o2 nad o3 object on top]{.underline}
+    -   That object at the call site (or the context object) becomes the **this** keyboard\.... [o2 nad o3 object on top]
 
     -   note: In JavaScript, everything is a reference to an object\....or everything is a reference to a function
 
 4.  Default Binding Rule
 
-    -   If you are in **strict** mode, default to **this** keyboard to the **undefined** value\.... [foo() object on top]{.underline}
+    -   If you are in **strict** mode, default to **this** keyboard to the **undefined** value\.... [foo() object on top]
 
     -   If you are NOT in **strict** mode, default to **this** keyboard to the global object
-
- 

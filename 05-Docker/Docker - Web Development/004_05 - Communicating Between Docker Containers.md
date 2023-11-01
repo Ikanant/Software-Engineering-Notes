@@ -4,11 +4,7 @@ Friday, April 29, 2016
 
 12:12 PM
 
- 
-
 Docker provides 2 different technologies we can use to link up our contianers:
-
- 
 
 1.  Use Legacy Linking (using names)
 
@@ -20,13 +16,7 @@ Docker provides 2 different technologies we can use to link up our contianers:
 
     b.  Create isolated network that only a set of specified containers can use
 
- 
-
- 
-
 **Linking Containers by Name (Legacy linking)**
-
- 
 
 Steps to do legacy linking:
 
@@ -46,21 +36,11 @@ Steps to do legacy linking:
 
     a.  ![Machine generated alternative text: 3 Repeat for Additional Containers Run a Container Repeat with a name Link to Named Container ](004_05_-_Communicating_Between_Docker_Containers_000.png)
 
- 
-
- 
-
 **Container Networks (Bridge Networks)**
-
- 
 
 The idea is simple: As developers we can create a private Docker Isolated Network that will allow the containers in it talk to one another without giving out their content to any other containers outside of such network.
 
- 
-
 ![Machine generated alternative text: Isolated Network 1 o Docker Host Isolated Network 2 ](004_05_-_Communicating_Between_Docker_Containers_001.png)
-
- 
 
 Steps to Create a Container Network
 
@@ -76,16 +56,10 @@ Steps to Create a Container Network
 
         i.  ![Machine generated alternative text: docker run \"Link\" to this container by name -d ----net=isolated network \--name mongodb mongo Run container in network ](004_05_-_Communicating_Between_Docker_Containers_003.png)
 
- 
-
 -   docker network ls
 
     -   Will show networks
 
- 
-
 Do we really need to type SO MANY commands to link containers....the answer is NO: Here comes Docker Compose
-
- 
 
 ![Machine generated alternative text: docker ](004_05_-_Communicating_Between_Docker_Containers_004.png)

@@ -4,11 +4,7 @@ Friday, April 29, 2016
 
 12:11 PM
 
- 
-
 Docker machine will be used to create and manage our local machines or cloud machines such as ones in AWS or AZURE. It will also configure Docker Client to talk to Machines.
-
- 
 
 Commands:
 
@@ -42,8 +38,6 @@ Commands:
 
         -   ...
 
- 
-
 **Getting Started with Docker Client**
 
 The Docker Client is a tool that interacts with the Docker Daemon...
@@ -51,8 +45,6 @@ The Docker Client is a tool that interacts with the Docker Daemon...
 Docker Daemon: The Engine that can control the containers that are running.
 
 \--\> Docker client will let us work with Images and convert those images to running containers
-
- 
 
 Commands:
 

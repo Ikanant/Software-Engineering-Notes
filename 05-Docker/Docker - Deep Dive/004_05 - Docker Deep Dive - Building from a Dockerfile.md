@@ -4,8 +4,6 @@ Friday, April 29, 2016
 
 11:44 AM
 
- 
-
 Course taught by: *Nigel Poulton*
 
 **Introducing the Dockerfile**
@@ -16,7 +14,7 @@ It\'s a regular old TEXT file. Yes, with it\'s syntax, but it\'s a human readabl
 
 Although it can live anywhere in our system! we have to choose very carefully where we want it to live.
 
-*[When we start to build an image out of a Dockerfile, ANY files and directories within the same location of the Dockerfile or further down in the directory tree get\'s included in our build.]{.underline}* So we definitely don\'t want to put our Dockerfile in ROOT for example.
+*[When we start to build an image out of a Dockerfile, ANY files and directories within the same location of the Dockerfile or further down in the directory tree get\'s included in our build.]* So we definitely don\'t want to put our Dockerfile in ROOT for example.
 
 Run **docker build** command to build an image from a Dockerfile
 
@@ -34,7 +32,7 @@ Dockefile Rules:
 
 ex: #Ubuntu based Hello World container
 
-*[Instructions]{.underline}*
+*[Instructions]*
 
 -   FROM
 
@@ -56,7 +54,7 @@ ex: #Ubuntu based Hello World container
 
         -   Often to install Software Packages: like nginX or golang
 
-    -   *[Every RUN instruction creates a new layer in our image]{.underline}*
+    -   *[Every RUN instruction creates a new layer in our image]*
 
         -   The way it actually works is that, let\'s consider we have 3 different RUN commands....well, Docker first get\'s to the first RUN, it creates a Container based on our base Image and runs the command we specified (Creating one layer).... then it commits this changes to a new Image layer. The next RUN command then launches a NEW container from the new Image layer we just committed, executes its command, Stops the container again and then commits it\'s new layer.....
 
@@ -98,7 +96,7 @@ Then we can see the daemon stepping over the different actions in our Dockerfile
 
 3.  Step 2: apt-get update
 
-    1.  Spins up a new continuer. We see the the output of the apt-get update and once that is done, a new image layer get\'s committed and the container it used get\'s thrown away. [It is the container that get\'s thrown away, NOT the images. We keep those.]{.underline}
+    1.  Spins up a new continuer. We see the the output of the apt-get update and once that is done, a new image layer get\'s committed and the container it used get\'s thrown away. [It is the container that get\'s thrown away, NOT the images. We keep those.]
 
 4.  Step 3: echo "Hello world\"
 
@@ -111,7 +109,5 @@ Now, in order to run a container up from our new image we just do:
 docker run And there is our hello world container.
 
 Note that with RUN command we can add commands with the && sign. That way we don\'t have create image layers for EVERY SINGLE echo command for example.
-
- 
 
 ![](004_05_-_Docker_Deep_Dive_-_Building_from_a_Dockerfile_000.png)

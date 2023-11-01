@@ -4,31 +4,19 @@ Saturday, April 25, 2020
 
 12:03 PM
 
- 
-
 Starting things off assuming I created a new dotnet core web app in VS2019. While writing this notes I selected Dotnet Core 3.1...
 
- 
-
 *Removed default controller and default poco...*
-
- 
 
 **Program.cs**
 
 Starting point of my application... We are starting a web application and it NEEDS to be hosted...that\'s what\'s created by the **CreateHostBuilder** function.... We call build on the builder and run to get it started... Leaving everything untouched will just get us the default settings and by default the builder will use the *Startup* class to get started...
 
- 
-
 ![\[S namespace CourseLibray.API public class Program public static void Main (string\[\] args) CreateHostauiIder(args) . Build . Run ; public static IHostauiIder Cre eHostauiIder(stringC\] args) Host. CreateDefauIt8uiIder(a . Conf igu reWebHostDef a u It s Builder webau ilder. LlseSta rtup\<Sta rtup\> ; ](000_Getting_Started_000.png)
-
- 
 
 **Startup.cs**
 
 In the constructor the configuration object is injected. This configuration is the only thing we need \*for now\* to get info from app settings and whatnot.
-
- 
 
 **Methods of importance:**
 
@@ -64,13 +52,9 @@ In the constructor the configuration object is injected. This configuration is t
 
     -   I will write some further notes here once I start creating controllers... the IMPORTANT thing to note here is that EACH request travels through ALL pieces of middleware we add here... IN ORDER... and each piece of middleware can short circuit request so it doesn\'t pass through to the next one.
 
- 
-
 **Entity Framework**
 
 So, this is the part where I don\'t have much experience working with this... BUT for me right now it doesn\'t matter all that much. For REST it DOES NOT matter what technology the data store is accessed through.. Nor how the data is stored... The code we will write will be over a repository, where we will keep our data persistent agnostic.
-
- 
 
 We will need some references to our project in order to use Entity Framework Core though:
 
@@ -130,15 +114,9 @@ Before I start changing things into the official Photography API ... I will foll
 
     -   ![ackage Manager Console Package source: All Default project HdezPhotography.Api Each package is licensed to you by its owner. NuGet is not responsible to determine any dependencies . Package Manager Console Host Version 5.5.0.6473 Type •get-help NuGet\' to see all available NuGet connands. Add-Migration InitialMigration ](000_Getting_Started_004.png)
 
- 
-
- 
-
 **REST is...**
 
 REST isn\'t just about building an API that consists of a few HTP services that return JSON. That\'s a web API... REST is much broader than that...it is an ARCHITECTURAL STYLE.
-
- 
 
 Definition: **Representational State Transfers** intended to evoke an image of how a well-designed web application behaves:
 
@@ -148,21 +126,11 @@ Definition: **Representational State Transfers** intended to evoke an image of h
 
 -   ... resulting in the next page (representing the next state of the application) being transferred to the user and rendered for their use
 
- 
-
 ![Introducing REST REST is an architectural style, not a standard We use standards to implement this architectural style REST is protocol agnostic ](000_Getting_Started_005.png)
-
- 
 
 **How do I build such a system then?** An architectural style is defined by a set of constraints... and these constraints is what WE have to adhere too.
 
- 
-
 ![Learning What the REST Constraints Are About REST is defined by 6 constraints (one optional) A constraint is a design decision that can have positive and negative impacts ](000_Getting_Started_006.png)
-
- 
-
- 
 
 **REST 6 Constraints to keep in mind:\
 ** 

@@ -4,17 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "f5033f625b528e9a",
+        "id": "e877b2a5a233f871",
         "type": "tabs",
         "children": [
           {
-            "id": "de4249fe0ff7cc6e",
+            "id": "909a56faa02d6d7d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "09-Misc/Terraform/004_Goals-.md",
-                "mode": "source",
+                "file": "09-Misc/Garbage Collector for the JVM/000_How Garbage Collection Works in the Oracle JVM.md",
+                "mode": "preview",
                 "source": false
               }
             }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "09-Misc/Terraform/004_Goals-.md",
+                "file": "09-Misc/Garbage Collector for the JVM/000_How Garbage Collection Works in the Oracle JVM.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "09-Misc/Terraform/004_Goals-.md",
+                "file": "09-Misc/Garbage Collector for the JVM/000_How Garbage Collection Works in the Oracle JVM.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "09-Misc/Terraform/004_Goals-.md"
+                "file": "09-Misc/Garbage Collector for the JVM/000_How Garbage Collection Works in the Oracle JVM.md"
               }
             }
           }
@@ -146,11 +146,24 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "de4249fe0ff7cc6e",
+  "active": "909a56faa02d6d7d",
   "lastOpenFiles": [
-    "10-Certifications/AWS Certified Developer - Associate DVA-C02/000_IAM.md",
-    "09-Misc/Terraform/001_Infrastructure as Code.md",
+    "09-Misc/GitHub Action/000_Core Concepts.md",
     "09-Misc/Terraform/000_Getting Started.md",
+    "10-Certifications/AWS Certified Developer - Associate DVA-C02/000_IAM.md",
+    "01-Languages/Golang/Getting Started/001_02 - Data Types and Operations & Branching and Looping.md",
+    "01-Languages/Golang/Getting Started/000_01 - The Beginning.md",
+    "01-Languages/Golang/Fundamentals/000_01 - The Core.md",
+    "01-Languages/Golang/Concurrent Programming/002_03 - Channels.md",
+    "01-Languages/Golang/Concurrent Programming/001_02 - Goroutines.md",
+    "01-Languages/Golang/Concurrent Programming/000_01 - Introduction.md",
+    "01-Languages/JavaScript/Advanced JavaScript/000_01 - Introduction & SCOPE.md",
+    "01-Languages/Golang/Getting Started/003_04 - OOP & Asynchronous Programming.md",
+    "01-Languages/Golang/Getting Started/002_03 - Branching and Looping & Functions.md",
+    "01-Languages/Java/What's new in Java8/001_Stream API and Collectors.md",
+    "01-Languages/Java/What's new in Java8/000_Introduction & Lambda Expressions.md",
+    "09-Misc/Terraform/004_Goals-.md",
+    "09-Misc/Terraform/001_Infrastructure as Code.md",
     "README.md"
   ]
 }

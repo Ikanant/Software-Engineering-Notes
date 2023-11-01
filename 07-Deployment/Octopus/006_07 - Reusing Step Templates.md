@@ -4,29 +4,15 @@ Friday, November 18, 2016
 
 11:51 AM
 
- 
-
 By doing this we will make our deployment process more flexible.
-
- 
 
 Up until now we have only used a Deploy Package step in our DEMO application. Octopus Deploy provides us with several other steps to take.
 
- 
-
 We can also look into creating our own Step templates and also include various Templates used by the community.
-
- 
 
 ![](006_07_-_Reusing_Step_Templates_000.png)
 
- 
-
- 
-
 **Built-in Step types:**
-
- 
 
 1.  Deploy package
 
@@ -54,17 +40,9 @@ We can also look into creating our own Step templates and also include various T
 
 6.  Run a Custom Scripts as a STEP
 
- 
-
- 
-
 **Creating Custom Step Templates**
 
- 
-
 A Step is commonly attached to the process of a project. If we want to re-use a Step we need to create a Step Template ourselves.
-
- 
 
 To do that:
 
@@ -108,36 +86,16 @@ To do that:
 
 9.  This STEP template can now be executed in many different projects.
 
- 
-
 **Import Step Templates**
-
- 
 
 If we look at the Custom Step we defined earlier, we can see that we can Export it. This is useful when we want to use the Step on a different Octopus Deploy Server. The export will generate a JSON file that will have all the information needed to recreate the STEP template on a different Server, such as the Script body and the parameters.
 
- 
-
 The same way we can export it, we can also IMPROT script Templates.
-
- 
 
 The Import Dialog allows us to PASTE in a JSON definition of the Script template. On the Site:
 
- 
-
 <https://library.octopusdeply.com/listing>
-
- 
 
 We can see a huge amount of Scripts created by the community.
 
- 
-
 ![](006_07_-_Reusing_Step_Templates_002.png)
-
- 
-
- 
-
- 

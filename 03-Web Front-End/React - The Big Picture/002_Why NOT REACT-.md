@@ -4,69 +4,37 @@ Monday, January 21, 2019
 
 8:30 PM
 
- 
-
 **1. JSX Differs from HTML**
-
- 
 
 I already wrote about the uses of JSX vs HTML in the previous page of this NOTE.. BUT a valid concern is: **What happens with the lots of HTML that we have to convert?**
 
- 
-
 ![Ctrl+F find/replace HTML to JSX Compiler Online compiler htmltojsx on npm ](002_Why_NOT_REACT-_000.png)
-
- 
 
 **2. Build Step Required**
 
- 
-
 As mentioned before, we need to compile JSX code to plain Javascript calls so the browser can understand it.
-
- 
 
 ![Minify Transpile Test and lint ](002_Why_NOT_REACT-_001.png)
 
- 
-
 ![Babel Typescript Both transpile JSX ](002_Why_NOT_REACT-_002.png)
-
- 
 
 **3. Version Conflicts**
 
 We CAN\'T run 2 version of REACT at the same time on the same page. This means we have to keep REACT components on the same version throughout.
 
- 
-
 **4. Old Stuff Online**
-
- 
 
 REACT has a huge community online and it has evolved since it was open sourced by Facebook. Searching for REACT example on Google and we get million of results (no different from Angular really).
 
- 
-
 Many Resources is great no? well, some of that content is outdated. So when searching the web for REACT topics we have to be careful not to run into patterns that are no longer popular today.
-
- 
 
 Features have been extracted from REACT Core
 
- 
-
 ![Features Extracted from React Core Old import {render} from React. createClass \' react\'; import {render} from \' react---domi var crc = require( \' \' ) ; import {PropTypes} from mixins: \[mixinNameHere\] \' react\'; import PropTypes from \'prop-types \' ; Higher order components, render props ](002_Why_NOT_REACT-_003.png)
-
- 
 
 **5. Decision Fatigue**
 
- 
-
 REACT is a small non-opinionated library, so it is quite easy to do the same thing in multiple ways.
-
- 
 
 -   **Dev Environment**
 
@@ -113,16 +81,6 @@ REACT is a small non-opinionated library, so it is quite easy to do the same thi
 
     -   Use whatever you know today. REACT works great with CSS, SCSS, etc...
 
- 
-
- 
-
 ![Decision Dev environment ES Class vs createClass Types State Styling Recommendation create-react-app ES Class PropTypes Plain React What you already know ](002_Why_NOT_REACT-_009.png)
 
- 
-
- 
-
 ![Summary JSX differs from HTML - Easy to convert Build step is typically required - You need a build step anyway Potential version conflicts Easy to upgrade via codemods Old features in searches Note features extracted from core Decision fatigue - Start simple - Add complexity as needed ](002_Why_NOT_REACT-_010.png)
-
- 

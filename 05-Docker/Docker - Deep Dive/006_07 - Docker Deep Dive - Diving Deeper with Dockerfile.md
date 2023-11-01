@@ -4,8 +4,6 @@ Friday, April 29, 2016
 
 11:45 AM
 
- 
-
 Course taught by: *Nigel Poulton*
 
 **The Build Cache**
@@ -22,9 +20,9 @@ Here it will do a bunch of work. It will take a while. At least a minute. Now, l
 
 -   this was FAST. why???
 
-Well, the reason why this happened SO FAST is because of the [build cache]{.underline}. Basically, when we  build a new image, the Docker Daemon iterates through our Docker file executing each instruction, as each instruction is executed the daemon checks whether or not it\'s got an image for that instruction already in its build cache.
+Well, the reason why this happened SO FAST is because of the [build cache]. Basically, when we  build a new image, the Docker Daemon iterates through our Docker file executing each instruction, as each instruction is executed the daemon checks whether or not it\'s got an image for that instruction already in its build cache.
 
-*[Build Cache:]{.underline}* When we build a new image:
+*[Build Cache:]* When we build a new image:
 
 1.  The Docker Daemon iterates through our Docker file executing each Instruction
 
@@ -78,7 +76,7 @@ Why did it add 6 layers?
 
 So 6 Dockerfile instructions created 6 layers. We can do things to reduce the amount of layers that Dockerfiles creates when building new images, but for now the main knowledge to take is:
 
-*[MOST instructions that we shoot in a  Dockerfile results in a new Image layer that is created]{.underline}*
+*[MOST instructions that we shoot in a  Dockerfile results in a new Image layer that is created]*
 
 **Building a Web Server Dockerfile (MORE DOCKER FILE INSTRUCTIONS - VOCABULARY TIME)**
 
@@ -184,11 +182,7 @@ From here we will save time AND space. The docker file we create will be smaller
 
 **The CMD Instruction**
 
-This guy is kind of similar to RUN, in that it executes commands, but it is very different too. CMD *[ONLY]{.underline}* executes at run time. So when we execute a container. RUN on the other hand is a build time instruction. We more often than not we use RUN commands to add layers to images and install app to images. CMD runs a command inside of our container when it\'s launched. It\'s equivalent to the command that we attach to the end of the Docker RUN command. Do note though, that if we write any command to the end of the DOCKER RUN command, this will overwrite whatever we have written on the Dockerfile under CMD. **There can only be ONE cmd instruction per Dockerfile.** We could write more than one, but only the last one will be effective. 
-
- 
-
- 
+This guy is kind of similar to RUN, in that it executes commands, but it is very different too. CMD *[ONLY]* executes at run time. So when we execute a container. RUN on the other hand is a build time instruction. We more often than not we use RUN commands to add layers to images and install app to images. CMD runs a command inside of our container when it\'s launched. It\'s equivalent to the command that we attach to the end of the Docker RUN command. Do note though, that if we write any command to the end of the DOCKER RUN command, this will overwrite whatever we have written on the Dockerfile under CMD. **There can only be ONE cmd instruction per Dockerfile.** We could write more than one, but only the last one will be effective. 
 
 <table>
 <colgroup>
@@ -222,7 +216,7 @@ This guy is kind of similar to RUN, in that it executes commands, but it is very
 </tbody>
 </table>
 
-*[Style of Syntax:]{.underline}*
+*[Style of Syntax:]*
 
 The CMD takes to styles of input:
 
@@ -330,7 +324,7 @@ We will see the pings as they happen live
 
 **Volumes and the VOLUME instruction**
 
-Volumes are under development by Docker. A guess: At a bare minimum we will see a dedicated *[docker volume]{.underline}* subcommand that will allow us to manage Volumes.
+Volumes are under development by Docker. A guess: At a bare minimum we will see a dedicated *[docker volume]* subcommand that will allow us to manage Volumes.
 
 Volumes are all about decoupling data volumes from Containers. And they are also about SHARING data between containers. Basically a way to store the data in a directory on the Docker HOST file system. These way, if the container get\'s stopped or even deleted the DATA persists. As it\'s decoupled from the container.
 

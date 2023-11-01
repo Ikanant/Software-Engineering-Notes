@@ -4,8 +4,6 @@ Friday, April 29, 2016
 
 11:49 AM
 
- 
-
 **Why GrapQH ?**
 
 1.  Facebook and other big players. GraphQL has been proven to work on big environments. BIG applications such as Facebook.
@@ -29,35 +27,21 @@ Friday, April 29, 2016
 
                 -   ![](003_04_-_GraphQL-_Getting_Started_000.png)
 
- 
-
 **What is GraphQL**
-
- 
 
 1.  Express data needs hierarchically
 
 2.  Get data with a single round trip
 
- 
-
 Example Query:
 
- 
-
 ![](003_04_-_GraphQL-_Getting_Started_001.png)
-
- 
-
- 
 
 -   Execution engine on server
 
 -   Query language on client
 
- 
-
-> *[The Lingua Franca of data communication]{.underline}*
+> *[The Lingua Franca of data communication]*
 >
 >  
 >
@@ -65,51 +49,21 @@ Example Query:
 
 ![](003_04_-_GraphQL-_Getting_Started_002.png)
 
- 
-
- 
-
 ![](003_04_-_GraphQL-_Getting_Started_003.png)
-
- 
-
- 
 
 ![](003_04_-_GraphQL-_Getting_Started_004.png)
 
- 
-
- 
-
 ![](003_04_-_GraphQL-_Getting_Started_005.png)
-
- 
 
 ![](003_04_-_GraphQL-_Getting_Started_006.png)
 
- 
-
- 
-
 ![](003_04_-_GraphQL-_Getting_Started_007.png)
-
- 
-
- 
 
 ![](003_04_-_GraphQL-_Getting_Started_008.png)
 
- 
-
 ![](003_04_-_GraphQL-_Getting_Started_009.png)
 
- 
-
- 
-
 **GraphQL Core Principles**
-
- 
 
 1.  Mental Model
 
@@ -167,9 +121,5 @@ e.  ![](003_04_-_GraphQL-_Getting_Started_015.png)
     a.  A Special kind of query which changes data on the server
 
     b.  ![](003_04_-_GraphQL-_Getting_Started_016.png)
-
- 
-
- 
 
 ![](003_04_-_GraphQL-_Getting_Started_017.png)

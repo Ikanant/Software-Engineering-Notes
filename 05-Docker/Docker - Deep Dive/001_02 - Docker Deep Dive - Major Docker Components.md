@@ -4,8 +4,6 @@ Friday, April 29, 2016
 
 11:43 AM
 
- 
-
 Course taught by: *Nigel Poulton*
 
 **Module Outline**
@@ -34,11 +32,7 @@ Docker Containers = Shipping Containers
 
 ![](001_02_-_Docker_Deep_Dive_-_Major_Docker_Components_000.png)
 
- 
-
 ![](001_02_-_Docker_Deep_Dive_-_Major_Docker_Components_001.png)
-
- 
 
 **The Docker Engine**
 
@@ -68,7 +62,7 @@ note: fedora:latest
 
 Remember we are downloading this image from the public Docker registry. (Docker Hub) On Docker hub there just happen to be a bunch of different version of Fedora. If we do a Docker run command for fedora (or any other image), Docker will grab the one that is tagged as the latest version for that image.
 
-*[Command:]{.underline}*
+*[Command:]*
 
 docker pull
 
@@ -168,7 +162,7 @@ We pull images from Repos or Repositories and Repositories live inside of Regist
 
 Within each repo, we then have the images. So, let\'s think of Ubuntu, the images would be 14.04, 12.04, all of that.
 
-*[User Repos:]{.underline}* User Repositories are repos containing images created by members of the Docker community.
+*[User Repos:]* User Repositories are repos containing images created by members of the Docker community.
 
 Always be extra careful before downloading random containers in our environment. Make sure to trust the source of the containers we want to use.
 

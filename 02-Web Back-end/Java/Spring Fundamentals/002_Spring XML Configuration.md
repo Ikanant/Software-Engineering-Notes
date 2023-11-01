@@ -4,36 +4,18 @@ Sunday, February 10, 2019
 
 1:16 PM
 
- 
-
 Why use XML?\
 XML configuration was one of the first solutions ever implemented to configure Spring and it is still widely used. Things are considered to be simpler using XML, and there is a clear cut of separation of concerns when using XML
 
- 
-
 ![XML First Approach Simpler Separation of Concerns ](002_Spring_XML_Configuration_000.png)
-
- 
-
- 
 
 XML configuration for Spring begins with a file that we will name applicationContext.xml. This file is name is arbitrary and can be named differently, but in the JAVA community it has become somewhat of a standard.
 
- 
-
 ![Machine generated alternative text: XML applicationContext.xml Name doesn\'t matter Spring Context sort of a HashMap Can simply be a registry XML configuration begins with this file Namespaces aid in configuration/validation ](002_Spring_XML_Configuration_001.png)
-
- 
 
 There are some namespaces that Spring developers have put together to help with the configuration and validation of our project. We will be adding one of those namespaces to the top of our application but basically we put an XML snippet at the top of our applicationContext and it knows what our bean namespace is to help us configure the rest of our file.
 
- 
-
 ![](002_Spring_XML_Configuration_002.png)
-
- 
-
- 
 
 Xmlns (XML Namespace): Default namespace of beans
 
@@ -41,38 +23,22 @@ XSI: This just says this is an XML schema instance
 
 SchemaLocation: Added to our XML file and it\'s what gives us context sensitive help inside of our application. IDE now will offer suggestions when inserting a \< inside the beans section.
 
- 
-
 ![XML Declaration \<bean name=\" customerService\" class=\"com.pluralsight.service.CustomerServiceImp1\" autowire=\" byName \" \> \<property name-\"0\" ref=\" customerRepository \" \</bean\> ](002_Spring_XML_Configuration_003.png)
 
- 
-
 \^\^\^ This is the definition of a BEAN in XML. This represents where we want to put our business logic inside of our application.\
- 
-
 Beans are basically classes. There are just POJOs to be used inside of our application context. Defining beans can be thought as replacing the keyboard NEW. So wherever we are using the keyword NEW within our poject\
 \
 like: CustomerService cs = **new** CustomerServiceImpl();
 
- 
-
 That\'s somewhere we can look into removing that configuration and placing it into an XML file. One thing that\'s important with this is that we always want to define the class but USE the interface.
-
- 
 
 By using beans, we can now change configurations without recompiling our code. We can switch from dev to test without recompiling. This technique is called **Separation of Concerns.**
 
 ![\<bean name=\"customerRepository\" class= \" com . pluralsight . repository. HibernateCustomerRepositoryImp1 \" Beans Essentially Classes Replaces keyword new Define Class, use Interface ](002_Spring_XML_Configuration_004.png)
 
- 
-
 Now that we have a bean defined, how do we use it? **INJECTION**
 
- 
-
 There are 2 types of INJECTION to remember:\
- 
-
 1.  Setter injection
 
     a.  Using exactly what it sounds like. Using the getters/setters of our bean
@@ -81,21 +47,13 @@ There are 2 types of INJECTION to remember:\
 
     a.  Use the defined constructors
 
- 
-
 We can use BOTH ways of injection together
-
- 
 
 **Constructor Injection** guarantees us a bunch nice things using simple constructs in java but mainly it is that we have a defined contract when we create each object.
 
 One positive & negative of this is that we have to have a constructor defined for each possible situation.
 
- 
-
 Constructor injections are INDEX based on NOT NAME based.
-
- 
 
 ![14 \< bean n ame= \" customerServi ce \" \<constructor-arg \</beans ](002_Spring_XML_Configuration_005.png)
 
@@ -103,15 +61,9 @@ Constructor injections are INDEX based on NOT NAME based.
 
 By Index we mean that if we have three arguments to pass in to our constructor, we have to specify that here in the applicationContext file.
 
- 
-
 **Autowire**
 
- 
-
 Early on (probably when I was originally working with Spring) Spring got a bad reputation for having way too much configuration done through XML. To counter this, Spring developers created a new method called Autowire, to make sure we wire beans together.
-
- 
 
 **Autowire Types:**
 
@@ -135,14 +87,6 @@ Early on (probably when I was originally working with Spring) Spring got a bad r
 
     a.  Way to specify that a bean cannot be autowired at all
 
- 
-
 ![\< bean name= \"customerService \" \<constructor-gcg ](002_Spring_XML_Configuration_006.png)
 
- 
-
- 
-
 ![Summary applicationContext.xml Bean Definition Setter Injection Constructor Injection Auto wiring ](002_Spring_XML_Configuration_007.png)
-
- 

@@ -4,8 +4,6 @@ Friday, April 29, 2016
 
 11:45 AM
 
- 
-
 Course taught by: *Nigel Poulton*
 
 **The docker0 Bridge**
@@ -16,7 +14,7 @@ We are on our Local Host with the Docker daemon running and NO container started
 
 Here, ignore lo, or eth0 or eth1, they got nothing specific about them. BUT, take a look at the bottom...we can see docker0
 
-When the Docker Daemon starts in our Docker Hosts, it creates a docker0 interface....*[But it is a bit more than just an Interface]{.underline}*... It\'s actually a BRIDGE, or a virtual switch created entirely in software inside the Linux Kernel. **docker0 is crucial to Container Networking**. 
+When the Docker Daemon starts in our Docker Hosts, it creates a docker0 interface....*[But it is a bit more than just an Interface]*... It\'s actually a BRIDGE, or a virtual switch created entirely in software inside the Linux Kernel. **docker0 is crucial to Container Networking**. 
 
 As a bridge or a virtual switch: Just as we might consider a normal physical switch, it passes or switches packets between two connected devices. So, this is an internet switch, just one that is implemented entirely inside the Linux kernel. But, NORMAL switches got ports and devices attached to them, well if this is 100% software, how can we see what is connected to it?
 
@@ -96,13 +94,11 @@ So: 172.17.0.1 is our default gateway. It is the address of our Docker0 interfac
 
 Let\'s look how this eth0 inside of the container and the vethx interface we saw connected to the virtual bridge earlier how they work. SIMPLE
 
-[Think of them as two ends of a Pipe]{.underline}
+[Think of them as two ends of a Pipe]
 
 A good way to think of this is like a virtual ethernet cable. One end of the cable is plugged into the eth0 in the container, and the other end is plugged into the vethx port on the Docker0 bridge
 
 ![](007_08_-_Docker_Deep_Dive_-_Docker_Networking_000.png)
-
- 
 
 **Network Configuration Files**
 
@@ -128,7 +124,7 @@ We will get a handful of files.** For now we only care for:**
 
 **     - resolve.conf**
 
-resolve.conf looks exactly how we would expect it to look like! We have got a single DNS server: googles used and abused 8.8.8.8 and if we CAT the file we will get the resolve.conf file from the Docker HOST. Kinda looks the same...Well, by default, resolve.conf for every container of the HOST is a straight copy of the results.conf file form the HOST that is running on. [Though, we can override both of the values in resolve.conf on the docker run command line]{.underline}. 
+resolve.conf looks exactly how we would expect it to look like! We have got a single DNS server: googles used and abused 8.8.8.8 and if we CAT the file we will get the resolve.conf file from the Docker HOST. Kinda looks the same...Well, by default, resolve.conf for every container of the HOST is a straight copy of the results.conf file form the HOST that is running on. [Though, we can override both of the values in resolve.conf on the docker run command line]. 
 
 What about the hosts file....No surprises either. IPV4 and IPV6 name resolutions.
 
@@ -224,7 +220,7 @@ So let\'s say that we just wanted our containers port 80 to be exposed on port 5
 
 // 80/tcp -\> 10.0.2.15:5003
 
-*[One last thing:]{.underline}*
+*[One last thing:]*
 
 We can use the -P (capital P switch): This will map all exposed port on a container (all ports marked as exposed in our Docker file) to random high number ports on the docker host.
 

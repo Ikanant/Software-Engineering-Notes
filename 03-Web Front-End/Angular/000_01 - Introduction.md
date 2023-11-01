@@ -4,71 +4,41 @@ Wednesday, August 24, 2016
 
 1:48 PM
 
- 
-
 **What is Angular?**
 
 Angular is a JavaScript library. It\'s falls under the category of MV\* framework (like: Knockout or Backbone). Angular is an opinionated MV\* framework... Opinionated means that the framework will guide into doing things a certain way.
 
- 
-
 ![Machine generated alternative text: View MV\* Frameworks Model Controller/ Presenter/ ViewModel/ ](000_01_-_Introduction_000.png)
-
- 
 
 **Angular Features:**
 
- 
-
 Angular will handle the AJAX communication from our server so we can both send and receive data as Plain JavaScript Objects that will not need HTTP request like GETs and SETs when updating data.
-
- 
 
 Angular will take care of modifying that data on the page itself
 
- 
-
 Angular will also take care of listening of users input for any change occurring in the page
-
- 
 
 Angular handles Routing. Moving from one View to another. Key into building single page applications. This way we can completely change the view of the page based on the users interaction with the page. Angular can also update the url in the browser so that the new view can be bookmarked for later.
 
- 
-
 Angular was built with test in mind. Angular supports isolated Unit test and Integrated end-to-end test.
 
- 
-
-**Angular extends HTML Vocabulary** by providing its own elements and properties called **[Directives]{.underline}** that are used to interact with our HTML DOM...
-
- 
+**Angular extends HTML Vocabulary** by providing its own elements and properties called **[Directives]** that are used to interact with our HTML DOM...
 
 ![Machine generated alternative text: Extended HTML Vocabulary \<input id=\"username\" type=\"text\" focus / \> \<mu1tiStateButton id=\"buttonl\" / \> \<userTi1e id=\"userTi1e1\" user=\"currentUser\" / \> ](000_01_-_Introduction_001.png)
 
- 
-
 **Review:**
-
- 
 
 **Angular thinks of HTML as if it had been designed to do what?**
 
 Build applications instead of documents.
 
- 
-
 **What kinds fo tests does angular support?**
 
 Unit tests and end to end tests
 
- 
-
 **Name one of the ways that angular is forward thinking.**
 
 Web Components / Object.observe
-
- 
 
 **Angular Architecture:**
 
@@ -83,8 +53,6 @@ Web Components / Object.observe
 -   Dependency Injection
 
     -   Allow us to encapsulate pieces of our application better and Improve testability
-
- 
 
 **Angular Components**
 
@@ -102,11 +70,7 @@ Web Components / Object.observe
 
 >  
 
- 
-
 **Course Application: Angular EventReg**
-
- 
 
 -   List of Angular Events
 
@@ -119,7 +83,3 @@ Web Components / Object.observe
 -   Login
 
 -   Server
-
- 
-
- 

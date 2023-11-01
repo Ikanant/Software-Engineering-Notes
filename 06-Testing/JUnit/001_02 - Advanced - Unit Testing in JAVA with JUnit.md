@@ -4,8 +4,6 @@ Friday, April 29, 2016
 
 12:25 PM
 
- 
-
 **Test Suites**
 
 There will be a time were we are going to want to run multiple test classes together without having to individually select and TestRun each class. JUnit provides Test Suites to fix this issue.
@@ -64,10 +62,6 @@ Are similar to Suites in JUnit, in fact, the categories runner is just a special
 
 }
 
- 
-
- 
-
 \@Test(expected=InvalidGoalException.**class**)
 
 \@Category(BadTestCategory.**class**)
@@ -87,10 +81,6 @@ Are similar to Suites in JUnit, in fact, the categories runner is just a special
       BadTestCategory. **class**
 
 })
-
- 
-
- 
 
 **Parameterized Tests**
 
@@ -162,8 +152,6 @@ In many circumstances, developers end up writing a series of tests that only var
 
 }
 
- 
-
 **Advanced Assertions**
 
 **Matchers & AssertThat**
@@ -198,8 +186,6 @@ Consider that if we have multiple asserts in a method, we have a valid statement
 
 public void WhenAddingProteinTotalIncreases() {
 
- 
-
 //Use AssertThat now\...
 
 int val = 5;
@@ -208,11 +194,7 @@ service.addProtein(val);
 
 assertEquals(\"Total was not added correctly\", val, service.getTotal());
 
- 
-
 assertThat(service.getTotal(), is(5));
-
- 
 
 // allOf checks that every condition inside the parenthesis is true
 
@@ -232,8 +214,6 @@ throw new InvalidGoalException(\"Goal was less than zero\");
 
 }
 
- 
-
 goal = value;
 
 }
@@ -244,8 +224,6 @@ On the code above we pretty much return an exception with a custom message on it
 
 public ExpectedException thrown = ExpectedException.none();
 
- 
-
 \@Test
 
 \@Category(BadTestCategory.class)
@@ -253,8 +231,6 @@ public ExpectedException thrown = ExpectedException.none();
 public void CheckForInvalidGoalException() throws InvalidGoalException{
 
 thrown.expect(InvalidGoalException.class);
-
- 
 
 //thrown.expectMessage(\"Goal was less than zero\");
 
@@ -292,16 +268,14 @@ Rules will be applied to EVERYTHING inside of the class. So for example, with th
 
 \@Rule
 
-public Timeout timeout = new [~~Timeout~~(20)]{.underline}; // 20 milliseconds
+public Timeout timeout = new [~~Timeout~~(20)]; // 20 milliseconds
 
 With the above code, we ensure that every test times out at 20 milliseconds
-
- 
 
 **Theories**
 
 Theories are almost the same as parameterized tests.
 
-[A theory is TEST that holds true under all conditions that meet a set of assumptions.]{.underline}
+[A theory is TEST that holds true under all conditions that meet a set of assumptions.]
 
 We can create a Theory by simply using the Theory annotation instead of the Test annotation. The big difference between a theory and a parameterized test is that the theory will have the same expected result for all inputs.

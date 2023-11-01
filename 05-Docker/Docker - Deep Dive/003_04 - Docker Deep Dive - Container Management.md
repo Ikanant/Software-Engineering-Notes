@@ -4,8 +4,6 @@ Friday, April 29, 2016
 
 11:44 AM
 
- 
-
 Course taught by: *Nigel Poulton*
 
 **Starting and Stopping Containers**
@@ -116,7 +114,7 @@ If we want to brute force a removal for a running container we can just type:
 
 // We will use the -f flag
 
-*[Cool Note:]{.underline}*
+*[Cool Note:]*
 
  So far we can conclude that we are using docker ps A LOT...so, we can consider using some **shell aliases**
 
@@ -138,7 +136,7 @@ So, if we take a look at a running container that has more than one process, if 
 
 // There we go, we see all same processes but this time their IDs are much lower.
 
-[Good Reminder about Namespaces:]{.underline}
+[Good Reminder about Namespaces:]
 
 From WITHIN out container we have a fully isolated sandbox process tree. As far as the container is concerned, there is nothing outside it\'s process tree. It gas no concept of the Docker host itself and it only knows about it small partition area.
 
@@ -186,13 +184,13 @@ Running - Docker attach will attach our HOST terminal to the standard stream of 
 
 How about SSH? Well, running SSH inside of the container (as mentioned before) it\'s looked down upon. It can make things messy.
 
-*[nsenter]{.underline}*
+*[nsenter]*
 
 -   Allows us to enter Namespaces
 
 -   Requires the containers PID. (NOT the container\'s ID we have been working on so far, or their name...NO, nester needs the container PID). Where can we find that?
 
-    -   We can get *[docker inspect]{.underline}*
+    -   We can get *[docker inspect]*
 
     -   docker inspect \| grep Pid
 
@@ -216,11 +214,11 @@ How about SSH? Well, running SSH inside of the container (as mentioned before) i
 
 Nice! but this is NOT the same as an attach.Because we are not attached to the standard streams of the containers PID1 if we do an EXIT, it actually logs us off BUT  it doesn\'t kill the container. The container will keep running.
 
-*[docker-enter]{.underline}*
+*[docker-enter]*
 
 -   Similar as before......if we EXIT, the container will keep running
 
-*[docker exec -it /bin/bash]{.underline}*
+*[docker exec -it /bin/bash]*
 
 -   This is probably the RECOMMENDED way to get a terminal inside of the container
 

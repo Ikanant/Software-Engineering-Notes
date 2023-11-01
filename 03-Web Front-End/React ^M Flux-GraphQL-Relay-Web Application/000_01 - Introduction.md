@@ -4,15 +4,9 @@ Friday, April 29, 2016
 
 11:46 AM
 
- 
-
 ![](000_01_-_Introduction_000.png)
 
- 
-
 **WHAT IS REACT ?**
-
- 
 
 1.  React is all about components and building complete views using them.
 
@@ -24,8 +18,6 @@ Friday, April 29, 2016
 
 5.  **Simple: Write HTML using JavaScript**
 
- 
-
 Why React?
 
 > In most applications we generate all the data server side, build the HTML and then send it to the user....the way React does things is that it sends the user the data and it efficiently manages it in the front end.
@@ -35,8 +27,6 @@ Why React?
 > ![Machine generated alternative text: HTML in JS? why?? Data HTML PHP/JSP server-side Send only the Data to the client Enhance HTML: Loops, Conditionals Generate HTML with JavaScript Virtual DOM ](000_01_-_Introduction_001.png)
 >
 >  
-
- 
 
 **React Disadvantages:**
 
@@ -57,8 +47,6 @@ Why React?
     -   Controller: Relay
 
     -   MVC ===\> RGR
-
- 
 
 **React Advantages:**
 
@@ -84,17 +72,9 @@ Why React?
 
     -   iOS or Android !
 
- 
-
- 
-
 **What is GraphQL ?**
 
- 
-
 ![Machine generated alternative text: GraphQL JSON without the values address• person: { name• No custom endpoints Clients ask exactly what they want One endpoint to rule them all ](000_01_-_Introduction_002.png)
-
- 
 
 1.  JSON without the values
 
@@ -108,56 +88,28 @@ Why React?
 
 4.  One endpoint to rule them all
 
- 
-
 GraphQL can be the killer of Rest APIs
-
- 
-
- 
 
 **What is FLUX ?**
 
- 
-
 ![Machine generated alternative text: Flux No data binding, one-way data flow Views do not change the models A single dispatcher Views listen, React reacts What\'s wrong with MVC? Constraints are good ](000_01_-_Introduction_003.png)
-
- 
 
 Flux is a pattern for building Web Application using Unidirectional Data Flows... Instead of Data bindings between the Views and the Models the front end system should have a a one way data flow...
 
- 
-
 Your View should never change the model directly. They can READ from the model, but for write Operations they trigger actions that get eventually dispatched to the model.
 
- 
-
 React fits perfectly in this flow because the way it reacts to data changes in the stores.
-
- 
 
 **What is wrong with MVC?**
 
 On a small scale, MVC works well. When an application grows into multiple models and multiple views the relationships between start to get complicated, and even hard to understand. Multiple things reading a writing in multiple direction.
 
- 
-
 According to the FLUX pattern the solution is in constrains..... An enforced ONE WAY data flow. Any way in the application you know there is only one way to go to. No guessing
-
- 
-
- 
 
 **What is Relay ?**
 
- 
-
 ![](000_01_-_Introduction_004.png)
 
- 
-
 Relay builds on top of the FLUX pattern and basically reduces the pattern onto one store. Handles the connection between Views and Models...
-
- 
 
 In MVC we separate the Data and View completely....but the View is the one that know which data element they need to be able to render correctly....In RELAY we do NOT separate them AT ALL.....instead we Co-locate them to have the data requirement express directly in the view component itself...

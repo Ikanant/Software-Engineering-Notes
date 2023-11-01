@@ -4,8 +4,6 @@ Friday, April 29, 2016
 
 11:27 AM
 
- 
-
 Course taught by: *Nigel Poulton*
 
 ***Course Overview***

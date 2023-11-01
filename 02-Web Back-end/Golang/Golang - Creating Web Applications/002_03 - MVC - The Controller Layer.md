@@ -4,8 +4,6 @@ Friday, April 29, 2016
 
 11:20 AM
 
- 
-
 The controller layer will allow us to receive the user\'s requests and route it through the application eventually feeding data into the application being bound by the templates and later on returning the full functional web page.
 
 Normally the controller layer is made of 2 basic components:
@@ -18,11 +16,7 @@ Normally the controller layer is made of 2 basic components:
 
 Right now, we will relieve our main function of all the responsibilities we have given it.
 
- 
-
 ![](002_03_-_MVC_-_The_Controller_Layer_000.png)
-
- 
 
 Controller main tasts:
 
@@ -51,25 +45,21 @@ Controller main tasts:
 
     -   **Summary: Sessions of code that are called before or after the controller handles the request itself**
 
- 
-
-**[Parameterized Routes]{.underline}**
+**[Parameterized Routes]**
 
 ![](002_03_-_MVC_-_The_Controller_Layer_001.png)
-
- 
 
 Gorilla Mux Code added
 
 This toolkit consist of a collection of packages that are intended to augment the out of the box experience that GO provides. This is an HTTP server that extents the basic capabilities that come with the default server in many ways. Specifically we are interested in its option to provide parameterized routing.
 
-**[DATA Compression]{.underline}**
+**[DATA Compression]**
 
 When generating a Page in our system, we are currently creating such page and sending it fully to our client. In many circumstances this can be a problem because pages can be large and occupy a big space. One tool we can use is to compress such file to make things more efficient
 
 ![](002_03_-_MVC_-_The_Controller_Layer_002.png)
 
-**[Unit Testing]{.underline}**
+**[Unit Testing]**
 
 Go test should be really easy. We can just head to the src folder of our application and type:
 

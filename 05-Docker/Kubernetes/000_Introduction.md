@@ -4,57 +4,33 @@ Sunday, April 18, 2021
 
 1:33 PM
 
- 
-
 **Overview**
-
- 
 
 *In this notes I am going to write down everything Kubernetes related FROM A DEVELOPERS perspective. Why do we \*as developers\* want to learn Kubernetes? What benefits do we get from learning about it?*
 
- 
-
-Official Definition: [Kubernetes (8s) is an open-source system for automating deployment, scaling, and management of containerized applications.]{.underline}
-
- 
+Official Definition: [Kubernetes (8s) is an open-source system for automating deployment, scaling, and management of containerized applications.]
 
 The real question, at least for me, is how is Kubernetes any different than docker-compose for example... in which we write a .yaml file that contains the configuration of our docker containers and allows us to run different commands on them like *docker-compose up/down* from the terminal? - Well, docker compose was never intended to be used in a production setting... but let\'s assume we do... what happens if we require to scale our application(s)? What happens when one or more of our running containers fail?
 
- 
-
 ![It Would Be Nice if We Could\... Package up an app and let something else manage it for us Not worry about the management of containers Eliminate single points of failure Scale containers Update containers without bringing down the application Have robust networking and persistent storage options ](000_Introduction_000.png)
 
- 
-
 All of the things above can be done by using Kubernetes... or in other words (like the ones I am sure you have heard off) Kubernetes is a tool to orchestrate docker containers... like a conductor would in an actual orchestra. The conductor knows who is playing music when, when they should start and stop... or even if they need to replace a musician for another at some point during the show.
-
- 
 
 ![Key Kubernetes Features Service Discovery/ Load Balancing Self-healing Storage Orchestration Secret and Configuration Management Automate Rollouts/Rollbacks Horizontal Scaling ](000_Introduction_001.png)
 
 ... these are NOT the only tools Kubernetes does for us BUT, these are some of the main ones we often focus on as developers when working with Kubernetes.
 
- 
-
 **The Big Picture**
 
 Kubernetes started out at Google... There was a need within the company for container and cluster management... they used it for OVER 15+ years... WHAT?! I don\'t think it was called kubernetes back then but this certain is what we know and love today.
 
- 
-
 Some people see Kubernetes at the core: As a bunch of state machines
 
- 
-
 Kubernetes moves you to a desired state....
-
- 
 
 ![Current State Container Kubernetes Desired State Container Container ](000_Introduction_002.png)
 
 So you can start with a certain state, and if you wish to change it somehow, that\'s what Kubernetes can help you to do... like a GPS map... it will take you from point A to point B.
-
- 
 
 **Core components:**
 
@@ -102,7 +78,7 @@ So you can start with a certain state, and if you wish to change it somehow, tha
 
             -   Just a command line tool that we can send requests into the master which then can be sent into the cluster.
 
-            -   Ultimately this tool is [simply]{.underline}, as far as I know, making RESTful service calls to send our BEFORE/AFTER state request to the master.
+            -   Ultimately this tool is [simply], as far as I know, making RESTful service calls to send our BEFORE/AFTER state request to the master.
 
                 -   We can use YAML or even JSON metadata files to send these requests
 
@@ -118,41 +94,21 @@ So you can start with a certain state, and if you wish to change it somehow, tha
 
             -   Networking Capabilities of course are REQUERIED. So Kube-Proxy allows us to ensure that each POD has a unique IP address
 
- 
-
- 
-
- 
-
 ![The Master Node Store (etcd) API Server Node Pod Master Node Pod Cluster Controller Manager Scheduler Node Pod ](000_Introduction_003.png)
-
- 
 
 ![Pod Container Pod Container Pod Container ](000_Introduction_004.png)
 
- 
-
 ![Pod Deployment ReplicaSet Pod Container Service Pod Container ](000_Introduction_005.png)
-
- 
 
 ![Node Kubelet Container Runtime Pod Container Pod Kube-Proxy Container ](000_Introduction_006.png)
 
- 
-
 *Of course there are more pieces that form the complex tool that is Kubernetes, BUT as far as basics goes... the pieces above are the CORE elements that will allow us to hit the ground running when setting things up.*
-
- 
-
- 
 
 **Benefits and Use Cases**
 
 *Why do we even care about any of this? As developers I don\'t often deal with the production setup, networking or servers or anything like that... even when using the cloud there are tons of options that will run containers for me... so WHY?*
 
- 
-
-[Well, lets start by reminding ourselves the benefits of using docker containers to begin with:]{.underline}
+[Well, lets start by reminding ourselves the benefits of using docker containers to begin with:]
 
 -   Accelerated Developer Onboarding
 
@@ -168,9 +124,7 @@ So you can start with a certain state, and if you wish to change it somehow, tha
 
 -   Ship software faster
 
- 
-
-[Now let\'s think of the Kubernetes benefits:]{.underline}
+[Now let\'s think of the Kubernetes benefits:]
 
 -   Orchestrate containers
 
@@ -186,9 +140,7 @@ So you can start with a certain state, and if you wish to change it somehow, tha
 
     -   If we want more PODS with containers on a given node, with a single command we can do this
 
- 
-
-[Developer Use Cases:]{.underline}
+[Developer Use Cases:]
 
 -   Emulate production locally
 
@@ -224,15 +176,9 @@ So you can start with a certain state, and if you wish to change it somehow, tha
 
 -   ...
 
- 
-
- 
-
 **Running Kubernetes Locally**
 
 There are tons of options out there to get started...
-
- 
 
 -   Minikube
 
@@ -270,43 +216,23 @@ There are tons of options out there to get started...
 
     -   This is more targeted towards administrators of a Kubernetes cluster
 
- 
-
- 
-
 **Getting Started with kubectl**
-
- 
 
 ![\$kubectl Node Pod Master Node Pod Node Pod ](000_Introduction_007.png)
 
- 
-
- 
-
 ![Getting Started with kubectl Commands kubectl version kubectl cluster-info kubectl get all kubectl run \[container-name\] - image-name\] kubectl kubectl kubectl kubectl port-forward \[pod\] \[ports\] expose create \[resource\] apply \[resource\] Check Kubernetes version View cluster information Retrieve information about Kubernetes Pods, Deployments, Services, and more Simple way to create a Deployment for a Pod Forward a port to allow external access Expose a port for a Deployment/Pod Create a resource Create or modify a resource ](000_Introduction_008.png)
 
- 
-
-[Quick tip:]{.underline}
+[Quick tip:]
 
 In Powershell: Set-Alias -Name k -Value kubectl
 
- 
-
 One that it is not fully specified above is that we might end up using **kubectl get pods** to get all the pods in our worker machine.
 
- 
-
 **K create / apply** are our most common actions for creating/change/modify a resource.
-
- 
 
 **Web UI Dashboard**
 
 *This is totally optional... but it will give me a chance to play with some of the commands we saw above and will allow us to inspect things better. To enable it do:*
-
- 
 
 -   **Kubectl apply -f \[dashboard-yaml-url\]**
 
@@ -345,7 +271,5 @@ One that it is not fully specified above is that we might end up using **kubectl
 >  
 
 *Keep close attention to all of the options we have on the left hand side nav bar. Everything should be empty but we now have access to Nodes / Pods / Jobs and more... This is a helpful way to see what resources we have available.*
-
- 
 
 *Party time... time to create some PODs*

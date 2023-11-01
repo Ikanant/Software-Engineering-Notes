@@ -4,8 +4,6 @@ Friday, April 29, 2016
 
 12:27 PM
 
- 
-
 **SOAP: Simple Object Access Protocol**
 
 There are 2 types of WEB Services:

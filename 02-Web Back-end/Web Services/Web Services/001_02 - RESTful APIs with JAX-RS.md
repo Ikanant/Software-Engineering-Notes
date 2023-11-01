@@ -4,8 +4,6 @@ Friday, April 29, 2016
 
 12:27 PM
 
- 
-
 **\[ 1 - INTRODUCTION \]**
 
 Sections:

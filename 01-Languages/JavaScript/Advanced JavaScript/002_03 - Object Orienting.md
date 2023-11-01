@@ -4,8 +4,6 @@ Friday, April 29, 2016
 
 11:07 AM
 
- 
-
 **Agenda:**
 
 -   Common OO Patterns
@@ -13,8 +11,6 @@ Friday, April 29, 2016
 -   Prototype
 
 -   "Inheritance" vs. "Behavior Delegation\"
-
- 
 
 **Singleton**
 
@@ -43,8 +39,6 @@ Friday, April 29, 2016
 *var another = new Router();*
 
 ***myrouter === another;***
-
- 
 
 ***Observer***
 
@@ -84,19 +78,17 @@ Friday, April 29, 2016
 
 *var thepage = new PageController(router);*
 
- 
-
 **Prototype**
 
 Every single "object" is built by a constructor function
 
 Each time a constructor is called, a new object is created
 
-A constructor makes an object "[based on]{.underline}" its own prototype. (THIS IS NOT TRUE)
+A constructor makes an object "[based on]" its own prototype. (THIS IS NOT TRUE)
 
 Based on implies that we take a prototype and we make a copy of it. Thats the way it works on Class Oriented languages. Thats not what happens in JavaScript.
 
-**Right Answer:** The constructor makes an object that is **[linked to]{.underline}** its own prototype
+**Right Answer:** The constructor makes an object that is **[linked to]** its own prototype
 
 \_ \_ we are gonna call: Dunder 
 
@@ -104,27 +96,15 @@ Based on implies that we take a prototype and we make a copy of it. Thats the wa
 
 I will insert the diagram that explain the Prototype model but keep in mind that it is VERY similar to the Scope model. If an object does not contain a certain property it will go up the chain and check if the Prototype object has it...
 
- 
-
- 
-
 Simple Diagram to study:
 
 ![](002_03_-_Object_Orienting_000.png)
-
- 
-
- 
 
 A more complex version of that:
 
 ![](002_03_-_Object_Orienting_001.png)
 
- 
-
 **Quiz:**
-
- 
 
 1.  What is a constructor?
 
@@ -146,45 +126,23 @@ A more complex version of that:
 
     c.  .constructor.prototype (HACK)
 
- 
-
- 
-
 **Inheritance**
-
- 
 
 When dealing with common Object Oriented programming we were tought to think of classes as blue prints. What does this mean? Well, in general a class only contained the characteristics of such class, and when we instanciated the class we pretty much made COPIES (physical) from that blue print. Later on we were able to make changes to such classes and did not need to worry about the status of the original blue print at all. For example, if an architect creates a blue print of a builder and a constructor builds such building, that physical building is not connected in any way to the blue print. If they deside to demolish the last floor, it doesn't mean that every time a new building is going to get constructed from the blueprint is going to be missing the last floor information. In JavaScript this is different...
 
- 
-
 Inheritance means: COPY......so, if JavaScript copying does not exists....then we should not call it inheritance
 
- 
-
-So, rather than stating that JavaScript has inheritance, we can say JavaScript has *[Bhavior Delegation]{.underline}*
-
- 
+So, rather than stating that JavaScript has inheritance, we can say JavaScript has *[Bhavior Delegation]*
 
 **OLOO**
 
- 
-
 So far we have learned a way to \"practice\" some sort of inheritance by using Prototypes.....the way we have done it though has been a bit confusing a lengthy....right now we can learn how to go a bit a head....and simplify things a little...
-
- 
 
 OLLO: **O**bjects **L**inked to **O**ther **O**bjects
 
- 
-
 ![](002_03_-_Object_Orienting_002.png)
 
- 
-
 **Quiz**
-
- 
 
 1.  How is JavaScripts \[\[Prototype\]\] chain not like traditional/classical inheritance?
 
@@ -202,13 +160,7 @@ OLLO: **O**bjects **L**inked to **O**ther **O**bjects
 
 4.   
 
- 
-
- 
-
 04 - Async Patterns
-
- 
 
 **Agenda**
 
@@ -220,107 +172,55 @@ OLLO: **O**bjects **L**inked to **O**ther **O**bjects
 
     -   Promises
 
- 
-
 **Callbacks**
-
- 
 
 Our brain works synchronously. So, why are we talking about this?
 
- 
-
 Answer: How do I take something that is fundamentally asynchronously like a timer, and express in such a fassion that I can reason about that asynchronous code in a synchronous fassion...
-
- 
 
 Callbacks is how we do this
 
- 
-
 Callback: Is a continuation
-
- 
 
 **Callback Hell**
 
- 
-
 Inversion of Control. When using utilities that we trusts like: SetTimeout...we are pretty much giving our program the trust to take care of whatever task we were originally dealing with. We are giving them the control.
 
- 
-
 We are going to try to fix this...
-
- 
 
 (This, along some other examples shown is not really correct)
 
 ![](002_03_-_Object_Orienting_003.png)
 
- 
-
- 
-
 We are going to fix the \"callback\" problems with something called **Generators**
-
- 
 
 **Generators (yield)**
 
- 
-
 Everyone\'s assumption: As soon as the first line of a function runs, we all assume that it will run every single line of that function before anything else runs... That's called the run to completion....and we assume it can never be interrupted..... This is NOT true upon generatorrs
-
- 
 
 Generators: A type of functions that can be interrupted half way through its run time and continued later on...
 
- 
-
 New syntax: Function\* (not function pointer !!!) This functions have this new keyboard called yield. See the example:
-
- 
 
 ![](002_03_-_Object_Orienting_004.png)
 
- 
-
- 
-
 When you call a generator function, what you get back is an **Iterator.** When we type it.next() we are going to start running until we get to the yield statement. A generator can pause itself and an iterator will resume it.
-
- 
 
 Why do we need this ?????
 
 ![](002_03_-_Object_Orienting_005.png)
 
- 
-
- 
-
 Note the the null will be the returned value for that first run() call. What we pretty much deal with is that when using yield we are having a two way conversation mechanism with the function... When the function comes back to run, we can then pass in a value and it will replace the yield null statement that we left hanging. **Two way message passing mechanism**
 
- 
-
 This is NOT asynchronous.....so what then?
-
- 
 
 Here we go:
 
 ![](002_03_-_Object_Orienting_006.png)
 
- 
-
 Generators...........are the \*new\* tech that will become the \*BIG\* thing...
 
- 
-
 **Promises**
-
- 
 
 Promises: (two metaphores for it)\\
 
@@ -334,8 +234,6 @@ Promises: (two metaphores for it)\\
 2.  What if we could call a function but we can subscribe to an event that can let us know when that function finishes....Like a continuation/completion event...That's essentailly what promises are....
 
     a.  We are calling a function that doesn\'t finish yet, but it allow us to subscribe to a continuation event
-
- 
 
 Code:
 
@@ -355,87 +253,39 @@ So we can have something like:
 
 In this case we are pretty much getting our controller back (from back on top where we talked about the Inversion of Control. In these scenarios, we provide a function with the information that we need but instead get a promise back....which we can use however we want. And we decide what to do next... We are now in control of the entire completion of our program...
 
- 
-
 Promises are now built in after ES6
-
- 
 
 ![](002_03_-_Object_Orienting_009.png)
 
- 
-
- 
-
- 
-
 **Asynquence**
-
- 
 
 Promises can be really really tedious in the real world... for that we have a set of tools that can help use get things simpler.
 
- 
-
 A recommended tool for such scenarios is called Asyquence
-
- 
 
 **Sequence = automatically chained promises**
 
- 
-
 Gates......Sequences are things that go this then this then this then this pattern. A gate says: two or more things are going to happen at the same time and I don\'t care when they finish and it what order, I just need them ALL to finish before I move on...
-
- 
 
 Example of code:
 
 ![](002_03_-_Object_Orienting_010.png)
 
- 
-
- 
-
 Meaning of life example:
 
 ![](002_03_-_Object_Orienting_011.png)
 
- 
-
- 
-
 **How about Generators and Promises put together?**
-
- 
 
 This is actually the most popular pattern we are getting used too...Runner utility it will receive promises, it will wait for them to complete before it starts back up the generator...It will automatically continue to the end for us...
 
- 
-
 ![](002_03_-_Object_Orienting_012.png)
-
- 
-
- 
-
- 
-
- 
 
 **This is some unexplored territory that is COOL. The idea of taking two or more generator and interleaving their operations:**
 
- 
-
 ![](002_03_-_Object_Orienting_013.png)
 
- 
-
- 
-
 **Quiz**
-
- 
 
 1.  What is \"callback hell\" ? Why doi callbacks suffer from \"inversion of control\"?
 

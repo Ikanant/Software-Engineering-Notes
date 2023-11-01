@@ -18,22 +18,14 @@ Monday, November 8, 2021
 
 -   **Var** is required.... And it is the ONLY keyword we need/use to declare a variable.
 
- 
-
 **REPL read/eval/print/loop**
 
 There are other ways to write swift code but not use playgrounds. This is where a REPL file comes into place.
 
 The concept of a REPL started with LISP. This feature is what lets us write and immediately run a single expression/statement in the terminal. Also known as Interactive Mode... To start using REPL just go to the terminal and type **swift**. Playgrounds are just way easier to do things so I\'m not going to be using this much.
 
- 
-
 **The Swift Compilation Process**
 
 ![DEVELOPER COMPILED LANGUAGES (C++, C) SOURCE CODE \> FULL COMPILATION INTERMEDIATE (C#, JAVA) SOURCE CODE \> PARTIAL COMPILATION INTERPRETED LANGUAGES (JAVASCRIPT, RUBY) SOURCE CODE - NO COMPILATION BYTECODE USER RUN JIT COMPILE\' \> RUN • VM Runtime Engine required INTERPRET• \> RUN • Interpreter required ](000_The_Basic_Structure_002.png)
-
- 
-
- 
 
 ![DEVELOPER SWIFT IS A COMPILED LANGUAGE SOURCE CODE \> FULL COMPILATION INTERMEDIATE SOURCE CODE \> PARTIAL COMPILATION INTERPRETED LANGUAGES SOURCE CODE - NO COMPILATION BYTECODE USER RUN JIT COMPILE• \> RUN • VM / Runtime Engine required INTERPRET• \> RUN •Intergreter reauired ](000_The_Basic_Structure_003.png)

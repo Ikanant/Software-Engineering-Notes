@@ -4,9 +4,7 @@ Friday, April 29, 2016
 
 12:15 PM
 
- 
-
-**[Branches]{.underline}**
+**[Branches]**
 
 *IF statements:*
 
@@ -60,8 +58,6 @@ It comes in two forms:
 
 ***    }***
 
- 
-
 *LOOPS:*
 
 FOR loop is the same as usual without parenthesis
@@ -110,13 +106,9 @@ How about a map situation?
 
 ***    }***
 
- 
+**[FUNCTIONS]**
 
- 
-
-**[FUNCTIONS]{.underline}**
-
-**[Functions and Parameters]{.underline}**
+**[Functions and Parameters]**
 
 1.  Passing by Value
 
@@ -133,11 +125,9 @@ How about a map situation?
 
     -   This is a special type of parameter that will turn the function into a variadic function
 
-    -   [Variadic function:]{.underline} A function that can take in an arbitrary long list of arguments
+    -   [Variadic function:] A function that can take in an arbitrary long list of arguments
 
 Everything is more or less the same for creating functions with various parameters and all. Similar to C with dealing with pointers.
-
- 
 
 ***func main() {***
 
@@ -157,9 +147,7 @@ Everything is more or less the same for creating functions with various paramete
 
 ***}***
 
- 
-
-[Variadic Functions:]{.underline}
+[Variadic Functions:]
 
 Similar to the code shown above, we just need to replace the asterisc before the string type and replace it with three dots (. . .)
 
@@ -181,9 +169,7 @@ Doing this, Go will take all the parameters going into the function and treat th
 
 ***}***
 
- 
-
-[Return Values]{.underline}
+[Return Values]
 
 Similar to most languages, GO lets us return data from our functions. We have several options though:
 
@@ -269,15 +255,9 @@ By doing this we could then remove the variables we created within our function 
 
 ***}***
 
- 
-
- 
-
-[Anonymous Functions]{.underline}
+[Anonymous Functions]
 
 GO support functions as first class citizens of the language...this means that they can be assigned to variables and passed around the application without needing to be wrapped with some sort of container like a class... This opens up a lot of functionaloties...
-
- 
 
 ***func main() {***
 
@@ -300,11 +280,5 @@ GO support functions as first class citizens of the language...this means that t
 ***    fmt.Println(\"Added:\", numTerms, \" terms for a total of\", sum)***
 
 ***}***
-
- 
-
- 
-
- 
 
 ![](002_03_-_Branching_and_Looping_&_Functions_000.png)

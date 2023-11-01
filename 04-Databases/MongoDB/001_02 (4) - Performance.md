@@ -4,8 +4,6 @@ Friday, April 29, 2016
 
 12:22 PM
 
- 
-
 Database schemas are best stored using the 3NF (3rd Normal Form).
 
 Even though this is also the case for MongoDB, it is also important to organize our data by how ofter some of the values get read or written within our application.
@@ -37,8 +35,6 @@ MongoDB:
 **Alternative Schema Design for Blog:**
 
 ![](001_02_(4)_-_Performance_000.png)
-
- 
 
 MongoDB has NO transactions
 
@@ -139,8 +135,6 @@ Although it is a many to many relation there are not very large numbers for thes
 -   Improved READ performance
 
 -   One round trip to the DataBase
-
- 
 
 **ODM - Object Document Mapper**
 

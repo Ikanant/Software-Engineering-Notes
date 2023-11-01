@@ -4,8 +4,6 @@ Friday, May 20, 2016
 
 10:16 AM
 
- 
-
 -   Enterprise Integration
 
     -   Enterprise Integration Pattern
@@ -30,23 +28,13 @@ Friday, May 20, 2016
 
     -   Introduce Camel Mediation
 
- 
-
 **Enterprise Integration**
-
- 
 
 This refers to the communication between different systems across the network. In most cases, such systems have various properties and deal with different protocols to send and receive information.
 
- 
-
 **Enterprise Application Integration**
 
- 
-
-[3 Different Approaches:]{.underline}
-
- 
+[3 Different Approaches:]
 
 1.  Storefront \<\-- File \--\> File Transfer \<\-\-- File \--\> Order Processing\
      
@@ -59,19 +47,11 @@ This refers to the communication between different systems across the network. I
 
 Camel, as a mediation engine, uses all three of the mentioned approaches
 
- 
-
- 
-
 **Mediator Behavioral Design Pattern:**
 
 \"Define an object that encapsulates how a set of objects interact. Mediator promotes loose coupling by keeping objects from referring to each other explicitly, and it lets you vary their interaction independently.\" (Gamma, Helm, Johnsons and Vlissides, 1995)
 
- 
-
 **Enterprise Integration Pattern Review:**
-
- 
 
 1.  Message
 
@@ -97,18 +77,10 @@ Camel, as a mediation engine, uses all three of the mentioned approaches
 
     c.  Core of the architecture of Apache Camel
 
- 
-
 ![Machine generated alternative text: Order Service run Fulfillment Processor execute Order Retrieval get orders send orders Order Processor Process Fulfillment File save orders get orders 1 save orders process orders Fulfillment Center 2 Fulfillment Center 1 Order Source Orders DB ](000_01_-_Integration_with_Apache_Camel_000.png)
-
- 
 
 **Why should we consider Apache Camel for this Case Study:**
 
- 
-
 For this case study we already have an Order Processor working... but sadly, it is not flexible or robust enough to provide results.
-
- 
 
 ![Machine generated alternative text: Orders Apache Camel Endpoint Pipes and Filters Endpoint Fulfillment Center 1 Endpoint Fulfillment Center 2 Endpoint ](000_01_-_Integration_with_Apache_Camel_001.png)

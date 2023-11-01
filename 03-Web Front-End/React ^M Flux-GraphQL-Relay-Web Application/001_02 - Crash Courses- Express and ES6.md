@@ -4,21 +4,13 @@ Friday, April 29, 2016
 
 11:49 AM
 
- 
-
 ES6 = The new and modern JavaScript
 
- 
-
 **Node and Express**
-
- 
 
 **Babel:**
 
 This is NODE wrapped in Babel compiling that allows the full use of Most of ES6 features (and even some ES7)
-
- 
 
 **WebPack:**
 

@@ -4,11 +4,7 @@ Sunday, March 13, 2022
 
 1:33 PM
 
- 
-
 Azure Compute is a SET of services that provide on-demand computing power. It is NOT a service on itself... it is just a logical grouping of several services in Azure related to running application workloads.
-
- 
 
 Azure Compute Services are:
 

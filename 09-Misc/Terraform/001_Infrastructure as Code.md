@@ -4,17 +4,11 @@ Wednesday, January 5, 2022
 
 11:18 PM
 
- 
-
 **What is it?**
 
 As the name suggests, IaC is the process of provisioning infrastructure through **software** to achieve **consistent** and **predictable** deployments.
 
- 
-
 The goal for it really is to achieve consistency. This can easily get out of hand when done manually over time. The environment we get at the end is a PREDICTABLE environment. This is very important when we start trying to get MULTIPLE environments that need to run the same version of an application.
-
- 
 
 **Core Concepts:**
 
@@ -32,7 +26,7 @@ The goal for it really is to achieve consistency. This can easily get out of han
 
         -   Relevant when we are dealing with software that already has some sort of implementation behind the scenes for accomplishing the task at hand. We can provide elements needed for a given task, but we don\'t need to specify the HOW to get it done.
         -   We are **declaring** what we want... and then we are leaving up to the software to figure out how to implement what we want.
-        -   **[Terraform uses a declarative approach to deploying IaC]{.underline}**
+        -   **[Terraform uses a declarative approach to deploying IaC]**
 
     -   Imperative
         -   Describe **exact** steps to be reproduced

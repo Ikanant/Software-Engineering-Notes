@@ -4,27 +4,17 @@ Friday, April 29, 2016
 
 12:12 PM
 
- 
-
 Great way to get multiple containers to be up and running with a minimal effort of our part
 
- 
-
 ![Machine generated alternative text: docker ](005_06_-_Docker_Compose_000.png)
-
- 
 
 **What is Docker Compose?**
 
 Is a great way to automatically manage the lifecycle of our application in the development environment to get it up and running and stop it very very quickly.
 
- 
-
 **What does it do?**
 
 It allows us to handle multiple images and turn those images into containers. This is similar to what we are commonly used too by typing docker run and so on....but in this case, Docker Compose will make ouyr life much easier and less repetitive and promt for errors.
-
- 
 
 **Docker Compose Features:**
 
@@ -40,8 +30,6 @@ It allows us to handle multiple images and turn those images into containers. Th
 
     d.  Run a one-off command on a service
 
- 
-
 **Whats the need of Docker Compose?**
 
 ![Machine generated alternative text: The Need for Docker Compose NGMX nodeo redis nodeo nodeo mongoDB Docker Compose (docker-compose.yml) ](005_06_-_Docker_Compose_001.png)
@@ -50,19 +38,11 @@ It allows us to handle multiple images and turn those images into containers. Th
 
 In this case we are dealing with 6 different Docker Containers and we are going to manage them all through our docker-compose.yml file.
 
- 
-
 The **docker-compose.yml** is written in a very easy format
-
- 
 
 ![Machine generated alternative text: Docker Compose Workflow Build Services Start Up Services Tear Down Services ](005_06_-_Docker_Compose_002.png)
 
- 
-
 **The docker-compose.yml File**
-
- 
 
 -   This fille will define ALL of our services
 
@@ -70,13 +50,9 @@ The **docker-compose.yml** is written in a very easy format
 
 ![Machine generated alternative text: The Role of the Docker Compose File o Docker Compose Build docker-compose.yml (service configuration) Docker Images (services) ](005_06_-_Docker_Compose_003.png)
 
- 
-
 **What do we include in this Dockerfile?**
 
 ![Machine generated alternative text: Docker Compose and Services version: \'2\' services: nedeo mongo DB docker-compose.yml ](005_06_-_Docker_Compose_004.png)
-
- 
 
 **Configuration Options that we can Supply to our docker-compose.yml:**
 
@@ -100,11 +76,7 @@ The **docker-compose.yml** is written in a very easy format
 
 -   Volumes
 
- 
-
 ![Machine generated alternative text: docker-compose.yml version: \'2\' services: node: build: context: . Example dockerfile: node.dockerfile networks: -nodeapp-network mongodb: image: mongo networks: - nodeapp-network networks: nodeapp-network driver: bridge ](005_06_-_Docker_Compose_005.png)
-
- 
 
 **Docker-compose Commands:**
 
@@ -136,41 +108,25 @@ The **docker-compose.yml** is written in a very easy format
 
     -   Remove the different contianers that are making up our services
 
- 
-
- 
-
 **Building Services**
 
 ![](005_06_-_Docker_Compose_006.png)
-
- 
 
 Or we can build an individual Service:
 
 ![](005_06_-_Docker_Compose_007.png)
 
- 
-
 **Service Start:**
 
 ![](005_06_-_Docker_Compose_008.png)
 
- 
-
 ![](005_06_-_Docker_Compose_009.png)
-
- 
 
 Teare Down Services
 
 ![](005_06_-_Docker_Compose_010.png)
 
- 
-
 ![](005_06_-_Docker_Compose_011.png)
-
- 
 
 **Docker-compose.yml Example:**
 
