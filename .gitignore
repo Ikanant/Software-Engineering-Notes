@@ -1,4 +1,8 @@
 ### macOS ###
+
+# Obsidian
+.obsidian
+
 # General
 .DS_Store
 .AppleDouble
