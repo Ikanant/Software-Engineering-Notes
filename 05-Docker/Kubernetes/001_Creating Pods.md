@@ -82,8 +82,6 @@ Zoomed in:
 
 ![Windows PowerSheII PS C: Set-Alias PS C: k get all NAME service/kubernetes TYPE Cluster IP k kubectl ---Name CLUSTER-IP EXTERNAL-IP le.96.e.1 \<none\> PORT(S) 443/TCP 74m PS C: k run my-first-pod pod/my-first-pod created PS C: k get pods - -image=nginx : alpine NAME my-first-pod READY STATUS RESTARTS Running e 1/1 PS C: k get services NAME kubernetes TYPE CLUSTER-IP EXTERNAL-IP Cluster IP le.96.e.1 \<none\> PORT(S) 443/TCP 76m PS C: k port-forward my-first-pod 1234: 80 Forwarding from 127.e.e.1:1234 8e Forwarding from \[::1\]:1234 -\> 80 Handling connection for 1234 Handling connection for 1234 ](001_Creating_Pods_009.png)
 
-*This is very unlikely to be the way we do things at Abrigo... or anywhere really... this is just a basic fun way to showcase how things are running behind the scenes*
-
 *Note: When we load the service... notice that we have the cluster IP... could we have hit that from the browser instead of localhost? NO -\> Remember that cluster Ips are internal only! We essentially just poke a hole in Kubernetes to access the content/container inside that Pod...*
 
 *Note2: Notice that running the port-forwarding command locks up the console which would force us to either stop the task OR open up another console instance.*

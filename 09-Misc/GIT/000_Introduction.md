@@ -10,8 +10,6 @@ These notes will not be focused on a list of git commands and their respective a
 
 Quick Note Reminder: In GIT, \"Origin\" is a shorthand name for the remote repository that a project was originally cloned from. In the following example, the URL parameter to the \"clone\" command becomes the \"origin\" for the cloned local repository:
 
-**\<git clone ssh://git@bitbucket.internal.abrigo.com:7999/sage/sageworks.git\>**
-
 The one thing to keep in mind when dealing with GIT, is that in each project there are 4 Storage AREAS\... and you move data across them.
 
 **The FOUR Areas:**

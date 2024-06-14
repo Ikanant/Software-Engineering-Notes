@@ -227,9 +227,3 @@ This is a GIANT topic and there should probably be another full courses on this 
 *The way rolling deployments work is simple... let\'s say we have our application running across 4 PODS.... Once we have an update to our application we essentially stand up ONE POD.... And once it is ready (we can test using Probes) we can remove one of the old Pods that has the outdated application... and so on and so on...*
 
 *You know what\'s cool? - If we simply run a **kubectl apply -f file.deployment.yml** this automatically happens!*
-
-**ACTION TIME**
-
-*To allow for more progress in the course I only payed attention to this chapter: 4:7.... If necessary I will include it in the DEMO... it would be cool... but it worked extremely similar to what we saw above... can I make a quick Abrigo Vue App container? Sure can!*
-
-*The only thing to note from the DEMO is that we used Services... which will be on the next Chapter... it will be even cooler looping back to this module once I understand how those work.*

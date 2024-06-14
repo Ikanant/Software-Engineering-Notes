@@ -12,8 +12,6 @@ Instead of having my DB created locally, I used Docker to get things potentially
 
 docker pull microsoft/mssql-server-windows-developer
 
-docker run \--name AbrigoKeyValueStoreDB -d -p 1433:1433 \--volume C:\\Docker\\Volumes\\SQLServer:C:\\SQLData -e sa_password=HelloAbrigo123 -e ACCEPT_EULA=Y microsoft/mssql-server-windows-developer
-
 Then later in SSMS:
 
 ![](008_BONUS_000.png)
