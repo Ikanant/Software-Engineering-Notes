@@ -21,3 +21,10 @@ In order to make my life easier I just made sure VM allows for SSH exposing the 
 
 One quick reminder for myself... ensure VM has openssh-server package otherwise things won't work:
 > sudo apt-get install openssh-server
+
+Getting all 4 VMs running took a bit and one thing to keep in mind is that ssh(ing) into all at once using multiple VS Code windows does require to tweak my ssh config a bit:
+
+![[Pasted image 20240818115850.png]]
+
+By the end of it all I got this:
+![[Pasted image 20240818120024.png]]
